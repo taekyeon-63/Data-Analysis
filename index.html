@@ -63,16 +63,45 @@
         </div>
     </div>
 
-    <!-- 메인 콘텐츠 -->
-    <main>
-        <div class="main-content">
-            <div class="article-box">
-                <h2>Article Title</h2>
-                <p>This is where the article content will appear. You can place dynamic content here.</p>
+   <!-- 메인 콘텐츠 -->
+   <main>
+    <div class="main-content">
+        <!-- 큰 뉴스 영역 -->
+        <div class="highlighted-news">
+            <img src="placeholder.jpg" alt="Main News Image" class="highlighted-news-image" />
+            <div class="highlighted-news-content">
+                <h2><a href="#" target="_blank">Main News Title</a></h2>
+                <p>Main news description goes here. This should be short and concise.</p>
+                <p class="author">By Author - Date</p>
             </div>
         </div>
-    </main>
 
-    <script src="js/scripts.js"></script>
+        <!-- 작은 뉴스 슬라이더 -->
+        <div class="news-slider-container">
+            <button class="slider-button left">&#8249;</button>
+            <div class="news-slider">
+                <div class="news-item">
+                    <img src="placeholder.jpg" alt="News Image" class="news-image" />
+                    <h3><a href="#" target="_blank">News Title</a></h3>
+                    <p class="author">By Author - Date</p>
+                </div>
+                <div class="news-item">
+                    <img src="placeholder.jpg" alt="News Image" class="news-image" />
+                    <h3><a href="#" target="_blank">News Title</a></h3>
+                    <p class="author">By Author - Date</p>
+                </div>
+                <div class="news-item">
+                    <img src="placeholder.jpg" alt="News Image" class="news-image" />
+                    <h3><a href="#" target="_blank">News Title</a></h3>
+                    <p class="author">By Author - Date</p>
+                </div>
+            </div>
+            <button class="slider-button right">&#8250;</button>
+        </div>
+    </div>
+</main>
+
+<script src="js/scripts.js"></script>
+
 </body>
 </html>
