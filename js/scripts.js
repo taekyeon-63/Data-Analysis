@@ -1,10 +1,5 @@
-/*!
- * Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
- */
-
 window.addEventListener('DOMContentLoaded', event => {
-
-    // Toggle the side navigation
+    // 기존 기능: 사이드바 토글
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
     if (sidebarToggle) {
         sidebarToggle.addEventListener('click', event => {
@@ -14,7 +9,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
-    // Dropdown menu toggle for RESEARCH
+    // 기존 기능: 드롭다운 메뉴 토글
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const dropdownBar = document.querySelector('.dropdown-bar');
 
@@ -22,34 +17,43 @@ window.addEventListener('DOMContentLoaded', event => {
         dropdownToggle.addEventListener('click', event => {
             event.preventDefault();
 
-            // Toggle dropdown bar height for sliding effect
+            // 드롭다운 바 열고 닫기
             if (dropdownBar.classList.contains('open')) {
-                dropdownBar.style.height = '0'; // Close dropdown
+                dropdownBar.style.height = '0';
                 dropdownBar.classList.remove('open');
-                dropdownToggle.classList.remove('dropdown-open'); // Reset triangle rotation
+                dropdownToggle.classList.remove('dropdown-open'); // 삼각형 초기화
             } else {
-                dropdownBar.style.height = '200px'; // Open dropdown (adjust height as needed)
+                dropdownBar.style.height = '200px';
                 dropdownBar.classList.add('open');
-                dropdownToggle.classList.add('dropdown-open'); // Rotate triangle
+                dropdownToggle.classList.add('dropdown-open'); // 삼각형 회전
             }
         });
     }
 
-    // Search bar toggle functionality
+    // 추가 기능: 검색창 토글
     const searchContainer = document.querySelector('.search-container');
     const searchIcon = document.querySelector('.search-icon');
 
     if (searchContainer && searchIcon) {
         searchIcon.addEventListener('click', event => {
             event.preventDefault();
-            searchContainer.classList.toggle('active'); // Toggle active class
+            searchContainer.classList.toggle('active'); // 검색창 활성화
         });
 
-        // Optional: Close search bar when clicking outside
+        // 외부 클릭 시 검색창 닫기
         document.addEventListener('click', event => {
             if (!searchContainer.contains(event.target) && !searchIcon.contains(event.target)) {
                 searchContainer.classList.remove('active');
             }
         });
     }
+
+    // 추가: 드롭다운 메뉴와 검색창이 동시에 열리지 않도록 처리
+    document.addEventListener('click', event => {
+        if (!dropdownBar.contains(event.target) && !dropdownToggle.contains(event.target)) {
+            dropdownBar.style.height = '0';
+            dropdownBar.classList.remove('open');
+            dropdownToggle.classList.remove('dropdown-open');
+        }
+    });
 });
