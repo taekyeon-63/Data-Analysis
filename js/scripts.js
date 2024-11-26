@@ -9,27 +9,60 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
-    // 기존 기능: 드롭다운 메뉴 토글
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
-    const dropdownBar = document.querySelector('.dropdown-bar');
+    // 수정된 기능: 여러 드롭다운 메뉴 동적 토글
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle'); // 모든 드롭다운 토글
+    const dropdownBars = document.querySelectorAll('.dropdown-bar'); // 모든 드롭다운 바
 
-    if (dropdownToggle && dropdownBar) {
-        dropdownToggle.addEventListener('click', (event) => {
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (event) => {
             event.preventDefault();
 
-            if (dropdownBar.classList.contains('open')) {
-                dropdownBar.style.height = '0';
-                dropdownBar.classList.remove('open');
-                dropdownToggle.classList.remove('dropdown-open'); // 삼각형 초기화
+            // 연결된 드롭다운 가져오기
+            const dropdownId = toggle.getAttribute('data-dropdown');
+            const relatedDropdown = document.getElementById(`${dropdownId}-dropdown`);
+
+            // 다른 드롭다운 닫기
+            dropdownBars.forEach(bar => {
+                if (bar !== relatedDropdown) {
+                    bar.style.height = '0';
+                    bar.classList.remove('open');
+                }
+            });
+            
+            // 현재 드롭다운 열기/닫기
+            if (relatedDropdown.classList.contains('open')) {
+                relatedDropdown.style.height = '0';
+                relatedDropdown.classList.remove('open');
+                toggle.classList.remove('dropdown-open'); // 삼각형 초기화
             } else {
-                dropdownBar.style.height = '200px';
-                dropdownBar.classList.add('open');
-                dropdownToggle.classList.add('dropdown-open'); // 삼각형 회전
+                relatedDropdown.style.height = relatedDropdown.scrollHeight + 'px';
+                relatedDropdown.classList.add('open');
+                toggle.classList.add('dropdown-open'); // 삼각형 회전
             }
         });
-    }
+    });
 
-    // 추가 기능: 검색창 토글
+    // 외부 클릭 시 모든 드롭다운 닫기
+    document.addEventListener('click', (event) => {
+        // 드롭다운 토글과 드롭다운 바 외부 클릭 감지
+        if (![...dropdownToggles].some(toggle => toggle.contains(event.target)) &&
+            ![...dropdownBars].some(bar => bar.contains(event.target))) {
+        
+            // 모든 드롭다운 닫기
+            dropdownBars.forEach(bar => {
+                bar.style.height = '0'; // 높이 0으로 설정
+                bar.classList.remove('open'); // 드롭다운 닫기 상태
+            });
+
+            // 모든 삼각형 초기화
+            dropdownToggles.forEach(toggle => {
+                toggle.classList.remove('dropdown-open'); // 삼각형 초기화
+            });
+        }
+    });
+
+
+    // 기존 기능: 검색창 토글
     const searchContainer = document.querySelector('.search-container');
     const searchIcon = document.querySelector('.search-icon');
 
@@ -46,15 +79,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
         });
     }
-
-    // 추가: 드롭다운 메뉴와 검색창이 동시에 열리지 않도록 처리
-    document.addEventListener('click', (event) => {
-        if (!dropdownBar.contains(event.target) && !dropdownToggle.contains(event.target)) {
-            dropdownBar.style.height = '0';
-            dropdownBar.classList.remove('open');
-            dropdownToggle.classList.remove('dropdown-open');
-        }
-    });
 
     // 방위 관련 뉴스 데이터를 가져오고 표시
     fetchNews();
@@ -137,14 +161,15 @@ function displayAdditionalNews(articles) {
     const container = document.getElementById("news-container");
     container.innerHTML = ""; // 기존 콘텐츠 초기화
 
-    articles.forEach((article) => {
+    // 최대 3개의 뉴스만 표시
+    articles.slice(0, 3).forEach((article) => {
         const newsHTML = `
-            <div class="article-box">
-                <img src="${article.urlToImage || 'placeholder.jpg'}" alt="News Image" class="news-image">
+            <div class="news-item">
+                <img src="${article.urlToImage || 'placeholder.jpg'}" alt="News Image">
                 <div class="news-content">
-                    <h2><a href="${article.url}" target="_blank">${article.title}</a></h2>
-                    <p>${article.description || "No description available."}</p>
-                    <p class="author">By ${article.author || "Unknown"} - ${new Date(article.publishedAt).toLocaleDateString()}</p>
+                    <h3><a href="${article.url}" target="_blank">${article.title || 'No Title'}</a></h3>
+                    <p>${article.description || 'No description available.'}</p>
+                    <p class="news-date">${new Date(article.publishedAt).toLocaleDateString()}</p>
                 </div>
             </div>
         `;
