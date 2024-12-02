@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>기타 데이터 - DEFT</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <!-- 상단 네비게이션 -->
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand ps-3" href="../index.html">DEFT</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <div id="layoutSidenav">
+        <!-- 사이드바 -->
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Chart</div>
+                        <a class="nav-link" href="country-data.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            국가 데이터
+                        </a>
+                        <a class="nav-link" href="corporate-data.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-bar"></i></div>
+                            기업 데이터
+                        </a>
+                        <a class="nav-link" href="other-data.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-pie"></i></div>
+                            기타 데이터
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 메인 콘텐츠 -->
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4"><i class="fas fa-chart-pie me-2"></i>기타 데이터</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                        <li class="breadcrumb-item active">기타 데이터</li>
+                    </ol>
+                    <p>기타 흥미로운 데이터 및 지표를 시각화합니다.</p>
+
+                    <!-- Section 1: 주요 지표 -->
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <div class="card bg-info text-white">
+                                <div class="card-body">
+                                    <h5>세계 행복 지수</h5>
+                                    <h2>7.2</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body">
+                                    <h5>평균 기후 변화 점수</h5>
+                                    <h2>55</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-warning text-white">
+                                <div class="card-body">
+                                    <h5>글로벌 교육 지수</h5>
+                                    <h2>80</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: 차트 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-line me-1"></i> 행복 지수 트렌드
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="happinessTrendChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-bar me-1"></i> 교육 지수 분포
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="educationIndexChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                    <div class="text-muted">Copyright &copy; DEFT Dashboard 2023</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // 행복 지수 트렌드 차트
+        const ctxHappinessTrend = document.getElementById('happinessTrendChart').getContext('2d');
+        new Chart(ctxHappinessTrend, {
+            type: 'line',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022'],
+                datasets: [{
+                    label: '행복 지수',
+                    data: [6.5, 6.8, 7.0, 7.1, 7.2],
+                    borderColor: '#36b9cc',
+                    fill: false
+                }]
+            }
+        });
+
+        // 교육 지수 분포 차트
+        const ctxEducationIndex = document.getElementById('educationIndexChart').getContext('2d');
+        new Chart(ctxEducationIndex, {
+            type: 'bar',
+            data: {
+                labels: ['아시아', '유럽', '아프리카', '북아메리카', '남아메리카'],
+                datasets: [{
+                    label: '교육 지수',
+                    data: [78, 85, 60, 88, 75],
+                    backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

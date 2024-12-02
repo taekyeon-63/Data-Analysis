@@ -9,6 +9,41 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
+   // DataTable 초기화
+   const datatablesSimple = document.getElementById('datatablesSimple');
+   if (datatablesSimple) {
+       // JSON 파일 경로 정확히 설정
+       fetch('/WEB/web-layout/data/Economy_data(GDP).json')
+           .then(response => {
+               if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+               return response.json();
+           })
+           .then(data => {
+               if (Array.isArray(data) && data.length > 0) {
+                   initializeDataTable(data, datatablesSimple);
+               } else {
+                   console.warn('JSON 파일에 데이터가 없습니다.');
+               }
+           })
+           .catch(error => console.error('JSON 로드 오류:', error));
+   }
+
+   function initializeDataTable(data, tableElement) {
+       // 테이블 헤더 추가
+       const headers = Object.keys(data[0]); // JSON 첫 번째 객체의 키를 헤더로 사용
+       tableElement.querySelector('thead').innerHTML = `
+           <tr>${headers.map(header => `<th>${header}</th>`).join('')}</tr>
+       `;
+
+       // 테이블 본문 추가
+       tableElement.querySelector('tbody').innerHTML = data.map(row => `
+           <tr>${headers.map(header => `<td>${row[header] || '-'}</td>`).join('')}</tr>
+       `).join('');
+
+       // DataTable 적용
+       new simpleDatatables.DataTable(tableElement);
+   }
+
     // 수정된 기능: 여러 드롭다운 메뉴 동적 토글
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle'); // 모든 드롭다운 토글
     const dropdownBars = document.querySelectorAll('.dropdown-bar'); // 모든 드롭다운 바
