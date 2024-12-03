@@ -10870,7 +10870,7 @@ body {
 #layoutSidenav #layoutSidenav_nav {
   flex-basis: 225px;
   flex-shrink: 0;
-  transition: transform 0.15s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   z-index: 1038;
   transform: translateX(-225px);
 }
@@ -10899,7 +10899,7 @@ body {
   background: #000;
   z-index: 1037;
   opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -10908,7 +10908,7 @@ body {
   }
   #layoutSidenav #layoutSidenav_content {
     margin-left: 0;
-    transition: margin 0.15s ease-in-out;
+    transition: margin 0.3s ease-in-out;
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
     transform: translateX(-225px);
@@ -11245,4 +11245,123 @@ body {
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.375rem !important;
+}
+
+/* 데이터 테이블 관련 */
+/* 테이블 컨테이너 스타일 */
+.table-container {
+  border: 1px solid #ccc; /* 테두리 */
+  padding: 20px;
+  border-radius: 10px; /* 둥근 모서리 */
+  background-color: #f9f9f9; /* 배경색 */
+}
+
+/* 데이터 테이블 스타일 */
+.dataTable-table {
+  border: 1px solid #dee2e6; /* 전체 테이블 테두리 */
+  width: 100%;
+  border-collapse: collapse; /* 셀 테두리 겹침 제거 */
+}
+
+.dataTable-table th,
+.dataTable-table td {
+  border: 1px solid #dee2e6 !important; /* 테두리 강제 적용 */
+  padding: 0.5rem !important; /* 셀 간격 */
+  text-align: left !important; /* 텍스트 정렬 */
+  white-space: nowrap !important; /* 줄바꿈 방지 */
+}
+
+.dataTable-table th {
+  background-color: #f8f9fa; /* 헤더 배경색 */
+  font-weight: solid; /* 헤더 글자 굵기 */
+  text-transform: uppercase; /* 헤더 대문자 */
+}
+
+.dataTable-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* 짝수 행 배경색 */
+}
+
+.dataTable-table tr:nth-child(odd) {
+  background-color: #ffffff; /* 홀수 행 배경색 */
+}
+
+/* 카드 스타일 */
+.card-header {
+  background-color: #f8f9fa;
+  font-size: 1rem; /* 글자 크기 축소 */
+  font-weight: normal; /* 글자 굵기 축소 */
+  padding: 0.5rem 0.75rem; /* 패딩 축소 */
+  border-bottom: 1px solid #ddd; /* 얇은 테두리 */
+  display: flex;
+  align-items: center;
+}
+
+.card-header .fas {
+  font-size: 0.85rem !important; /* 아이콘 크기 */
+  margin-right: 0.6rem !important; /* 아이콘과 텍스트 간격 */
+  color: #495057 !important; /* 색상 */
+}
+
+.card-body {
+  padding: 1rem;
+  border-radius: 0.25rem; /* 둥근 모서리 */
+}
+
+.datatable-selector {
+  appearance: auto !important; /* 기본 브라우저 스타일 복원 */
+  background: none !important; /* 커스텀 배경 제거 */
+  padding: 0 8px !important; /* 필요에 따라 패딩 조정 */
+  line-height: 30px !important; /* 드롭다운 높이 조정 */
+  height: 35px;
+  width: 70px !important; /* 드롭다운 너비 */
+  border: 1px solid #ccc !important; /* 테두리 유지 */
+  border-radius: 4px !important; /* 둥근 모서리 */
+}
+
+
+.datatable-dropdown label {
+  margin: 0 !important; /* 라벨의 마진 제거 */
+  padding: 0 !important; /* 라벨의 패딩 제거 */
+  font-size: 0.9rem !important; /* 라벨의 글꼴 크기 */
+  line-height: 30px !important; /* 드롭다운 높이와 일치 */
+  display: inline-block !important; /* 라벨 정렬 */
+}
+
+/* 숫자 박스 테두리 스타일 */
+.datatable-pagination .datatable-pagination-list button {
+  border: 1px solid #ccc !important; /* 테두리 추가 */
+  border-radius: 4px !important; /* 모서리 둥글게 */
+  padding: 5px 8px !important; /* 버튼 크기 조정 */
+  font-size: 1rem !important; /* 글씨 크기 줄이기 */
+  cursor: pointer !important; /* 마우스 커서 표시 */
+  transition: all 0.2s ease-in-out !important; /* 호버 시 애니메이션 효과 */
+}
+
+.datatable-pagination .datatable-pagination-list {
+  display: flex; /* 버튼을 가로로 나열 */
+  gap: 0px; /* 버튼 간격 줄이기 */
+}
+
+/* 이전/다음 버튼 항상 표시 */
+.datatable-pagination .datatable-pagination-list button:first-child,
+.datatable-pagination .datatable-pagination-list button:last-child {
+  display: inline-block !important;
+}
+
+/* 드롭다운 컨테이너 */
+.dropdown-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+/* 드롭다운 스타일 */
+.dropdown-container .form-select {
+  width: 250px;
+  height: 40px;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
 }
