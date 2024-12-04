@@ -19,6 +19,22 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
+    // 2. 사이드바 드롭다운 기본 열림
+    const defaultOpenDropdownId = 'collapseResearch'; // 기본으로 열릴 드롭다운의 ID
+    const defaultDropdown = document.getElementById(defaultOpenDropdownId);
+
+    if (defaultDropdown) {
+        // 드롭다운 열기
+        defaultDropdown.classList.add('show'); // Bootstrap에서 사용하는 'show' 클래스를 추가하여 열기
+
+        // 삼각형 아이콘 회전 상태 설정
+        const toggleButton = document.querySelector(`[data-bs-target="#${defaultOpenDropdownId}"]`);
+        if (toggleButton) {
+            toggleButton.setAttribute('aria-expanded', 'true'); // 접근성을 위해 aria-expanded를 true로 설정
+            toggleButton.classList.remove('collapsed'); // 'collapsed' 클래스를 제거하여 삼각형이 회전된 상태로 표시
+        }
+    }
+
     // 수정된 기능: 여러 드롭다운 메뉴 동적 토글
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle'); // 모든 드롭다운 토글
     const dropdownBars = document.querySelectorAll('.dropdown-bar'); // 모든 드롭다운 바
@@ -92,6 +108,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+
     // DataTable 초기화 함수
     function initializeDataTableFromFile(tableElementId, jsonFilePath) {
         const tableElement = document.getElementById(tableElementId);
@@ -177,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 여러 테이블 및 JSON 파일 초기화
     initializeDataTableFromFile('customDataTable', '/WEB/web-layout/data/Economy_data(GDP).json');
     initializeDataTableFromFile('politicsDataTable', '/WEB/web-layout/data/governance_data.json');
-    // initializeDataTableFromFile('militaryDataTable', '/WEB/web-layout/data/military_expenses_data.json');
+    initializeDataTableFromFile('militaryDataTable', '/WEB/web-layout/data/military_expenses_data.json');
     // initializeDataTableFromFile('ucdpDataTable', '/WEB/web-layout/data/UCDP_data.json');
     // initializeDataTableFromFile('ucdpgedDataTable', '/WEB/web-layout/data/UCDP_GED_data.json');
     // initializeDataTableFromFile('armsexportDataTable', '/WEB/web-layout/data/arms_exports_data.json');
