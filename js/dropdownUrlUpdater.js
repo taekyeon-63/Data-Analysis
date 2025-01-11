@@ -1,16 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const countrySelector = document.getElementById('countrySelector');
-
-    if (countrySelector) {
-        countrySelector.addEventListener('change', () => {
-            const selectedCountry = countrySelector.value;
-
-            // URL 변경
-            if (selectedCountry) {
-                const currentUrl = new URL(window.location.href);
-                currentUrl.searchParams.set('country', selectedCountry);
-                window.history.pushState({}, '', currentUrl); // URL 업데이트 (페이지 리로드 없음)
-            }
-        });
-    }
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:382215e6b0cf45bbb5877bdc5ece5249260ee35ef4c43a396837ae85308fdb87
+size 620
