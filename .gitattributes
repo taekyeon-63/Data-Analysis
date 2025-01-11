@@ -1,3 +1,4 @@
 "* text=auto" 
 data/UCDP_GED_data.json filter=lfs diff=lfs merge=lfs -text
 WEB/web-layout/* filter=lfs diff=lfs merge=lfs -text
+js/* filter=lfs diff=lfs merge=lfs -text
