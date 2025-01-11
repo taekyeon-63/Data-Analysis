@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd571414067781b81a112b36ccca9bd9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bd571414067781b81a112b36ccca9bd9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bd571414067781b81a112b36ccca9bd9 = L.map(
+                "map_bd571414067781b81a112b36ccca9bd9",
+                {
+                    center: [43.42688852380951, 5.30508230952381],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_49cff94c06408cea5c31cbd6d556a554 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_49cff94c06408cea5c31cbd6d556a554.addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+            var marker_d834971bbd49b834cb276d7c15f9f41b = L.marker(
+                [43.42688852380951, 5.30508230952381],
+                {}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+            var div_icon_a840d87429ff99ddcc76fa8c837faaf1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eFrance\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_d834971bbd49b834cb276d7c15f9f41b.setIcon(div_icon_a840d87429ff99ddcc76fa8c837faaf1);
+        
+    
+            var circle_marker_2e3b0d21e48378e0f3a6ad40b4fad901 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_1838197ac5c13fff524a352782ba81cf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fb46f3c2794dae142057b0934884841c = $(`<div id="html_fb46f3c2794dae142057b0934884841c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Micocouliers                 </div>`)[0];
+                popup_1838197ac5c13fff524a352782ba81cf.setContent(html_fb46f3c2794dae142057b0934884841c);
+            
+        
+
+        circle_marker_2e3b0d21e48378e0f3a6ad40b4fad901.bindPopup(popup_1838197ac5c13fff524a352782ba81cf)
+        ;
+
+        
+    
+    
+            var circle_marker_9f3c5f9ec4c1447b738a7fcc537d95a4 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_23f3b455d3a626c2a49acac691238596 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_244ecc4ef8ebbc2336360a4415270580 = $(`<div id="html_244ecc4ef8ebbc2336360a4415270580" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the Saint-Thys district of Marseille (Bouches-du-Rhône)                 </div>`)[0];
+                popup_23f3b455d3a626c2a49acac691238596.setContent(html_244ecc4ef8ebbc2336360a4415270580);
+            
+        
+
+        circle_marker_9f3c5f9ec4c1447b738a7fcc537d95a4.bindPopup(popup_23f3b455d3a626c2a49acac691238596)
+        ;
+
+        
+    
+    
+            var circle_marker_63cc25fccb6d7357d41e7e275a9b8ae9 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_b92240fe3de1670cff38481c63d2d83c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_17378e71e70bffac1b72787df5fd7dac = $(`<div id="html_17378e71e70bffac1b72787df5fd7dac" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Cité des Rosiers (14th arrondissement)                 </div>`)[0];
+                popup_b92240fe3de1670cff38481c63d2d83c.setContent(html_17378e71e70bffac1b72787df5fd7dac);
+            
+        
+
+        circle_marker_63cc25fccb6d7357d41e7e275a9b8ae9.bindPopup(popup_b92240fe3de1670cff38481c63d2d83c)
+        ;
+
+        
+    
+    
+            var circle_marker_2cc1eb288f92a3710823db6f7e0acd6d = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_3e21febf8ee0afbad6b3c069931c426f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c5bef2af43dc9d018b7c612325792143 = $(`<div id="html_c5bef2af43dc9d018b7c612325792143" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Micocouliers                 </div>`)[0];
+                popup_3e21febf8ee0afbad6b3c069931c426f.setContent(html_c5bef2af43dc9d018b7c612325792143);
+            
+        
+
+        circle_marker_2cc1eb288f92a3710823db6f7e0acd6d.bindPopup(popup_3e21febf8ee0afbad6b3c069931c426f)
+        ;
+
+        
+    
+    
+            var circle_marker_fcf283a10528935f78447b05c7ff5afa = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_7b4b1d9d9c60a055551dbb691ff5a74f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ee6771451e3f596a491d721f5e3aff06 = $(`<div id="html_ee6771451e3f596a491d721f5e3aff06" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the east of Marseille                 </div>`)[0];
+                popup_7b4b1d9d9c60a055551dbb691ff5a74f.setContent(html_ee6771451e3f596a491d721f5e3aff06);
+            
+        
+
+        circle_marker_fcf283a10528935f78447b05c7ff5afa.bindPopup(popup_7b4b1d9d9c60a055551dbb691ff5a74f)
+        ;
+
+        
+    
+    
+            var circle_marker_328216d14d216b524adddf10bc33b462 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_86f88699aef7e8b7db69dedaaa2a1390 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_46f086d2882c51eac10b3a8ff8a079e7 = $(`<div id="html_46f086d2882c51eac10b3a8ff8a079e7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Rosiers                 </div>`)[0];
+                popup_86f88699aef7e8b7db69dedaaa2a1390.setContent(html_46f086d2882c51eac10b3a8ff8a079e7);
+            
+        
+
+        circle_marker_328216d14d216b524adddf10bc33b462.bindPopup(popup_86f88699aef7e8b7db69dedaaa2a1390)
+        ;
+
+        
+    
+    
+            var circle_marker_00aa7dc9d252996cc096a17fbf556eab = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_2294bdef2f810ea06d9b24f0bb607fdb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7267e1011522b2a201ed2951b3c4d8df = $(`<div id="html_7267e1011522b2a201ed2951b3c4d8df" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Saint-Gabriel neighborhood                 </div>`)[0];
+                popup_2294bdef2f810ea06d9b24f0bb607fdb.setContent(html_7267e1011522b2a201ed2951b3c4d8df);
+            
+        
+
+        circle_marker_00aa7dc9d252996cc096a17fbf556eab.bindPopup(popup_2294bdef2f810ea06d9b24f0bb607fdb)
+        ;
+
+        
+    
+    
+            var circle_marker_9f98baf788e1103d7be848e267d3acc0 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_41518d95cc320c1f4e75f69cae96f460 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8f35d27f5d6a1fde7d1ba99788a27a4f = $(`<div id="html_8f35d27f5d6a1fde7d1ba99788a27a4f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Old Port, in Marseille (Bouches-du-Rhône)                 </div>`)[0];
+                popup_41518d95cc320c1f4e75f69cae96f460.setContent(html_8f35d27f5d6a1fde7d1ba99788a27a4f);
+            
+        
+
+        circle_marker_9f98baf788e1103d7be848e267d3acc0.bindPopup(popup_41518d95cc320c1f4e75f69cae96f460)
+        ;
+
+        
+    
+    
+            var circle_marker_0f7c82f259e6e4721e6e78bfc320ad84 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_cd3a8fe0e78958c0721d48f98b758c2f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2df24d584d7ca6c868307a7f902f1d82 = $(`<div id="html_2df24d584d7ca6c868307a7f902f1d82" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Paternelle housing estate in northern Marseille.                 </div>`)[0];
+                popup_cd3a8fe0e78958c0721d48f98b758c2f.setContent(html_2df24d584d7ca6c868307a7f902f1d82);
+            
+        
+
+        circle_marker_0f7c82f259e6e4721e6e78bfc320ad84.bindPopup(popup_cd3a8fe0e78958c0721d48f98b758c2f)
+        ;
+
+        
+    
+    
+            var circle_marker_4cfeb33c9d8d5a23434f51f9a94dbb75 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_78e445911e35faed8dcc7af09b9c42fe = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f955f39221f2a74084f2eb7e46481aa8 = $(`<div id="html_f955f39221f2a74084f2eb7e46481aa8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> at the Belle de Mai, in the 3rd arrondissement of Marseille                 </div>`)[0];
+                popup_78e445911e35faed8dcc7af09b9c42fe.setContent(html_f955f39221f2a74084f2eb7e46481aa8);
+            
+        
+
+        circle_marker_4cfeb33c9d8d5a23434f51f9a94dbb75.bindPopup(popup_78e445911e35faed8dcc7af09b9c42fe)
+        ;
+
+        
+    
+    
+            var circle_marker_42a52da072ca78673f7a8b6f7a9a9fe0 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_532ec295f979fa7e4bf58b873c4bc5a9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_20fa5a0f3862836125df079443c35841 = $(`<div id="html_20fa5a0f3862836125df079443c35841" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the city of La Paternelle, north of Marseille                 </div>`)[0];
+                popup_532ec295f979fa7e4bf58b873c4bc5a9.setContent(html_20fa5a0f3862836125df079443c35841);
+            
+        
+
+        circle_marker_42a52da072ca78673f7a8b6f7a9a9fe0.bindPopup(popup_532ec295f979fa7e4bf58b873c4bc5a9)
+        ;
+
+        
+    
+    
+            var circle_marker_b80adee5a6165f9e6031bad2ad9cd0d6 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_2a404c0b49f3ac56056ad815b8834e4e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_72d1f6272a9c2bed443d63ad176ed0e9 = $(`<div id="html_72d1f6272a9c2bed443d63ad176ed0e9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Cité de la Paternelle, in Marseille                 </div>`)[0];
+                popup_2a404c0b49f3ac56056ad815b8834e4e.setContent(html_72d1f6272a9c2bed443d63ad176ed0e9);
+            
+        
+
+        circle_marker_b80adee5a6165f9e6031bad2ad9cd0d6.bindPopup(popup_2a404c0b49f3ac56056ad815b8834e4e)
+        ;
+
+        
+    
+    
+            var circle_marker_d64f1a25e343d33651ce166897c20676 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_b74efdde7ad679a56818e07c77f62b37 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ca39626abec0b9a4f21ad7a25517bd3f = $(`<div id="html_ca39626abec0b9a4f21ad7a25517bd3f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> the Cité de la Paternelle                 </div>`)[0];
+                popup_b74efdde7ad679a56818e07c77f62b37.setContent(html_ca39626abec0b9a4f21ad7a25517bd3f);
+            
+        
+
+        circle_marker_d64f1a25e343d33651ce166897c20676.bindPopup(popup_b74efdde7ad679a56818e07c77f62b37)
+        ;
+
+        
+    
+    
+            var circle_marker_2a9ae6a145d87b2bab0ef1dae20c35c4 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_886394d43d7507baa6478549d74dbd80 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_05752ef67131463d0fe69da73538b183 = $(`<div id="html_05752ef67131463d0fe69da73538b183" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Marseille (Bouches-du-Rhône)                 </div>`)[0];
+                popup_886394d43d7507baa6478549d74dbd80.setContent(html_05752ef67131463d0fe69da73538b183);
+            
+        
+
+        circle_marker_2a9ae6a145d87b2bab0ef1dae20c35c4.bindPopup(popup_886394d43d7507baa6478549d74dbd80)
+        ;
+
+        
+    
+    
+            var circle_marker_2b9c91feae929bf5e7cb79d7e20906d2 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_71a0dc143a8a5af3aa013d07e50d88e5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c722b5b1f1c14339a9ab6835b25d92fc = $(`<div id="html_c722b5b1f1c14339a9ab6835b25d92fc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the housing estate of Cayolle, in the 9th arrondissement of Marseille                 </div>`)[0];
+                popup_71a0dc143a8a5af3aa013d07e50d88e5.setContent(html_c722b5b1f1c14339a9ab6835b25d92fc);
+            
+        
+
+        circle_marker_2b9c91feae929bf5e7cb79d7e20906d2.bindPopup(popup_71a0dc143a8a5af3aa013d07e50d88e5)
+        ;
+
+        
+    
+    
+            var circle_marker_afd9465913923d207fa3a472ec5d29da = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_7ebf8dbe94434be0662cde8aca7a22f3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d682e65fcae44b311d8cab11b2638ede = $(`<div id="html_d682e65fcae44b311d8cab11b2638ede" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> La Paternelle, Marseille                 </div>`)[0];
+                popup_7ebf8dbe94434be0662cde8aca7a22f3.setContent(html_d682e65fcae44b311d8cab11b2638ede);
+            
+        
+
+        circle_marker_afd9465913923d207fa3a472ec5d29da.bindPopup(popup_7ebf8dbe94434be0662cde8aca7a22f3)
+        ;
+
+        
+    
+    
+            var circle_marker_6afb269b7bd392b37cd00b7c844351a2 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_593730b749a4066dc6887ca1dc7fafd6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b593cc3d86a580274db86e32ea62423 = $(`<div id="html_2b593cc3d86a580274db86e32ea62423" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Chutes-Lavie district, in the 4th arrondissement of Marseille                 </div>`)[0];
+                popup_593730b749a4066dc6887ca1dc7fafd6.setContent(html_2b593cc3d86a580274db86e32ea62423);
+            
+        
+
+        circle_marker_6afb269b7bd392b37cd00b7c844351a2.bindPopup(popup_593730b749a4066dc6887ca1dc7fafd6)
+        ;
+
+        
+    
+    
+            var circle_marker_94d3e64ef86654dba19270616a3b50b7 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_e9a774fd58682b04b924da56b7f34913 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5d911debb68c1bff6bc752360e047dfe = $(`<div id="html_5d911debb68c1bff6bc752360e047dfe" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> city Marseille                 </div>`)[0];
+                popup_e9a774fd58682b04b924da56b7f34913.setContent(html_5d911debb68c1bff6bc752360e047dfe);
+            
+        
+
+        circle_marker_94d3e64ef86654dba19270616a3b50b7.bindPopup(popup_e9a774fd58682b04b924da56b7f34913)
+        ;
+
+        
+    
+    
+            var circle_marker_a413a4a730b63c4749e9ad190cf08722 = L.circleMarker(
+                [48.866667, 2.333333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_eada3cfc2a9031726568e9601336cfaf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cc931e37ea5be52140c516390374e3f8 = $(`<div id="html_cc931e37ea5be52140c516390374e3f8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 48.8667<br>                 <b>Longitude:</b> 2.3333<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Paris city<br>                 <b>Where Description:</b> Paris                 </div>`)[0];
+                popup_eada3cfc2a9031726568e9601336cfaf.setContent(html_cc931e37ea5be52140c516390374e3f8);
+            
+        
+
+        circle_marker_a413a4a730b63c4749e9ad190cf08722.bindPopup(popup_eada3cfc2a9031726568e9601336cfaf)
+        ;
+
+        
+    
+    
+            var circle_marker_618aa73688d3521eda78d1111bb111f6 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_f02091d5f7ca280339a3f543b18e1c8b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dd88c1378ab12bcb9d4e62e6156d9b55 = $(`<div id="html_dd88c1378ab12bcb9d4e62e6156d9b55" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the city of La Bricarde.                 </div>`)[0];
+                popup_f02091d5f7ca280339a3f543b18e1c8b.setContent(html_dd88c1378ab12bcb9d4e62e6156d9b55);
+            
+        
+
+        circle_marker_618aa73688d3521eda78d1111bb111f6.bindPopup(popup_f02091d5f7ca280339a3f543b18e1c8b)
+        ;
+
+        
+    
+    
+            var circle_marker_15bceb2eadbce67568cc7e166bbde9c1 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_925a80a3a296eab0a21b017a867f4dd4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_94883c9eb1b6c2375df3cd0fcf2a4c56 = $(`<div id="html_94883c9eb1b6c2375df3cd0fcf2a4c56" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Marseille                 </div>`)[0];
+                popup_925a80a3a296eab0a21b017a867f4dd4.setContent(html_94883c9eb1b6c2375df3cd0fcf2a4c56);
+            
+        
+
+        circle_marker_15bceb2eadbce67568cc7e166bbde9c1.bindPopup(popup_925a80a3a296eab0a21b017a867f4dd4)
+        ;
+
+        
+    
+    
+            var circle_marker_8d81d828b9f13b755fb6a37f704584e1 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_bb7eeb1e6c8543690ef5529c6136c7f4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_387411a93c716ab0a55b4e90ee71154d = $(`<div id="html_387411a93c716ab0a55b4e90ee71154d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the Consolat housing estate in the 15th arrondissement                 </div>`)[0];
+                popup_bb7eeb1e6c8543690ef5529c6136c7f4.setContent(html_387411a93c716ab0a55b4e90ee71154d);
+            
+        
+
+        circle_marker_8d81d828b9f13b755fb6a37f704584e1.bindPopup(popup_bb7eeb1e6c8543690ef5529c6136c7f4)
+        ;
+
+        
+    
+    
+            var circle_marker_f7135442146c0ec662ca6b9e935690f0 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_2ee1e18473b295ea8d4c4d232ac54f7a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d40eddee4c1e4203ec7216b99effc5b4 = $(`<div id="html_d40eddee4c1e4203ec7216b99effc5b4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the eleventh arrondissement of the Phocaean city, boulevard de la Pomme,                 </div>`)[0];
+                popup_2ee1e18473b295ea8d4c4d232ac54f7a.setContent(html_d40eddee4c1e4203ec7216b99effc5b4);
+            
+        
+
+        circle_marker_f7135442146c0ec662ca6b9e935690f0.bindPopup(popup_2ee1e18473b295ea8d4c4d232ac54f7a)
+        ;
+
+        
+    
+    
+            var circle_marker_25ebf1cd15c366ba4488d5370f494d4d = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_3f174d5300641337a22bed039cd9d343 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3535429b8125708b5be969e05897df96 = $(`<div id="html_3535429b8125708b5be969e05897df96" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the Capelette district in the south of the city, near the Palais des Sports                 </div>`)[0];
+                popup_3f174d5300641337a22bed039cd9d343.setContent(html_3535429b8125708b5be969e05897df96);
+            
+        
+
+        circle_marker_25ebf1cd15c366ba4488d5370f494d4d.bindPopup(popup_3f174d5300641337a22bed039cd9d343)
+        ;
+
+        
+    
+    
+            var circle_marker_ead6893f4f9cf648287ef4131c930ab1 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_f10e365ae3e37ad61dff5a9fff9ebfa9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_909cd84eacfd3070c518c0127c004f1b = $(`<div id="html_909cd84eacfd3070c518c0127c004f1b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Micocouliers                 </div>`)[0];
+                popup_f10e365ae3e37ad61dff5a9fff9ebfa9.setContent(html_909cd84eacfd3070c518c0127c004f1b);
+            
+        
+
+        circle_marker_ead6893f4f9cf648287ef4131c930ab1.bindPopup(popup_f10e365ae3e37ad61dff5a9fff9ebfa9)
+        ;
+
+        
+    
+    
+            var circle_marker_3c3686d2029eff524d00b7cbcc6e3e4b = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_bf7b6f6b5167a0d397bbdb2e21bc822f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_31fd590bc49245dc47d6c65cb275d2c8 = $(`<div id="html_31fd590bc49245dc47d6c65cb275d2c8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Paternelle                 </div>`)[0];
+                popup_bf7b6f6b5167a0d397bbdb2e21bc822f.setContent(html_31fd590bc49245dc47d6c65cb275d2c8);
+            
+        
+
+        circle_marker_3c3686d2029eff524d00b7cbcc6e3e4b.bindPopup(popup_bf7b6f6b5167a0d397bbdb2e21bc822f)
+        ;
+
+        
+    
+    
+            var circle_marker_514288752965daa99456f8bee5d7eaec = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_85eb2c47809ad838eccec770cd055c6f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c14040de920e43ee306f03f9b0b94983 = $(`<div id="html_c14040de920e43ee306f03f9b0b94983" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in La Paternelle                 </div>`)[0];
+                popup_85eb2c47809ad838eccec770cd055c6f.setContent(html_c14040de920e43ee306f03f9b0b94983);
+            
+        
+
+        circle_marker_514288752965daa99456f8bee5d7eaec.bindPopup(popup_85eb2c47809ad838eccec770cd055c6f)
+        ;
+
+        
+    
+    
+            var circle_marker_c4d1387f0e09b2b8b8c298ee929c0261 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_ffe8e2c6922a3aebdaca766744804d4b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6541ba4de099320dd91ff8c1730ae184 = $(`<div id="html_6541ba4de099320dd91ff8c1730ae184" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> several popular districts of Marseille                 </div>`)[0];
+                popup_ffe8e2c6922a3aebdaca766744804d4b.setContent(html_6541ba4de099320dd91ff8c1730ae184);
+            
+        
+
+        circle_marker_c4d1387f0e09b2b8b8c298ee929c0261.bindPopup(popup_ffe8e2c6922a3aebdaca766744804d4b)
+        ;
+
+        
+    
+    
+            var circle_marker_5058883e59f7e23d6a690d560e44e8b7 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_ea30f92bc7bd4585657dd80effbce5ff = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4d82e49c39ed398bd3d37428775dbc31 = $(`<div id="html_4d82e49c39ed398bd3d37428775dbc31" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> near the Maurelette housing estate in the 14th arrondissement of Marseille,                 </div>`)[0];
+                popup_ea30f92bc7bd4585657dd80effbce5ff.setContent(html_4d82e49c39ed398bd3d37428775dbc31);
+            
+        
+
+        circle_marker_5058883e59f7e23d6a690d560e44e8b7.bindPopup(popup_ea30f92bc7bd4585657dd80effbce5ff)
+        ;
+
+        
+    
+    
+            var circle_marker_3abc81a68b22de3ca4a71ab8b3fe3645 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_6d7b937e734dc46c8e2facc5183a9611 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c67e3edb0c73df4ca0dd9e34aad1f844 = $(`<div id="html_c67e3edb0c73df4ca0dd9e34aad1f844" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> 3rd arrondissement of Marseille                 </div>`)[0];
+                popup_6d7b937e734dc46c8e2facc5183a9611.setContent(html_c67e3edb0c73df4ca0dd9e34aad1f844);
+            
+        
+
+        circle_marker_3abc81a68b22de3ca4a71ab8b3fe3645.bindPopup(popup_6d7b937e734dc46c8e2facc5183a9611)
+        ;
+
+        
+    
+    
+            var circle_marker_c02192411f756a8b7c7d835107378bb9 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_26f46510a78fdac81ee371bdbeac9cbf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_913fde843a8fe7ef3c729cfea556c474 = $(`<div id="html_913fde843a8fe7ef3c729cfea556c474" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the Cité du Mail                 </div>`)[0];
+                popup_26f46510a78fdac81ee371bdbeac9cbf.setContent(html_913fde843a8fe7ef3c729cfea556c474);
+            
+        
+
+        circle_marker_c02192411f756a8b7c7d835107378bb9.bindPopup(popup_26f46510a78fdac81ee371bdbeac9cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_e2daad6ead6f423526ed960da3dcfff5 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_05cf9ba50dada2022ef260298be83040 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b8cf369f2aff6b92bd4333159ffb3860 = $(`<div id="html_b8cf369f2aff6b92bd4333159ffb3860" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> Belle de Mai in Marseille                 </div>`)[0];
+                popup_05cf9ba50dada2022ef260298be83040.setContent(html_b8cf369f2aff6b92bd4333159ffb3860);
+            
+        
+
+        circle_marker_e2daad6ead6f423526ed960da3dcfff5.bindPopup(popup_05cf9ba50dada2022ef260298be83040)
+        ;
+
+        
+    
+    
+            var circle_marker_66c524219857f6da5cde4f9ff80f8998 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_80dbb6dd3566ef32b05f835a4e1eddb8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6dfb8d419e1ba304480a29f43b8afe5b = $(`<div id="html_6dfb8d419e1ba304480a29f43b8afe5b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> La Cabucelle in Marseille                 </div>`)[0];
+                popup_80dbb6dd3566ef32b05f835a4e1eddb8.setContent(html_6dfb8d419e1ba304480a29f43b8afe5b);
+            
+        
+
+        circle_marker_66c524219857f6da5cde4f9ff80f8998.bindPopup(popup_80dbb6dd3566ef32b05f835a4e1eddb8)
+        ;
+
+        
+    
+    
+            var circle_marker_baea709a96400acdbaa6af027f90aafb = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_bad6d58081757d6925bfc9cabfe39f14 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a8a9654bccb4be998c2b62bbff677d75 = $(`<div id="html_a8a9654bccb4be998c2b62bbff677d75" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> n the parking lot of the Quick restaurant, located on rue de Lyon, in the 15th arrondissement of Marseille.                 </div>`)[0];
+                popup_bad6d58081757d6925bfc9cabfe39f14.setContent(html_a8a9654bccb4be998c2b62bbff677d75);
+            
+        
+
+        circle_marker_baea709a96400acdbaa6af027f90aafb.bindPopup(popup_bad6d58081757d6925bfc9cabfe39f14)
+        ;
+
+        
+    
+    
+            var circle_marker_6a2c2d057619f9627fd959d60809976d = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_3c6afa76ead27c91189ea061d3afc666 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c826a3fdebf4de23803348aa2ceb06aa = $(`<div id="html_c826a3fdebf4de23803348aa2ceb06aa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> n the 15th arrondissement of Marseille (Bouches-du-Rhône)                 </div>`)[0];
+                popup_3c6afa76ead27c91189ea061d3afc666.setContent(html_c826a3fdebf4de23803348aa2ceb06aa);
+            
+        
+
+        circle_marker_6a2c2d057619f9627fd959d60809976d.bindPopup(popup_3c6afa76ead27c91189ea061d3afc666)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb167b714d891e7756a038a66754e73 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_3ee89028812238cf01f5728c97f813f9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2317b7b67482fab887b01add0e4c7111 = $(`<div id="html_2317b7b67482fab887b01add0e4c7111" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> between the 12th and 13th arrondissements                 </div>`)[0];
+                popup_3ee89028812238cf01f5728c97f813f9.setContent(html_2317b7b67482fab887b01add0e4c7111);
+            
+        
+
+        circle_marker_4cb167b714d891e7756a038a66754e73.bindPopup(popup_3ee89028812238cf01f5728c97f813f9)
+        ;
+
+        
+    
+    
+            var circle_marker_f30c64df3bf09af6f8164129c1ae6c88 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_cc121746af17e83e1e35e96a5b046100 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3a13e10934051cd95969f043b2d1e42b = $(`<div id="html_3a13e10934051cd95969f043b2d1e42b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the neighborhood of the Cité de Saint-Joseph, in the 14th arrondissement of the Phocaean city,                 </div>`)[0];
+                popup_cc121746af17e83e1e35e96a5b046100.setContent(html_3a13e10934051cd95969f043b2d1e42b);
+            
+        
+
+        circle_marker_f30c64df3bf09af6f8164129c1ae6c88.bindPopup(popup_cc121746af17e83e1e35e96a5b046100)
+        ;
+
+        
+    
+    
+            var circle_marker_33337e7b2581c51fd4cfcfe5ea413a21 = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_a653c6c428cd8d8e24e58e0ec994ce05 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_00b1da238888d41e1d102a8bb24ff58d = $(`<div id="html_00b1da238888d41e1d102a8bb24ff58d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> neighborhoods of northern Marseille on Monday night                 </div>`)[0];
+                popup_a653c6c428cd8d8e24e58e0ec994ce05.setContent(html_00b1da238888d41e1d102a8bb24ff58d);
+            
+        
+
+        circle_marker_33337e7b2581c51fd4cfcfe5ea413a21.bindPopup(popup_a653c6c428cd8d8e24e58e0ec994ce05)
+        ;
+
+        
+    
+    
+            var circle_marker_927ad4d7a550a120cbd200820f699e3e = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_ac8bc4b93eaecc3b99c70eea18a81309 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_92ed6f398336b0c39eadb588d6024852 = $(`<div id="html_92ed6f398336b0c39eadb588d6024852" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in front of a hospital in the 13th arrondissement of Marseille                 </div>`)[0];
+                popup_ac8bc4b93eaecc3b99c70eea18a81309.setContent(html_92ed6f398336b0c39eadb588d6024852);
+            
+        
+
+        circle_marker_927ad4d7a550a120cbd200820f699e3e.bindPopup(popup_ac8bc4b93eaecc3b99c70eea18a81309)
+        ;
+
+        
+    
+    
+            var circle_marker_650e4b12206042c4066d3a9ffbfc192a = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_d3adc118a4b0e2b8f8b4bd4e6b87039b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2218f9a1cd716e0f790c7bc0b86111d3 = $(`<div id="html_2218f9a1cd716e0f790c7bc0b86111d3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in Marseille in the Kalliste park                 </div>`)[0];
+                popup_d3adc118a4b0e2b8f8b4bd4e6b87039b.setContent(html_2218f9a1cd716e0f790c7bc0b86111d3);
+            
+        
+
+        circle_marker_650e4b12206042c4066d3a9ffbfc192a.bindPopup(popup_d3adc118a4b0e2b8f8b4bd4e6b87039b)
+        ;
+
+        
+    
+    
+            var circle_marker_a769b515628bd35090b9c4ddb2a1020d = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_dc5440402b0a032e70c6666c563853ce = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_eb55c7a157a4523b1cb576d4d8cafc57 = $(`<div id="html_eb55c7a157a4523b1cb576d4d8cafc57" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the 14th arrondissement                 </div>`)[0];
+                popup_dc5440402b0a032e70c6666c563853ce.setContent(html_eb55c7a157a4523b1cb576d4d8cafc57);
+            
+        
+
+        circle_marker_a769b515628bd35090b9c4ddb2a1020d.bindPopup(popup_dc5440402b0a032e70c6666c563853ce)
+        ;
+
+        
+    
+    
+            var circle_marker_8d3893e34bd2408688b776c07d38ee4a = L.circleMarker(
+                [43.294211, 5.377564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_bd571414067781b81a112b36ccca9bd9);
+        
+    
+        var popup_6a3ec5d0a9e11e4ad0fd808332fca2e7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e50036b2eaf3b173010914fe9b717998 = $(`<div id="html_e50036b2eaf3b173010914fe9b717998" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2942<br>                 <b>Longitude:</b> 5.3776<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marseille town<br>                 <b>Where Description:</b> in the sensitive district of Busserine (14th arrondissement)                 </div>`)[0];
+                popup_6a3ec5d0a9e11e4ad0fd808332fca2e7.setContent(html_e50036b2eaf3b173010914fe9b717998);
+            
+        
+
+        circle_marker_8d3893e34bd2408688b776c07d38ee4a.bindPopup(popup_6a3ec5d0a9e11e4ad0fd808332fca2e7)
+        ;
+
+        
+    
+</script>
+</html>

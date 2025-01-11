@@ -6,49 +6,183 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
         <title>Static Navigation - SB Admin</title>
         <link href="/WEB/web-layout/css/layout.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+        <!-- 공통 기능 -->
+        <script type="module" src="/WEB/web-layout/js/common.js"></script>
+        
+        <!-- url 관련 -->
+        <script type="module" src="/WEB/web-layout/js/dropdownUrlHandler.js"></script>
+        
+        <!-- 그래프-->
+        <script type="module" src="/WEB/web-layout/js/Economy_data.js"></script>
+        <script type="module" src="/WEB/web-layout/js/governance_chart.js"></script>
+        <script type="module" src="/WEB/web-layout/js/governance_radar.js"></script>
+        <script type="module" src="/WEB/web-layout/js/arms_trade_data.js"></script>
+        <script type="module" src="/WEB/web-layout/js/military_expend.js"></script>
+        <script type="module" src="/WEB/web-layout/js/weapon_system_pie.js"></script>
+        <script type="module" src="/WEB/web-layout/js/weapon_import_pie.js"></script>
+        <script src="/WEB/web-layout/js/map.js"></script>
+
+
+        <style>
+            /* 테이블 스타일 */
+            .table-container {
+                overflow-x: auto;
+                max-height: 800px;
+                padding: 10px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            .table th, .table td {
+                white-space: nowrap; /* 컬럼명 줄바꿈 방지 */
+                padding: 7px;
+            }
+            .table th {
+                font-size: 14px;
+                align-items: center;
+            }
+            .table tr:nth-child(odd) {
+                background-color: #f9f9f9;
+            }
+            .table tr:hover {
+                background-color: #e9ecef;
+            }
+
+            
+                    .info-box {
+                position: fixed;
+                top: 80px; /* Adjusted to clear the header */
+                right: 20px;
+                width: 300px;
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                font-size: 0.9rem;
+                overflow-y: auto; /* 내용이 넘치면 스크롤 생성 */
+                transition: transform 0.3s, opacity 0.3s;
+                opacity: 0.4; /* 기본 투명도 설정 */
+            }
+
+            .info-box h3 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                color: #007bff;
+                text-align: center;
+            }
+
+            .info-box ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .info-box li {
+                margin-bottom: 10px;
+                line-height: 1.5;
+                color: #333;
+            }
+
+            .info-box strong {
+                color: #007bff;
+            }
+
+            .toggle-button {
+                width: 100%;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s;
+            }
+
+            .toggle-button:hover {
+                background-color: #0056b3;
+            }
+
+            .info-box.collapsed {
+                opacity: 0.7;
+                transform: scale(0.95);
+            }
+
+            .info-box.collapsed .toggle-button {
+                background-color: #0056b3;
+            }
+
+            .hidden {
+                display: none; /* Completely hide the content */
+            }
+
+            @media screen and (max-width: 768px) {
+                .info-box {
+                    width: 90%;
+                    top: 70px; /* Adjust for mobile header spacing */
+                    right: 5%;
+                }
+                .toggle-button {
+                    font-size: 0.9rem;
+                }
+            }
+                .info-box .info-content {
+                display: block; /* 기본 표시 상태 */
+            }
+
+            .info-box .info-content.hidden {
+                display: none; /* 숨김 상태 */
+            }
+            .info-box:hover {
+            opacity: 1; /* 마우스를 올렸을 때 투명도 제거 */
+        }
+  </style>
+
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html">PRISM</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html"><img src="/WEB/web-layout/data/logo.png" style="max-width: 30%; height: auto;"></a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
+                    <button class="btn btn-primary" id="btnNavbarSearch"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            </form> -->
+            <!-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" data-bs-toggle="dropdown"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#!">Logout</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-dark">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <div class="sb-sidenav-menu-heading">국가별 데이터</div>
                             <a class="nav-link" href="/WEB/web-layout/html/data/analysis_2.html">기업별 데이터</a>
-                            <a class="nav-link" href="/WEB/web-layout/html/data/analysis_3.html">국가별 비교 및 분석</a>                           
+                            <a class="nav-link" href="/WEB/web-layout/html/data/analysis_3.html">비교 및 분석</a>                           
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
+                        <div class="small">Producted by:</div>
                         천무 - ll
                     </div>
                 </nav>
@@ -56,34 +190,262 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">국가별 데이터</h1>
-                        
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    국가별 데이터 페이지입니다. 
+                        <h1 class="mt-4"></h1>
+                        <p class="breadcrumb-item active">국가를 선택하세요. 세부 데이터가 표시됩니다.</p>
+                        <!-- 국가 선택 드롭다운 -->
+                        <div class="mb-4">
+                            <select id="countrySelector" class="form-select">
+                                <option value="" selected disabled>Select a country</option>
+                            </select>                        
+                        </div>
+                        <!-- 금수조치 팝업 -->
+                        <div id="alertBox" style="display: none; background-color: red; color: white; padding: 10px; text-align: center; font-weight: bold;">
+                            해당 국가는 현재 전쟁 중이거나 UN 무기금수조치 국가입니다.
+                        </div>
+                        <!-- 지도 컨테이너 -->
+                        <div id="mapContainer" style="display: none;">
+                            <iframe id="mapFrame" src="" style="width: 100%; height: 600px; border: none;"></iframe>
+                        </div>
+                        <!-- 경제 차트 및 데이터 테이블 -->
+                        <div id="chartsContainer" class="chart-section" style="display: none;">
+                            <canvas id="barChart"></canvas>
+                            <div id="economyDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    경제지표
                                 </p>
+                                <table id="economyDataTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
+ 
+                        <div class="info-box" id="infoBox">
+                            <button class="toggle-button" onclick="toggleInfoBox()">컬럼 설명</button>
+                            <div class="info-content hidden"> <!-- hidden 클래스 추가 -->
+                                <ul>
+                                    <li><strong>Category:</strong> 각 카테고리 숫자를 표시하며, 커서를 가져가면 세부 설명을 확인할 수 있습니다.</li>
+                                    <li><strong>Category1:</strong> 화기류, 근접공격무기류 및 전투용 산탄총류</li>
+                                    <li><strong>Category2:</strong> 총기류 및 화포류</li>
+                                    <li><strong>Category3:</strong> 탄약 및 관련 장비</li>
+                                    <li><strong>Category4:</strong> 이동발사체, 유도미사일, 탄도미사일, 로켓, 어뢰, 폭탄 및 지뢰</li>
+                                    <li><strong>Category5:</strong> 폭발물, 에너지물질, 추진제, 소이제 및 관련 구성품</li>
+                                    <li><strong>Category6:</strong> 전함 및 해군 특수장비</li>
+                                    <li><strong>Category7:</strong> 탱크 및 군용차량</li>
+                                    <li><strong>Category8:</strong> 항공기 및 관련 장비</li>
+                                    <li><strong>Category9:</strong> 군 훈련용 장비 및 훈련</li>
+                                    <li><strong>Category10:</strong> 개인방호장비 및 보호시설</li>
+                                    <li><strong>Category11:</strong> 군 전자장비</li>
+                                    <li><strong>Category12:</strong> 사격통제, 거리측정기, 광학기기 및 통제장비</li>
+                                    <li><strong>Category13:</strong> 보조군사장비</li>
+                                    <li><strong>Category14:</strong> 독극물</li>
+                                    <li><strong>Category15:</strong> 우주선 시스템 및 관련 장비</li>
+                                    <li><strong>Category16:</strong> 핵무기 관련 설계, 시험장비</li>
+                                    <li><strong>Category17:</strong> 기타 군용물자</li>
+                                    <li><strong>Category18:</strong> 지향성 에너지 무기체계</li>
+                                    <li><strong>Category19:</strong> 생물학적 또는 방사성 물질</li>
+                                    <li><strong>Category20:</strong> 잠수함, 해양 및 관련 장비</li>
+                                    <li><strong>Category21:</strong> 기타 군용물자</li>
+                                    <li><strong>Category22:</strong> 군사 인력</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 거버넌스 차트 및 데이터 테이블 -->
+                        <!-- <div id="chartContainer" class="chart-section" style="display: none;">
+                            <canvas id="lineChart"></canvas>
+                            <div id="governanceDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    정부지표
+                                </p>
+                                <table id="governanceDataTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div> -->
+
+                        <!-- 거버넌스 레이더 차트 및 데이터 테이블 -->
+                        <!-- <div id="radarChartContainer" class="chart-section" style="display: none;">
+                            <canvas id="radarChart"></canvas>
+                            <div id="governanceRadarDataTableContainer" class="table-container">
+                                <table id="governanceRadarDataTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div> -->
+
+                        <!-- 거버넌스 차트 (라인 차트 - 최상단에 고정) -->
+                        <div id="chartContainer" class="chart-section" style="display: none;">
+                            <canvas id="lineChart"></canvas>
+                        </div>
+
+                        <!-- 하단부를 50:50로 나눈 구획 -->
+                        <div class="row mt-4">
+                            <!-- 왼쪽: 거버넌스 레이더 차트 -->
+                            <div class="col-md-6">
+                                <div id="radarChartContainer" class="chart-section" style="display: none;">
+                                    <canvas id="radarChart"></canvas>
+                                </div>
+                            </div>
+
+                            <!-- 오른쪽: 정부지표 데이터 테이블 -->
+                            <div class="col-md-6">
+                                <div id="governanceDataTableContainer" class="table-container" style="display: block;">
+                                    <p style="text-align: left; margin-bottom: 10px;">
+                                        <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon"
+                                            style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                        정부지표
+                                    </p>
+                                    <table id="governanceDataTable" class="table table-bordered table-sm">
+                                        <thead></thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 무기 무역 차트 및 데이터 테이블 -->
+                        <div id="armsTradeContainer" class="chart-section" style="display: none;">
+                            <canvas id="armsTradeChart"></canvas>
+
+                            <!-- 무기 수출 데이터 테이블 -->
+                            <div id="armsExportsDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    무기수출 비용
+                                </p>
+                                <table id="armsExportsTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+
+                            <!-- 무기 수입 데이터 테이블 -->
+                            <div id="armsImportsDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    무기수입 비용
+                                </p>
+                                <table id="armsImportsTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 군사비 지출 차트 및 데이터 테이블 -->
+                        <div id="militaryChartContainer" class="chart-section" style="display: none;">
+                            <canvas id="militaryChart"></canvas>
+                            <div id="militaryDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    국방비 지출
+                                </p>
+                                <table id="militaryDataTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 무기 체계 파이 차트 및 데이터 테이블 -->
+                        <!-- <div id="pieChartContainer" class="chart-section" style="display: none;">
+                            <canvas id="pieChart"></canvas>
+                            <div id="weaponSystemDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    보유 무기체계 현황
+                                </p>
+                                <table id="weaponSystemDataTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div> -->
+
+                        <!-- 무기 수입 파이 차트 및 데이터 테이블 -->
+                        <!-- <div id="weaponImportPieChartContainer" class="chart-section" style="display: none;">
+                            <canvas id="weaponImportPieChart"></canvas>
+                            <div id="weaponImportDataTableContainer" class="table-container">
+                                <p style="text-align: left; margin-bottom: 10px;">
+                                    <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                    무기수입 항목
+                                </p>
+                                <table id="weaponImportDataTable" class="table table-bordered table-sm">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div> -->
+
+                        <!-- 무기 체계와 무기 수입 파이 차트를 같은 줄에 배치 -->
+                        <div class="row mt-4">
+                            <!-- 왼쪽: 무기 체계 파이 차트 -->
+                            <div class="col-md-6">
+                                <div id="pieChartContainer" class="chart-section" style="display: block;">
+                                    <canvas id="pieChart"></canvas>
+                                    <div id="weaponSystemDataTableContainer" class="table-container">
+                                        <p style="text-align: left; margin-bottom: 10px;">
+                                            <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon"
+                                                style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                            보유 무기체계 현황
+                                        </p>
+                                        <table id="weaponSystemDataTable" class="table table-bordered table-sm">
+                                            <thead></thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 오른쪽: 무기 수입 파이 차트 -->
+                            <div class="col-md-6">
+                                <div id="weaponImportPieChartContainer" class="chart-section" style="display: block;">
+                                    <canvas id="weaponImportPieChart"></canvas>
+                                    <div id="weaponImportDataTableContainer" class="table-container">
+                                        <p style="text-align: left; margin-bottom: 10px;">
+                                            <img src="/WEB/web-layout/data/free-icon-excel-document-12583548.png" alt="Table Icon"
+                                                style="width: 30px; height: 30px; vertical-align: middle; margin-right: 5px; margin-left: 5px; margin-bottom: 5px;">
+                                            무기수입 항목
+                                        </p>
+                                        <table id="weaponImportDataTable" class="table table-bordered table-sm">
+                                            <thead></thead>
+                                            <tbody></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                        <div class="d-flex align-items-center justify-content-between small"></div>
                             </div>
                         </div>
                     </div>
                 </footer>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="/WEB/web-layout/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/WEB/web-layout/js/analysis.js" defer></script>
+        <script src="/WEB/web-layout/js/datatables_withcharts.js" defer></script>
+        <script src="/WEB/web-layout/js/dropdownUrlUpdater.js" defer></script>
+        <script src="js/navigateCountry.js" type="module" defer></script>
     </body>
+    <script>
+        function toggleInfoBox() {
+            const infoBox = document.getElementById("infoBox");
+            const infoContent = infoBox.querySelector(".info-content");
+    
+            // Toggle the 'hidden' class
+            infoContent.classList.toggle("hidden");
+        }
+    </script>
 </html>

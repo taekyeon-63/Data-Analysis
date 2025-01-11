@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f32131e3173aa1debaa24d27236dcd2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f32131e3173aa1debaa24d27236dcd2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f32131e3173aa1debaa24d27236dcd2 = L.map(
+                "map_5f32131e3173aa1debaa24d27236dcd2",
+                {
+                    center: [9.864128615384617, -68.17674276923077],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39a79d013abb07f35ee1fd600bd6e9cd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_39a79d013abb07f35ee1fd600bd6e9cd.addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+            var marker_7c103a29267377ff0bd24426f9995e55 = L.marker(
+                [9.864128615384617, -68.17674276923077],
+                {}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+            var div_icon_2fc7f8be2dd07adc2c87bd74cd0407a1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eVenezuela\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_7c103a29267377ff0bd24426f9995e55.setIcon(div_icon_2fc7f8be2dd07adc2c87bd74cd0407a1);
+        
+    
+            var circle_marker_27828ffb43b3d1c4e8c81e681b39ed94 = L.circleMarker(
+                [10.488011, -66.879193],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_753a27b27a991018c7d06aeff56b4237 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_39d8d95e0b31370924a09e4e5e6a11d2 = $(`<div id="html_39d8d95e0b31370924a09e4e5e6a11d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4880<br>                 <b>Longitude:</b> -66.8792<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Caracas city<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_753a27b27a991018c7d06aeff56b4237.setContent(html_39d8d95e0b31370924a09e4e5e6a11d2);
+            
+        
+
+        circle_marker_27828ffb43b3d1c4e8c81e681b39ed94.bindPopup(popup_753a27b27a991018c7d06aeff56b4237)
+        ;
+
+        
+    
+    
+            var circle_marker_fa898af4eaaf31fee5ea989ac114cb98 = L.circleMarker(
+                [10.49017, -66.87472],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_6fee3fa565b1995ca05bdc7b1b64b945 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3ef0a5745d63a472d318793ae6c80c63 = $(`<div id="html_3ef0a5745d63a472d318793ae6c80c63" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4902<br>                 <b>Longitude:</b> -66.8747<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Libertador municipality<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_6fee3fa565b1995ca05bdc7b1b64b945.setContent(html_3ef0a5745d63a472d318793ae6c80c63);
+            
+        
+
+        circle_marker_fa898af4eaaf31fee5ea989ac114cb98.bindPopup(popup_6fee3fa565b1995ca05bdc7b1b64b945)
+        ;
+
+        
+    
+    
+            var circle_marker_45c26676c8227e51d71216ef31a57df5 = L.circleMarker(
+                [10.21844, -67.33017],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_1d49103a6f38d02aa2cc2943e9e353b1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1eef8b940661c060be308465c51f8b84 = $(`<div id="html_1eef8b940661c060be308465c51f8b84" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2184<br>                 <b>Longitude:</b> -67.3302<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> La Victoria town<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_1d49103a6f38d02aa2cc2943e9e353b1.setContent(html_1eef8b940661c060be308465c51f8b84);
+            
+        
+
+        circle_marker_45c26676c8227e51d71216ef31a57df5.bindPopup(popup_1d49103a6f38d02aa2cc2943e9e353b1)
+        ;
+
+        
+    
+    
+            var circle_marker_8a98edcb4558bddb24fe9c57e2c6cd03 = L.circleMarker(
+                [7.91689, -72.44188],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_9e40fefd1da6ebe06b5a498b396c40f3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_714b7d9f6de2af69f1479759a0a13e0a = $(`<div id="html_714b7d9f6de2af69f1479759a0a13e0a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.9169<br>                 <b>Longitude:</b> -72.4419<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ureña town<br>                 <b>Where Description:</b> Ureña                 </div>`)[0];
+                popup_9e40fefd1da6ebe06b5a498b396c40f3.setContent(html_714b7d9f6de2af69f1479759a0a13e0a);
+            
+        
+
+        circle_marker_8a98edcb4558bddb24fe9c57e2c6cd03.bindPopup(popup_9e40fefd1da6ebe06b5a498b396c40f3)
+        ;
+
+        
+    
+    
+            var circle_marker_8202329f617243c7f8217574da86a846 = L.circleMarker(
+                [10.49017, -66.87472],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_c4be8c352805563c5f4ac08c26e5d6f6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9b58a375a8c5700ce0fe766218558a27 = $(`<div id="html_9b58a375a8c5700ce0fe766218558a27" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4902<br>                 <b>Longitude:</b> -66.8747<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Libertador municipality<br>                 <b>Where Description:</b> Lubertador Municipality                 </div>`)[0];
+                popup_c4be8c352805563c5f4ac08c26e5d6f6.setContent(html_9b58a375a8c5700ce0fe766218558a27);
+            
+        
+
+        circle_marker_8202329f617243c7f8217574da86a846.bindPopup(popup_c4be8c352805563c5f4ac08c26e5d6f6)
+        ;
+
+        
+    
+    
+            var circle_marker_88324511b61dff6aaf0e34b609006b76 = L.circleMarker(
+                [10.49017, -66.87472],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_185bc681fd1d25528b9d3480b14801a6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_720ac2ef944b998e02a7efcd25afcf63 = $(`<div id="html_720ac2ef944b998e02a7efcd25afcf63" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4902<br>                 <b>Longitude:</b> -66.8747<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Libertador municipality<br>                 <b>Where Description:</b> El Valle Neighbourhood                 </div>`)[0];
+                popup_185bc681fd1d25528b9d3480b14801a6.setContent(html_720ac2ef944b998e02a7efcd25afcf63);
+            
+        
+
+        circle_marker_88324511b61dff6aaf0e34b609006b76.bindPopup(popup_185bc681fd1d25528b9d3480b14801a6)
+        ;
+
+        
+    
+    
+            var circle_marker_4ba5a0fadfa3c67f96dfe72d298e611f = L.circleMarker(
+                [7.93333, -72.4],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_712892031587b53942f455bbfc783fa6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ce319b0f3cb4004c231c6dd5e0e8a930 = $(`<div id="html_ce319b0f3cb4004c231c6dd5e0e8a930" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.9333<br>                 <b>Longitude:</b> -72.4000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Pedro María Ureña municipality<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_712892031587b53942f455bbfc783fa6.setContent(html_ce319b0f3cb4004c231c6dd5e0e8a930);
+            
+        
+
+        circle_marker_4ba5a0fadfa3c67f96dfe72d298e611f.bindPopup(popup_712892031587b53942f455bbfc783fa6)
+        ;
+
+        
+    
+    
+            var circle_marker_c30ba072b750b5f647568e1965c81899 = L.circleMarker(
+                [10.47226, -66.80155],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_53a2ebf97012de4345d636d3431a6559 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_79e75dd97909c2faf0503d975a87cfad = $(`<div id="html_79e75dd97909c2faf0503d975a87cfad" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4723<br>                 <b>Longitude:</b> -66.8016<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Petare suburb of Caracas<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_53a2ebf97012de4345d636d3431a6559.setContent(html_79e75dd97909c2faf0503d975a87cfad);
+            
+        
+
+        circle_marker_c30ba072b750b5f647568e1965c81899.bindPopup(popup_53a2ebf97012de4345d636d3431a6559)
+        ;
+
+        
+    
+    
+            var circle_marker_91429cf5d24be4b03cd5f4cae220c921 = L.circleMarker(
+                [8.08333, -72.25],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_261dc9a19c349cbe6faa0ce5e3dc822a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_373e6f81fb5c7d49259b4fde7a07ad1b = $(`<div id="html_373e6f81fb5c7d49259b4fde7a07ad1b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0833<br>                 <b>Longitude:</b> -72.2500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ayacucho municipality<br>                 <b>Where Description:</b> Táchira - Ayacucho Distribuidor Vial, aún en construcción de la autopista Colón - Lobatera.                 </div>`)[0];
+                popup_261dc9a19c349cbe6faa0ce5e3dc822a.setContent(html_373e6f81fb5c7d49259b4fde7a07ad1b);
+            
+        
+
+        circle_marker_91429cf5d24be4b03cd5f4cae220c921.bindPopup(popup_261dc9a19c349cbe6faa0ce5e3dc822a)
+        ;
+
+        
+    
+    
+            var circle_marker_ba77b4d75d9f78207440b8d5d8bffbda = L.circleMarker(
+                [10.46021, -66.91714],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_844a12c8d0977f6bf4a52952813ec863 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a77551a71942e52cfef138100157dad6 = $(`<div id="html_a77551a71942e52cfef138100157dad6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4602<br>                 <b>Longitude:</b> -66.9171<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> El Valle Parish<br>                 <b>Where Description:</b> parroquia El Valle                 </div>`)[0];
+                popup_844a12c8d0977f6bf4a52952813ec863.setContent(html_a77551a71942e52cfef138100157dad6);
+            
+        
+
+        circle_marker_ba77b4d75d9f78207440b8d5d8bffbda.bindPopup(popup_844a12c8d0977f6bf4a52952813ec863)
+        ;
+
+        
+    
+    
+            var circle_marker_21f3b5175e23d70edcf6b7e363376c8d = L.circleMarker(
+                [10.46021, -66.91714],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_4b0df335834f49e618aa126496dfb4fa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6a53874ae870021c38cb3ca20650c63a = $(`<div id="html_6a53874ae870021c38cb3ca20650c63a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4602<br>                 <b>Longitude:</b> -66.9171<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> El Valle Parish<br>                 <b>Where Description:</b> El Valle parish of the Libertador municipality.                 </div>`)[0];
+                popup_4b0df335834f49e618aa126496dfb4fa.setContent(html_6a53874ae870021c38cb3ca20650c63a);
+            
+        
+
+        circle_marker_21f3b5175e23d70edcf6b7e363376c8d.bindPopup(popup_4b0df335834f49e618aa126496dfb4fa)
+        ;
+
+        
+    
+    
+            var circle_marker_49703aa1e6b52de1916eb91ead128644 = L.circleMarker(
+                [10.24247, -66.85723],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_cbb570ab866af281eedd71036c95d166 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_91b0fb0669a8cbf18523aa3621ca1f59 = $(`<div id="html_91b0fb0669a8cbf18523aa3621ca1f59" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2425<br>                 <b>Longitude:</b> -66.8572<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Charallave town<br>                 <b>Where Description:</b> the Ciudad Miranda de Charallave urbanization, in the Valles del Tuy                 </div>`)[0];
+                popup_cbb570ab866af281eedd71036c95d166.setContent(html_91b0fb0669a8cbf18523aa3621ca1f59);
+            
+        
+
+        circle_marker_49703aa1e6b52de1916eb91ead128644.bindPopup(popup_cbb570ab866af281eedd71036c95d166)
+        ;
+
+        
+    
+    
+            var circle_marker_abd7c0269bec1ef5ea6f09cc39e790b9 = L.circleMarker(
+                [10.488011, -66.879193],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_5f32131e3173aa1debaa24d27236dcd2);
+        
+    
+        var popup_cbc6dac6ad8e4380c5d7a214e9b23865 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a36efc9e501c5462a0ece8eda89183cf = $(`<div id="html_a36efc9e501c5462a0ece8eda89183cf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.4880<br>                 <b>Longitude:</b> -66.8792<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Caracas city<br>                 <b>Where Description:</b> Catia, Caracas                 </div>`)[0];
+                popup_cbc6dac6ad8e4380c5d7a214e9b23865.setContent(html_a36efc9e501c5462a0ece8eda89183cf);
+            
+        
+
+        circle_marker_abd7c0269bec1ef5ea6f09cc39e790b9.bindPopup(popup_cbc6dac6ad8e4380c5d7a214e9b23865)
+        ;
+
+        
+    
+</script>
+</html>

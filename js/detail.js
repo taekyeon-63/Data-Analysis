@@ -9,92 +9,87 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
-    // 2. 사이드바 드롭다운 기본 열림
-    const defaultOpenDropdownId = 'collapseResearch'; // 기본으로 열릴 드롭다운의 ID
-    const defaultDropdown = document.getElementById(defaultOpenDropdownId);
+    // PDF.js 관련 기능
+    const pdfContainers = document.querySelectorAll('.pdf-viewer-container');
 
-    if (defaultDropdown) {
-        // 드롭다운 열기
-        defaultDropdown.classList.add('show'); // Bootstrap에서 사용하는 'show' 클래스를 추가하여 열기
+    pdfContainers.forEach((pdfContainer) => {
+        // PDF 컨테이너 기본 스타일 적용
+        pdfContainer.style.position = 'relative';
+        pdfContainer.style.display = 'flex';
+        pdfContainer.style.flexDirection = 'column';
+        pdfContainer.style.alignItems = 'center';
+        pdfContainer.style.width = '100%';
 
-        // 삼각형 아이콘 회전 상태 설정
-        const toggleButton = document.querySelector(`[data-bs-target="#${defaultOpenDropdownId}"]`);
-        if (toggleButton) {
-            toggleButton.setAttribute('aria-expanded', 'true'); // 접근성을 위해 aria-expanded를 true로 설정
-            toggleButton.classList.remove('collapsed'); // 'collapsed' 클래스를 제거하여 삼각형이 회전된 상태로 표시
+        const pdfControls = pdfContainer.querySelector('.pdf-controls');
+        pdfControls.style.width = '100%'; // 컨트롤 영역의 폭을 PDF 영역에 맞춤
+        pdfControls.style.textAlign = 'center';
+        pdfControls.style.marginBottom = '10px';
+
+        const pdfScrollArea = pdfContainer.querySelector('.pdf-scroll-area');
+        pdfScrollArea.style.flex = '1'; // PDF 콘텐츠가 영역을 채우도록 설정
+        pdfScrollArea.style.display = 'flex';
+        pdfScrollArea.style.justifyContent = 'center';
+        pdfScrollArea.style.alignItems = 'center';
+        pdfScrollArea.style.width = '100%';
+
+        const canvas = pdfContainer.querySelector('canvas');
+        canvas.style.display = 'block';
+
+        const url = pdfContainer.getAttribute('data-pdf-url');
+        if (!url) {
+            console.error('PDF URL not specified in the container:', pdfContainer);
+            return;
         }
-    }
 
-    // 수정된 기능: 여러 드롭다운 메뉴 동적 토글
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle'); // 모든 드롭다운 토글
-    const dropdownBars = document.querySelectorAll('.dropdown-bar'); // 모든 드롭다운 바
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.worker.min.js';
 
-    dropdownToggles.forEach(toggle => {
-        toggle.addEventListener('click', (event) => {
-            event.preventDefault();
+        let pdfDoc = null, pageNum = 1;
 
-            // 연결된 드롭다운 가져오기
-            const dropdownId = toggle.getAttribute('data-dropdown');
-            const relatedDropdown = document.getElementById(`${dropdownId}-dropdown`);
+        const ctx = canvas.getContext('2d');
+        const pageNumElement = pdfContainer.querySelector('.pageNum');
+        const pageCountElement = pdfContainer.querySelector('.pageCount');
+        const prevButton = pdfContainer.querySelector('.prevPage');
+        const nextButton = pdfContainer.querySelector('.nextPage');
 
-            // 다른 드롭다운 닫기
-            dropdownBars.forEach(bar => {
-                if (bar !== relatedDropdown) {
-                    bar.style.height = '0';
-                    bar.classList.remove('open');
-                }
+        const renderPage = (num) => {
+            pdfDoc.getPage(num).then((page) => {
+                const viewport = page.getViewport({ scale: 1.3 });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderCtx = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                };
+
+                page.render(renderCtx);
+                pageNumElement.textContent = num;
+
+                // PDF 컨테이너의 크기를 동적으로 설정
+                pdfContainer.style.height = `${canvas.height + pdfControls.offsetHeight}px`;
+            }).catch((error) => {
+                console.error('Error rendering page:', error);
             });
+        };
 
-            // 현재 드롭다운 열기/닫기
-            if (relatedDropdown.classList.contains('open')) {
-                relatedDropdown.style.height = '0';
-                relatedDropdown.classList.remove('open');
-                toggle.classList.remove('dropdown-open'); // 삼각형 초기화
-            } else {
-                relatedDropdown.style.height = relatedDropdown.scrollHeight + 'px';
-                relatedDropdown.classList.add('open');
-                toggle.classList.add('dropdown-open'); // 삼각형 회전
-            }
+        pdfjsLib.getDocument(url).promise.then((pdfDoc_) => {
+            pdfDoc = pdfDoc_;
+            pageCountElement.textContent = pdfDoc.numPages;
+            renderPage(pageNum);
+        }).catch((error) => {
+            console.error('Error loading PDF:', error);
+        });
+
+        prevButton.addEventListener('click', () => {
+            if (pageNum <= 1) return;
+            pageNum--;
+            renderPage(pageNum);
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (pageNum >= pdfDoc.numPages) return;
+            pageNum++;
+            renderPage(pageNum);
         });
     });
-
-    // 외부 클릭 시 모든 드롭다운 닫기
-    document.addEventListener('click', (event) => {
-        // 드롭다운 토글과 드롭다운 바 외부 클릭 감지
-        if (![...dropdownToggles].some(toggle => toggle.contains(event.target)) &&
-            ![...dropdownBars].some(bar => bar.contains(event.target))) {
-
-            // 모든 드롭다운 닫기
-            dropdownBars.forEach(bar => {
-                bar.style.height = '0'; // 높이 0으로 설정
-                bar.classList.remove('open'); // 드롭다운 닫기 상태
-            });
-
-            // 모든 삼각형 초기화
-            dropdownToggles.forEach(toggle => {
-                toggle.classList.remove('dropdown-open'); // 삼각형 초기화
-            });
-        }
-    });
-
-    // 기존 기능: 검색창 토글
-    const searchContainer = document.querySelector('.search-container');
-    const searchIcon = document.querySelector('.search-icon');
-
-    if (searchContainer && searchIcon) {
-        searchIcon.addEventListener('click', (event) => {
-            event.preventDefault();
-            searchContainer.classList.toggle('active'); // 검색창 활성화
-        });
-
-        // 외부 클릭 시 검색창 닫기
-        document.addEventListener('click', (event) => {
-            if (!searchContainer.contains(event.target) && !searchIcon.contains(event.target)) {
-                searchContainer.classList.remove('active');
-            }
-        });
-    }
 });
-
-
-

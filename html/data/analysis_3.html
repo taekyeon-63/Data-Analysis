@@ -6,86 +6,628 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
         <title>Static Navigation - SB Admin</title>
         <link href="/WEB/web-layout/css/layout.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+        <script src="/WEB/web-layout/js/Company_chart.js" type="module" defer></script>
+        <script src="/WEB/web-layout/data/나라별지형_with_coordinates.json"></script>
+        <script src="/WEB/web-layout/data/R&D_Data.js" type="application/javascript" defer></script>
+
+        <!-- 공통 기능 -->
+        <script type="module" src="/WEB/web-layout/js/common.js"></script>
+
+        <!-- 그래프-->
+        <script type="module" src="/WEB/web-layout/js/weapon_system_pie.js"></script>
+        <script type="module" src="/WEB/web-layout/js/weapon_import_pie.js"></script>
+        <script type="module" src="/WEB/web-layout/js/Company_chart.js"></script>
+        <script>
+
+const clusters = {
+    '군집1': ['항공및우주기술_1', '항공및우주기술_2', '항공및우주기술_3', '항공및우주기술_4'],
+    '군집2': ['해양방위및조선업_1', '해양방위및조선업_2', '해양방위및조선업_3'],
+    '군집3': ['지상방위및무기시스템_1', '지상방위및무기시스템_2', '지상방위및무기시스템_3', '지상방위및무기시스템_4'],
+    '군집4': ['전자및시스템주요제품_1', '전자및시스템주요제품_2', '전자및시스템주요제품_3'],
+    '군집5': ['독일', '미국', '영국', '중국', '프랑스'] // 군집5 국가 목록
+};
+
+// 기업(또는 국가) 드롭다운 업데이트
+function updateCompanyDropdown() {
+    const clusterSelector = document.getElementById('clusterSelector');
+    const companySelector = document.getElementById('companySelector');
+    const selectedCluster = clusterSelector.value;
+
+    companySelector.innerHTML = '<option value="" disabled selected>기업을 선택하세요</option>';
+
+    if (clusters[selectedCluster]) {
+        clusters[selectedCluster].forEach(company => {
+            const option = document.createElement('option');
+            option.value = company;
+            option.textContent = company;
+            companySelector.appendChild(option);
+        });
+    }
+}
+
+// 파일명에서 공백과 특수문자 처리
+function formatFileName(name) {
+    return name
+        .replace(/\s+/g, '')         // 공백 제거
+        .replace(/[()]/g, '')        // 괄호 제거
+        .replace(/,+/g, '');         // 콤마 제거
+}
+
+async function fetchAndVisualize(cluster, company) {
+    if (!cluster || !company) {
+        alert('군집과 기업(국가)을 모두 선택하세요.');
+        return;
+    }
+
+    let filePath;
+    if (cluster === '군집5') {
+        const country = getCountryForCompany(company.trim());
+        if (!country) {
+            alert(`선택된 기업(${company})에 대한 국가를 찾을 수 없습니다.`);
+            return;
+        }
+        filePath = `./data/${cluster}/${country}/${company}.json`;
+    } else {
+        filePath = `./data/${cluster}/${company}.json`;
+    }
+
+    console.log("Fetching data from:", filePath);
+
+    try {
+        const response = await fetch(filePath);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+        console.log("Fetched Data:", data);
+
+        if (!Array.isArray(data) || data.length === 0) {
+            alert('유효한 데이터를 가져올 수 없습니다.');
+            return;
+        }
+
+        const labels = data.map(item => item.category || 'Unknown');
+        const values = data.map(item => item.value || 0);
+
+        visualizePieChart(labels, values);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        alert('데이터를 가져오는 중 오류가 발생했습니다.');
+    }
+}
+function getCountryForCompany(company) {
+    const companyCountryMap = {
+        '라인메탈': '독일',
+        '록히드마틴': '미국',
+        '노스롭그루먼': '미국',
+        '레이시온테크놀로지스': '미국',
+        '보잉': '미국',
+        '제너럴다이내믹스': '미국',
+        'BAE시스템스': '영국',
+        '중국항공공업집단': '중국',
+        '탈레스그룹_사프란': '프랑스'
+    };
+
+    return companyCountryMap[company.trim()] || null;
+}
+
+            function visualizePieChart(labels, values) {
+                const ctx = document.getElementById('companyImportPieChart').getContext('2d');
+
+                if (importPieChart) {
+                    importPieChart.destroy(); // 기존 차트를 제거
+                }
+
+                importPieChart = new Chart(ctx, {
+                    type: 'pie', // 차트 타입을 파이로 설정
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            backgroundColor: ['#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF'],
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'top' },
+                            title: {
+                                display: true,
+                                text: 'Company Import Distribution'
+                            }
+                        }
+                    }
+                });
+            }
+
+
+            document.getElementById('companySelector').addEventListener('change', () => {
+                const cluster = document.getElementById('clusterSelector').value;
+                const company = document.getElementById('companySelector').value;
+                fetchAndVisualize(cluster, company);
+            });
+        </script>
+<script>
+    const jsonFiles = {
+        terrainData: '/WEB/web-layout/data/나라별지형_with_coordinates.json',
+    };
+    document.addEventListener("DOMContentLoaded", () => {
+    const countrySelector = document.getElementById("countrySelector");
+    const terrainTableContainer = document.getElementById("countryTerrainTable");
+
+    if (!countrySelector || !terrainTableContainer) {
+        console.error("countrySelector 또는 countryTerrainTable을 찾을 수 없습니다.");
+        return;
+    }
+
+    loadCountryData(countrySelector, terrainTableContainer);
+});
+
+function visualizePieChart(labels, values) {
+    const ctx = document.getElementById('pieChart').getContext('2d');
+
+    if (window.pieChart) {
+        window.pieChart.destroy(); // 기존 차트 제거
+    }
+
+    window.pieChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                data: values,
+                backgroundColor: ['#FFB3BA', '#FFDFBA', '#FFFFBA', '#BAFFC9', '#BAE1FF']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false, // 비율 유지 해제
+            plugins: {
+                legend: { position: 'top' },
+                title: { display: true, text: 'Weapon Systems Distribution' }
+            }
+        }
+    });
+}
+
+async function loadCountryData(countrySelector, terrainTableContainer) {
+    try {
+        const response = await fetch('/WEB/web-layout/data/나라별지형_with_coordinates.json');
+        if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+        const countryData = await response.json();
+
+        if (!Array.isArray(countryData)) {
+            throw new Error("Invalid JSON structure: expected an array.");
+        }
+
+        countrySelector.innerHTML = '<option value="" disabled selected>국가를 선택하세요</option>';
+        countryData.forEach(country => {
+            const option = document.createElement("option");
+            option.value = country.Country;
+            option.textContent = country.Country;
+            countrySelector.appendChild(option);
+        });
+
+        countrySelector.addEventListener("change", () => {
+            const selectedCountry = countrySelector.value;
+            displayCountryTerrainTable(selectedCountry, countryData, terrainTableContainer);
+        });
+    } catch (error) {
+        console.error("Error loading country data:", error);
+        alert("데이터를 로드하는 중 문제가 발생했습니다.");
+    }
+}
+
+function displayCountryTerrainTable(countryName, countryData) {
+    const countryInfo = countryData.find((country) => country.Country === countryName);
+    const terrainTableContainer = document.getElementById("countryTerrainTable");
+
+    if (countryInfo) {
+        terrainTableContainer.innerHTML = `
+            <table class="table table-bordered">
+                <thead>
+                    <tr><th>항목</th><th>정보</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>주요 항구/터미널</td><td>${countryInfo.major_ports_terminals || "데이터 없음"}</td></tr>
+                    <tr><td>도로망(㎞)</td><td>${countryInfo.roadway_coverage_km || "데이터 없음"}</td></tr>
+                    <tr><td>철도망(㎞)</td><td>${countryInfo.railway_coverage_km || "데이터 없음"}</td></tr>
+                    <tr><td>운영 공항 수</td><td>${countryInfo.serviceable_airports || "데이터 없음"}</td></tr>
+                    <tr><td>면적(㎢)</td><td>${countryInfo.square_land_area_km || "데이터 없음"}</td></tr>
+                    <tr><td>해안선 길이(㎞)</td><td>${countryInfo.coastline_km || "데이터 없음"}</td></tr>
+                    <tr><td>국경 길이(㎞)</td><td>${countryInfo.shared_borders_km || "데이터 없음"}</td></tr>
+                    <tr><td>수로 길이(㎞)</td><td>${countryInfo.waterways_km || "데이터 없음"}</td></tr>
+                </tbody>
+            </table>
+        `;
+    } else {
+        terrainTableContainer.innerHTML = `
+            <div class="alert alert-danger" role="alert">
+                해당 국가의 데이터를 찾을 수 없습니다.
+            </div>
+        `;
+    }
+}
+</script>
+
+<script>
+    const RND_DATA_PATH = '/WEB/web-layout/data/R&D_Data.json';
+    let RND_Data = [];
+
+    async function loadRNDData() {
+        try {
+            const response = await fetch(RND_DATA_PATH);
+            if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`);
+            }
+            RND_Data = await response.json();
+            populateCountrySelector();
+        } catch (error) {
+            console.error("Error loading R&D Data:", error);
+        }
+    }
+
+    function populateCountrySelector() {
+        const countrySelector = document.getElementById("countrySelector");
+        const uniqueCountries = [...new Set(RND_Data.map(data => data.Country))];
+        uniqueCountries.forEach(country => {
+            const option = document.createElement("option");
+            option.value = country;
+            option.textContent = country;
+            countrySelector.appendChild(option);
+        });
+
+        countrySelector.addEventListener("change", (event) => {
+            displayRNDData(event.target.value);
+        });
+    }
+
+    function displayRNDData(countryName) {
+        const rndDataTable = document.getElementById("rndDataTable");
+        const countryRND = RND_Data.filter(data => data.Country === countryName);
+
+        if (countryRND.length) {
+            const tableRows = countryRND.map(data => `
+                <tr class="project-name-row"><td>Project Name</td><td>${data.Project_Name || "No Data"}</td></tr>
+                <tr><td>Program Name</td><td>${data.Program_Name || "No Data"}</td></tr>
+                <tr><td>Objective</td><td>${data.Objective || "No Data"}</td></tr>
+                <tr><td>Features</td><td>${data.Features || "No Data"}</td></tr>
+            `).join("");
+
+            rndDataTable.innerHTML = `
+                <table class="table table-bordered">
+                    <thead>
+                        <tr><th>Item</th><th>Details</th></tr>
+                    </thead>
+                    <tbody>
+                        ${tableRows}
+                    </tbody>
+                </table>
+            `;
+        } else {
+            rndDataTable.innerHTML = `
+                <div class="alert alert-warning">No R&D data available for ${countryName}.</div>
+            `;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadRNDData);
+</script>
+
+<style>
+    #countryTerrainTableContainer {
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+    }
+      /* Adjust overall layout styling */
+      .table-responsive {
+          margin-bottom: 20px;
+      }
+  
+      #countryTerrainTable, #rndDataTable {
+          max-height: 300px;
+          overflow-y: auto;
+      }
+  
+      canvas {
+          margin-top: 20px;
+      }
+  
+      h5 {
+          margin-top: 20px;
+      }
+
+      .project-name-row {
+        font-weight: bold; /* 행 전체를 굵게 표시 */
+    }
+    
+    .info-box {
+                position: fixed;
+                top: 80px; /* Adjusted to clear the header */
+                right: 20px;
+                width: 300px;
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+                font-size: 0.9rem;
+                overflow-y: auto; /* 내용이 넘치면 스크롤 생성 */
+                transition: transform 0.3s, opacity 0.3s;
+                opacity: 0.4; /* 기본 투명도 설정 */
+            }
+
+            .info-box h3 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                color: #007bff;
+                text-align: center;
+            }
+
+            .info-box ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .info-box li {
+                margin-bottom: 10px;
+                line-height: 1.5;
+                color: #333;
+            }
+
+            .info-box strong {
+                color: #007bff;
+            }
+
+            .toggle-button {
+                width: 100%;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s;
+            }
+
+            .toggle-button:hover {
+                background-color: #0056b3;
+            }
+
+            .info-box.collapsed {
+                opacity: 0.7;
+                transform: scale(0.95);
+            }
+
+            .info-box.collapsed .toggle-button {
+                background-color: #0056b3;
+            }
+
+            .hidden {
+                display: none; /* Completely hide the content */
+            }
+
+            @media screen and (max-width: 768px) {
+                .info-box {
+                    width: 90%;
+                    top: 70px; /* Adjust for mobile header spacing */
+                    right: 5%;
+                }
+                .toggle-button {
+                    font-size: 0.9rem;
+                }
+            }
+                .info-box .info-content {
+                display: block; /* 기본 표시 상태 */
+            }
+
+            .info-box .info-content.hidden {
+                display: none; /* 숨김 상태 */
+            }
+            .info-box:hover {
+            opacity: 1; /* 마우스를 올렸을 때 투명도 제거 */
+        }
+  </style>
+    </head> 
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html">PRISM</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html"><img src="/WEB/web-layout/data/logo.png" style="max-width: 30%; height: auto;"></a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." />
+                    <button class="btn btn-primary" id="btnNavbarSearch"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            </form> -->
+            <!-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" data-bs-toggle="dropdown"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#!">Logout</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-dark">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="nav">
-                                <div class="sb-sidenav-menu-heading"></div>
-                                <a class="nav-link" href="/WEB/web-layout/html/data/analysis_1.html">국가별 데이터</a>
-                                <a class="nav-link" href="/WEB/web-layout/html/data/analysis_2.html">기업별 데이터</a>  
-                                <div class="sb-sidenav-menu-heading">국가별 비교 및 분석</div>             
-                            </div>                          
+                            <div class="sb-sidenav-menu-heading"></div>
+                            <a class="nav-link" href="/WEB/web-layout/html/data/analysis_1.html">국가별 데이터</a>
+                            <a class="nav-link" href="/WEB/web-layout/html/data/analysis_2.html">기업별 데이터</a>
+                            <div class="sb-sidenav-menu-heading">비교 및 분석</div>                
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
+                        <div class="small">Producted by:</div>
                         천무 - ll
                     </div>
                 </nav>
             </div>
+
+            <div class="info-box" id="infoBox">
+                <button class="toggle-button" onclick="toggleInfoBox()">컬럼 설명</button>
+                <div class="info-content hidden"> <!-- hidden 클래스 추가 -->
+                    <ul>
+                        <li><strong>Category:</strong> 각 카테고리 숫자를 표시하며, 커서를 가져가면 세부 설명을 확인할 수 있습니다.</li>
+                        <li><strong>Category1:</strong> 화기류, 근접공격무기류 및 전투용 산탄총류</li>
+                        <li><strong>Category2:</strong> 총기류 및 화포류</li>
+                        <li><strong>Category3:</strong> 탄약 및 관련 장비</li>
+                        <li><strong>Category4:</strong> 이동발사체, 유도미사일, 탄도미사일, 로켓, 어뢰, 폭탄 및 지뢰</li>
+                        <li><strong>Category5:</strong> 폭발물, 에너지물질, 추진제, 소이제 및 관련 구성품</li>
+                        <li><strong>Category6:</strong> 전함 및 해군 특수장비</li>
+                        <li><strong>Category7:</strong> 탱크 및 군용차량</li>
+                        <li><strong>Category8:</strong> 항공기 및 관련 장비</li>
+                        <li><strong>Category9:</strong> 군 훈련용 장비 및 훈련</li>
+                        <li><strong>Category10:</strong> 개인방호장비 및 보호시설</li>
+                        <li><strong>Category11:</strong> 군 전자장비</li>
+                        <li><strong>Category12:</strong> 사격통제, 거리측정기, 광학기기 및 통제장비</li>
+                        <li><strong>Category13:</strong> 보조군사장비</li>
+                        <li><strong>Category14:</strong> 독극물</li>
+                        <li><strong>Category15:</strong> 우주선 시스템 및 관련 장비</li>
+                        <li><strong>Category16:</strong> 핵무기 관련 설계, 시험장비</li>
+                        <li><strong>Category17:</strong> 기타 군용물자</li>
+                        <li><strong>Category18:</strong> 지향성 에너지 무기체계</li>
+                        <li><strong>Category19:</strong> 생물학적 또는 방사성 물질</li>
+                        <li><strong>Category20:</strong> 잠수함, 해양 및 관련 장비</li>
+                        <li><strong>Category21:</strong> 기타 군용물자</li>
+                        <li><strong>Category22:</strong> 군사 인력</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <!-- 메인 콘텐츠 -->
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">국가별 비교 및 분석</h1>
-                        
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    국가별 지표 비교 및 분석 페이지입니다. 
-                                </p>
+                        <h1 class="mt-4"><i class="fas fa-chart-bar me-2"></i>비교 및 분석</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="/WEB/web-layout/index.html">Home</a></li>
+                            <li class="breadcrumb-item active">비교 및 분석page</li>
+                        </ol>
+        
+                        <div class="row">
+                            <!-- 국가 선택 섹션 -->
+                            <div class="col-md-6 border-end">
+                                <h5>국가 선택</h5>
+                                <div class="mb-4">
+                                    <select id="countrySelector" class="form-select">
+                                        <option value="" selected disabled>국가를 선택하세요</option>
+                                    </select>
+                                </div>
+
+                                <!-- 경고 메시지 -->
+                                <div id="alertBox" style="display: none; background-color: red; color: white; padding: 10px; text-align: center; font-weight: bold;">
+                                    해당 국가는 현재 전쟁 중이거나 UN 무기금수조치 국가입니다.
+                                </div>
+                                
+                            <!-- 무기 시스템 파이 차트 -->
+                                <div id="pieChartContainer" style="width: 530px; height: 530px; margin-bottom: 50px;">
+                                    <canvas id="pieChart"></canvas>
+                                </div>
+
+                                <!-- 무기 수입 파이 차트 -->
+                                <div id="weaponImportPieChartContainer" style="width: 530px; height: 530px; margin-bottom: 50px;">
+                                    <canvas id="weaponImportPieChart"></canvas>
+                                </div>
+
+                                    <style>
+                                    #pieChartContainer, #weaponImportPieChartContainer {
+                                        position: relative; /* 차트 컨테이너 위치 설정 */
+                                        margin: 0 auto; /* 차트 중앙 정렬 */
+                                        margin-bottom: 50px; /* 두 차트 사이 여백 */
+                                    }
+
+                                    canvas {
+                                        display: block;
+                                        width: 100% !important;
+                                        height: 100% !important;
+                                    }
+
+                                    </style>
+                                
+                                
+
+
+
                             </div>
-                        </div>
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
+        
+                            <!-- 기업 및 데이터 표시 섹션 -->
+                            <div class="col-md-6">
+                                <!-- 지형 데이터 표시 -->
+                                <div id="countryDataRow" class="row mt-4">
+                                </div>
+        
+                                <!-- 군집 선택 -->
+                                <h5>군집 선택</h5>
+                                <div class="mb-4">
+                                    <select id="clusterSelector" class="form-select" onchange="updateCompanyDropdown()">
+                                        <option value="" selected disabled>군집을 선택하세요</option>
+                                        <option value="군집1">항공 및 우주기술 기업</option>
+                                        <option value="군집2">해양방위 및 조선 기업</option>
+                                        <option value="군집3">지상방위 및 무기시스템 기업</option>
+                                        <option value="군집4">전자 및 시스템 기업</option>
+                                        <option value="군집5">해외 기업</option>
+                                    </select>
+                                </div>
+        
+                                <!-- 기업 선택 -->
+                                <h5>기업 선택</h5>
+                                <div class="mb-4">
+                                    <select id="companySelector" class="form-select">
+                                        <option value="" disabled selected>기업을 선택하세요</option>
+                                    </select>
+                                </div>
+        
+                                <!-- 파이 차트 표시 -->
+                                <div class="col-md-12">
+                                    <canvas id="companyImportPieChart" style="width: 500px; height: 500px;"></canvas>
+                                </div>
+                                <h5>국가별 지형 정보</h5>
+                                <div id="countryTerrainTable" class="table-responsive"></div>
+                                <h5>국가별 R&D 정보</h5>
+                                <div id="rndDataTable" class="table-responsive"></div>
+                            </div>                                                                                                               
+                        </div>                                             
                     </div>
                 </main>
+            </div>
+        </div>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
                         </div>
                     </div>
                 </footer>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="/WEB/web-layout/js/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/WEB/web-layout/js/analysis.js" defer></script>
+        <script>
+            function toggleInfoBox() {
+                const infoBox = document.getElementById("infoBox");
+                const infoContent = infoBox.querySelector(".info-content");
+        
+                // Toggle the 'hidden' class
+                infoContent.classList.toggle("hidden");
+            }
+        </script>
     </body>
 </html>

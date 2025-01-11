@@ -1,0 +1,90 @@
+[
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "틸트로터(KUS-VT)",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "76",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "사단 정찰용 무인기(KUS-FT)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "중고도 무인기(KUS-FS)",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "78",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "무인헬기(KUS-VH)",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "77",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "Lift & Cruise",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "하이브리드 드론(KUS-HD)",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "인스펙션 드론 ",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "76",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "4",
+        "Category": "8",
+        "Main_Selling_Product": "군용기MRO",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "85",
+        "Export History": "YES"
+    }
+]

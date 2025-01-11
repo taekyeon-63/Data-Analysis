@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_47dda003be375f024243efc366cd8352 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_47dda003be375f024243efc366cd8352" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_47dda003be375f024243efc366cd8352 = L.map(
+                "map_47dda003be375f024243efc366cd8352",
+                {
+                    center: [40.00243127272727, 46.571248818181814],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9992d17215e21ce01c02ba8b54142d7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e9992d17215e21ce01c02ba8b54142d7.addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+            var marker_dd584f4583cc7542b535d1ff0f5ef728 = L.marker(
+                [40.00243127272727, 46.571248818181814],
+                {}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+            var div_icon_ffd34378e195709309a096161ff3b453 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eAzerbaijan\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_dd584f4583cc7542b535d1ff0f5ef728.setIcon(div_icon_ffd34378e195709309a096161ff3b453);
+        
+    
+            var circle_marker_6c7b3eee3b2e01cfbd7ad370d1f2fe31 = L.circleMarker(
+                [39.75943, 46.70906],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_d20979c97f355cf2abd943dce40c69be = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23870b9ac3a98f4b44545e217b91f8a5 = $(`<div id="html_23870b9ac3a98f4b44545e217b91f8a5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.7594<br>                 <b>Longitude:</b> 46.7091<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Dükanlar village<br>                 <b>Where Description:</b> Dyukyanlar, Karabakh                 </div>`)[0];
+                popup_d20979c97f355cf2abd943dce40c69be.setContent(html_23870b9ac3a98f4b44545e217b91f8a5);
+            
+        
+
+        circle_marker_6c7b3eee3b2e01cfbd7ad370d1f2fe31.bindPopup(popup_d20979c97f355cf2abd943dce40c69be)
+        ;
+
+        
+    
+    
+            var circle_marker_814f48bbe11199ba4a0a1ab2cb89b813 = L.circleMarker(
+                [40.37663, 46.74271],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_61d1b5517136cd179a0707dfb4822016 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23fc04655961c6924191ac8d131bbbda = $(`<div id="html_23fc04655961c6924191ac8d131bbbda" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.3766<br>                 <b>Longitude:</b> 46.7427<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Talish town<br>                 <b>Where Description:</b> Talish village of Tartar region of Azerbaijan                 </div>`)[0];
+                popup_61d1b5517136cd179a0707dfb4822016.setContent(html_23fc04655961c6924191ac8d131bbbda);
+            
+        
+
+        circle_marker_814f48bbe11199ba4a0a1ab2cb89b813.bindPopup(popup_61d1b5517136cd179a0707dfb4822016)
+        ;
+
+        
+    
+    
+            var circle_marker_80b647f0e41c64ef2a1f4fbe50e3853e = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_45ab3fcf8043e974dd90f841c8df1236 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cbe6e4277137a0382b753c4b3a9a9104 = $(`<div id="html_cbe6e4277137a0382b753c4b3a9a9104" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Nagorno-Karabakh                 </div>`)[0];
+                popup_45ab3fcf8043e974dd90f841c8df1236.setContent(html_cbe6e4277137a0382b753c4b3a9a9104);
+            
+        
+
+        circle_marker_80b647f0e41c64ef2a1f4fbe50e3853e.bindPopup(popup_45ab3fcf8043e974dd90f841c8df1236)
+        ;
+
+        
+    
+    
+            var circle_marker_a7379854024833627e1f57320e595d04 = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_dcaaeb111a91f05e90164fc7ba1abcfa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bbe83b365599f4a6a5a11c4c0cfb2ee7 = $(`<div id="html_bbe83b365599f4a6a5a11c4c0cfb2ee7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Ahmadbayli-Fuzuli-Susa road                 </div>`)[0];
+                popup_dcaaeb111a91f05e90164fc7ba1abcfa.setContent(html_bbe83b365599f4a6a5a11c4c0cfb2ee7);
+            
+        
+
+        circle_marker_a7379854024833627e1f57320e595d04.bindPopup(popup_dcaaeb111a91f05e90164fc7ba1abcfa)
+        ;
+
+        
+    
+    
+            var circle_marker_91665ade5cf7d550881d467c097257e6 = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_6c1c275127b5f5b991c4c7882e3478d2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f02c9000b0e601d2b6dc9c8d1ae08b7e = $(`<div id="html_f02c9000b0e601d2b6dc9c8d1ae08b7e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Nagorno-Karabakh                 </div>`)[0];
+                popup_6c1c275127b5f5b991c4c7882e3478d2.setContent(html_f02c9000b0e601d2b6dc9c8d1ae08b7e);
+            
+        
+
+        circle_marker_91665ade5cf7d550881d467c097257e6.bindPopup(popup_6c1c275127b5f5b991c4c7882e3478d2)
+        ;
+
+        
+    
+    
+            var circle_marker_62f703b99fd6664f9b9c2916cd868644 = L.circleMarker(
+                [39.753744, 46.746476],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_3c8ff9ba681bb7f039e761c769f39869 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_455546253454d70562c821ad4e8562c8 = $(`<div id="html_455546253454d70562c821ad4e8562c8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.7537<br>                 <b>Longitude:</b> 46.7465<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shusha town<br>                 <b>Where Description:</b> Shusha                 </div>`)[0];
+                popup_3c8ff9ba681bb7f039e761c769f39869.setContent(html_455546253454d70562c821ad4e8562c8);
+            
+        
+
+        circle_marker_62f703b99fd6664f9b9c2916cd868644.bindPopup(popup_3c8ff9ba681bb7f039e761c769f39869)
+        ;
+
+        
+    
+    
+            var circle_marker_9fb1fec660df602e4e0c97df12b03627 = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.14139260115349, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_96b7f54c3bf1ee86283bf204b4c48543 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_835cc49b8526232dfde2c011580e66c7 = $(`<div id="html_835cc49b8526232dfde2c011580e66c7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 414<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Karabakh                 </div>`)[0];
+                popup_96b7f54c3bf1ee86283bf204b4c48543.setContent(html_835cc49b8526232dfde2c011580e66c7);
+            
+        
+
+        circle_marker_9fb1fec660df602e4e0c97df12b03627.bindPopup(popup_96b7f54c3bf1ee86283bf204b4c48543)
+        ;
+
+        
+    
+    
+            var circle_marker_16c9a019ee8d709490bec9daeb01c34f = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_f051a15959b3f7aa414ff0ec3781d26d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c75f920516f02aed9471dd2e20f13553 = $(`<div id="html_c75f920516f02aed9471dd2e20f13553" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Karabakh                 </div>`)[0];
+                popup_f051a15959b3f7aa414ff0ec3781d26d.setContent(html_c75f920516f02aed9471dd2e20f13553);
+            
+        
+
+        circle_marker_16c9a019ee8d709490bec9daeb01c34f.bindPopup(popup_f051a15959b3f7aa414ff0ec3781d26d)
+        ;
+
+        
+    
+    
+            var circle_marker_cfb14f162a6f5233b29e5a320fe8150e = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_86a83c46a1f9164cd10196c094a5fd49 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e3db5f4438c820dd5ec46465eeb2f79f = $(`<div id="html_e3db5f4438c820dd5ec46465eeb2f79f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Nagorno-Karabakh                 </div>`)[0];
+                popup_86a83c46a1f9164cd10196c094a5fd49.setContent(html_e3db5f4438c820dd5ec46465eeb2f79f);
+            
+        
+
+        circle_marker_cfb14f162a6f5233b29e5a320fe8150e.bindPopup(popup_86a83c46a1f9164cd10196c094a5fd49)
+        ;
+
+        
+    
+    
+            var circle_marker_fcd22c9bf5a9ed3cbd84bdfa74e1d094 = L.circleMarker(
+                [40.0, 46.583333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_d2308b6c72a69de3b0d447912d227d01 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_70431d72c1bf03557799b46c330c0c85 = $(`<div id="html_70431d72c1bf03557799b46c330c0c85" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.0000<br>                 <b>Longitude:</b> 46.5833<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Nagorno-Karabakh<br>                 <b>Where Description:</b> Nagorno-Karabakh                 </div>`)[0];
+                popup_d2308b6c72a69de3b0d447912d227d01.setContent(html_70431d72c1bf03557799b46c330c0c85);
+            
+        
+
+        circle_marker_fcd22c9bf5a9ed3cbd84bdfa74e1d094.bindPopup(popup_d2308b6c72a69de3b0d447912d227d01)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d72ee820edfa3aa2750eeb9ba47b1f = L.circleMarker(
+                [40.13694, 46.00216],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_47dda003be375f024243efc366cd8352);
+        
+    
+        var popup_e9dcee5ca7ef22343d2caeec4b721df5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f27589e6dd98376d7193e30e1a9bd39f = $(`<div id="html_f27589e6dd98376d7193e30e1a9bd39f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.1369<br>                 <b>Longitude:</b> 46.0022<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Aşağı Ayrım village<br>                 <b>Where Description:</b> positions of the Azerbaijani army stationed in the direction of Ashaghi Ayrim settlement of Kalbajar region                 </div>`)[0];
+                popup_e9dcee5ca7ef22343d2caeec4b721df5.setContent(html_f27589e6dd98376d7193e30e1a9bd39f);
+            
+        
+
+        circle_marker_d9d72ee820edfa3aa2750eeb9ba47b1f.bindPopup(popup_e9dcee5ca7ef22343d2caeec4b721df5)
+        ;
+
+        
+    
+</script>
+</html>

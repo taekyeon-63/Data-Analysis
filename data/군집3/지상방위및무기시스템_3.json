@@ -1,0 +1,167 @@
+[
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "STC16(K13)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K2/K2C1",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "88",
+        "Export History": "페루"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K2C",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "페루"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "STSR23",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K14",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K15",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K15PARA",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K16 SERIES",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "77",
+        "Export History": "폴란드"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K4",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "필리핀/인도네시아"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K600 장애물개척전차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "STSM21",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "76",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K7",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "필리핀"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "K5",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "73",
+        "Export History": "방글라데시"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "DP51 SERIES",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "3",
+        "Category": "1",
+        "Main_Selling_Product": "STRV9",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Overseas",
+        "Price Competitiveness": "75",
+        "Export History": "NO"
+    }
+]

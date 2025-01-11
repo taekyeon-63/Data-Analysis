@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea4e47ffcc5464f9914e58fdee58d522 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea4e47ffcc5464f9914e58fdee58d522" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea4e47ffcc5464f9914e58fdee58d522 = L.map(
+                "map_ea4e47ffcc5464f9914e58fdee58d522",
+                {
+                    center: [21.44684245454545, 91.99531627272727],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8080d3eed3a6cdea92b3fe7542aa3ebc = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_8080d3eed3a6cdea92b3fe7542aa3ebc.addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+            var marker_8d4159c51e70247114a29c235a509909 = L.marker(
+                [21.44684245454545, 91.99531627272727],
+                {}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+            var div_icon_508b826c6ec083e19a15b3f4c1fad203 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eBangladesh\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_8d4159c51e70247114a29c235a509909.setIcon(div_icon_508b826c6ec083e19a15b3f4c1fad203);
+        
+    
+            var circle_marker_77e9017cbbcf44ec003b9cbca2a2e19e = L.circleMarker(
+                [21.193635, 92.16293],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_e68ce0f1cd0a235bf07692a0c5097162 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0eed8391034de0740a4e6b16092a499b = $(`<div id="html_0eed8391034de0740a4e6b16092a499b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.1936<br>                 <b>Longitude:</b> 92.1629<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Camp 8<br>                 <b>Where Description:</b> Balukhali camp in Cox’s Bazar’s Ukhiya camp                 </div>`)[0];
+                popup_e68ce0f1cd0a235bf07692a0c5097162.setContent(html_0eed8391034de0740a4e6b16092a499b);
+            
+        
+
+        circle_marker_77e9017cbbcf44ec003b9cbca2a2e19e.bindPopup(popup_e68ce0f1cd0a235bf07692a0c5097162)
+        ;
+
+        
+    
+    
+            var circle_marker_8821b6a542b0d124c8add815250c4750 = L.circleMarker(
+                [21.218459, 92.160461],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_802133354f912c3806ab5802851b32a1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_895317a0b3aac98d7233e40618aa48e5 = $(`<div id="html_895317a0b3aac98d7233e40618aa48e5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.2185<br>                 <b>Longitude:</b> 92.1605<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ukhiya sub-district<br>                 <b>Where Description:</b> Ukhiya Sub-District of Cox’s Bazar District (Chittagong Division)                 </div>`)[0];
+                popup_802133354f912c3806ab5802851b32a1.setContent(html_895317a0b3aac98d7233e40618aa48e5);
+            
+        
+
+        circle_marker_8821b6a542b0d124c8add815250c4750.bindPopup(popup_802133354f912c3806ab5802851b32a1)
+        ;
+
+        
+    
+    
+            var circle_marker_c3e70d2a6795e3d42ac6b347bdad56dd = L.circleMarker(
+                [21.207767, 92.16198],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_172163d44d68bd7f0a13bb21645119d0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e3efb21bcd023db6ae63e3857e52afb8 = $(`<div id="html_e3efb21bcd023db6ae63e3857e52afb8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.2078<br>                 <b>Longitude:</b> 92.1620<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Camp 2<br>                 <b>Where Description:</b> 9D block at camp-2 in Kutupalong refugee camp in Ukhiya sub-District of Cox's Bazar District                 </div>`)[0];
+                popup_172163d44d68bd7f0a13bb21645119d0.setContent(html_e3efb21bcd023db6ae63e3857e52afb8);
+            
+        
+
+        circle_marker_c3e70d2a6795e3d42ac6b347bdad56dd.bindPopup(popup_172163d44d68bd7f0a13bb21645119d0)
+        ;
+
+        
+    
+    
+            var circle_marker_2dd7e24a03e3c42120cd93623fd8a2d4 = L.circleMarker(
+                [20.940935, 92.259555],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_fa0a145b753d0995787a1a40dab56b6a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ff805853594d0a399801376dc727ca44 = $(`<div id="html_ff805853594d0a399801376dc727ca44" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 20.9409<br>                 <b>Longitude:</b> 92.2596<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Jadimura village<br>                 <b>Where Description:</b> Jadimura Rohingya camp in Teknaf upazila                 </div>`)[0];
+                popup_fa0a145b753d0995787a1a40dab56b6a.setContent(html_ff805853594d0a399801376dc727ca44);
+            
+        
+
+        circle_marker_2dd7e24a03e3c42120cd93623fd8a2d4.bindPopup(popup_fa0a145b753d0995787a1a40dab56b6a)
+        ;
+
+        
+    
+    
+            var circle_marker_07a593eb5d6c4ad675513256dc7b2ddf = L.circleMarker(
+                [21.2127, 92.163445],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_13e64766d48739e39aec1a786616d9e5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b811cdb2dfcbe7e21fe172b79db067f2 = $(`<div id="html_b811cdb2dfcbe7e21fe172b79db067f2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.2127<br>                 <b>Longitude:</b> 92.1634<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kutupalong refugee camp<br>                 <b>Where Description:</b> Kutupalong refugee camp in Ukhiya upazila                 </div>`)[0];
+                popup_13e64766d48739e39aec1a786616d9e5.setContent(html_b811cdb2dfcbe7e21fe172b79db067f2);
+            
+        
+
+        circle_marker_07a593eb5d6c4ad675513256dc7b2ddf.bindPopup(popup_13e64766d48739e39aec1a786616d9e5)
+        ;
+
+        
+    
+    
+            var circle_marker_7783d8288f8bc6ecc2f449ec1de2286e = L.circleMarker(
+                [21.207767, 92.16198],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_68211e50f36c3817870179a8e3c32156 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_925f4b15f22a9bf4a120157d25b38676 = $(`<div id="html_925f4b15f22a9bf4a120157d25b38676" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.2078<br>                 <b>Longitude:</b> 92.1620<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Camp 2<br>                 <b>Where Description:</b> B-5 block of Rohingya refugee camp No. 2 (West Kutupalong) in Ukhiya Upazila                 </div>`)[0];
+                popup_68211e50f36c3817870179a8e3c32156.setContent(html_925f4b15f22a9bf4a120157d25b38676);
+            
+        
+
+        circle_marker_7783d8288f8bc6ecc2f449ec1de2286e.bindPopup(popup_68211e50f36c3817870179a8e3c32156)
+        ;
+
+        
+    
+    
+            var circle_marker_1ebe6c88935d324f01f0d5913091781e = L.circleMarker(
+                [21.169359, 92.153274],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_a07965b81ebacd828d293e8011f2ed95 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_519728cb18ad1679a49d4e947e567180 = $(`<div id="html_519728cb18ad1679a49d4e947e567180" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.1694<br>                 <b>Longitude:</b> 92.1533<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Balukhali camp 11<br>                 <b>Where Description:</b> Balukhali Rohingya camp in Ukhiya upazila                 </div>`)[0];
+                popup_a07965b81ebacd828d293e8011f2ed95.setContent(html_519728cb18ad1679a49d4e947e567180);
+            
+        
+
+        circle_marker_1ebe6c88935d324f01f0d5913091781e.bindPopup(popup_a07965b81ebacd828d293e8011f2ed95)
+        ;
+
+        
+    
+    
+            var circle_marker_74996c5cfaee4c01987e5cb180361698 = L.circleMarker(
+                [21.2127, 92.163445],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_9c8ec9efcfff3b2d045ac0cd3bcdb2af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ddc5281cff70e6372eede5cc9cff8132 = $(`<div id="html_ddc5281cff70e6372eede5cc9cff8132" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.2127<br>                 <b>Longitude:</b> 92.1634<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kutupalong refugee camp<br>                 <b>Where Description:</b> Kutupalong camp in Ukhiya sub-District                 </div>`)[0];
+                popup_9c8ec9efcfff3b2d045ac0cd3bcdb2af.setContent(html_ddc5281cff70e6372eede5cc9cff8132);
+            
+        
+
+        circle_marker_74996c5cfaee4c01987e5cb180361698.bindPopup(popup_9c8ec9efcfff3b2d045ac0cd3bcdb2af)
+        ;
+
+        
+    
+    
+            var circle_marker_9828c7dc1bc553bc0e6d04f28178a8e2 = L.circleMarker(
+                [21.583889, 92.015278],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_64d3b2d3c19fe315d7d09789ffa6b697 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b2b5745a37c02f23cf0ba3f2504098e4 = $(`<div id="html_b2b5745a37c02f23cf0ba3f2504098e4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.5839<br>                 <b>Longitude:</b> 92.0153<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Cox’s Bāzār district<br>                 <b>Where Description:</b> Cox’s Bazar                 </div>`)[0];
+                popup_64d3b2d3c19fe315d7d09789ffa6b697.setContent(html_b2b5745a37c02f23cf0ba3f2504098e4);
+            
+        
+
+        circle_marker_9828c7dc1bc553bc0e6d04f28178a8e2.bindPopup(popup_64d3b2d3c19fe315d7d09789ffa6b697)
+        ;
+
+        
+    
+    
+            var circle_marker_37a549a4fa90061e8ef30001f2aa4f8d = L.circleMarker(
+                [23.723056, 90.408611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_dd3c2211e5191d0332c83f9f7acf33c6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23d09804acb306e27f6a9abc7c9219da = $(`<div id="html_23d09804acb306e27f6a9abc7c9219da" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 23.7231<br>                 <b>Longitude:</b> 90.4086<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Dhaka city<br>                 <b>Where Description:</b> in Dhaka.                 </div>`)[0];
+                popup_dd3c2211e5191d0332c83f9f7acf33c6.setContent(html_23d09804acb306e27f6a9abc7c9219da);
+            
+        
+
+        circle_marker_37a549a4fa90061e8ef30001f2aa4f8d.bindPopup(popup_dd3c2211e5191d0332c83f9f7acf33c6)
+        ;
+
+        
+    
+    
+            var circle_marker_bc2cb56a26b9d5f9d73dec472eb46191 = L.circleMarker(
+                [21.245, 92.13752],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_ea4e47ffcc5464f9914e58fdee58d522);
+        
+    
+        var popup_347620dab973f943ce937d6b105e1893 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2d6b99e877db7972a3264c54f7f833d9 = $(`<div id="html_2d6b99e877db7972a3264c54f7f833d9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.2450<br>                 <b>Longitude:</b> 92.1375<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ukhiya village<br>                 <b>Where Description:</b> Ukhiya Rohingya camp in Cox's Bazar                 </div>`)[0];
+                popup_347620dab973f943ce937d6b105e1893.setContent(html_2d6b99e877db7972a3264c54f7f833d9);
+            
+        
+
+        circle_marker_bc2cb56a26b9d5f9d73dec472eb46191.bindPopup(popup_347620dab973f943ce937d6b105e1893)
+        ;
+
+        
+    
+</script>
+</html>

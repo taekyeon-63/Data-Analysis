@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6448c03f3fd88cfa188936266f5bb03 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6448c03f3fd88cfa188936266f5bb03" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6448c03f3fd88cfa188936266f5bb03 = L.map(
+                "map_c6448c03f3fd88cfa188936266f5bb03",
+                {
+                    center: [15.922973363636363, 17.18233572727273],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_07e1510f8d41f30e148a40cbb18eafdf = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_07e1510f8d41f30e148a40cbb18eafdf.addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+            var marker_bddea731421ad6a55a8dd0e6137cbb70 = L.marker(
+                [15.922973363636363, 17.18233572727273],
+                {}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+            var div_icon_fec4979a7197760265d496bd64c14cb2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eChad\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_bddea731421ad6a55a8dd0e6137cbb70.setIcon(div_icon_fec4979a7197760265d496bd64c14cb2);
+        
+    
+            var circle_marker_8ce3524b1d0becb2678a798d659bd362 = L.circleMarker(
+                [12.3546, 19.6139],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.54025100551105, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_4ef61e7cdddbd9ee497bcefadc9c3f57 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cea62fc9a41a4c3cf195c34381d1ef1a = $(`<div id="html_cea62fc9a41a4c3cf195c34381d1ef1a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.3546<br>                 <b>Longitude:</b> 19.6139<br>                 <b>Deaths:</b> 14<br>                 <b>Where Coordinates:</b> Mangalmé town<br>                 <b>Where Description:</b> near the city of Mangalme                 </div>`)[0];
+                popup_4ef61e7cdddbd9ee497bcefadc9c3f57.setContent(html_cea62fc9a41a4c3cf195c34381d1ef1a);
+            
+        
+
+        circle_marker_8ce3524b1d0becb2678a798d659bd362.bindPopup(popup_4ef61e7cdddbd9ee497bcefadc9c3f57)
+        ;
+
+        
+    
+    
+            var circle_marker_2e11326864e7fe67f02b1b7e3c104fdc = L.circleMarker(
+                [7.84277, 16.47379],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.451858789480823, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_36cca05a1158e25c1e93c5cc2998e2f8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_05c608a26611c22bb547536c8bf6e0e1 = $(`<div id="html_05c608a26611c22bb547536c8bf6e0e1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.8428<br>                 <b>Longitude:</b> 16.4738<br>                 <b>Deaths:</b> 17<br>                 <b>Where Coordinates:</b> Don village<br>                 <b>Where Description:</b> village of Don in Logone Oriental province                 </div>`)[0];
+                popup_36cca05a1158e25c1e93c5cc2998e2f8.setContent(html_05c608a26611c22bb547536c8bf6e0e1);
+            
+        
+
+        circle_marker_2e11326864e7fe67f02b1b7e3c104fdc.bindPopup(popup_36cca05a1158e25c1e93c5cc2998e2f8)
+        ;
+
+        
+    
+    
+            var circle_marker_fd0d61a1be55438ac5ac5150e361600b = L.circleMarker(
+                [9.9118, 20.88091],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.989476363991853, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_7389c8c4b79fa4c9e2927d0aca3bb140 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9f3aedf107ae003a11f2e53298b71e25 = $(`<div id="html_9f3aedf107ae003a11f2e53298b71e25" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.9118<br>                 <b>Longitude:</b> 20.8809<br>                 <b>Deaths:</b> 10<br>                 <b>Where Coordinates:</b> Tafok Bara village<br>                 <b>Where Description:</b> near the village of Bara                 </div>`)[0];
+                popup_7389c8c4b79fa4c9e2927d0aca3bb140.setContent(html_9f3aedf107ae003a11f2e53298b71e25);
+            
+        
+
+        circle_marker_fd0d61a1be55438ac5ac5150e361600b.bindPopup(popup_7389c8c4b79fa4c9e2927d0aca3bb140)
+        ;
+
+        
+    
+    
+            var circle_marker_2bfaec59e4454f8cffec0807a29fa83d = L.circleMarker(
+                [21.5, 17.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_19d3d79e8342aa35898873d4db4622eb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1daaaf68b5ff67b66a1666371f01cfa8 = $(`<div id="html_1daaaf68b5ff67b66a1666371f01cfa8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.5000<br>                 <b>Longitude:</b> 17.5000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tibesti mountains<br>                 <b>Where Description:</b> Tibesti mountainous                 </div>`)[0];
+                popup_19d3d79e8342aa35898873d4db4622eb.setContent(html_1daaaf68b5ff67b66a1666371f01cfa8);
+            
+        
+
+        circle_marker_2bfaec59e4454f8cffec0807a29fa83d.bindPopup(popup_19d3d79e8342aa35898873d4db4622eb)
+        ;
+
+        
+    
+    
+            var circle_marker_d915585157ebc27c7fd55dc3dd858294 = L.circleMarker(
+                [13.377031, 14.530923],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_1b975c0ab6ddea578e372c0e79dcd1b0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4b331d0b53ee5087be92eff1239a6525 = $(`<div id="html_4b331d0b53ee5087be92eff1239a6525" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.3770<br>                 <b>Longitude:</b> 14.5309<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Kaiga town<br>                 <b>Where Description:</b> Kaiga, Fouli department                 </div>`)[0];
+                popup_1b975c0ab6ddea578e372c0e79dcd1b0.setContent(html_4b331d0b53ee5087be92eff1239a6525);
+            
+        
+
+        circle_marker_d915585157ebc27c7fd55dc3dd858294.bindPopup(popup_1b975c0ab6ddea578e372c0e79dcd1b0)
+        ;
+
+        
+    
+    
+            var circle_marker_40530a88775f8ba534673d3bbd7fcedc = L.circleMarker(
+                [13.683161, 13.959359],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_c7c005ca4a7c51d66ae3edcad8506be0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_77bb74899cf5618b9c07b10f28ee541c = $(`<div id="html_77bb74899cf5618b9c07b10f28ee541c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.6832<br>                 <b>Longitude:</b> 13.9594<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Boldoua village<br>                 <b>Where Description:</b> Boldoua, Mamdi Department                 </div>`)[0];
+                popup_c7c005ca4a7c51d66ae3edcad8506be0.setContent(html_77bb74899cf5618b9c07b10f28ee541c);
+            
+        
+
+        circle_marker_40530a88775f8ba534673d3bbd7fcedc.bindPopup(popup_c7c005ca4a7c51d66ae3edcad8506be0)
+        ;
+
+        
+    
+    
+            var circle_marker_96cba4f920159a583faaef98dae28f25 = L.circleMarker(
+                [8.885416, 18.519966],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_08bbedcfef05740496e1da7265fd7739 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4bd04e8a008198fa2593ccf97906a278 = $(`<div id="html_4bd04e8a008198fa2593ccf97906a278" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.8854<br>                 <b>Longitude:</b> 18.5200<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Koida village<br>                 <b>Where Description:</b> Koida village, Moyen-Chari                 </div>`)[0];
+                popup_08bbedcfef05740496e1da7265fd7739.setContent(html_4bd04e8a008198fa2593ccf97906a278);
+            
+        
+
+        circle_marker_96cba4f920159a583faaef98dae28f25.bindPopup(popup_08bbedcfef05740496e1da7265fd7739)
+        ;
+
+        
+    
+    
+            var circle_marker_82477e5fd3a84cc1b8187bfaf6ab47e4 = L.circleMarker(
+                [21.5, 17.5],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.890269151739728, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_be040d5fc3068380874c9f0ff272dbe5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_da904e885019e5fb1b4a4cc446746209 = $(`<div id="html_da904e885019e5fb1b4a4cc446746209" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.5000<br>                 <b>Longitude:</b> 17.5000<br>                 <b>Deaths:</b> 23<br>                 <b>Where Coordinates:</b> Tibesti mountains<br>                 <b>Where Description:</b> Tibesti mountainous                 </div>`)[0];
+                popup_be040d5fc3068380874c9f0ff272dbe5.setContent(html_da904e885019e5fb1b4a4cc446746209);
+            
+        
+
+        circle_marker_82477e5fd3a84cc1b8187bfaf6ab47e4.bindPopup(popup_be040d5fc3068380874c9f0ff272dbe5)
+        ;
+
+        
+    
+    
+            var circle_marker_8396518e146f4aa4117cdeafda41062e = L.circleMarker(
+                [21.349789, 15.949948],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_8c93d3bdd4a0b4f6b38665ffde47ef62 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b07838f343b0e499f22835fd46f05f12 = $(`<div id="html_b07838f343b0e499f22835fd46f05f12" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.3498<br>                 <b>Longitude:</b> 15.9499<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Wour village<br>                 <b>Where Description:</b> Wour and Kouri area                 </div>`)[0];
+                popup_8c93d3bdd4a0b4f6b38665ffde47ef62.setContent(html_b07838f343b0e499f22835fd46f05f12);
+            
+        
+
+        circle_marker_8396518e146f4aa4117cdeafda41062e.bindPopup(popup_8c93d3bdd4a0b4f6b38665ffde47ef62)
+        ;
+
+        
+    
+    
+            var circle_marker_5ed0236e24bc2d55e2e720291a516592 = L.circleMarker(
+                [21.449704, 18.416707],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_077835d3761882ec457cdf8cfc441a84 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8042fb6b6057320a32516a8f2818ef28 = $(`<div id="html_8042fb6b6057320a32516a8f2818ef28" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 21.4497<br>                 <b>Longitude:</b> 18.4167<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kouri village<br>                 <b>Where Description:</b> Wour and Kouri area                 </div>`)[0];
+                popup_077835d3761882ec457cdf8cfc441a84.setContent(html_8042fb6b6057320a32516a8f2818ef28);
+            
+        
+
+        circle_marker_5ed0236e24bc2d55e2e720291a516592.bindPopup(popup_077835d3761882ec457cdf8cfc441a84)
+        ;
+
+        
+    
+    
+            var circle_marker_075e454d30ec48e6116345505c7fb396 = L.circleMarker(
+                [23.298436, 15.66019],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.91759469228055, "stroke": true, "weight": 3}
+            ).addTo(map_c6448c03f3fd88cfa188936266f5bb03);
+        
+    
+        var popup_6034e942f49b2d44baff0258c03ceceb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5105a34e313ec14df30988936d0e3aec = $(`<div id="html_5105a34e313ec14df30988936d0e3aec" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 23.2984<br>                 <b>Longitude:</b> 15.6602<br>                 <b>Deaths:</b> 35<br>                 <b>Where Coordinates:</b> Kouri Bougoudi gold field<br>                 <b>Where Description:</b> Near Kouri-Bougoudi town, TIbesti                 </div>`)[0];
+                popup_6034e942f49b2d44baff0258c03ceceb.setContent(html_5105a34e313ec14df30988936d0e3aec);
+            
+        
+
+        circle_marker_075e454d30ec48e6116345505c7fb396.bindPopup(popup_6034e942f49b2d44baff0258c03ceceb)
+        ;
+
+        
+    
+</script>
+</html>

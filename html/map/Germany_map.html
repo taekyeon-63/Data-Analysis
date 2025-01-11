@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Leaflet.js와 관련 스타일 및 스크립트 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <style>
+        html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
+        .country-label {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 1px 1px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // 지도 초기화
+        var map = L.map("map", {
+            center : [51.1638175, 10.4478313], // 기본 중심 위치
+            zoom: 6, // 기본 줌 레벨
+            zoomControl: true,
+        });
+
+        // 배경 타일 추가 (CARTO 타일 사용)
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20,
+        }).addTo(map);
+
+        // 국가명 표시
+        var countryName = "Germany";
+        var countryCoordinates = [51.1638175, 10.4478313];
+
+        // 국가명을 레이블로 지도에 추가
+        var labelIcon = L.divIcon({
+            className: 'country-label', // CSS 클래스
+            html: `<div>${countryName}</div>`, // 표시할 텍스트
+            iconSize: [150, 36], // 아이콘 크기 (CSS로 조정 가능)
+            iconAnchor: [75, 18] // 아이콘 기준점 (텍스트 중심)
+        });
+
+        L.marker(countryCoordinates, { icon: labelIcon }).addTo(map);
+    </script>
+</body>
+</html>

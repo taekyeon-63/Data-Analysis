@@ -7,24 +7,228 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Static Navigation - SB Admin</title>
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+        
         <link href="/WEB/web-layout/css/layout.css" rel="stylesheet" />
+        <link href="/WEB/web-layout/css/main_css.css" rel="stylesheet">
+        <link href="/WEB/web-layout/css/company_news.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <style>
+            .cluster-section {
+                margin-bottom: 40px;
+            }
+            .cluster-title {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                color: #333;
+                font-weight: bold;
+                text-align: center;
+            }
+            .company-section {
+                border-bottom: 2px solid #ddd;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+            .company-description {
+                font-weight: bold;
+                margin-bottom: 10px;
+                font-size: 1.1em;
+            }
+            .company-links {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+                justify-items: center;
+                margin-bottom: 40px;
+            }
+           body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+				background-color: #f9f9f9;
+			}
+            h2 {
+                margin: 20px 0;
+                font-size: 1.5em;
+                color: #333;
+            }
+			.container {
+    			display: flex;
+    			flex-direction: row;
+    			justify-content: center;
+    			align-items: flex-start;
+    			gap: 20px;
+    			padding: 20px;
+    			position: relative;
+			}
+			
+			.left-section,
+			.right-section {
+				flex: 1; /* 두 섹션 모두 균등한 너비 설정 */
+			}
+			
+			.right-section {
+				margin-left: auto; /* 오른쪽에 고정 */
+			}
+			.divider {
+				background-color: black;
+				width: 1px;
+				height: 100%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+            .left-title {
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .right-title {
+                text-align: right;
+                margin-bottom: 10px;
+            }
+			.section {
+				width: 48%;
+			}
+			.right-section {
+				width: 48%; /* 이미 오른쪽으로 정렬 */
+				margin-left: auto; /* 정렬 보장 */
+			}
+			
+			.company-grid {
+				display: flex;
+				flex-wrap: wrap; /* 아이템들이 줄 바꿈 되도록 설정 */
+				gap: 20px; /* 아이템 사이의 간격 */
+				justify-content: space-between; /* 아이템 간격을 고르게 배치 */
+				align-items: flex-start; /* 아이템 위쪽 정렬 */
+			}
+
+			
+			@media (min-width: 1200px) {
+				.company-box {
+					width: calc(25% - 20px); /* 큰 화면에서는 한 줄에 4개 */
+				}
+			}
+			
+			@media (max-width: 768px) {
+				.company-box {
+					width: calc(50% - 20px); /* 중간 화면에서는 2개 */
+				}
+			}
+			
+			@media (max-width: 480px) {
+				.company-box {
+					width: 100%; /* 작은 화면에서는 1개 */
+				}
+			}
+			/* 제목 섹션 */
+			.section-title {
+				position: relative; /* 기준점 설정 */
+				text-align: center; /* 가운데 정렬 */
+				margin: 20px 0; /* 상하 여백 */
+				font-size: 1.5em;
+				color: #333;
+				font-weight: bold;
+			}
+			
+			/* 가운데 구분선 */
+			.section-title::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				height: 1px;
+				width: 80%;
+				background-color: black;
+				transform: translate(-50%, -50%);
+				z-index: -1; /* 타이틀 위에 텍스트 유지 */
+			}
+			
+			/* 타이틀 내부 텍스트 */
+			.section-title span {
+				background-color: #f9f9f9; /* 배경색과 동일하게 */
+				padding: 0 10px; /* 텍스트 주변 여백 */
+				z-index: 1;
+				position: relative;
+			}
+
+            .company-box {
+				width: calc(50% - 20px); /* 한 줄에 두 개씩 배치되도록 설정 */
+				box-sizing: border-box; /* 패딩과 보더를 포함하여 크기 계산 */
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: #fff; /* 박스 배경색 설정 */
+				border: 1px solid #ddd; /* 테두리 추가 */
+				border-radius: 8px; /* 둥근 테두리 */
+				overflow: hidden; /* 내용이 박스 밖으로 넘치지 않도록 */
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+			.company-image {
+				width: 100%; /* 모든 이미지 동일한 너비 */
+				height: 250px; /* 고정된 높이 */
+				object-fit: cover; /* 비율 유지하면서 지정된 크기에 맞게 자름 */
+				display: block;
+			}
+            .company-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            .company-box p {
+                margin: 10px 0;
+                font-size: 1em;
+                color: #333;
+            }
+            .company-title {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 10px;
+				color: #333;
+			}
+			.company-name {
+				font-weight: bold;
+				margin-top: 10px;
+				font-size: 1.2em;
+				color: #333;
+			}
+			.company-description {
+				color: #777;
+				font-size: 0.95em;
+				margin-top: 5px;
+			}
+            .company-description p {
+                margin: 5px 0;
+            }
+            .domestic-section {
+                margin-bottom: 60px;
+            }
+            .international-section {
+                margin-top: 60px;
+            }
+			.section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+			
+        </style>
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html">PRISM</a>
+            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html"><img src="/WEB/web-layout/data/logo.png" style="max-width: 30%; height: auto;"></a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
+            </form> -->
             <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <!-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -34,7 +238,7 @@
                         <li><a class="dropdown-item" href="#!">Logout</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -43,47 +247,256 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="/WEB/web-layout/html/data/analysis_1.html">국가별 데이터</a>
-                            <div class="sb-sidenav-menu-heading">기업별 데이터</div>
-                            <a class="nav-link" href="/WEB/web-layout/html/data/analysis_3.html">국가별 비교 및 분석</a>                   
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="false" aria-controls="collapseResearch">
+                                기업별 데이터
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseResearch" aria-labelledby="headingResearch" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/WEB/web-layout/html/data/company/항공및우주기술.html"><i class="fas fa-plane"></i> &nbsp; 항공 및 우주기술</a>
+                                    <a class="nav-link" href="/WEB/web-layout/html/data/company/해양방위및조선업.html"><i class="fas fa-ship"></i> &nbsp; 해양방위</a>
+                                    <a class="nav-link" href="/WEB/web-layout/html/data/company/전자및시스템주요제품.html"><i class="fas fa-microchip"></i> &nbsp; 전자 및 시스템</a>
+                                    <a class="nav-link" href="/WEB/web-layout/html/data/company/지상방위및무기시스템.html"><i class="fas fa-shield-alt"></i> &nbsp; 지상방위</a>
+                                    <a class="nav-link" href="/WEB/web-layout/html/data/company/해외기업.html"><i class="fas fa-globe"></i> &nbsp; 해외기업</a>
+                                </nav>                                
+                            </div>
+                            <a class="nav-link" href="/WEB/web-layout/html/data/analysis_3.html">비교 및 분석</a>                            
                         </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        천무 - ll
                     </div>
                 </nav>
             </div>
+
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">기업별 상세</h1>
-                        
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    기업별 상세 분석 페이지입니다. 
-                                </p>
-                            </div>
-                        </div>
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
-                    </div>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-        </div>
+                        <h1 class="mt-4"><i class="fas fa-chart-bar me-2"></i>기업별 데이터</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="/WEB/web-layout/index.html">Home</a></li>
+                            <li class="breadcrumb-item active">기업별 데이터 page</li>
+                        </ol>
+                        <p>기업의 세부 홈페이지 정보를 확인할 수 있습니다.</p>
+           
+						<div class="container-fluid px-4">
+							<div class="section-container">
+								<!-- 국내 방위사업 기업 -->
+								<div class="section left-section">
+									<h2 class="section-title"><span>국내 방위사업 기업</span></h2>
+									<div class="company-grid">
+										<div class="company-box">
+											<a href="https://www.koreaaero.com/" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.koreaaero.com/KO/Business/T50.aspx/&width=400&height=250"
+												alt="KAI 미리보기" class="company-image">
+											</a>
+											<div class="company-name">KAI</div>
+											<div class="company-description">항공 및 우주 기술 중심</div>
+							            </div>
+
+										<div class="company-box">
+											<a href="https://www.lignex1.com/business/gddWpnList.do" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.lignex1.com/business/gddWpnList.do&width=400&height=250" 
+													alt="LIG넥스원 미리보기" class="company-image">
+											</a>
+											<div class="company-name">LIG넥스원</div>
+											<div class="company-description">전자 및 시스템 주요제품</div>
+										</div>
+								
+										<!-- 회사 블록: SNT모티브 -->
+										<div class="company-box">
+											<a href="https://www.sntmotiv.com/kor/business/defense.html" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.sntmotiv.com/kor/business/defense.html&width=400&height=250" 
+													alt="SNT모티브 미리보기" class="company-image">
+											</a>
+											<div class="company-title">SNT모티브</div>
+											<div class="company-description">지상 방위 및 무기 시스템</div>
+										</div>
+									
+										<!-- 회사 블록: 대한항공 -->
+										<div class="company-box">
+											<a href="https://aerospace.koreanair.com/business/uav/index" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://aerospace.koreanair.com/business/uav/index&width=400&height=250" 
+													alt="대한항공 미리보기" class="company-image">
+											</a>
+											<div class="company-title">대한항공</div>
+											<div class="company-description">항공 및 우주 기술 중심</div>
+										</div>
+									
+										<!-- 회사 블록: 풍산 -->
+										<div class="company-box">
+											<a href="https://www.poongsan.co.kr/product/special" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.poongsan.co.kr/product/special&width=400&height=250" 
+													alt="풍산 미리보기" class="company-image">
+											</a>
+											<div class="company-title">풍산</div>
+											<div class="company-description">지상 방위 및 무기 시스템</div>
+										</div>
+				
+										<div class="company-box">
+											<a href="https://www.hanwhaaerospace.com/kor/whatwedo/product/space.do" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.hanwhaaerospace.com/kor/whatwedo/product/space.do/kor/whatwedo/product/space.do&width=400&height=250" 
+													alt="한화에어로스페이스 미리보기" class="company-image">
+											</a>
+												<div class="company-name">한화에어로스페이스</div>
+												<div class="company-description">항공 및 우주 기술 중심</div>
+												<div class="company-description">지상 방위 및 무기 시스템</div>
+												<div class="company-description">전자 및 시스템 주요제품</div>
+										</div>
+								
+										<div class="company-box">
+											<a href="https://www.hanwha.co.kr/business/manufacture/hanwhaocean.do" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.hanwha.co.kr/business/manufacture/hanwhaocean.do&width=400&height=250" 
+													alt="한화오션 미리보기" class="company-image">
+											</a>
+												<div class="company-name">한화오션</div>
+												<div class="company-description">해양 방위 및 조선업</div>
+										</div>
+										
+										<div class="company-box">
+											<a href="https://www.hyundai-rotem.co.kr/ko/business/defense/content.do" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.hyundai-rotem.co.kr/ko/business/defense/content.do&width=400&height=250" 
+													alt="현대로템 미리보기" class="company-image">
+											</a>
+												<div class="company-name">현대로템</div>
+												<div class="company-description">지상 방위 및 무기 시스템</div>
+										</div>
+										
+										<div class="company-box">
+											<a href="https://www.hhi.co.kr/Division/biz08" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.hhi.co.kr/Division/biz08&width=400&height=250" 
+													alt="현대중공업 미리보기" class="company-image">
+											</a>
+												<div class="company-name">현대중공업</div>
+												<div class="company-description">해양 방위 및 조선업</div>
+										</div>
+										
+										<div class="company-box">
+											<a href="https://www.huneed.com/manetfanetsolutions" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.huneed.com/manetfanetsolutions&width=400&height=250" 
+													alt="휴니드테크놀러지 미리보기" class="company-image">
+											</a>
+												<div class="company-name">휴니드테크놀러지</div>
+												<div class="company-description">항공 및 우주 기술 중심</div>
+										</div>
+										
+										<div class="company-box">
+											<a href="https://www.hanwhasystems.com/kr/business/defense/space.do" target="_blank">
+												<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.hanwhasystems.com/kr/business/defense/space.do&width=400" 
+													alt="한화시스템 미리보기" class="company-image">
+											</a>
+												<div class="company-name">한화시스템</div>
+												<div class="company-description">전자 및 시스템 주요제품</div>
+												<div class="company-description">해양 방위 및 조선업</div>
+										</div>
+									</div>
+								</div>
+	
+					   <!-- 해외 방위사업 기업 -->
+					   <div class="section right-section">
+						<h2 class="section-title"><span>해외 방위사업 기업</span></h2>
+						<div class="company-grid">
+
+							<!-- 록히드마틴 -->
+							<div class="company-box">
+								<a href="https://www.lockheedmartin.com/" target="_blank">
+									<img src="https://api.thumbnail.ws/api/thumbnail/get?url=https://https://www.lockheedmartin.com/en-us/capabilities/aircraft.html/&width=400&height=250" alt="록히드마틴" class="company-image">
+								</a>
+								<div class="company-name">록히드마틴</div>
+								<div class="company-description">미국의 대표적인 항공 및 방위산업 기업</div>
+							</div>
+
+							<!-- 보잉 -->
+							<div class="company-box">
+								<a href="https://www.boeing.co.kr/" target="_blank">
+									<img src="https://api.thumbnail.ws/api/thumbnail/get?url=https://www.boeing.co.kr/&width=400&height=250" alt="보잉" class="company-image">
+								</a>
+								<div class="company-name">보잉</div>
+								<div class="company-description">미국 항공우주 선도 기업</div>
+							</div>
+
+							<div class="company-box">
+								<a href="https://www.northropgrumman.com/" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.northropgrumman.com/&width=400&height=250" 
+										alt="노스롭 그루먼 미리보기" class="company-image">
+								</a>
+								<div class="company-name">노스롭 그루먼</div>
+								<div class="company-description">미국의 방위산업 및 정보 기술 전문 기업</div>
+							</div>
+							
+							<div class="company-box">
+								<a href="https://www.rtx.com/" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.rtx.com/&width=400&height=250" 
+										alt="레이시온 테크놀로지스 미리보기" class="company-image">
+								</a>
+								<div class="company-name">레이시온 테크놀로지스</div>
+								<div class="company-description">미국의 방위 및 항공우주 기술 전문 기업</div>
+							</div>
+							
+							<div class="company-box">
+								<a href="https://www.gd.com/" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.gd.com/&width=400&height=250" 
+										alt="제너럴 다이내믹스 미리보기" class="company-image">
+								</a>
+								<div class="company-name">제너럴 다이내믹스</div>
+								<div class="company-description">미국의 방위 및 항공우주 산업 선도 기업</div>
+							</div>
+
+							<div class="company-box">
+								<a href="https://www.baesystems.com/en/home" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.baesystems.com/en/home&width=400&height=250" 
+										alt="BAE 시스템스 미리보기" class="company-image">
+								</a>
+								<div class="company-name">BAE 시스템스</div>
+								<div class="company-description">영국의 주요 항공 및 방위 우주 기업</div>
+							</div>
+							
+							<div class="company-box">
+								<a href="https://en.avic.com/" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://en.avic.com/&width=400&height=250" 
+										alt="중국항공공업집단 미리보기" class="company-image">
+								</a>
+								<div class="company-name">중국항공공업집단</div>
+								<div class="company-description">중국의 항공기 및 방위 산업 기업</div>
+							</div>
+							
+							<div class="company-box">
+								<a href="https://www.thalesgroup.com/en" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.thalesgroup.com/en&width=400&height=250" 
+										alt="탈레스 그룹 미리보기" class="company-image">
+								</a>
+								<div class="company-name">탈레스 그룹</div>
+								<div class="company-description">프랑스의 방위산업 및 항공 기술 기업</div>
+							</div>
+							
+							<div class="company-box">
+								<a href="https://www.safran-group.com/companies/safran-aircraft-engines" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.safran-group.com/companies/safran-aircraft-engines&width=400&height=250" 
+										alt="사프란 미리보기" class="company-image">
+								</a>
+								<div class="company-name">사프란</div>
+								<div class="company-description">프랑스의 항공 엔진 및 방위산업 기업</div>
+							</div>
+							
+							<div class="company-box">
+								<a href="https://www.rheinmetall.com/de/produkte/uebersicht" target="_blank">
+									<img src="https://api.thumbnail.ws/api/ab609d1788e9e7585c044ff62bbf9ff48859edff8ce6/thumbnail/get?url=https://www.rheinmetall.com/de/produkte/uebersicht&width=400&height=250" 
+										alt="라인메탈 미리보기" class="company-image">
+								</a>
+								<div class="company-name">라인메탈</div>
+								<div class="company-description">독일의 방위산업 및 군수 제품 기업</div>
+							</div>
+						</div>
+					</div> <!-- company-grid 닫기 -->
+				</div> <!-- section right-section 닫기 -->
+			</div> <!-- container 닫기 -->
+
+		</main> <!-- main 닫기 -->
+		<footer class="py-4 bg-light mt-auto">
+			<div class="container-fluid px-4">
+			</div>
+		</footer>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="/WEB/web-layout/js/scripts.js"></script>
+        <script src="/WEB/web-layout/js/company_news.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     </body>
 </html>

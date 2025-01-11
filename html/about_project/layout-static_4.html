@@ -27,11 +27,11 @@
     </head>
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html">PRISM</a>
+            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html"><img src="/WEB/web-layout/data/logo.png" style="max-width: 30%; height: auto;"></a>
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle">
                 <i class="fas fa-bars"></i>
             </button>
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button">
@@ -51,7 +51,7 @@
                         <li><a class="dropdown-item" href="#!">Logout</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
+                        <div class="small">Producted by:</div>
                         천무 - ll
                     </div>
                 </nav>
@@ -74,16 +74,13 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">데이터</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="#">데이터 및 코드북.zip</a></li>
-                            <li class="breadcrumb-item active">CSV 다운로드</li>
-                        </ol>
+                        <h1 class="mt-4"></h1>
 
                         <!-- 테이블 선택 드롭다운 -->
                         <div class="dropdown-container">
+                            <div class="tooltip-text">테이블을 선택하세요. 상단의 아이콘을 통해 CSV, CODE BOOK 을 확인하세요.</div>
                             <select id="tableSelector" class="form-select">
-                                <option value="gdpTable">국가별 경제지표 (GDP)</option>
+                                <option value="gdpTable">국가별 경제지표</option>
                                 <option value="politicsTable">거버넌스 지표 (정치)</option>
                                 <option value="ucdpTable">무력분쟁 지표</option>
                                 <option value="ucdpgedTable">무력분쟁 지역</option>
@@ -99,9 +96,23 @@
                         <div class="card mb-4" id="gdpTable">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                국가별 경제지표 (GDP)
+                                국가별 경제지표
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/ECONOMY_DATA/part-00000-90984f9c-3ee9-4de3-981f-8cfc5d27caa9-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/ECONOMY_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="customDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -116,6 +127,20 @@
                                 거버넌스 지표 (정치)
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/GOVERNANCE_DATA/part-00000-132daf5e-79c2-4a56-a5a0-b7061c40e7ad-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/GOVERNANCE_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="politicsDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -130,6 +155,20 @@
                                 무력분쟁 지표
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/UCDP_DATA/part-00000-2b2b9e7a-e850-437b-afd2-4da0a2adb5f2-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/UCDP_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="ucdpDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -143,6 +182,20 @@
                                 무력분쟁 지역 정보
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/UCDP_GED_DATA/part-00000-9a564f5f-53d0-4861-80a8-913490fe3712-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/UCDP_GED_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="ucdpgedDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -157,6 +210,20 @@
                                 국가별 국방비 지출 지표 (GDP%)
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/MILITARY_EXPENSES_DATA/part-00000-daef51a9-3ddb-4b50-8f97-4d73d3ea08ef-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/MILITARY_EXPENSES_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="militaryDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -171,6 +238,20 @@
                                 국가별 무기수입 지표
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/ARMS_IMPORT_DATA/part-00000-4a298db6-0a37-40b7-ac7a-83b436a82b58-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/ARMS_IMPORTS_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="armsimportDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -184,6 +265,20 @@
                                 국가별 무기수출 지표
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/ARMS_EXPORTS_DATA/part-00000-7ff5a2d0-fc48-4019-9f25-8807d1aecc56-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/ARMS_EXPORTS_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="armsexportDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -198,6 +293,20 @@
                                 국가별 보유 무기체계
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/WEAPON_SYSTEM_DATA/part-00000-47357e86-1709-4865-9ff0-d9b52dfadf3d-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/WEAPON_SYSTEM_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="weaponsysDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>
@@ -212,6 +321,20 @@
                                 국가별 무기수입 항목
                             </div>
                             <div class="card-body">
+
+                                <!-- 다운로드 아이콘 -->
+                                <!-- csv -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 300px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/csv/WEAPON_IMPORT_DATA/part-00000-9c1bf67e-b1ed-42b4-b6c1-822cf3fa666c-c000.csv?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-csv-file-11471469.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                </div>
+                                <!-- pdf -->
+                                <div class="icon-section" style="position: absolute; top: 50px; right: 250px;">
+                                    <a href="http://192.168.100.38:9870/webhdfs/v1/user/team2/codebook/WEAPON_IMPORT_DATA.pdf?op=OPEN" class="download-icon">
+                                        <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" style="width: 50px; height: 50px;">
+                                    </a>
+                                </div>
+
                                 <table id="weaponimportDataTable" class="dataTable-table">
                                     <thead></thead>
                                     <tbody></tbody>

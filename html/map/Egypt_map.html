@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bb0d28145e20545041fc265b877c7cb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7bb0d28145e20545041fc265b877c7cb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7bb0d28145e20545041fc265b877c7cb = L.map(
+                "map_7bb0d28145e20545041fc265b877c7cb",
+                {
+                    center: [30.369394749999998, 30.37169825],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60715afdc0906ec2f7acbe86c56bb7ca = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_60715afdc0906ec2f7acbe86c56bb7ca.addTo(map_7bb0d28145e20545041fc265b877c7cb);
+        
+    
+            var marker_4058e5cbd4137c44496ff3738e630133 = L.marker(
+                [30.369394749999998, 30.37169825],
+                {}
+            ).addTo(map_7bb0d28145e20545041fc265b877c7cb);
+        
+    
+            var div_icon_28d6527b589a2d1552e4ea7185a8a488 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eEgypt\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_4058e5cbd4137c44496ff3738e630133.setIcon(div_icon_28d6527b589a2d1552e4ea7185a8a488);
+        
+    
+            var circle_marker_86f2ef97f5df7542e0bdbe309fed1f55 = L.circleMarker(
+                [28.555556, 33.976111],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_7bb0d28145e20545041fc265b877c7cb);
+        
+    
+        var popup_075a24c5155dde5e1899b18a3541ebc9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ac344b37c7cd5052ce3e46ae90478afc = $(`<div id="html_ac344b37c7cd5052ce3e46ae90478afc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 28.5556<br>                 <b>Longitude:</b> 33.9761<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> St Catherine's monastery<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_075a24c5155dde5e1899b18a3541ebc9.setContent(html_ac344b37c7cd5052ce3e46ae90478afc);
+            
+        
+
+        circle_marker_86f2ef97f5df7542e0bdbe309fed1f55.bindPopup(popup_075a24c5155dde5e1899b18a3541ebc9)
+        ;
+
+        
+    
+    
+            var circle_marker_db535cffdf2a0d828a5e293431eb0d4e = L.circleMarker(
+                [31.61166, 25.92539],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_7bb0d28145e20545041fc265b877c7cb);
+        
+    
+        var popup_22c627749efbb737bc55fbf6e65ba38d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5aa172a87a55dba4889138805499d2b9 = $(`<div id="html_5aa172a87a55dba4889138805499d2b9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 31.6117<br>                 <b>Longitude:</b> 25.9254<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sīdī Barānī town<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_22c627749efbb737bc55fbf6e65ba38d.setContent(html_5aa172a87a55dba4889138805499d2b9);
+            
+        
+
+        circle_marker_db535cffdf2a0d828a5e293431eb0d4e.bindPopup(popup_22c627749efbb737bc55fbf6e65ba38d)
+        ;
+
+        
+    
+    
+            var circle_marker_d24ca7bf677a054792016de895e68273 = L.circleMarker(
+                [30.094718, 31.630026],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_7bb0d28145e20545041fc265b877c7cb);
+        
+    
+        var popup_f138d92ab8451fec4e88c3beb0f39d52 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_395bfbe06bdf174caa366e193af9a0ac = $(`<div id="html_395bfbe06bdf174caa366e193af9a0ac" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 30.0947<br>                 <b>Longitude:</b> 31.6300<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Madinaty suburb<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f138d92ab8451fec4e88c3beb0f39d52.setContent(html_395bfbe06bdf174caa366e193af9a0ac);
+            
+        
+
+        circle_marker_d24ca7bf677a054792016de895e68273.bindPopup(popup_f138d92ab8451fec4e88c3beb0f39d52)
+        ;
+
+        
+    
+    
+            var circle_marker_ffffd0a3543c84f5751eb344d3b46db6 = L.circleMarker(
+                [31.215645, 29.955266],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_7bb0d28145e20545041fc265b877c7cb);
+        
+    
+        var popup_9e7f9f88fd5ee2df148cfbcb2b1d05c3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1ae4cfdb709de0d552fbceb6234892e8 = $(`<div id="html_1ae4cfdb709de0d552fbceb6234892e8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 31.2156<br>                 <b>Longitude:</b> 29.9553<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Alexandria town<br>                 <b>Where Description:</b> Alexandria                 </div>`)[0];
+                popup_9e7f9f88fd5ee2df148cfbcb2b1d05c3.setContent(html_1ae4cfdb709de0d552fbceb6234892e8);
+            
+        
+
+        circle_marker_ffffd0a3543c84f5751eb344d3b46db6.bindPopup(popup_9e7f9f88fd5ee2df148cfbcb2b1d05c3)
+        ;
+
+        
+    
+</script>
+</html>

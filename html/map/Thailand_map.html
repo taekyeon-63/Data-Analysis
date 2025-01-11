@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c1be87052269b7d4edc3bcd9c32c4c5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8c1be87052269b7d4edc3bcd9c32c4c5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8c1be87052269b7d4edc3bcd9c32c4c5 = L.map(
+                "map_8c1be87052269b7d4edc3bcd9c32c4c5",
+                {
+                    center: [6.375434217391304, 101.48660486956521],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d7c82ebe712f3ad38e763ecf242f75a3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_d7c82ebe712f3ad38e763ecf242f75a3.addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+            var marker_028454b26b31ba2b9fe5cd74c68698d0 = L.marker(
+                [6.375434217391304, 101.48660486956521],
+                {}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+            var div_icon_85757438ff78ea036c656f57f90e0032 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eThailand\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_028454b26b31ba2b9fe5cd74c68698d0.setIcon(div_icon_85757438ff78ea036c656f57f90e0032);
+        
+    
+            var circle_marker_3e57d28b5585ed1df8306782e788858b = L.circleMarker(
+                [6.193603, 101.512574],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_9f624748b5d6e239c99198f57ec51e8e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4af1f91b8fdb408fb622598ab9093daa = $(`<div id="html_4af1f91b8fdb408fb622598ab9093daa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.1936<br>                 <b>Longitude:</b> 101.5126<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Si Sakhon district<br>                 <b>Where Description:</b> Si Sakhon district Narathiwat province                 </div>`)[0];
+                popup_9f624748b5d6e239c99198f57ec51e8e.setContent(html_4af1f91b8fdb408fb622598ab9093daa);
+            
+        
+
+        circle_marker_3e57d28b5585ed1df8306782e788858b.bindPopup(popup_9f624748b5d6e239c99198f57ec51e8e)
+        ;
+
+        
+    
+    
+            var circle_marker_57901e819b3c76bcc1b160b8b99de47a = L.circleMarker(
+                [6.325841, 101.479657],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_2baba470eb91a92979c8c6c74019305e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_042de46b68680462989f8714e740747a = $(`<div id="html_042de46b68680462989f8714e740747a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.3258<br>                 <b>Longitude:</b> 101.4797<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Moo 3 - Tambon<br>                 <b>Where Description:</b> Ban Iryaeng Road in Moo 3 village of Tambon Si Sakhon in Si Sakhon district Narathiwat province                 </div>`)[0];
+                popup_2baba470eb91a92979c8c6c74019305e.setContent(html_042de46b68680462989f8714e740747a);
+            
+        
+
+        circle_marker_57901e819b3c76bcc1b160b8b99de47a.bindPopup(popup_2baba470eb91a92979c8c6c74019305e)
+        ;
+
+        
+    
+    
+            var circle_marker_369770553dace4d098a40a63b1b17053 = L.circleMarker(
+                [6.665195, 101.6075],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_09b36f9d28ebbd1630b6ad30b320f6b4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_346e079bcabc42cab7f3ee2a1c43af1e = $(`<div id="html_346e079bcabc42cab7f3ee2a1c43af1e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.6652<br>                 <b>Longitude:</b> 101.6075<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ma-nang Dalum village<br>                 <b>Where Description:</b> Manang Da Lam subdistrict                 </div>`)[0];
+                popup_09b36f9d28ebbd1630b6ad30b320f6b4.setContent(html_346e079bcabc42cab7f3ee2a1c43af1e);
+            
+        
+
+        circle_marker_369770553dace4d098a40a63b1b17053.bindPopup(popup_09b36f9d28ebbd1630b6ad30b320f6b4)
+        ;
+
+        
+    
+    
+            var circle_marker_dc06baa8434446b3f948ee81caa7137e = L.circleMarker(
+                [6.080425, 101.25941],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_b0b44a3ac5512fc9da6b72dc2e15d7ac = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_830a9899995350606b96f76ca9e1a3c3 = $(`<div id="html_830a9899995350606b96f76ca9e1a3c3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0804<br>                 <b>Longitude:</b> 101.2594<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Than To district<br>                 <b>Where Description:</b> in Than To district  Along Bannang Sata to Thanto Road                 </div>`)[0];
+                popup_b0b44a3ac5512fc9da6b72dc2e15d7ac.setContent(html_830a9899995350606b96f76ca9e1a3c3);
+            
+        
+
+        circle_marker_dc06baa8434446b3f948ee81caa7137e.bindPopup(popup_b0b44a3ac5512fc9da6b72dc2e15d7ac)
+        ;
+
+        
+    
+    
+            var circle_marker_50375fbffe95a97da9fb978f30a6c1c2 = L.circleMarker(
+                [6.080425, 101.25941],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_f8d7d73b211f42d3ea55e570738b1940 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d6d9250a6e901b949ec47f026e159c25 = $(`<div id="html_d6d9250a6e901b949ec47f026e159c25" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0804<br>                 <b>Longitude:</b> 101.2594<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Than To district<br>                 <b>Where Description:</b> Than Tho district of Yala                 </div>`)[0];
+                popup_f8d7d73b211f42d3ea55e570738b1940.setContent(html_d6d9250a6e901b949ec47f026e159c25);
+            
+        
+
+        circle_marker_50375fbffe95a97da9fb978f30a6c1c2.bindPopup(popup_f8d7d73b211f42d3ea55e570738b1940)
+        ;
+
+        
+    
+    
+            var circle_marker_808dfb4ecd24a1d730758d21fc046777 = L.circleMarker(
+                [6.193603, 101.512574],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_ec0360395dbdb4602584a17abcffb5ab = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8e2bbe8b2be0d53184b3a7b7b5dba0d1 = $(`<div id="html_8e2bbe8b2be0d53184b3a7b7b5dba0d1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.1936<br>                 <b>Longitude:</b> 101.5126<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Si Sakhon district<br>                 <b>Where Description:</b> Baan Irkasae Road, Si Sakhon district, Narathiwat province, 800 m from army outpost                 </div>`)[0];
+                popup_ec0360395dbdb4602584a17abcffb5ab.setContent(html_8e2bbe8b2be0d53184b3a7b7b5dba0d1);
+            
+        
+
+        circle_marker_808dfb4ecd24a1d730758d21fc046777.bindPopup(popup_ec0360395dbdb4602584a17abcffb5ab)
+        ;
+
+        
+    
+    
+            var circle_marker_bc43fa503e3dc022e012c7210e75aa44 = L.circleMarker(
+                [6.237477, 102.00238],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_524c4c77f0b55d95f260bc93b36ef543 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_efacbe5b860be1e355cb018bc45de7e5 = $(`<div id="html_efacbe5b860be1e355cb018bc45de7e5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2375<br>                 <b>Longitude:</b> 102.0024<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tak Bai district<br>                 <b>Where Description:</b> Tak Bai district, Narathiwat province                 </div>`)[0];
+                popup_524c4c77f0b55d95f260bc93b36ef543.setContent(html_efacbe5b860be1e355cb018bc45de7e5);
+            
+        
+
+        circle_marker_bc43fa503e3dc022e012c7210e75aa44.bindPopup(popup_524c4c77f0b55d95f260bc93b36ef543)
+        ;
+
+        
+    
+    
+            var circle_marker_3a1e82887faf9908bfa0c869791cc018 = L.circleMarker(
+                [6.256427, 101.278521],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_19d6b7fe7faa658b9f47bb28b1f00787 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c27cbdc158bf8105fd6b346c27350a3b = $(`<div id="html_c27cbdc158bf8105fd6b346c27350a3b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2564<br>                 <b>Longitude:</b> 101.2785<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bannang Sata district<br>                 <b>Where Description:</b> Bannang Sata district, Yala                 </div>`)[0];
+                popup_19d6b7fe7faa658b9f47bb28b1f00787.setContent(html_c27cbdc158bf8105fd6b346c27350a3b);
+            
+        
+
+        circle_marker_3a1e82887faf9908bfa0c869791cc018.bindPopup(popup_19d6b7fe7faa658b9f47bb28b1f00787)
+        ;
+
+        
+    
+    
+            var circle_marker_4369aad76c2c4b4ad7a64f4f314218c4 = L.circleMarker(
+                [6.080425, 101.25941],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_0bec17702635795c04e621cecaebb96f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6c74dc442bffd540cba27d96b509f97c = $(`<div id="html_6c74dc442bffd540cba27d96b509f97c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0804<br>                 <b>Longitude:</b> 101.2594<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Than To district<br>                 <b>Where Description:</b> Than To district, Yala                 </div>`)[0];
+                popup_0bec17702635795c04e621cecaebb96f.setContent(html_6c74dc442bffd540cba27d96b509f97c);
+            
+        
+
+        circle_marker_4369aad76c2c4b4ad7a64f4f314218c4.bindPopup(popup_0bec17702635795c04e621cecaebb96f)
+        ;
+
+        
+    
+    
+            var circle_marker_6fa9d48bb9c315bfcd5c48b752196690 = L.circleMarker(
+                [6.708577, 101.116933],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_f5a8295ec1c51b438f409306c176f947 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7bfb333aec59947f84208cbe933e0841 = $(`<div id="html_7bfb333aec59947f84208cbe933e0841" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.7086<br>                 <b>Longitude:</b> 101.1169<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Khok Pho district<br>                 <b>Where Description:</b> Khok Po (Pho) district                 </div>`)[0];
+                popup_f5a8295ec1c51b438f409306c176f947.setContent(html_7bfb333aec59947f84208cbe933e0841);
+            
+        
+
+        circle_marker_6fa9d48bb9c315bfcd5c48b752196690.bindPopup(popup_f5a8295ec1c51b438f409306c176f947)
+        ;
+
+        
+    
+    
+            var circle_marker_9a47f4be2a0589532188d815978a7280 = L.circleMarker(
+                [6.099142, 101.693531],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_f73b8d483d47afd0b3eabbc73d115305 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_184eadf829728f230260a7e028482c95 = $(`<div id="html_184eadf829728f230260a7e028482c95" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0991<br>                 <b>Longitude:</b> 101.6935<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chanae district<br>                 <b>Where Description:</b> Chanae district, Narathiwat province                 </div>`)[0];
+                popup_f73b8d483d47afd0b3eabbc73d115305.setContent(html_184eadf829728f230260a7e028482c95);
+            
+        
+
+        circle_marker_9a47f4be2a0589532188d815978a7280.bindPopup(popup_f73b8d483d47afd0b3eabbc73d115305)
+        ;
+
+        
+    
+    
+            var circle_marker_474715fc16d34ddbabb06ae76a57aee2 = L.circleMarker(
+                [6.754463, 101.164347],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_ff44093ec9527403e71b3f4e285650bb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23209ffc1d39028446fe84f4fee6401d = $(`<div id="html_23209ffc1d39028446fe84f4fee6401d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.7545<br>                 <b>Longitude:</b> 101.1643<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Khuan Lamae village, Na Ket sub-district<br>                 <b>Where Description:</b> Khuan Lamae, a village in the Na Ket sub-district, Khok Pho                 </div>`)[0];
+                popup_ff44093ec9527403e71b3f4e285650bb.setContent(html_23209ffc1d39028446fe84f4fee6401d);
+            
+        
+
+        circle_marker_474715fc16d34ddbabb06ae76a57aee2.bindPopup(popup_ff44093ec9527403e71b3f4e285650bb)
+        ;
+
+        
+    
+    
+            var circle_marker_3d67e4a7f9889652bbd3552fa51bb103 = L.circleMarker(
+                [6.718639, 101.409834],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_0c5ce90b1f185675693687592ab196f9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_db22b4f072b0f6b20ce7eb71bb7c0473 = $(`<div id="html_db22b4f072b0f6b20ce7eb71bb7c0473" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.7186<br>                 <b>Longitude:</b> 101.4098<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mayo town<br>                 <b>Where Description:</b> on Chonlatarn Road in Mayor, Mayor district, Pattani Province                 </div>`)[0];
+                popup_0c5ce90b1f185675693687592ab196f9.setContent(html_db22b4f072b0f6b20ce7eb71bb7c0473);
+            
+        
+
+        circle_marker_3d67e4a7f9889652bbd3552fa51bb103.bindPopup(popup_0c5ce90b1f185675693687592ab196f9)
+        ;
+
+        
+    
+    
+            var circle_marker_f0b2468e1d6777f9844869b642026fe7 = L.circleMarker(
+                [6.256427, 101.278521],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_bcbf62bcc55ccff96497877c7e58fa14 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2dbbb5e502eb326c1674a819aa35fd25 = $(`<div id="html_2dbbb5e502eb326c1674a819aa35fd25" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2564<br>                 <b>Longitude:</b> 101.2785<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bannang Sata district<br>                 <b>Where Description:</b> Bannang Sata district, Yala province                 </div>`)[0];
+                popup_bcbf62bcc55ccff96497877c7e58fa14.setContent(html_2dbbb5e502eb326c1674a819aa35fd25);
+            
+        
+
+        circle_marker_f0b2468e1d6777f9844869b642026fe7.bindPopup(popup_bcbf62bcc55ccff96497877c7e58fa14)
+        ;
+
+        
+    
+    
+            var circle_marker_5efdc1e328606805b227a4fdd5e5c27b = L.circleMarker(
+                [6.230846, 101.500335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_1b8387dc81ea7a769b4de55602790139 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_48a327adabe578c9018cc5c3ec1577b3 = $(`<div id="html_48a327adabe578c9018cc5c3ec1577b3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2308<br>                 <b>Longitude:</b> 101.5003<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sako tambon<br>                 <b>Where Description:</b> Taloh village in Tambon Sakor of Narathiwat’s Si Sakhon district                 </div>`)[0];
+                popup_1b8387dc81ea7a769b4de55602790139.setContent(html_48a327adabe578c9018cc5c3ec1577b3);
+            
+        
+
+        circle_marker_5efdc1e328606805b227a4fdd5e5c27b.bindPopup(popup_1b8387dc81ea7a769b4de55602790139)
+        ;
+
+        
+    
+    
+            var circle_marker_2d9529b9b21cbb277875ee19435ca86c = L.circleMarker(
+                [6.759861, 101.293389],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_bcfb2ab933bdd473a5d60d1fcaf84918 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7dd718e22da0ca957634fddd0f572635 = $(`<div id="html_7dd718e22da0ca957634fddd0f572635" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.7599<br>                 <b>Longitude:</b> 101.2934<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Yarang Town<br>                 <b>Where Description:</b> in front of the Yarang municipal office on the Yarang-Mayo Road,  Yarang district, Pattani,                 </div>`)[0];
+                popup_bcfb2ab933bdd473a5d60d1fcaf84918.setContent(html_7dd718e22da0ca957634fddd0f572635);
+            
+        
+
+        circle_marker_2d9529b9b21cbb277875ee19435ca86c.bindPopup(popup_bcfb2ab933bdd473a5d60d1fcaf84918)
+        ;
+
+        
+    
+    
+            var circle_marker_5196c34f0d81c189afc30b93b6939c9a = L.circleMarker(
+                [6.800107, 101.17057],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_6e89c7b90450fcf040b530bf75806106 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ac25a9507bcd579b62b9913921f88bb1 = $(`<div id="html_ac25a9507bcd579b62b9913921f88bb1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8001<br>                 <b>Longitude:</b> 101.1706<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nong Chik district<br>                 <b>Where Description:</b> a household in Nong Chik District,  in Pattani Province.                 </div>`)[0];
+                popup_6e89c7b90450fcf040b530bf75806106.setContent(html_ac25a9507bcd579b62b9913921f88bb1);
+            
+        
+
+        circle_marker_5196c34f0d81c189afc30b93b6939c9a.bindPopup(popup_6e89c7b90450fcf040b530bf75806106)
+        ;
+
+        
+    
+    
+            var circle_marker_6e937497149c16c98d16c24ce60f33c3 = L.circleMarker(
+                [6.237477, 102.00238],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_fa91e1b5f027358b5312627e99ae56b6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_80e26e5f096242fb60a5e966a02f9e8f = $(`<div id="html_80e26e5f096242fb60a5e966a02f9e8f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2375<br>                 <b>Longitude:</b> 102.0024<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tak Bai district<br>                 <b>Where Description:</b> Tak Bai District                 </div>`)[0];
+                popup_fa91e1b5f027358b5312627e99ae56b6.setContent(html_80e26e5f096242fb60a5e966a02f9e8f);
+            
+        
+
+        circle_marker_6e937497149c16c98d16c24ce60f33c3.bindPopup(popup_fa91e1b5f027358b5312627e99ae56b6)
+        ;
+
+        
+    
+    
+            var circle_marker_ad5367da14efe42529b4adb9f2d91c47 = L.circleMarker(
+                [6.099142, 101.693531],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_f4ec8298c50b5187e2a7ca7798f0f87a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4bf1c8752bd101b726b1e723ece70db8 = $(`<div id="html_4bf1c8752bd101b726b1e723ece70db8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0991<br>                 <b>Longitude:</b> 101.6935<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chanae district<br>                 <b>Where Description:</b> Chanae District                 </div>`)[0];
+                popup_f4ec8298c50b5187e2a7ca7798f0f87a.setContent(html_4bf1c8752bd101b726b1e723ece70db8);
+            
+        
+
+        circle_marker_ad5367da14efe42529b4adb9f2d91c47.bindPopup(popup_f4ec8298c50b5187e2a7ca7798f0f87a)
+        ;
+
+        
+    
+    
+            var circle_marker_2ea6eccd080109e95c59f44496a10fc7 = L.circleMarker(
+                [6.835066, 101.390727],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_72a09bd82d950197cf7e9f02c1581964 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6097fed442f04cf6653905223fd66aaf = $(`<div id="html_6097fed442f04cf6653905223fd66aaf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8351<br>                 <b>Longitude:</b> 101.3907<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Yaring district<br>                 <b>Where Description:</b> In yaring District, in pattani Province                 </div>`)[0];
+                popup_72a09bd82d950197cf7e9f02c1581964.setContent(html_6097fed442f04cf6653905223fd66aaf);
+            
+        
+
+        circle_marker_2ea6eccd080109e95c59f44496a10fc7.bindPopup(popup_72a09bd82d950197cf7e9f02c1581964)
+        ;
+
+        
+    
+    
+            var circle_marker_85942419ede45f7e75dd02a298fa7ad1 = L.circleMarker(
+                [6.104253, 101.893325],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_16400264e8391ada4dc7833f2d217228 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1ef875b2fc540fac1d50736d3d98348e = $(`<div id="html_1ef875b2fc540fac1d50736d3d98348e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.1043<br>                 <b>Longitude:</b> 101.8933<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sungai Padi district<br>                 <b>Where Description:</b> In Narathiwat province’s Sungai Padi district                 </div>`)[0];
+                popup_16400264e8391ada4dc7833f2d217228.setContent(html_1ef875b2fc540fac1d50736d3d98348e);
+            
+        
+
+        circle_marker_85942419ede45f7e75dd02a298fa7ad1.bindPopup(popup_16400264e8391ada4dc7833f2d217228)
+        ;
+
+        
+    
+    
+            var circle_marker_dc89be825b2de1e10f542f9f265960c4 = L.circleMarker(
+                [6.6105, 101.694889],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_15c2cab0eff0546b6112c2a341363cd9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_866686bf39d2b8b12afa7320adf6a78f = $(`<div id="html_866686bf39d2b8b12afa7320adf6a78f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.6105<br>                 <b>Longitude:</b> 101.6949<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Don Sai tambon<br>                 <b>Where Description:</b> Don Sai subdistrict in Mai Kaen district                 </div>`)[0];
+                popup_15c2cab0eff0546b6112c2a341363cd9.setContent(html_866686bf39d2b8b12afa7320adf6a78f);
+            
+        
+
+        circle_marker_dc89be825b2de1e10f542f9f265960c4.bindPopup(popup_15c2cab0eff0546b6112c2a341363cd9)
+        ;
+
+        
+    
+    
+            var circle_marker_6be2c49371d999480388350aa0fb2d79 = L.circleMarker(
+                [6.307066, 101.718164],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_8c1be87052269b7d4edc3bcd9c32c4c5);
+        
+    
+        var popup_454f2eeb99d341c641b74f2b5e740148 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_831f6650eaedcc035f9ccd46432aa4a3 = $(`<div id="html_831f6650eaedcc035f9ccd46432aa4a3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.3071<br>                 <b>Longitude:</b> 101.7182<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tanyong Mat village<br>                 <b>Where Description:</b> in forested area of Tanyong Mas                 </div>`)[0];
+                popup_454f2eeb99d341c641b74f2b5e740148.setContent(html_831f6650eaedcc035f9ccd46432aa4a3);
+            
+        
+
+        circle_marker_6be2c49371d999480388350aa0fb2d79.bindPopup(popup_454f2eeb99d341c641b74f2b5e740148)
+        ;
+
+        
+    
+</script>
+</html>

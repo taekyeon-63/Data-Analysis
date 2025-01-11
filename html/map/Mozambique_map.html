@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1495d01609eef68a608be9db539d9cb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1495d01609eef68a608be9db539d9cb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1495d01609eef68a608be9db539d9cb = L.map(
+                "map_e1495d01609eef68a608be9db539d9cb",
+                {
+                    center: [-12.338569102564103, 39.792391153846154],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_710375f535c2432e4e3f47b502b95ca8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_710375f535c2432e4e3f47b502b95ca8.addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+            var marker_199b03aa2eed71f0ff83c86d6b3f6851 = L.marker(
+                [-12.338569102564103, 39.792391153846154],
+                {}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+            var div_icon_f2e07409692c977145c15da3b253ac47 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eMozambique\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_199b03aa2eed71f0ff83c86d6b3f6851.setIcon(div_icon_f2e07409692c977145c15da3b253ac47);
+        
+    
+            var circle_marker_3729a6ab73cd8349d32e9874e91792d2 = L.circleMarker(
+                [-11.001, 39.780306],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_0a5dc9d95ce5fa5ee11352dd26742cc9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_126f3ac0a0407171239313c24ac857c3 = $(`<div id="html_126f3ac0a0407171239313c24ac857c3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.0010<br>                 <b>Longitude:</b> 39.7803<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chacamba village<br>                 <b>Where Description:</b> near the village of Chacamba, which is seven kilometers from the headquarters of the district of Nangade.                 </div>`)[0];
+                popup_0a5dc9d95ce5fa5ee11352dd26742cc9.setContent(html_126f3ac0a0407171239313c24ac857c3);
+            
+        
+
+        circle_marker_3729a6ab73cd8349d32e9874e91792d2.bindPopup(popup_0a5dc9d95ce5fa5ee11352dd26742cc9)
+        ;
+
+        
+    
+    
+            var circle_marker_fd063604e955aac5b4cf75c1fe9c0fd3 = L.circleMarker(
+                [-11.898333, 39.8175],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_ef64fc2d6a99029f9a427de95fc6da6f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c2dfae16b9d2484ce6cb8dbe4c883d0d = $(`<div id="html_c2dfae16b9d2484ce6cb8dbe4c883d0d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8983<br>                 <b>Longitude:</b> 39.8175<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mandava village<br>                 <b>Where Description:</b> Mandava, Muidumbe                 </div>`)[0];
+                popup_ef64fc2d6a99029f9a427de95fc6da6f.setContent(html_c2dfae16b9d2484ce6cb8dbe4c883d0d);
+            
+        
+
+        circle_marker_fd063604e955aac5b4cf75c1fe9c0fd3.bindPopup(popup_ef64fc2d6a99029f9a427de95fc6da6f)
+        ;
+
+        
+    
+    
+            var circle_marker_0fc09e19d94dab6e6c6e274122c98d31 = L.circleMarker(
+                [-11.808701, 40.006456],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_c1c5fba3e6d1a12b8461538f993d9036 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_34cfcdb8932a1497b60b061590de260b = $(`<div id="html_34cfcdb8932a1497b60b061590de260b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8087<br>                 <b>Longitude:</b> 40.0065<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Xitaxi village<br>                 <b>Where Description:</b> Xitaxi in Muidumbe                 </div>`)[0];
+                popup_c1c5fba3e6d1a12b8461538f993d9036.setContent(html_34cfcdb8932a1497b60b061590de260b);
+            
+        
+
+        circle_marker_0fc09e19d94dab6e6c6e274122c98d31.bindPopup(popup_c1c5fba3e6d1a12b8461538f993d9036)
+        ;
+
+        
+    
+    
+            var circle_marker_7125ca7b6293c3ce195cacd55c22d580 = L.circleMarker(
+                [-11.861389, 39.800278],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_39002db7343b941b05a4de1d031e6d06 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9943f49bfb161338fd14f763a6316736 = $(`<div id="html_9943f49bfb161338fd14f763a6316736" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8614<br>                 <b>Longitude:</b> 39.8003<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Namacule village<br>                 <b>Where Description:</b> Namacule village                 </div>`)[0];
+                popup_39002db7343b941b05a4de1d031e6d06.setContent(html_9943f49bfb161338fd14f763a6316736);
+            
+        
+
+        circle_marker_7125ca7b6293c3ce195cacd55c22d580.bindPopup(popup_39002db7343b941b05a4de1d031e6d06)
+        ;
+
+        
+    
+    
+            var circle_marker_9619bf4afc1c6c84e69130bd005f034a = L.circleMarker(
+                [-11.345833, 40.352222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_904baebf92f1e437391d5e89ee6002f5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f223dc5b9529ff7a16256eb6a382c11c = $(`<div id="html_f223dc5b9529ff7a16256eb6a382c11c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.3458<br>                 <b>Longitude:</b> 40.3522<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mocímboa da Praia town<br>                 <b>Where Description:</b> neighborhood of 30 de Junho, Mocímboa da Praia                 </div>`)[0];
+                popup_904baebf92f1e437391d5e89ee6002f5.setContent(html_f223dc5b9529ff7a16256eb6a382c11c);
+            
+        
+
+        circle_marker_9619bf4afc1c6c84e69130bd005f034a.bindPopup(popup_904baebf92f1e437391d5e89ee6002f5)
+        ;
+
+        
+    
+    
+            var circle_marker_bd4cc80697cc1b5b2125f6e667666f74 = L.circleMarker(
+                [-11.54332, 39.355546],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_27086319fadead030fe10a847634c9ed = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_33e0c3b94454d72453a6a12337be8593 = $(`<div id="html_33e0c3b94454d72453a6a12337be8593" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5433<br>                 <b>Longitude:</b> 39.3555<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Chomba village<br>                 <b>Where Description:</b> Nacala in southern Mueda, near the Messalo river, near Homba                 </div>`)[0];
+                popup_27086319fadead030fe10a847634c9ed.setContent(html_33e0c3b94454d72453a6a12337be8593);
+            
+        
+
+        circle_marker_bd4cc80697cc1b5b2125f6e667666f74.bindPopup(popup_27086319fadead030fe10a847634c9ed)
+        ;
+
+        
+    
+    
+            var circle_marker_b8ecdbdffa99334fbee5eed0d5bc28b6 = L.circleMarker(
+                [-11.59936, 40.430773],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.195286648076292, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_320f0024c654d59f7d651d45d7091957 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7d6e6f0573999c4a72b3a31c016c87cd = $(`<div id="html_7d6e6f0573999c4a72b3a31c016c87cd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5994<br>                 <b>Longitude:</b> 40.4308<br>                 <b>Deaths:</b> 13<br>                 <b>Where Coordinates:</b> Lucete village<br>                 <b>Where Description:</b> near Luxete, approximately 10 km from Calugo                 </div>`)[0];
+                popup_320f0024c654d59f7d651d45d7091957.setContent(html_7d6e6f0573999c4a72b3a31c016c87cd);
+            
+        
+
+        circle_marker_b8ecdbdffa99334fbee5eed0d5bc28b6.bindPopup(popup_320f0024c654d59f7d651d45d7091957)
+        ;
+
+        
+    
+    
+            var circle_marker_e3bae863555f30edfbf042f9d835c0ad = L.circleMarker(
+                [-11.59936, 40.430773],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.989476363991853, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_e4fa6aaeb371adce4772759ecccbb499 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_410f1d5e9694cae65d4a22f2a1059fb9 = $(`<div id="html_410f1d5e9694cae65d4a22f2a1059fb9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5994<br>                 <b>Longitude:</b> 40.4308<br>                 <b>Deaths:</b> 10<br>                 <b>Where Coordinates:</b> Lucete village<br>                 <b>Where Description:</b> near Luxete, approximately 10 km from Calugo                 </div>`)[0];
+                popup_e4fa6aaeb371adce4772759ecccbb499.setContent(html_410f1d5e9694cae65d4a22f2a1059fb9);
+            
+        
+
+        circle_marker_e3bae863555f30edfbf042f9d835c0ad.bindPopup(popup_e4fa6aaeb371adce4772759ecccbb499)
+        ;
+
+        
+    
+    
+            var circle_marker_cc919d0b1a48e0c97f1772715c0bd137 = L.circleMarker(
+                [-11.82601, 39.415334],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b9abe4a31071c2a297c80c4cc75180ba = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4823cb15f0674039c7d7b1b6d6dd855f = $(`<div id="html_4823cb15f0674039c7d7b1b6d6dd855f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8260<br>                 <b>Longitude:</b> 39.4153<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Chapa village<br>                 <b>Where Description:</b> Chapa village in Mueda, approximately 25 km south of Mueda district headquarters on the R698 road connecting Mueda to Montepuez                 </div>`)[0];
+                popup_b9abe4a31071c2a297c80c4cc75180ba.setContent(html_4823cb15f0674039c7d7b1b6d6dd855f);
+            
+        
+
+        circle_marker_cc919d0b1a48e0c97f1772715c0bd137.bindPopup(popup_b9abe4a31071c2a297c80c4cc75180ba)
+        ;
+
+        
+    
+    
+            var circle_marker_efcd485b7472b20d59a133a6e4cd5378 = L.circleMarker(
+                [-13.018183, 38.722359],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_61841eab57f6a5bee904623021febc6e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_278215d07108f4e0a0abdf8f6a73a792 = $(`<div id="html_278215d07108f4e0a0abdf8f6a73a792" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -13.0182<br>                 <b>Longitude:</b> 38.7224<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Ravia village<br>                 <b>Where Description:</b> near Ravia, in Montepuez                 </div>`)[0];
+                popup_61841eab57f6a5bee904623021febc6e.setContent(html_278215d07108f4e0a0abdf8f6a73a792);
+            
+        
+
+        circle_marker_efcd485b7472b20d59a133a6e4cd5378.bindPopup(popup_61841eab57f6a5bee904623021febc6e)
+        ;
+
+        
+    
+    
+            var circle_marker_0e0f45e3159333fd1d9ca1d1dfb6f04d = L.circleMarker(
+                [-12.510556, 40.066944],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_38a81a14e3e7cc99e80ac54a366e32af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4f2b79f0b70f817de9a2e58cf58e2495 = $(`<div id="html_4f2b79f0b70f817de9a2e58cf58e2495" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.5106<br>                 <b>Longitude:</b> 40.0669<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mitambo village<br>                 <b>Where Description:</b> near Mitambo village in Meluco by the N380 road connecting Pemba to the north of the province, approximately 40 km south of Macomia town.                 </div>`)[0];
+                popup_38a81a14e3e7cc99e80ac54a366e32af.setContent(html_4f2b79f0b70f817de9a2e58cf58e2495);
+            
+        
+
+        circle_marker_0e0f45e3159333fd1d9ca1d1dfb6f04d.bindPopup(popup_38a81a14e3e7cc99e80ac54a366e32af)
+        ;
+
+        
+    
+    
+            var circle_marker_943cc3fc54fd1bc8d3632d7200aa556d = L.circleMarker(
+                [-12.474051, 40.082136],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_59574d18b7b57c3b3a6fc34b54f685e9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9fd342979e358547ae6900847cb26af2 = $(`<div id="html_9fd342979e358547ae6900847cb26af2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.4741<br>                 <b>Longitude:</b> 40.0821<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> 19 de Outubro village (ADPP intersection)<br>                 <b>Where Description:</b> on the N380 near the village of 19 de Outubro / area of ​​Nangololo, administrative post of Muaguide, district of Meluco.                 </div>`)[0];
+                popup_59574d18b7b57c3b3a6fc34b54f685e9.setContent(html_9fd342979e358547ae6900847cb26af2);
+            
+        
+
+        circle_marker_943cc3fc54fd1bc8d3632d7200aa556d.bindPopup(popup_59574d18b7b57c3b3a6fc34b54f685e9)
+        ;
+
+        
+    
+    
+            var circle_marker_01480e20d1ed7626711a71a9d997ffa9 = L.circleMarker(
+                [-12.309167, 40.011389],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.45521226679158, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_03a6dd8eb16d27abe3719c47391b251a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b18f61b028f001ef1a5b26c5d2534b71 = $(`<div id="html_b18f61b028f001ef1a5b26c5d2534b71" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.3092<br>                 <b>Longitude:</b> 40.0114<br>                 <b>Deaths:</b> 21<br>                 <b>Where Coordinates:</b> Iba village<br>                 <b>Where Description:</b> forests around Iba village on the Meluco-Macomia border                 </div>`)[0];
+                popup_03a6dd8eb16d27abe3719c47391b251a.setContent(html_b18f61b028f001ef1a5b26c5d2534b71);
+            
+        
+
+        circle_marker_01480e20d1ed7626711a71a9d997ffa9.bindPopup(popup_03a6dd8eb16d27abe3719c47391b251a)
+        ;
+
+        
+    
+    
+            var circle_marker_890f37812f8789a6a0b2ea040d4f2169 = L.circleMarker(
+                [-11.43399, 40.16517],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_23e9c436b6ffa3df883a71a89c9df2af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9df1eb9a307086e855947152eeb9f392 = $(`<div id="html_9df1eb9a307086e855947152eeb9f392" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.4340<br>                 <b>Longitude:</b> 40.1652<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Mocímboa da Praia district<br>                 <b>Where Description:</b> villages of Chuculua and Maculo                 </div>`)[0];
+                popup_23e9c436b6ffa3df883a71a89c9df2af.setContent(html_9df1eb9a307086e855947152eeb9f392);
+            
+        
+
+        circle_marker_890f37812f8789a6a0b2ea040d4f2169.bindPopup(popup_23e9c436b6ffa3df883a71a89c9df2af)
+        ;
+
+        
+    
+    
+            var circle_marker_693b8b04138c611bae7a059b9f711400 = L.circleMarker(
+                [-12.553135, 39.002393],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_f886c46111828df4f4afbe35559d0d7f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_31f492538ea8c5b29669b685491a35d5 = $(`<div id="html_31f492538ea8c5b29669b685491a35d5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.5531<br>                 <b>Longitude:</b> 39.0024<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Nairoto village<br>                 <b>Where Description:</b> headquarters of the administrative post of Nairoto, Montepuez district                 </div>`)[0];
+                popup_f886c46111828df4f4afbe35559d0d7f.setContent(html_31f492538ea8c5b29669b685491a35d5);
+            
+        
+
+        circle_marker_693b8b04138c611bae7a059b9f711400.bindPopup(popup_f886c46111828df4f4afbe35559d0d7f)
+        ;
+
+        
+    
+    
+            var circle_marker_4f446a44aa3da050d0c74afe8f071b2b = L.circleMarker(
+                [-11.816986, 39.818051],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b3a2107f55111e3164b597df46e17dca = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6fe081827a519bc7983e448d4041ac73 = $(`<div id="html_6fe081827a519bc7983e448d4041ac73" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8170<br>                 <b>Longitude:</b> 39.8181<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Muambula town<br>                 <b>Where Description:</b> village of Muambula, Muidumbe district, north of Cabo Delgado                 </div>`)[0];
+                popup_b3a2107f55111e3164b597df46e17dca.setContent(html_6fe081827a519bc7983e448d4041ac73);
+            
+        
+
+        circle_marker_4f446a44aa3da050d0c74afe8f071b2b.bindPopup(popup_b3a2107f55111e3164b597df46e17dca)
+        ;
+
+        
+    
+    
+            var circle_marker_4af4f3e5315f6be2a31d280024f0eea5 = L.circleMarker(
+                [-11.167497, 40.306269],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_92bb931e0929e0d91d5a5384e9f4edc7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2d5ea5dd7100f7d541b957b926794c9e = $(`<div id="html_2d5ea5dd7100f7d541b957b926794c9e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.1675<br>                 <b>Longitude:</b> 40.3063<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Quelimane village<br>                 <b>Where Description:</b> Quelimane village in Mocímboa da Praia                 </div>`)[0];
+                popup_92bb931e0929e0d91d5a5384e9f4edc7.setContent(html_2d5ea5dd7100f7d541b957b926794c9e);
+            
+        
+
+        circle_marker_4af4f3e5315f6be2a31d280024f0eea5.bindPopup(popup_92bb931e0929e0d91d5a5384e9f4edc7)
+        ;
+
+        
+    
+    
+            var circle_marker_979f0c77b468db0668dd507e93c40b80 = L.circleMarker(
+                [-11.278734, 40.408252],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_f0875fedc5c962c5cea9781d8e740c65 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b28ad32ca433d307c3380a72ae597b1 = $(`<div id="html_2b28ad32ca433d307c3380a72ae597b1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.2787<br>                 <b>Longitude:</b> 40.4083<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Malinde village<br>                 <b>Where Description:</b> village of Malinde, just under 10 km from Mocímboa da Praia town.                 </div>`)[0];
+                popup_f0875fedc5c962c5cea9781d8e740c65.setContent(html_2b28ad32ca433d307c3380a72ae597b1);
+            
+        
+
+        circle_marker_979f0c77b468db0668dd507e93c40b80.bindPopup(popup_f0875fedc5c962c5cea9781d8e740c65)
+        ;
+
+        
+    
+    
+            var circle_marker_020617ce9980dfd408ef53115dfb7da6 = L.circleMarker(
+                [-25.965278, 32.589167],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_46b52bb6410ad0e88e5a4cc48904a2c0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8040374869f7377f88681af5bdbcbbcf = $(`<div id="html_8040374869f7377f88681af5bdbcbbcf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -25.9653<br>                 <b>Longitude:</b> 32.5892<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Maputo city<br>                 <b>Where Description:</b> Bairro 3 de Fevereiro, on the outskirts of Maputo                 </div>`)[0];
+                popup_46b52bb6410ad0e88e5a4cc48904a2c0.setContent(html_8040374869f7377f88681af5bdbcbbcf);
+            
+        
+
+        circle_marker_020617ce9980dfd408ef53115dfb7da6.bindPopup(popup_46b52bb6410ad0e88e5a4cc48904a2c0)
+        ;
+
+        
+    
+    
+            var circle_marker_45cc2a0fc8233ac8de69567451ada9c5 = L.circleMarker(
+                [-11.413042, 40.001983],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_8134f079831c34883cc5792120eef0b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b8e52965ffff1fe1b49f89fd71f6621 = $(`<div id="html_2b8e52965ffff1fe1b49f89fd71f6621" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.4130<br>                 <b>Longitude:</b> 40.0020<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mitope village<br>                 <b>Where Description:</b> Mitope, Mocímboa da Praia                 </div>`)[0];
+                popup_8134f079831c34883cc5792120eef0b9.setContent(html_2b8e52965ffff1fe1b49f89fd71f6621);
+            
+        
+
+        circle_marker_45cc2a0fc8233ac8de69567451ada9c5.bindPopup(popup_8134f079831c34883cc5792120eef0b9)
+        ;
+
+        
+    
+    
+            var circle_marker_aa6e3899fb2c8e4324a30c1a8956d037 = L.circleMarker(
+                [-11.413042, 40.001983],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_bca4019144e5541863314d537247a5ed = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_30ee594867e387e29eaba33393888d1c = $(`<div id="html_30ee594867e387e29eaba33393888d1c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.4130<br>                 <b>Longitude:</b> 40.0020<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Mitope village<br>                 <b>Where Description:</b> Mitope, Mocímboa da Praia district                 </div>`)[0];
+                popup_bca4019144e5541863314d537247a5ed.setContent(html_30ee594867e387e29eaba33393888d1c);
+            
+        
+
+        circle_marker_aa6e3899fb2c8e4324a30c1a8956d037.bindPopup(popup_bca4019144e5541863314d537247a5ed)
+        ;
+
+        
+    
+    
+            var circle_marker_0c48e485d10280399dbcb1920d4b90d5 = L.circleMarker(
+                [-11.808701, 40.006456],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_063147c2e8d7bf4eb7df09d6e8a42db1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d60b6d0d04b565ae94309e108c0845c2 = $(`<div id="html_d60b6d0d04b565ae94309e108c0845c2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8087<br>                 <b>Longitude:</b> 40.0065<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Xitaxi village<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_063147c2e8d7bf4eb7df09d6e8a42db1.setContent(html_d60b6d0d04b565ae94309e108c0845c2);
+            
+        
+
+        circle_marker_0c48e485d10280399dbcb1920d4b90d5.bindPopup(popup_063147c2e8d7bf4eb7df09d6e8a42db1)
+        ;
+
+        
+    
+    
+            var circle_marker_f0ccec66ff17abf22af6b1d3a5e3b259 = L.circleMarker(
+                [-11.857651, 39.957573],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_13d79de2ae5ecabebfb93e5d15a8d876 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d1e2e83a8ac780c3411a91854a116950 = $(`<div id="html_d1e2e83a8ac780c3411a91854a116950" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8577<br>                 <b>Longitude:</b> 39.9576<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Litapata village<br>                 <b>Where Description:</b> Litapata village, in the district of Muidumbe,                 </div>`)[0];
+                popup_13d79de2ae5ecabebfb93e5d15a8d876.setContent(html_d1e2e83a8ac780c3411a91854a116950);
+            
+        
+
+        circle_marker_f0ccec66ff17abf22af6b1d3a5e3b259.bindPopup(popup_13d79de2ae5ecabebfb93e5d15a8d876)
+        ;
+
+        
+    
+    
+            var circle_marker_3b41cf8dcdb8ea9c480cc18db2d7f232 = L.circleMarker(
+                [-11.831667, 40.093333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_ec587a0e01ce26b8f508e581661ef935 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dd61eccd061445272bcc5d55c9042b97 = $(`<div id="html_dd61eccd061445272bcc5d55c9042b97" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8317<br>                 <b>Longitude:</b> 40.0933<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Miangalewa village<br>                 <b>Where Description:</b> village of Miangalewa, administrative post of Chitunda, in the northern district of Muidumbe,                 </div>`)[0];
+                popup_ec587a0e01ce26b8f508e581661ef935.setContent(html_dd61eccd061445272bcc5d55c9042b97);
+            
+        
+
+        circle_marker_3b41cf8dcdb8ea9c480cc18db2d7f232.bindPopup(popup_ec587a0e01ce26b8f508e581661ef935)
+        ;
+
+        
+    
+    
+            var circle_marker_51a955cafe36e94c967fedf19d7eacd2 = L.circleMarker(
+                [-11.898333, 39.8175],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_9af42debbe7387ab41c377906bf0afe0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f06e560562c779e3597bf9b91a78563a = $(`<div id="html_f06e560562c779e3597bf9b91a78563a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8983<br>                 <b>Longitude:</b> 39.8175<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mandava village<br>                 <b>Where Description:</b> Mandava region, in the Muidumbe district                 </div>`)[0];
+                popup_9af42debbe7387ab41c377906bf0afe0.setContent(html_f06e560562c779e3597bf9b91a78563a);
+            
+        
+
+        circle_marker_51a955cafe36e94c967fedf19d7eacd2.bindPopup(popup_9af42debbe7387ab41c377906bf0afe0)
+        ;
+
+        
+    
+    
+            var circle_marker_d7834e21f6e3dc63eaee4297be2f629c = L.circleMarker(
+                [-11.898333, 39.8175],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_93115bd2ed544a1a3415334bc82598ed = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_17c1553dcf25c1f8330811e3b4a18d0c = $(`<div id="html_17c1553dcf25c1f8330811e3b4a18d0c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8983<br>                 <b>Longitude:</b> 39.8175<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Mandava village<br>                 <b>Where Description:</b> around the villages of Mandava and Mapate                 </div>`)[0];
+                popup_93115bd2ed544a1a3415334bc82598ed.setContent(html_17c1553dcf25c1f8330811e3b4a18d0c);
+            
+        
+
+        circle_marker_d7834e21f6e3dc63eaee4297be2f629c.bindPopup(popup_93115bd2ed544a1a3415334bc82598ed)
+        ;
+
+        
+    
+    
+            var circle_marker_2de1bfaf603686ccd20dc44737ce2547 = L.circleMarker(
+                [-11.283889, 39.6125],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_4b6b954d417b42eb7835f7459d37518f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1aea0650bc8f8b2b3a8322928f1f982e = $(`<div id="html_1aea0650bc8f8b2b3a8322928f1f982e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.2839<br>                 <b>Longitude:</b> 39.6125<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Ngangolo village<br>                 <b>Where Description:</b> near Ngangolo village                 </div>`)[0];
+                popup_4b6b954d417b42eb7835f7459d37518f.setContent(html_1aea0650bc8f8b2b3a8322928f1f982e);
+            
+        
+
+        circle_marker_2de1bfaf603686ccd20dc44737ce2547.bindPopup(popup_4b6b954d417b42eb7835f7459d37518f)
+        ;
+
+        
+    
+    
+            var circle_marker_feb340fe402c7d0ee6a79ea860cdb085 = L.circleMarker(
+                [-11.661126, 40.363355],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_2bba41e27b22718d1a489afd168b368b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_40ac16ae76069192bdf7749058b5c276 = $(`<div id="html_40ac16ae76069192bdf7749058b5c276" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.6611<br>                 <b>Longitude:</b> 40.3634<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marere village<br>                 <b>Where Description:</b> village of Marere, in the district of Mocímboa da Praia                 </div>`)[0];
+                popup_2bba41e27b22718d1a489afd168b368b.setContent(html_40ac16ae76069192bdf7749058b5c276);
+            
+        
+
+        circle_marker_feb340fe402c7d0ee6a79ea860cdb085.bindPopup(popup_2bba41e27b22718d1a489afd168b368b)
+        ;
+
+        
+    
+    
+            var circle_marker_5d1c1ac8cb99cba7f8ec3243ecd32d7b = L.circleMarker(
+                [-11.935833, 39.984722],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_7c45c211d6dcc91923d9d367b9774a3c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_735cd9777044beb4a9645322949ddd42 = $(`<div id="html_735cd9777044beb4a9645322949ddd42" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9358<br>                 <b>Longitude:</b> 39.9847<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Litandacua village<br>                 <b>Where Description:</b> Litandacua                 </div>`)[0];
+                popup_7c45c211d6dcc91923d9d367b9774a3c.setContent(html_735cd9777044beb4a9645322949ddd42);
+            
+        
+
+        circle_marker_5d1c1ac8cb99cba7f8ec3243ecd32d7b.bindPopup(popup_7c45c211d6dcc91923d9d367b9774a3c)
+        ;
+
+        
+    
+    
+            var circle_marker_74299ebdfd769692b985e072bf5064ca = L.circleMarker(
+                [-11.83378, 39.83689],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_32dff78513f9b1ffb904e4dde788cbe1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ac8376f4e79a78172b2d635876d5bdca = $(`<div id="html_ac8376f4e79a78172b2d635876d5bdca" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8338<br>                 <b>Longitude:</b> 39.8369<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Muidumbe district<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_32dff78513f9b1ffb904e4dde788cbe1.setContent(html_ac8376f4e79a78172b2d635876d5bdca);
+            
+        
+
+        circle_marker_74299ebdfd769692b985e072bf5064ca.bindPopup(popup_32dff78513f9b1ffb904e4dde788cbe1)
+        ;
+
+        
+    
+    
+            var circle_marker_67a13786075539e98a0003fed2aec7fd = L.circleMarker(
+                [-11.969419, 39.80793],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_f172a420aeab483d5e0391aed46ede41 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5a3d368df5b729d9195d51cb48264e82 = $(`<div id="html_5a3d368df5b729d9195d51cb48264e82" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9694<br>                 <b>Longitude:</b> 39.8079<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Mandela village<br>                 <b>Where Description:</b> Mandela village                 </div>`)[0];
+                popup_f172a420aeab483d5e0391aed46ede41.setContent(html_5a3d368df5b729d9195d51cb48264e82);
+            
+        
+
+        circle_marker_67a13786075539e98a0003fed2aec7fd.bindPopup(popup_f172a420aeab483d5e0391aed46ede41)
+        ;
+
+        
+    
+    
+            var circle_marker_a903070bc5dd58300887c093186b5282 = L.circleMarker(
+                [-11.769, 40.092],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b86045f85d7c26d24c5902e8125a3d9b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c2748c35f5e13358f884a9e35b82b974 = $(`<div id="html_c2748c35f5e13358f884a9e35b82b974" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7690<br>                 <b>Longitude:</b> 40.0920<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lagoa Nguri lagoon<br>                 <b>Where Description:</b> 10 kilometers to the north by Lake Nguri, near Miangalewa in Muidumbe district,                 </div>`)[0];
+                popup_b86045f85d7c26d24c5902e8125a3d9b.setContent(html_c2748c35f5e13358f884a9e35b82b974);
+            
+        
+
+        circle_marker_a903070bc5dd58300887c093186b5282.bindPopup(popup_b86045f85d7c26d24c5902e8125a3d9b)
+        ;
+
+        
+    
+    
+            var circle_marker_b2e06cab3caa7d7081992bee15ff54f6 = L.circleMarker(
+                [-11.898333, 39.8175],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_96740c69547156bc5523fb500ebd4365 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b0b66a85934a4cb8e41bf74f69022e17 = $(`<div id="html_b0b66a85934a4cb8e41bf74f69022e17" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8983<br>                 <b>Longitude:</b> 39.8175<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mandava village<br>                 <b>Where Description:</b> near Mandava village in Muidumbe                 </div>`)[0];
+                popup_96740c69547156bc5523fb500ebd4365.setContent(html_b0b66a85934a4cb8e41bf74f69022e17);
+            
+        
+
+        circle_marker_b2e06cab3caa7d7081992bee15ff54f6.bindPopup(popup_96740c69547156bc5523fb500ebd4365)
+        ;
+
+        
+    
+    
+            var circle_marker_e72cb299b144d2aee95b7dbaaab01b4d = L.circleMarker(
+                [-11.759857, 39.726127],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_e802baa611ef4e6f697bf1ded1b6a2f0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bd2b01881da60d66661be16abacbe36c = $(`<div id="html_bd2b01881da60d66661be16abacbe36c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7599<br>                 <b>Longitude:</b> 39.7261<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Matambalala village<br>                 <b>Where Description:</b> Matambalale village                 </div>`)[0];
+                popup_e802baa611ef4e6f697bf1ded1b6a2f0.setContent(html_bd2b01881da60d66661be16abacbe36c);
+            
+        
+
+        circle_marker_e72cb299b144d2aee95b7dbaaab01b4d.bindPopup(popup_e802baa611ef4e6f697bf1ded1b6a2f0)
+        ;
+
+        
+    
+    
+            var circle_marker_ac45bb001c042f33ec69b3d1b5a3301e = L.circleMarker(
+                [-12.36833, 40.12778],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_3ac2d288a6be236a53a21dab1e6b74ad = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_42cee6dd3a12a05843822c9a0f5ba670 = $(`<div id="html_42cee6dd3a12a05843822c9a0f5ba670" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.3683<br>                 <b>Longitude:</b> 40.1278<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Monte Ungumbè hill<br>                 <b>Where Description:</b> Matandane area, near Nangumbe, Meluco Muaguide administrative post                 </div>`)[0];
+                popup_3ac2d288a6be236a53a21dab1e6b74ad.setContent(html_42cee6dd3a12a05843822c9a0f5ba670);
+            
+        
+
+        circle_marker_ac45bb001c042f33ec69b3d1b5a3301e.bindPopup(popup_3ac2d288a6be236a53a21dab1e6b74ad)
+        ;
+
+        
+    
+    
+            var circle_marker_dc44db4a305d1a429b9933478406c55f = L.circleMarker(
+                [-11.67426, 40.271608],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_f0c7174754b144e8235bf38a868896f3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_93f49fee08c3ad1347cd6ba5f4751250 = $(`<div id="html_93f49fee08c3ad1347cd6ba5f4751250" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.6743<br>                 <b>Longitude:</b> 40.2716<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Limala village<br>                 <b>Where Description:</b> Limala village, in the district of Mocímboa da Praia, in Cabo Delgado.                 </div>`)[0];
+                popup_f0c7174754b144e8235bf38a868896f3.setContent(html_93f49fee08c3ad1347cd6ba5f4751250);
+            
+        
+
+        circle_marker_dc44db4a305d1a429b9933478406c55f.bindPopup(popup_f0c7174754b144e8235bf38a868896f3)
+        ;
+
+        
+    
+    
+            var circle_marker_6b41a395dc6f93c876b2aa332778acdf = L.circleMarker(
+                [-11.935833, 39.984722],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_025307272264d4683818a35ce925b178 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_82840d9a4556e30f9dd20e9f0945791e = $(`<div id="html_82840d9a4556e30f9dd20e9f0945791e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9358<br>                 <b>Longitude:</b> 39.9847<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Litandacua village<br>                 <b>Where Description:</b> Chitoio (near)                 </div>`)[0];
+                popup_025307272264d4683818a35ce925b178.setContent(html_82840d9a4556e30f9dd20e9f0945791e);
+            
+        
+
+        circle_marker_6b41a395dc6f93c876b2aa332778acdf.bindPopup(popup_025307272264d4683818a35ce925b178)
+        ;
+
+        
+    
+    
+            var circle_marker_7c42d0384292b2a2cbab07975c311702 = L.circleMarker(
+                [-11.345833, 40.352222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b0c44bf6cbefd8ab6548a1b9d9ea4e64 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_05ae2ce6f8842a2be00c560a82c75f80 = $(`<div id="html_05ae2ce6f8842a2be00c560a82c75f80" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.3458<br>                 <b>Longitude:</b> 40.3522<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mocímboa da Praia town<br>                 <b>Where Description:</b> in Pamunda neighbourhood of Mocímboa da Praia district                 </div>`)[0];
+                popup_b0c44bf6cbefd8ab6548a1b9d9ea4e64.setContent(html_05ae2ce6f8842a2be00c560a82c75f80);
+            
+        
+
+        circle_marker_7c42d0384292b2a2cbab07975c311702.bindPopup(popup_b0c44bf6cbefd8ab6548a1b9d9ea4e64)
+        ;
+
+        
+    
+    
+            var circle_marker_0da25cf8385ae0e645c8a2ad67b2c5aa = L.circleMarker(
+                [-11.879167, 40.423611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.989476363991853, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_914863d8984db628ab61458eb2ee1b9f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_67afc2f0839d4bc11c756d9d243ff2dd = $(`<div id="html_67afc2f0839d4bc11c756d9d243ff2dd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8792<br>                 <b>Longitude:</b> 40.4236<br>                 <b>Deaths:</b> 10<br>                 <b>Where Coordinates:</b> Cobre village<br>                 <b>Where Description:</b> around Cobre, near the Macomia coast                 </div>`)[0];
+                popup_914863d8984db628ab61458eb2ee1b9f.setContent(html_67afc2f0839d4bc11c756d9d243ff2dd);
+            
+        
+
+        circle_marker_0da25cf8385ae0e645c8a2ad67b2c5aa.bindPopup(popup_914863d8984db628ab61458eb2ee1b9f)
+        ;
+
+        
+    
+    
+            var circle_marker_f661d2544de5acfc62fc2e217fa8a336 = L.circleMarker(
+                [-11.568246, 40.349843],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_470fce35d161e9aedb1b357d9a4d07d3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1ecbc7526cd1873fe2b8ddc1d4c38c3a = $(`<div id="html_1ecbc7526cd1873fe2b8ddc1d4c38c3a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5682<br>                 <b>Longitude:</b> 40.3498<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Calugo village<br>                 <b>Where Description:</b> in Mocímboa da Praia district, insurgents were involved in two incidents in the Mbau area [...]  in the nearby village of Kalugo                 </div>`)[0];
+                popup_470fce35d161e9aedb1b357d9a4d07d3.setContent(html_1ecbc7526cd1873fe2b8ddc1d4c38c3a);
+            
+        
+
+        circle_marker_f661d2544de5acfc62fc2e217fa8a336.bindPopup(popup_470fce35d161e9aedb1b357d9a4d07d3)
+        ;
+
+        
+    
+    
+            var circle_marker_1ed1cb5c3f8bf3c156a2cae914b844bd = L.circleMarker(
+                [-11.528386, 40.247555],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_a15226cf4fc21c3e58fef2dee066eab7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_24212e5d77cae0c0e0aa925f35286e5e = $(`<div id="html_24212e5d77cae0c0e0aa925f35286e5e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5284<br>                 <b>Longitude:</b> 40.2476<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Naquitengue village<br>                 <b>Where Description:</b> in Mocímboa da Praia: on the outskirts of the Naquitengue community                 </div>`)[0];
+                popup_a15226cf4fc21c3e58fef2dee066eab7.setContent(html_24212e5d77cae0c0e0aa925f35286e5e);
+            
+        
+
+        circle_marker_1ed1cb5c3f8bf3c156a2cae914b844bd.bindPopup(popup_a15226cf4fc21c3e58fef2dee066eab7)
+        ;
+
+        
+    
+    
+            var circle_marker_523329f1c8c9d7db7b0c49c34769c2af = L.circleMarker(
+                [-11.67426, 40.271608],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_d61fc3862aee414bca5c4b6e89c445a5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4f51ba634aefed833be58fe0d6284f7c = $(`<div id="html_4f51ba634aefed833be58fe0d6284f7c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.6743<br>                 <b>Longitude:</b> 40.2716<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Limala village<br>                 <b>Where Description:</b> in Mocímboa da Praia:  in fields close to the Limala village                 </div>`)[0];
+                popup_d61fc3862aee414bca5c4b6e89c445a5.setContent(html_4f51ba634aefed833be58fe0d6284f7c);
+            
+        
+
+        circle_marker_523329f1c8c9d7db7b0c49c34769c2af.bindPopup(popup_d61fc3862aee414bca5c4b6e89c445a5)
+        ;
+
+        
+    
+    
+            var circle_marker_aea6db8da81db54007e1570e02d6cca4 = L.circleMarker(
+                [-15.165, 36.943056],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_3213dec0ad1812fc5a6abc8debda6634 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_20e7b7f2984fb9c86a10f3bbc598dcc1 = $(`<div id="html_20e7b7f2984fb9c86a10f3bbc598dcc1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -15.1650<br>                 <b>Longitude:</b> 36.9431<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gurue district<br>                 <b>Where Description:</b> district of Gurué in Zambézia, central Mozambique                 </div>`)[0];
+                popup_3213dec0ad1812fc5a6abc8debda6634.setContent(html_20e7b7f2984fb9c86a10f3bbc598dcc1);
+            
+        
+
+        circle_marker_aea6db8da81db54007e1570e02d6cca4.bindPopup(popup_3213dec0ad1812fc5a6abc8debda6634)
+        ;
+
+        
+    
+    
+            var circle_marker_3d3f26fda3aea0ccf5b3c7185bbc964b = L.circleMarker(
+                [-11.750652, 40.442179],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_f3e603f59011e22d05189cc6c0bccb82 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0268a6a7700283fcfbf8d7ff27aaab4d = $(`<div id="html_0268a6a7700283fcfbf8d7ff27aaab4d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7507<br>                 <b>Longitude:</b> 40.4422<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Quiterajo village<br>                 <b>Where Description:</b> village of Quiterajo, in the Macomia district of the restive Cabo Delgado province                 </div>`)[0];
+                popup_f3e603f59011e22d05189cc6c0bccb82.setContent(html_0268a6a7700283fcfbf8d7ff27aaab4d);
+            
+        
+
+        circle_marker_3d3f26fda3aea0ccf5b3c7185bbc964b.bindPopup(popup_f3e603f59011e22d05189cc6c0bccb82)
+        ;
+
+        
+    
+    
+            var circle_marker_0c305868f79167e8e978a6ca2580fbee = L.circleMarker(
+                [-11.898724, 40.111727],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_7a0d4c5564e6221f72efbc9bc8633daa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c38114aa0a2ed6af080cfdeeec2336cb = $(`<div id="html_c38114aa0a2ed6af080cfdeeec2336cb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8987<br>                 <b>Longitude:</b> 40.1117<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Litamanda village<br>                 <b>Where Description:</b> in Litamanda village, Chai administrative post, Macomia district                 </div>`)[0];
+                popup_7a0d4c5564e6221f72efbc9bc8633daa.setContent(html_c38114aa0a2ed6af080cfdeeec2336cb);
+            
+        
+
+        circle_marker_0c305868f79167e8e978a6ca2580fbee.bindPopup(popup_7a0d4c5564e6221f72efbc9bc8633daa)
+        ;
+
+        
+    
+    
+            var circle_marker_52360196a5a2edfe042af8f4978758dc = L.circleMarker(
+                [-11.625833, 40.176111],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_0ed3dd63db5598e4fc44ee9a44bec52f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b4ec2295153164b986454ecc28db8790 = $(`<div id="html_b4ec2295153164b986454ecc28db8790" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.6258<br>                 <b>Longitude:</b> 40.1761<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Mbau village<br>                 <b>Where Description:</b> near Mbau town, Mocímboa da Praia district                 </div>`)[0];
+                popup_0ed3dd63db5598e4fc44ee9a44bec52f.setContent(html_b4ec2295153164b986454ecc28db8790);
+            
+        
+
+        circle_marker_52360196a5a2edfe042af8f4978758dc.bindPopup(popup_0ed3dd63db5598e4fc44ee9a44bec52f)
+        ;
+
+        
+    
+    
+            var circle_marker_6c384daa4f7fa972af832a9ac8129026 = L.circleMarker(
+                [-11.879167, 40.423611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_ae100382127091b12c9691ec45dd1280 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c76a38d5853a8459cdaf95f076a280d4 = $(`<div id="html_c76a38d5853a8459cdaf95f076a280d4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8792<br>                 <b>Longitude:</b> 40.4236<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Cobre village<br>                 <b>Where Description:</b> in Cobre village, Macomia district                 </div>`)[0];
+                popup_ae100382127091b12c9691ec45dd1280.setContent(html_c76a38d5853a8459cdaf95f076a280d4);
+            
+        
+
+        circle_marker_6c384daa4f7fa972af832a9ac8129026.bindPopup(popup_ae100382127091b12c9691ec45dd1280)
+        ;
+
+        
+    
+    
+            var circle_marker_2a61da6ed63c8830554501bbdef7aeb2 = L.circleMarker(
+                [-11.769, 40.092],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_c03147e8c0616b30a3df79efabb90b7f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c4e4d4bf141e3a2b62193b6b57ef9f2a = $(`<div id="html_c4e4d4bf141e3a2b62193b6b57ef9f2a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7690<br>                 <b>Longitude:</b> 40.0920<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Lagoa Nguri lagoon<br>                 <b>Where Description:</b> around Lake Nguri/Inguri in Muidumbe district, approximately six kilometers north of Choi                 </div>`)[0];
+                popup_c03147e8c0616b30a3df79efabb90b7f.setContent(html_c4e4d4bf141e3a2b62193b6b57ef9f2a);
+            
+        
+
+        circle_marker_2a61da6ed63c8830554501bbdef7aeb2.bindPopup(popup_c03147e8c0616b30a3df79efabb90b7f)
+        ;
+
+        
+    
+    
+            var circle_marker_5dd27b3f761f8f619b16a1f46efa3a14 = L.circleMarker(
+                [-11.898724, 40.111727],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b808210c0a0b9df1a9802211bb8ed102 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dd6aad46d96e15b479e7ea3b7be94f79 = $(`<div id="html_dd6aad46d96e15b479e7ea3b7be94f79" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8987<br>                 <b>Longitude:</b> 40.1117<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Litamanda village<br>                 <b>Where Description:</b> near Litamanda                 </div>`)[0];
+                popup_b808210c0a0b9df1a9802211bb8ed102.setContent(html_dd6aad46d96e15b479e7ea3b7be94f79);
+            
+        
+
+        circle_marker_5dd27b3f761f8f619b16a1f46efa3a14.bindPopup(popup_b808210c0a0b9df1a9802211bb8ed102)
+        ;
+
+        
+    
+    
+            var circle_marker_d53aa6ee701612e6f2fb9e8d799af041 = L.circleMarker(
+                [-11.916, 40.287],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_f111b56f50ab6e76d938168e44e7f8bc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9d75430e6648d5734b93e1152c71f2a5 = $(`<div id="html_9d75430e6648d5734b93e1152c71f2a5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9160<br>                 <b>Longitude:</b> 40.2870<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Catupa Forest Reserve<br>                 <b>Where Description:</b> Kathupa base, in the interior of the Macomia district                 </div>`)[0];
+                popup_f111b56f50ab6e76d938168e44e7f8bc.setContent(html_9d75430e6648d5734b93e1152c71f2a5);
+            
+        
+
+        circle_marker_d53aa6ee701612e6f2fb9e8d799af041.bindPopup(popup_f111b56f50ab6e76d938168e44e7f8bc)
+        ;
+
+        
+    
+    
+            var circle_marker_08948c2e47c9e79ff020db7a47ed7113 = L.circleMarker(
+                [-11.750652, 40.442179],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.824746787307683, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_6d49c38f9189e8ac94e4f854c0bd8886 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_03a7128645fbfb3f5201161d93007d65 = $(`<div id="html_03a7128645fbfb3f5201161d93007d65" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7507<br>                 <b>Longitude:</b> 40.4422<br>                 <b>Deaths:</b> 12<br>                 <b>Where Coordinates:</b> Quiterajo village<br>                 <b>Where Description:</b> Quiterajo in Macomia (near) Between Kubar (كوبر, Cobre?) and Quiterajo                 </div>`)[0];
+                popup_6d49c38f9189e8ac94e4f854c0bd8886.setContent(html_03a7128645fbfb3f5201161d93007d65);
+            
+        
+
+        circle_marker_08948c2e47c9e79ff020db7a47ed7113.bindPopup(popup_6d49c38f9189e8ac94e4f854c0bd8886)
+        ;
+
+        
+    
+    
+            var circle_marker_d63fb8a684306fa7c9932c6ffd6d72ee = L.circleMarker(
+                [-12.143889, 39.973056],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_0879c40e5cf3d332ccde984f5f2b131a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8a5283f048c15749ac5dc1a9b24f7e12 = $(`<div id="html_8a5283f048c15749ac5dc1a9b24f7e12" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.1439<br>                 <b>Longitude:</b> 39.9731<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nguida village<br>                 <b>Where Description:</b> Nguida, Macomia distric                 </div>`)[0];
+                popup_0879c40e5cf3d332ccde984f5f2b131a.setContent(html_8a5283f048c15749ac5dc1a9b24f7e12);
+            
+        
+
+        circle_marker_d63fb8a684306fa7c9932c6ffd6d72ee.bindPopup(popup_0879c40e5cf3d332ccde984f5f2b131a)
+        ;
+
+        
+    
+    
+            var circle_marker_93a6ff56ec4bd11f910e0cc30de91ed5 = L.circleMarker(
+                [-11.898724, 40.111727],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_13a0c1972078b257ebf4cf1773a32866 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fbe46555ac573575680a991948d9cfe3 = $(`<div id="html_fbe46555ac573575680a991948d9cfe3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8987<br>                 <b>Longitude:</b> 40.1117<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Litamanda village<br>                 <b>Where Description:</b> seven kilometers inland from the Litamanda community, Macomia district                 </div>`)[0];
+                popup_13a0c1972078b257ebf4cf1773a32866.setContent(html_fbe46555ac573575680a991948d9cfe3);
+            
+        
+
+        circle_marker_93a6ff56ec4bd11f910e0cc30de91ed5.bindPopup(popup_13a0c1972078b257ebf4cf1773a32866)
+        ;
+
+        
+    
+    
+            var circle_marker_b4daed71ef0aaed222ff01bfde572796 = L.circleMarker(
+                [-11.921338, 40.480642],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_2e86297cbcc4c0fc3f6202bb017e9a4a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e9d641b69de0cea5ee8df7f60a9198d6 = $(`<div id="html_e9d641b69de0cea5ee8df7f60a9198d6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9213<br>                 <b>Longitude:</b> 40.4806<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ingoane village<br>                 <b>Where Description:</b> Ingoane in Macomia district.                 </div>`)[0];
+                popup_2e86297cbcc4c0fc3f6202bb017e9a4a.setContent(html_e9d641b69de0cea5ee8df7f60a9198d6);
+            
+        
+
+        circle_marker_b4daed71ef0aaed222ff01bfde572796.bindPopup(popup_2e86297cbcc4c0fc3f6202bb017e9a4a)
+        ;
+
+        
+    
+    
+            var circle_marker_2019a69b5f601586abd76c5298cef509 = L.circleMarker(
+                [-11.446287, 40.358561],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_0bf3bc29301ae68392d31bf55cf08d74 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9872454f2551df1afeb77112e43cd491 = $(`<div id="html_9872454f2551df1afeb77112e43cd491" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.4463<br>                 <b>Longitude:</b> 40.3586<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Naquindunga village<br>                 <b>Where Description:</b> village of Nanquidunga in Mocímboa da Praia district                 </div>`)[0];
+                popup_0bf3bc29301ae68392d31bf55cf08d74.setContent(html_9872454f2551df1afeb77112e43cd491);
+            
+        
+
+        circle_marker_2019a69b5f601586abd76c5298cef509.bindPopup(popup_0bf3bc29301ae68392d31bf55cf08d74)
+        ;
+
+        
+    
+    
+            var circle_marker_e1b760143ba78579bdc71a2e7887e2da = L.circleMarker(
+                [-12.213, 40.596],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_d8f4dd13080903baf46464355ed89704 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_62060c2fd8425dced3344a06e50f97e2 = $(`<div id="html_62060c2fd8425dced3344a06e50f97e2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.2130<br>                 <b>Longitude:</b> 40.5960<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Matemo island<br>                 <b>Where Description:</b> Matemo island                 </div>`)[0];
+                popup_d8f4dd13080903baf46464355ed89704.setContent(html_62060c2fd8425dced3344a06e50f97e2);
+            
+        
+
+        circle_marker_e1b760143ba78579bdc71a2e7887e2da.bindPopup(popup_d8f4dd13080903baf46464355ed89704)
+        ;
+
+        
+    
+    
+            var circle_marker_99b7cf290493d132d07d1ca2e4c0e467 = L.circleMarker(
+                [-11.879167, 40.423611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_7461e3d971d4da60cfa440049b01ec48 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6e75f8be743d686bbc2d8d792818d13b = $(`<div id="html_6e75f8be743d686bbc2d8d792818d13b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8792<br>                 <b>Longitude:</b> 40.4236<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Cobre village<br>                 <b>Where Description:</b> near Ilala village                 </div>`)[0];
+                popup_7461e3d971d4da60cfa440049b01ec48.setContent(html_6e75f8be743d686bbc2d8d792818d13b);
+            
+        
+
+        circle_marker_99b7cf290493d132d07d1ca2e4c0e467.bindPopup(popup_7461e3d971d4da60cfa440049b01ec48)
+        ;
+
+        
+    
+    
+            var circle_marker_f34ae4e682752ad0f80896cc6feadf92 = L.circleMarker(
+                [-11.528386, 40.247555],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.989476363991853, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_aa36f4660345efb8be3a996b75e219f0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dfc09feb5d03bfd6756518a75c717255 = $(`<div id="html_dfc09feb5d03bfd6756518a75c717255" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5284<br>                 <b>Longitude:</b> 40.2476<br>                 <b>Deaths:</b> 10<br>                 <b>Where Coordinates:</b> Naquitengue village<br>                 <b>Where Description:</b> Naquitenge, a village in the interior of Mocímboa da Praia district.                 </div>`)[0];
+                popup_aa36f4660345efb8be3a996b75e219f0.setContent(html_dfc09feb5d03bfd6756518a75c717255);
+            
+        
+
+        circle_marker_f34ae4e682752ad0f80896cc6feadf92.bindPopup(popup_aa36f4660345efb8be3a996b75e219f0)
+        ;
+
+        
+    
+    
+            var circle_marker_500bcbfcb67aec30375c059fb4a84640 = L.circleMarker(
+                [-11.831667, 40.093333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_90354bcde902f816833f18e3574cde1e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_420a223bc85cd6003d27ca1c99c2d88c = $(`<div id="html_420a223bc85cd6003d27ca1c99c2d88c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8317<br>                 <b>Longitude:</b> 40.0933<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Miangalewa village<br>                 <b>Where Description:</b> lagoon Lukaledi, near the village Miangaleua, district of Muidumbe,                 </div>`)[0];
+                popup_90354bcde902f816833f18e3574cde1e.setContent(html_420a223bc85cd6003d27ca1c99c2d88c);
+            
+        
+
+        circle_marker_500bcbfcb67aec30375c059fb4a84640.bindPopup(popup_90354bcde902f816833f18e3574cde1e)
+        ;
+
+        
+    
+    
+            var circle_marker_a9b9d31b26543c8fb97b0f165e7a5366 = L.circleMarker(
+                [-11.769, 40.092],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_8a54e63a21542945281a18c7756243a9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_40dcf64f3d84c32f3292f21d205d050e = $(`<div id="html_40dcf64f3d84c32f3292f21d205d050e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7690<br>                 <b>Longitude:</b> 40.0920<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lagoa Nguri lagoon<br>                 <b>Where Description:</b> near Lake Inguri, Muidumbe district                 </div>`)[0];
+                popup_8a54e63a21542945281a18c7756243a9.setContent(html_40dcf64f3d84c32f3292f21d205d050e);
+            
+        
+
+        circle_marker_a9b9d31b26543c8fb97b0f165e7a5366.bindPopup(popup_8a54e63a21542945281a18c7756243a9)
+        ;
+
+        
+    
+    
+            var circle_marker_a42a8a8b215c725737c4e7a5b09a4d22 = L.circleMarker(
+                [-11.528386, 40.247555],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_9b055c4c62991c111cc6ae44dfd1e59a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4ba4ff3e1b955be819bdd86a027cd2cb = $(`<div id="html_4ba4ff3e1b955be819bdd86a027cd2cb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.5284<br>                 <b>Longitude:</b> 40.2476<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Naquitengue village<br>                 <b>Where Description:</b> Naquitenge, a village in the interior of Mocímboa da Praia district.                 </div>`)[0];
+                popup_9b055c4c62991c111cc6ae44dfd1e59a.setContent(html_4ba4ff3e1b955be819bdd86a027cd2cb);
+            
+        
+
+        circle_marker_a42a8a8b215c725737c4e7a5b09a4d22.bindPopup(popup_9b055c4c62991c111cc6ae44dfd1e59a)
+        ;
+
+        
+    
+    
+            var circle_marker_b5ce014054e30a36c148fe495f7cd635 = L.circleMarker(
+                [-14.547304, 40.686221],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_4171f3724e6cafe06252484c680caa91 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b30b6f193f7d6cfa5c84eec542293fc2 = $(`<div id="html_b30b6f193f7d6cfa5c84eec542293fc2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -14.5473<br>                 <b>Longitude:</b> 40.6862<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nacala town<br>                 <b>Where Description:</b> Nacala                 </div>`)[0];
+                popup_4171f3724e6cafe06252484c680caa91.setContent(html_b30b6f193f7d6cfa5c84eec542293fc2);
+            
+        
+
+        circle_marker_b5ce014054e30a36c148fe495f7cd635.bindPopup(popup_4171f3724e6cafe06252484c680caa91)
+        ;
+
+        
+    
+    
+            var circle_marker_3560d8ec6cbb34765f44bf9131e08ab7 = L.circleMarker(
+                [-14.547304, 40.686221],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_c0a9b6cd83519f0b61878a9540c64109 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_95c427d52aefc83e8acb816d5949cb0d = $(`<div id="html_95c427d52aefc83e8acb816d5949cb0d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -14.5473<br>                 <b>Longitude:</b> 40.6862<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nacala town<br>                 <b>Where Description:</b> Nacala                 </div>`)[0];
+                popup_c0a9b6cd83519f0b61878a9540c64109.setContent(html_95c427d52aefc83e8acb816d5949cb0d);
+            
+        
+
+        circle_marker_3560d8ec6cbb34765f44bf9131e08ab7.bindPopup(popup_c0a9b6cd83519f0b61878a9540c64109)
+        ;
+
+        
+    
+    
+            var circle_marker_9184608625d91c723e3030ee4001ef61 = L.circleMarker(
+                [-12.076944, 40.108889],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_3fa26e7ada9a8c4c44fbb29c72ac884a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fe9f4dc5a3df47f3a62b712628dc1152 = $(`<div id="html_fe9f4dc5a3df47f3a62b712628dc1152" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.0769<br>                 <b>Longitude:</b> 40.1089<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nova Zambezia village<br>                 <b>Where Description:</b> moving east toward Nova Zambézia, near Chai in Macomia district                 </div>`)[0];
+                popup_3fa26e7ada9a8c4c44fbb29c72ac884a.setContent(html_fe9f4dc5a3df47f3a62b712628dc1152);
+            
+        
+
+        circle_marker_9184608625d91c723e3030ee4001ef61.bindPopup(popup_3fa26e7ada9a8c4c44fbb29c72ac884a)
+        ;
+
+        
+    
+    
+            var circle_marker_3076bbed0dbaa68f132bf3aa496c168c = L.circleMarker(
+                [-15.11646, 39.2666],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_9d8bf485e8612c806e365959e47d4baf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_38e2cb211504bca250b437d619a52bc5 = $(`<div id="html_38e2cb211504bca250b437d619a52bc5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -15.1165<br>                 <b>Longitude:</b> 39.2666<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nampula town<br>                 <b>Where Description:</b> Nampula city                 </div>`)[0];
+                popup_9d8bf485e8612c806e365959e47d4baf.setContent(html_38e2cb211504bca250b437d619a52bc5);
+            
+        
+
+        circle_marker_3076bbed0dbaa68f132bf3aa496c168c.bindPopup(popup_9d8bf485e8612c806e365959e47d4baf)
+        ;
+
+        
+    
+    
+            var circle_marker_d2ee098532411c7890402c088959a7f6 = L.circleMarker(
+                [-11.8875, 40.074444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_43826c4702376471cacbeb6073daba43 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_52fe8011a6f5c5ace225e2aff96b3b8c = $(`<div id="html_52fe8011a6f5c5ace225e2aff96b3b8c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8875<br>                 <b>Longitude:</b> 40.0744<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Novo Cabo Delgado village<br>                 <b>Where Description:</b> Novo Cabo Delgado village, Macomia district                 </div>`)[0];
+                popup_43826c4702376471cacbeb6073daba43.setContent(html_52fe8011a6f5c5ace225e2aff96b3b8c);
+            
+        
+
+        circle_marker_d2ee098532411c7890402c088959a7f6.bindPopup(popup_43826c4702376471cacbeb6073daba43)
+        ;
+
+        
+    
+    
+            var circle_marker_bc98dab0f54134047e5b922f471d4f60 = L.circleMarker(
+                [-11.808701, 40.006456],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_3de84974bbd9f18b43fc89fec197a228 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0b993a74ca2a4bab1e9c3cd4bf7ae8ce = $(`<div id="html_0b993a74ca2a4bab1e9c3cd4bf7ae8ce" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8087<br>                 <b>Longitude:</b> 40.0065<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Xitaxi village<br>                 <b>Where Description:</b> Xitaxi camp, in the region of Inguri / Inguri lake                 </div>`)[0];
+                popup_3de84974bbd9f18b43fc89fec197a228.setContent(html_0b993a74ca2a4bab1e9c3cd4bf7ae8ce);
+            
+        
+
+        circle_marker_bc98dab0f54134047e5b922f471d4f60.bindPopup(popup_3de84974bbd9f18b43fc89fec197a228)
+        ;
+
+        
+    
+    
+            var circle_marker_02fb7e198ad2e25e7a96e5fce0515123 = L.circleMarker(
+                [-11.8875, 40.074444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_751f6b599c8445008833e61c5246f248 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_379ab18906df475512d1d1b51ca3efdf = $(`<div id="html_379ab18906df475512d1d1b51ca3efdf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.8875<br>                 <b>Longitude:</b> 40.0744<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novo Cabo Delgado village<br>                 <b>Where Description:</b> Novo Cabo Delgado village, Macomia district                 </div>`)[0];
+                popup_751f6b599c8445008833e61c5246f248.setContent(html_379ab18906df475512d1d1b51ca3efdf);
+            
+        
+
+        circle_marker_02fb7e198ad2e25e7a96e5fce0515123.bindPopup(popup_751f6b599c8445008833e61c5246f248)
+        ;
+
+        
+    
+    
+            var circle_marker_e2c47bd7d4f62b567956c4c660ca8074 = L.circleMarker(
+                [-11.935833, 39.984722],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_656b07315ee0227ee7ea39b0298c9885 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0d41709088fab8cb8fc206d09eb0f658 = $(`<div id="html_0d41709088fab8cb8fc206d09eb0f658" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9358<br>                 <b>Longitude:</b> 39.9847<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Litandacua village<br>                 <b>Where Description:</b> around the village of Litandacua                 </div>`)[0];
+                popup_656b07315ee0227ee7ea39b0298c9885.setContent(html_0d41709088fab8cb8fc206d09eb0f658);
+            
+        
+
+        circle_marker_e2c47bd7d4f62b567956c4c660ca8074.bindPopup(popup_656b07315ee0227ee7ea39b0298c9885)
+        ;
+
+        
+    
+    
+            var circle_marker_7a1e59d55a52bc010d59e642889cac26 = L.circleMarker(
+                [-11.947765, 39.84518],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_860cfd6b1d098be4c7cc22f8cb514375 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fdf5dc819401c383561e171fdc70e304 = $(`<div id="html_fdf5dc819401c383561e171fdc70e304" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.9478<br>                 <b>Longitude:</b> 39.8452<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mapate village<br>                 <b>Where Description:</b> Mapate village in Muidumbe, approximately 30 km west of Nguri, and less than seven km north of the Messalo river                 </div>`)[0];
+                popup_860cfd6b1d098be4c7cc22f8cb514375.setContent(html_fdf5dc819401c383561e171fdc70e304);
+            
+        
+
+        circle_marker_7a1e59d55a52bc010d59e642889cac26.bindPopup(popup_860cfd6b1d098be4c7cc22f8cb514375)
+        ;
+
+        
+    
+    
+            var circle_marker_9a19297dc75e1484f98069be907ff6bc = L.circleMarker(
+                [-11.769, 40.092],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_890472ee27f61ac42ccabdb2254febbc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_89a7fd5ccd0e6ffb2a9447c918ebc9b3 = $(`<div id="html_89a7fd5ccd0e6ffb2a9447c918ebc9b3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7690<br>                 <b>Longitude:</b> 40.0920<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Lagoa Nguri lagoon<br>                 <b>Where Description:</b> near a fishing center called Manhiça, on the outskirts of Lake Inguri, in the district of Muidumbe / Neguri / Nguri village                 </div>`)[0];
+                popup_890472ee27f61ac42ccabdb2254febbc.setContent(html_89a7fd5ccd0e6ffb2a9447c918ebc9b3);
+            
+        
+
+        circle_marker_9a19297dc75e1484f98069be907ff6bc.bindPopup(popup_890472ee27f61ac42ccabdb2254febbc)
+        ;
+
+        
+    
+    
+            var circle_marker_15f5998d7226dcfcbc761b857fdce735 = L.circleMarker(
+                [-18.292779, 35.938237],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_a9457c56db65d87ee796c695516534c2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2cf0b6378a068e32d2382917c9ca437e = $(`<div id="html_2cf0b6378a068e32d2382917c9ca437e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -18.2928<br>                 <b>Longitude:</b> 35.9382<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marromeu town<br>                 <b>Where Description:</b> Marromeu Fish Market                 </div>`)[0];
+                popup_a9457c56db65d87ee796c695516534c2.setContent(html_2cf0b6378a068e32d2382917c9ca437e);
+            
+        
+
+        circle_marker_15f5998d7226dcfcbc761b857fdce735.bindPopup(popup_a9457c56db65d87ee796c695516534c2)
+        ;
+
+        
+    
+    
+            var circle_marker_f8f099abc71369b871a70618458966f1 = L.circleMarker(
+                [-12.069278, 40.478181],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b2a280e872953cb6418ba03a33eba4b4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_75bf8bf3e74624094c3b1ddede86a236 = $(`<div id="html_75bf8bf3e74624094c3b1ddede86a236" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.0693<br>                 <b>Longitude:</b> 40.4782<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Mucojo village<br>                 <b>Where Description:</b> army posts in the village of Mucojo in Cabo Delgado's Macomia district                 </div>`)[0];
+                popup_b2a280e872953cb6418ba03a33eba4b4.setContent(html_75bf8bf3e74624094c3b1ddede86a236);
+            
+        
+
+        circle_marker_f8f099abc71369b871a70618458966f1.bindPopup(popup_b2a280e872953cb6418ba03a33eba4b4)
+        ;
+
+        
+    
+    
+            var circle_marker_1d5d4677d0329c5282710026b8f6cf0e = L.circleMarker(
+                [-19.116389, 33.483333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_0292b79defb8d11c55e681d28d9d7976 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6f120d4859d0f80aa3d609adc141e308 = $(`<div id="html_6f120d4859d0f80aa3d609adc141e308" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -19.1164<br>                 <b>Longitude:</b> 33.4833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chimoio town<br>                 <b>Where Description:</b> city of Chimoio                 </div>`)[0];
+                popup_0292b79defb8d11c55e681d28d9d7976.setContent(html_6f120d4859d0f80aa3d609adc141e308);
+            
+        
+
+        circle_marker_1d5d4677d0329c5282710026b8f6cf0e.bindPopup(popup_0292b79defb8d11c55e681d28d9d7976)
+        ;
+
+        
+    
+    
+            var circle_marker_a93f6112100e4518c13d0f85b885fcf9 = L.circleMarker(
+                [-12.5, 39.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_48a2629e777317543f7dfd7174a03c1a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_af3aba9da7c0b81da54821c2c03b4556 = $(`<div id="html_af3aba9da7c0b81da54821c2c03b4556" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.5000<br>                 <b>Longitude:</b> 39.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Cabo Delgado province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_48a2629e777317543f7dfd7174a03c1a.setContent(html_af3aba9da7c0b81da54821c2c03b4556);
+            
+        
+
+        circle_marker_a93f6112100e4518c13d0f85b885fcf9.bindPopup(popup_48a2629e777317543f7dfd7174a03c1a)
+        ;
+
+        
+    
+    
+            var circle_marker_7915660d8cf9b50b438db1ffdacf0634 = L.circleMarker(
+                [-12.104444, 40.2725],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_b80b2bb844a465f32a22647f2c1cfb2c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_03e1af48da6abf40e0be0ab9082a80f6 = $(`<div id="html_03e1af48da6abf40e0be0ab9082a80f6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.1044<br>                 <b>Longitude:</b> 40.2725<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Road 766 between Macomia and Mucojo<br>                 <b>Where Description:</b> between Mucojo village and Macomia town                 </div>`)[0];
+                popup_b80b2bb844a465f32a22647f2c1cfb2c.setContent(html_03e1af48da6abf40e0be0ab9082a80f6);
+            
+        
+
+        circle_marker_7915660d8cf9b50b438db1ffdacf0634.bindPopup(popup_b80b2bb844a465f32a22647f2c1cfb2c)
+        ;
+
+        
+    
+    
+            var circle_marker_32e5d15864093ed8a037d3e1f0a407ea = L.circleMarker(
+                [-11.769, 40.092],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_75daf49fff58eaeb4e0e3c1e2c0571bf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2cf3da800e37aa804b68d51bb9d8a84b = $(`<div id="html_2cf3da800e37aa804b68d51bb9d8a84b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -11.7690<br>                 <b>Longitude:</b> 40.0920<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Lagoa Nguri lagoon<br>                 <b>Where Description:</b> near Lake Nguri in Muidumbe district                 </div>`)[0];
+                popup_75daf49fff58eaeb4e0e3c1e2c0571bf.setContent(html_2cf3da800e37aa804b68d51bb9d8a84b);
+            
+        
+
+        circle_marker_32e5d15864093ed8a037d3e1f0a407ea.bindPopup(popup_75daf49fff58eaeb4e0e3c1e2c0571bf)
+        ;
+
+        
+    
+    
+            var circle_marker_e655f2c166c5df68b86a50810d2087c2 = L.circleMarker(
+                [-12.001389, 40.535833],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1495d01609eef68a608be9db539d9cb);
+        
+    
+        var popup_cb1ed2fd4ed9c1d2cdf8dda409def1bb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e478cf3a113fae63cb3537da651b5543 = $(`<div id="html_e478cf3a113fae63cb3537da651b5543" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.0014<br>                 <b>Longitude:</b> 40.5358<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Pangane town<br>                 <b>Where Description:</b> Pangane                 </div>`)[0];
+                popup_cb1ed2fd4ed9c1d2cdf8dda409def1bb.setContent(html_e478cf3a113fae63cb3537da651b5543);
+            
+        
+
+        circle_marker_e655f2c166c5df68b86a50810d2087c2.bindPopup(popup_cb1ed2fd4ed9c1d2cdf8dda409def1bb)
+        ;
+
+        
+    
+</script>
+</html>

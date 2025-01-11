@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_09abd5f8c16221d1abb192227df9ebca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_09abd5f8c16221d1abb192227df9ebca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_09abd5f8c16221d1abb192227df9ebca = L.map(
+                "map_09abd5f8c16221d1abb192227df9ebca",
+                {
+                    center: [15.4177792, -87.92704647999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3bd09cc9d1ae5f39b05e66a8c872b179 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_3bd09cc9d1ae5f39b05e66a8c872b179.addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+            var marker_223cac94ed818393a0ded8cc7d858044 = L.marker(
+                [15.4177792, -87.92704647999999],
+                {}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+            var div_icon_0c4184b864d1efdc25167f32a808e468 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eHonduras\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_223cac94ed818393a0ded8cc7d858044.setIcon(div_icon_0c4184b864d1efdc25167f32a808e468);
+        
+    
+            var circle_marker_6993b76e76626d10c953b7811a917b0e = L.circleMarker(
+                [14.098056, -87.209722],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_b753eb40f713cb9d880ea6d028cfeaa5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e95fd8da2f9aa50930560a7147d29074 = $(`<div id="html_e95fd8da2f9aa50930560a7147d29074" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 14.0981<br>                 <b>Longitude:</b> -87.2097<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Comayagüela town<br>                 <b>Where Description:</b> Comayagüela  vicinity of the Primavera neighborhood                 </div>`)[0];
+                popup_b753eb40f713cb9d880ea6d028cfeaa5.setContent(html_e95fd8da2f9aa50930560a7147d29074);
+            
+        
+
+        circle_marker_6993b76e76626d10c953b7811a917b0e.bindPopup(popup_b753eb40f713cb9d880ea6d028cfeaa5)
+        ;
+
+        
+    
+    
+            var circle_marker_4da3d608dc26cd456b08833e8d6bacbe = L.circleMarker(
+                [15.06809, -88.22311],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_be225ad1de33dce6d77efd77e2a7bcee = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_79c634a8ba4878206d985945a9e56c85 = $(`<div id="html_79c634a8ba4878206d985945a9e56c85" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.0681<br>                 <b>Longitude:</b> -88.2231<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ilama town<br>                 <b>Where Description:</b> Ilama Santa Bárbara  El Pozo prison                 </div>`)[0];
+                popup_be225ad1de33dce6d77efd77e2a7bcee.setContent(html_79c634a8ba4878206d985945a9e56c85);
+            
+        
+
+        circle_marker_4da3d608dc26cd456b08833e8d6bacbe.bindPopup(popup_be225ad1de33dce6d77efd77e2a7bcee)
+        ;
+
+        
+    
+    
+            var circle_marker_5c68117efea21eca6a765d4ce6feb376 = L.circleMarker(
+                [14.15, -87.33333],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.250738008550293, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_da13a099f6ee68ceff5fbca949a91d23 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fa41a78cc0b1fc5feeb107c412de1499 = $(`<div id="html_fa41a78cc0b1fc5feeb107c412de1499" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 14.1500<br>                 <b>Longitude:</b> -87.3333<br>                 <b>Deaths:</b> 46<br>                 <b>Where Coordinates:</b> Támara town<br>                 <b>Where Description:</b> CEFAS women's prison in Tamara, outside of the capital city of Tegucigalpa                 </div>`)[0];
+                popup_da13a099f6ee68ceff5fbca949a91d23.setContent(html_fa41a78cc0b1fc5feeb107c412de1499);
+            
+        
+
+        circle_marker_5c68117efea21eca6a765d4ce6feb376.bindPopup(popup_da13a099f6ee68ceff5fbca949a91d23)
+        ;
+
+        
+    
+    
+            var circle_marker_a783d25fb2f3f8f58180175389e5ab9d = L.circleMarker(
+                [15.504167, -88.025],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_7181f3a8e0183d1f579ff1961f37c31f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fa18e14c804ffd200e3e66f9b2e07806 = $(`<div id="html_fa18e14c804ffd200e3e66f9b2e07806" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5042<br>                 <b>Longitude:</b> -88.0250<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> San Pedro Sula town<br>                 <b>Where Description:</b> San Pedro Sula  Buena Inversión neighborhood of the Rivera Hernández sector                 </div>`)[0];
+                popup_7181f3a8e0183d1f579ff1961f37c31f.setContent(html_fa18e14c804ffd200e3e66f9b2e07806);
+            
+        
+
+        circle_marker_a783d25fb2f3f8f58180175389e5ab9d.bindPopup(popup_7181f3a8e0183d1f579ff1961f37c31f)
+        ;
+
+        
+    
+    
+            var circle_marker_dd5db5a11ff8571415df3b53026e8fab = L.circleMarker(
+                [15.504167, -88.025],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_37ea1726939dc0a6041c4f425a27abac = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e53c215c489434415e2127a3428d0343 = $(`<div id="html_e53c215c489434415e2127a3428d0343" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5042<br>                 <b>Longitude:</b> -88.0250<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> San Pedro Sula town<br>                 <b>Where Description:</b> Chamelecón, San Pedro Sula                 </div>`)[0];
+                popup_37ea1726939dc0a6041c4f425a27abac.setContent(html_e53c215c489434415e2127a3428d0343);
+            
+        
+
+        circle_marker_dd5db5a11ff8571415df3b53026e8fab.bindPopup(popup_37ea1726939dc0a6041c4f425a27abac)
+        ;
+
+        
+    
+    
+            var circle_marker_23c7a4c27f3bb37b3cdafacd530829f6 = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_b2b44ba813b5e5feac058628dedebe07 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_abcf5b1eb998be96a9fe4e3319a691cd = $(`<div id="html_abcf5b1eb998be96a9fe4e3319a691cd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_b2b44ba813b5e5feac058628dedebe07.setContent(html_abcf5b1eb998be96a9fe4e3319a691cd);
+            
+        
+
+        circle_marker_23c7a4c27f3bb37b3cdafacd530829f6.bindPopup(popup_b2b44ba813b5e5feac058628dedebe07)
+        ;
+
+        
+    
+    
+            var circle_marker_0e51bcbd073f3827b8c803548cfd566d = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_201c72ac37f7cd324fb8ba0a48d67045 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_52005f4dac302121d0d25d5edf1cb765 = $(`<div id="html_52005f4dac302121d0d25d5edf1cb765" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> san Pedro Sula Municipality                 </div>`)[0];
+                popup_201c72ac37f7cd324fb8ba0a48d67045.setContent(html_52005f4dac302121d0d25d5edf1cb765);
+            
+        
+
+        circle_marker_0e51bcbd073f3827b8c803548cfd566d.bindPopup(popup_201c72ac37f7cd324fb8ba0a48d67045)
+        ;
+
+        
+    
+    
+            var circle_marker_a2952b0e31b9b99e98b4e9eb144d0d58 = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_54525b402fa7b6ba00a772aeb0befb62 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b92a5784307acfa2315144490af3e704 = $(`<div id="html_b92a5784307acfa2315144490af3e704" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula Municipality                 </div>`)[0];
+                popup_54525b402fa7b6ba00a772aeb0befb62.setContent(html_b92a5784307acfa2315144490af3e704);
+            
+        
+
+        circle_marker_a2952b0e31b9b99e98b4e9eb144d0d58.bindPopup(popup_54525b402fa7b6ba00a772aeb0befb62)
+        ;
+
+        
+    
+    
+            var circle_marker_cfbdd637b14e2775c3539bf5136ce29b = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_a67516c0f744f9d6676f31c8e671c621 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8d2696433cecdba4153a2e8cd0ca8f5f = $(`<div id="html_8d2696433cecdba4153a2e8cd0ca8f5f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_a67516c0f744f9d6676f31c8e671c621.setContent(html_8d2696433cecdba4153a2e8cd0ca8f5f);
+            
+        
+
+        circle_marker_cfbdd637b14e2775c3539bf5136ce29b.bindPopup(popup_a67516c0f744f9d6676f31c8e671c621)
+        ;
+
+        
+    
+    
+            var circle_marker_a8386ebfa270175cf7278653160d9e1f = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_98d6a1cc0172b0e7ed4854999d0278f2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4beb2cd7c25c7f88e0b62dbab8d40a0c = $(`<div id="html_4beb2cd7c25c7f88e0b62dbab8d40a0c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_98d6a1cc0172b0e7ed4854999d0278f2.setContent(html_4beb2cd7c25c7f88e0b62dbab8d40a0c);
+            
+        
+
+        circle_marker_a8386ebfa270175cf7278653160d9e1f.bindPopup(popup_98d6a1cc0172b0e7ed4854999d0278f2)
+        ;
+
+        
+    
+    
+            var circle_marker_6c0c60749998c6e808749a3e2fa21cae = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_72595cebbfb209453d0c98daf076cfba = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8e0f802408fb87de9779e0f6f799c041 = $(`<div id="html_8e0f802408fb87de9779e0f6f799c041" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_72595cebbfb209453d0c98daf076cfba.setContent(html_8e0f802408fb87de9779e0f6f799c041);
+            
+        
+
+        circle_marker_6c0c60749998c6e808749a3e2fa21cae.bindPopup(popup_72595cebbfb209453d0c98daf076cfba)
+        ;
+
+        
+    
+    
+            var circle_marker_5ae63e23b5d768d50b6fc2214beee0bf = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_e682044e14e59a016eb2c205d1dac649 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4edf63e1a3edd5fd5f5e32fcacec596f = $(`<div id="html_4edf63e1a3edd5fd5f5e32fcacec596f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_e682044e14e59a016eb2c205d1dac649.setContent(html_4edf63e1a3edd5fd5f5e32fcacec596f);
+            
+        
+
+        circle_marker_5ae63e23b5d768d50b6fc2214beee0bf.bindPopup(popup_e682044e14e59a016eb2c205d1dac649)
+        ;
+
+        
+    
+    
+            var circle_marker_4cc55fefa7e13e19d5f0a2bab67846d4 = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_03c0c96ece37ee7296aedf84b3586d1a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_26ddeb581d5c4c849923e5669009ab1f = $(`<div id="html_26ddeb581d5c4c849923e5669009ab1f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_03c0c96ece37ee7296aedf84b3586d1a.setContent(html_26ddeb581d5c4c849923e5669009ab1f);
+            
+        
+
+        circle_marker_4cc55fefa7e13e19d5f0a2bab67846d4.bindPopup(popup_03c0c96ece37ee7296aedf84b3586d1a)
+        ;
+
+        
+    
+    
+            var circle_marker_9a03b39584d642eb1c36cf31a4c5479d = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_337fa7858e790fd3eafd0bee6e43ee12 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a796c732d60701500577df9a74550b0d = $(`<div id="html_a796c732d60701500577df9a74550b0d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_337fa7858e790fd3eafd0bee6e43ee12.setContent(html_a796c732d60701500577df9a74550b0d);
+            
+        
+
+        circle_marker_9a03b39584d642eb1c36cf31a4c5479d.bindPopup(popup_337fa7858e790fd3eafd0bee6e43ee12)
+        ;
+
+        
+    
+    
+            var circle_marker_b5a63c9f5d91e31dd87e4e5d40d72110 = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_04b746aa3ec2c1389868f6613524a553 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3a3f7cb14a9d224662cc36e870ec58f4 = $(`<div id="html_3a3f7cb14a9d224662cc36e870ec58f4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_04b746aa3ec2c1389868f6613524a553.setContent(html_3a3f7cb14a9d224662cc36e870ec58f4);
+            
+        
+
+        circle_marker_b5a63c9f5d91e31dd87e4e5d40d72110.bindPopup(popup_04b746aa3ec2c1389868f6613524a553)
+        ;
+
+        
+    
+    
+            var circle_marker_0344c19666119eb49fea4b55ba458c23 = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_a8d7c60aa58b5349a0242c2a1fa483c8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4dcfd05a01e39730b92ae20c2bba408d = $(`<div id="html_4dcfd05a01e39730b92ae20c2bba408d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_a8d7c60aa58b5349a0242c2a1fa483c8.setContent(html_4dcfd05a01e39730b92ae20c2bba408d);
+            
+        
+
+        circle_marker_0344c19666119eb49fea4b55ba458c23.bindPopup(popup_a8d7c60aa58b5349a0242c2a1fa483c8)
+        ;
+
+        
+    
+    
+            var circle_marker_bad580cea97b256b0450737cf27e346a = L.circleMarker(
+                [15.5, -88.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_1135ccf260eddcc469dd6143305a6ba1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a72ebdcd7f3b8b14f7bb12524431cfcf = $(`<div id="html_a72ebdcd7f3b8b14f7bb12524431cfcf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5000<br>                 <b>Longitude:</b> -88.0000<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> San Pedro Sula municipality<br>                 <b>Where Description:</b> San Pedro Sula municipality                 </div>`)[0];
+                popup_1135ccf260eddcc469dd6143305a6ba1.setContent(html_a72ebdcd7f3b8b14f7bb12524431cfcf);
+            
+        
+
+        circle_marker_bad580cea97b256b0450737cf27e346a.bindPopup(popup_1135ccf260eddcc469dd6143305a6ba1)
+        ;
+
+        
+    
+    
+            var circle_marker_70fb815c1ca73952da038e8f1f4a974c = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_17ccfdaeca41f758e7a56effd70ce454 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8b923aac52f42113d84f537f9e4ba086 = $(`<div id="html_8b923aac52f42113d84f537f9e4ba086" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_17ccfdaeca41f758e7a56effd70ce454.setContent(html_8b923aac52f42113d84f537f9e4ba086);
+            
+        
+
+        circle_marker_70fb815c1ca73952da038e8f1f4a974c.bindPopup(popup_17ccfdaeca41f758e7a56effd70ce454)
+        ;
+
+        
+    
+    
+            var circle_marker_a24a44d39fbd548fcb1a02af83dea9bf = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_fbcbcb61920c9112dfd46e7361f24dc9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0a370f162afb6e128ec4471068a8c9b8 = $(`<div id="html_0a370f162afb6e128ec4471068a8c9b8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_fbcbcb61920c9112dfd46e7361f24dc9.setContent(html_0a370f162afb6e128ec4471068a8c9b8);
+            
+        
+
+        circle_marker_a24a44d39fbd548fcb1a02af83dea9bf.bindPopup(popup_fbcbcb61920c9112dfd46e7361f24dc9)
+        ;
+
+        
+    
+    
+            var circle_marker_db068fd21b0e3c9fde0c843467ad87e4 = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_ad85865c6165a3e5fe88392d15e85d43 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f8b06a2b18173ea2259a4285eb3dbdbd = $(`<div id="html_f8b06a2b18173ea2259a4285eb3dbdbd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_ad85865c6165a3e5fe88392d15e85d43.setContent(html_f8b06a2b18173ea2259a4285eb3dbdbd);
+            
+        
+
+        circle_marker_db068fd21b0e3c9fde0c843467ad87e4.bindPopup(popup_ad85865c6165a3e5fe88392d15e85d43)
+        ;
+
+        
+    
+    
+            var circle_marker_8d71e78d0a4d17be670c91692be0250c = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_bdbb219c2ef963f84ee0cebe15940a85 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_494a2b2aabbfdf5330000e7f15fbbfa2 = $(`<div id="html_494a2b2aabbfdf5330000e7f15fbbfa2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_bdbb219c2ef963f84ee0cebe15940a85.setContent(html_494a2b2aabbfdf5330000e7f15fbbfa2);
+            
+        
+
+        circle_marker_8d71e78d0a4d17be670c91692be0250c.bindPopup(popup_bdbb219c2ef963f84ee0cebe15940a85)
+        ;
+
+        
+    
+    
+            var circle_marker_0e3ae7b05ef189324fde888decfec332 = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_9028275770cd08e912fa299d6f4c91f1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_774c29ae51e6b00831fbe668e8452fee = $(`<div id="html_774c29ae51e6b00831fbe668e8452fee" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_9028275770cd08e912fa299d6f4c91f1.setContent(html_774c29ae51e6b00831fbe668e8452fee);
+            
+        
+
+        circle_marker_0e3ae7b05ef189324fde888decfec332.bindPopup(popup_9028275770cd08e912fa299d6f4c91f1)
+        ;
+
+        
+    
+    
+            var circle_marker_101c5c04d51d9600fb3f0657655ba8e3 = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_3189ad7026cd3c1ea8eec800467b5010 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_64a486c6cfb9460dc33a035f177eb60d = $(`<div id="html_64a486c6cfb9460dc33a035f177eb60d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_3189ad7026cd3c1ea8eec800467b5010.setContent(html_64a486c6cfb9460dc33a035f177eb60d);
+            
+        
+
+        circle_marker_101c5c04d51d9600fb3f0657655ba8e3.bindPopup(popup_3189ad7026cd3c1ea8eec800467b5010)
+        ;
+
+        
+    
+    
+            var circle_marker_25673d9ca43775f9fec640e0f52db30b = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_9a7c3e42ed2ef03b7a4f1fe83476d153 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0ae6dcccd47f5a310e396affd7b9e706 = $(`<div id="html_0ae6dcccd47f5a310e396affd7b9e706" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_9a7c3e42ed2ef03b7a4f1fe83476d153.setContent(html_0ae6dcccd47f5a310e396affd7b9e706);
+            
+        
+
+        circle_marker_25673d9ca43775f9fec640e0f52db30b.bindPopup(popup_9a7c3e42ed2ef03b7a4f1fe83476d153)
+        ;
+
+        
+    
+    
+            var circle_marker_49edde521c8fb84c5bcf32e3c1af523c = L.circleMarker(
+                [15.64, -87.92],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_09abd5f8c16221d1abb192227df9ebca);
+        
+    
+        var popup_3fcedecad53fb144873dfa4bdb8f1a81 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0241a922393f4f36657c41a23f1fa097 = $(`<div id="html_0241a922393f4f36657c41a23f1fa097" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.6400<br>                 <b>Longitude:</b> -87.9200<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Choloma municipality<br>                 <b>Where Description:</b> Choloma municipality                 </div>`)[0];
+                popup_3fcedecad53fb144873dfa4bdb8f1a81.setContent(html_0241a922393f4f36657c41a23f1fa097);
+            
+        
+
+        circle_marker_49edde521c8fb84c5bcf32e3c1af523c.bindPopup(popup_3fcedecad53fb144873dfa4bdb8f1a81)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54e52d8fcd12fa64a259f09cfdd8c98e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_54e52d8fcd12fa64a259f09cfdd8c98e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54e52d8fcd12fa64a259f09cfdd8c98e = L.map(
+                "map_54e52d8fcd12fa64a259f09cfdd8c98e",
+                {
+                    center: [18.554679375, -72.30694869999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_21c82b52292e49194bb867550b1d6181 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_21c82b52292e49194bb867550b1d6181.addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+            var marker_c176a9f123ef60129e74b9b9f1cd250e = L.marker(
+                [18.554679375, -72.30694869999999],
+                {}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+            var div_icon_65f2fe7106c11e3fa27b3453a459d616 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eHaiti\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_c176a9f123ef60129e74b9b9f1cd250e.setIcon(div_icon_65f2fe7106c11e3fa27b3453a459d616);
+        
+    
+            var circle_marker_3e667aa499a005a4d6ae0b071b81e4ee = L.circleMarker(
+                [18.577857, -72.331887],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.313399385206576, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_f543d51781b20710c1fcfc1661209cce = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e0c1ef4502ec225f17bfb05d799bd162 = $(`<div id="html_e0c1ef4502ec225f17bfb05d799bd162" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5779<br>                 <b>Longitude:</b> -72.3319<br>                 <b>Deaths:</b> 70<br>                 <b>Where Coordinates:</b> Cité Soleil town<br>                 <b>Where Description:</b> Cité Soleil                 </div>`)[0];
+                popup_f543d51781b20710c1fcfc1661209cce.setContent(html_e0c1ef4502ec225f17bfb05d799bd162);
+            
+        
+
+        circle_marker_3e667aa499a005a4d6ae0b071b81e4ee.bindPopup(popup_f543d51781b20710c1fcfc1661209cce)
+        ;
+
+        
+    
+    
+            var circle_marker_633152a8b23a179f92e3ff8a08294a21 = L.circleMarker(
+                [18.733333, -72.416667],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.313399385206576, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_aea8f6bc1917aa03d2077dd321518cc6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4fa378db21f10f31db6a90379fe8b7c8 = $(`<div id="html_4fa378db21f10f31db6a90379fe8b7c8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.7333<br>                 <b>Longitude:</b> -72.4167<br>                 <b>Deaths:</b> 70<br>                 <b>Where Coordinates:</b> Cabaret commune<br>                 <b>Where Description:</b> cabaret commune  source matelas                 </div>`)[0];
+                popup_aea8f6bc1917aa03d2077dd321518cc6.setContent(html_4fa378db21f10f31db6a90379fe8b7c8);
+            
+        
+
+        circle_marker_633152a8b23a179f92e3ff8a08294a21.bindPopup(popup_aea8f6bc1917aa03d2077dd321518cc6)
+        ;
+
+        
+    
+    
+            var circle_marker_769abc63d04c02d58eec1a5049dfc4d3 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_7083ec7d402b67289802c945201f37aa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7a85a4a4d0004c2b649de2e68e3b5bbc = $(`<div id="html_7a85a4a4d0004c2b649de2e68e3b5bbc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Carrefour-Feuilles  P-a-P                 </div>`)[0];
+                popup_7083ec7d402b67289802c945201f37aa.setContent(html_7a85a4a4d0004c2b649de2e68e3b5bbc);
+            
+        
+
+        circle_marker_769abc63d04c02d58eec1a5049dfc4d3.bindPopup(popup_7083ec7d402b67289802c945201f37aa)
+        ;
+
+        
+    
+    
+            var circle_marker_dcf1010c3eb40bde2b945be063ce21a0 = L.circleMarker(
+                [18.606567, -72.222182],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_abe0bcaffbbf4a9d723fb140089e41ba = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_674cadc18f4ebb23473ea374b8ffb5c8 = $(`<div id="html_674cadc18f4ebb23473ea374b8ffb5c8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.6066<br>                 <b>Longitude:</b> -72.2222<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Croix-des-Bouquets commune<br>                 <b>Where Description:</b> premises of Rhum Bakara, located in the commune of Croix des Bouquets                 </div>`)[0];
+                popup_abe0bcaffbbf4a9d723fb140089e41ba.setContent(html_674cadc18f4ebb23473ea374b8ffb5c8);
+            
+        
+
+        circle_marker_dcf1010c3eb40bde2b945be063ce21a0.bindPopup(popup_abe0bcaffbbf4a9d723fb140089e41ba)
+        ;
+
+        
+    
+    
+            var circle_marker_8524b4bfc5b7332cdb10b92dadabb452 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_ab9a8041471e1db751f63be83de8bec1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6b9fe81bcdaf7ba9e4d42a409add17e2 = $(`<div id="html_6b9fe81bcdaf7ba9e4d42a409add17e2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Carrefour-Feuilles                 </div>`)[0];
+                popup_ab9a8041471e1db751f63be83de8bec1.setContent(html_6b9fe81bcdaf7ba9e4d42a409add17e2);
+            
+        
+
+        circle_marker_8524b4bfc5b7332cdb10b92dadabb452.bindPopup(popup_ab9a8041471e1db751f63be83de8bec1)
+        ;
+
+        
+    
+    
+            var circle_marker_db20f56ef05d863ef50a00d7ba6722b4 = L.circleMarker(
+                [18.577857, -72.331887],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_9f76e59670f0d5f3009f714fc85b78e6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cb4b7ac494e098ed96d006075aaa3070 = $(`<div id="html_cb4b7ac494e098ed96d006075aaa3070" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5779<br>                 <b>Longitude:</b> -72.3319<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Cité Soleil town<br>                 <b>Where Description:</b> Cite Soleil                 </div>`)[0];
+                popup_9f76e59670f0d5f3009f714fc85b78e6.setContent(html_cb4b7ac494e098ed96d006075aaa3070);
+            
+        
+
+        circle_marker_db20f56ef05d863ef50a00d7ba6722b4.bindPopup(popup_9f76e59670f0d5f3009f714fc85b78e6)
+        ;
+
+        
+    
+    
+            var circle_marker_ba3a3fe13ccdcce62dd72519fe3abbb7 = L.circleMarker(
+                [18.65, -72.06667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_496e006fa72d88903c3438344a22af18 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aac72aa053e73df400b7fcbe9a99c084 = $(`<div id="html_aac72aa053e73df400b7fcbe9a99c084" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.6500<br>                 <b>Longitude:</b> -72.0667<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Durand town<br>                 <b>Where Description:</b> Durand (commune of Thomazeau)                 </div>`)[0];
+                popup_496e006fa72d88903c3438344a22af18.setContent(html_aac72aa053e73df400b7fcbe9a99c084);
+            
+        
+
+        circle_marker_ba3a3fe13ccdcce62dd72519fe3abbb7.bindPopup(popup_496e006fa72d88903c3438344a22af18)
+        ;
+
+        
+    
+    
+            var circle_marker_7de19b2b3acf1b369d628b8e0b6f9000 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_874c2ea230979ef2aabfe76b89f0b2cc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_77d45c30559b0910517f788e0dfbf0ad = $(`<div id="html_77d45c30559b0910517f788e0dfbf0ad" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Carrefour Feuilles                 </div>`)[0];
+                popup_874c2ea230979ef2aabfe76b89f0b2cc.setContent(html_77d45c30559b0910517f788e0dfbf0ad);
+            
+        
+
+        circle_marker_7de19b2b3acf1b369d628b8e0b6f9000.bindPopup(popup_874c2ea230979ef2aabfe76b89f0b2cc)
+        ;
+
+        
+    
+    
+            var circle_marker_090de45a5d464a4ce328480e5354174e = L.circleMarker(
+                [18.64461, -72.06598],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_b3b840aa2e584e93863dd8f986f24294 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dfc001718400fa761f23f4eef8b3d6cd = $(`<div id="html_dfc001718400fa761f23f4eef8b3d6cd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.6446<br>                 <b>Longitude:</b> -72.0660<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> L'Étang town<br>                 <b>Where Description:</b> Letang (commune of Thomazeau)                 </div>`)[0];
+                popup_b3b840aa2e584e93863dd8f986f24294.setContent(html_dfc001718400fa761f23f4eef8b3d6cd);
+            
+        
+
+        circle_marker_090de45a5d464a4ce328480e5354174e.bindPopup(popup_b3b840aa2e584e93863dd8f986f24294)
+        ;
+
+        
+    
+    
+            var circle_marker_8ccb888f7315a53e93efc5822e9faed4 = L.circleMarker(
+                [18.530172, -72.062905],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_832c64a3d2664ec8d1849c722fe9a993 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f98436e15794ac6f9352fae319f24588 = $(`<div id="html_f98436e15794ac6f9352fae319f24588" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5302<br>                 <b>Longitude:</b> -72.0629<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Ganthier town<br>                 <b>Where Description:</b> Ganthier, Croix-des-Bouquets                 </div>`)[0];
+                popup_832c64a3d2664ec8d1849c722fe9a993.setContent(html_f98436e15794ac6f9352fae319f24588);
+            
+        
+
+        circle_marker_8ccb888f7315a53e93efc5822e9faed4.bindPopup(popup_832c64a3d2664ec8d1849c722fe9a993)
+        ;
+
+        
+    
+    
+            var circle_marker_60d7bed4a5cc732fc0833d40e8dd94b8 = L.circleMarker(
+                [18.497278, -72.069109],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_d74b47c354dd9193b9510501f31af48f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6a0f8c34da81cd62167fd5438ee959e2 = $(`<div id="html_6a0f8c34da81cd62167fd5438ee959e2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.4973<br>                 <b>Longitude:</b> -72.0691<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Croix-des-Bouquets arrondissement<br>                 <b>Where Description:</b> outskirts of Port-au-Prince, in the Croix-des-Bouquets district.                 </div>`)[0];
+                popup_d74b47c354dd9193b9510501f31af48f.setContent(html_6a0f8c34da81cd62167fd5438ee959e2);
+            
+        
+
+        circle_marker_60d7bed4a5cc732fc0833d40e8dd94b8.bindPopup(popup_d74b47c354dd9193b9510501f31af48f)
+        ;
+
+        
+    
+    
+            var circle_marker_c6f03db3a4cb76eeb6b5c34b7236a2b0 = L.circleMarker(
+                [18.577857, -72.331887],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.452297205741957, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_4ef0ba2c4d4f041dafe0f1f4a48df7cf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cf6b78f25059e175a5a366a546d5ae63 = $(`<div id="html_cf6b78f25059e175a5a366a546d5ae63" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5779<br>                 <b>Longitude:</b> -72.3319<br>                 <b>Deaths:</b> 72<br>                 <b>Where Coordinates:</b> Cité Soleil town<br>                 <b>Where Description:</b> Terre Noire                 </div>`)[0];
+                popup_4ef0ba2c4d4f041dafe0f1f4a48df7cf.setContent(html_cf6b78f25059e175a5a366a546d5ae63);
+            
+        
+
+        circle_marker_c6f03db3a4cb76eeb6b5c34b7236a2b0.bindPopup(popup_4ef0ba2c4d4f041dafe0f1f4a48df7cf)
+        ;
+
+        
+    
+    
+            var circle_marker_513a5b2002b5733bc4947fdd8cf5c7c6 = L.circleMarker(
+                [18.577857, -72.331887],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_08ee2a1ae30f56bcbd00da121d1b87bd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_80a0c754eb60f11fc920cd5dfe37e125 = $(`<div id="html_80a0c754eb60f11fc920cd5dfe37e125" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5779<br>                 <b>Longitude:</b> -72.3319<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Cité Soleil town<br>                 <b>Where Description:</b> Nan Belekou  Cite Soleil commune                 </div>`)[0];
+                popup_08ee2a1ae30f56bcbd00da121d1b87bd.setContent(html_80a0c754eb60f11fc920cd5dfe37e125);
+            
+        
+
+        circle_marker_513a5b2002b5733bc4947fdd8cf5c7c6.bindPopup(popup_08ee2a1ae30f56bcbd00da121d1b87bd)
+        ;
+
+        
+    
+    
+            var circle_marker_08cbd2e38e95c86c93e4817258a66cd2 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.222612188617115, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_74fde40a01d8bfad9533b56f65c054f6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0a49212afbcac3f2d5557cdca76d73aa = $(`<div id="html_0a49212afbcac3f2d5557cdca76d73aa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 20<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_74fde40a01d8bfad9533b56f65c054f6.setContent(html_0a49212afbcac3f2d5557cdca76d73aa);
+            
+        
+
+        circle_marker_08cbd2e38e95c86c93e4817258a66cd2.bindPopup(popup_74fde40a01d8bfad9533b56f65c054f6)
+        ;
+
+        
+    
+    
+            var circle_marker_b5836587e97dbd08dfc4251d628d2311 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_ad8bcbb009461d3c3d30560e212839af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dec9cfb8974836dc8d2dc74d734c8893 = $(`<div id="html_dec9cfb8974836dc8d2dc74d734c8893" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Corridor Bastia                 </div>`)[0];
+                popup_ad8bcbb009461d3c3d30560e212839af.setContent(html_dec9cfb8974836dc8d2dc74d734c8893);
+            
+        
+
+        circle_marker_b5836587e97dbd08dfc4251d628d2311.bindPopup(popup_ad8bcbb009461d3c3d30560e212839af)
+        ;
+
+        
+    
+    
+            var circle_marker_0e99f70d49048a51b446f50758604d2a = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.862943611198906, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_02686eac4fa66612f90a7bdaab2f653e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e82806b8d746c7affd768e131f3a46d2 = $(`<div id="html_e82806b8d746c7affd768e131f3a46d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 15<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> refugee shelter located in Corridor Bastia in front of the Saint-Michel Church                 </div>`)[0];
+                popup_02686eac4fa66612f90a7bdaab2f653e.setContent(html_e82806b8d746c7affd768e131f3a46d2);
+            
+        
+
+        circle_marker_0e99f70d49048a51b446f50758604d2a.bindPopup(popup_02686eac4fa66612f90a7bdaab2f653e)
+        ;
+
+        
+    
+    
+            var circle_marker_a92b927dc4d26cbcc8003803657e6c51 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.222612188617115, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_9c58a87e5333c888b2ba83a02aae9971 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_02e45141824e5ed6f7b9e37625b617a1 = $(`<div id="html_02e45141824e5ed6f7b9e37625b617a1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 20<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Upper Bel-Air                 </div>`)[0];
+                popup_9c58a87e5333c888b2ba83a02aae9971.setContent(html_02e45141824e5ed6f7b9e37625b617a1);
+            
+        
+
+        circle_marker_a92b927dc4d26cbcc8003803657e6c51.bindPopup(popup_9c58a87e5333c888b2ba83a02aae9971)
+        ;
+
+        
+    
+    
+            var circle_marker_6f11af19469eb789f255f4c18c8ec61b = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.222612188617115, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_5504c74d06e080cfd3fc75b0fa57c398 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d9a7d2c750c92ac3b4ca39072bcfb508 = $(`<div id="html_d9a7d2c750c92ac3b4ca39072bcfb508" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 20<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Domòn and on Rue Saint Martin Extended.                 </div>`)[0];
+                popup_5504c74d06e080cfd3fc75b0fa57c398.setContent(html_d9a7d2c750c92ac3b4ca39072bcfb508);
+            
+        
+
+        circle_marker_6f11af19469eb789f255f4c18c8ec61b.bindPopup(popup_5504c74d06e080cfd3fc75b0fa57c398)
+        ;
+
+        
+    
+    
+            var circle_marker_8d1440b76010345144196efd48734082 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_235b46de2180a70ee45841f4b7b95901 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8e1682fc59d18c2797c2b4fb49b70179 = $(`<div id="html_8e1682fc59d18c2797c2b4fb49b70179" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Delmas 24                 </div>`)[0];
+                popup_235b46de2180a70ee45841f4b7b95901.setContent(html_8e1682fc59d18c2797c2b4fb49b70179);
+            
+        
+
+        circle_marker_8d1440b76010345144196efd48734082.bindPopup(popup_235b46de2180a70ee45841f4b7b95901)
+        ;
+
+        
+    
+    
+            var circle_marker_7b4831a03249ab812121a1d09603387f = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_0b5a0ad53403e9d21abf10a7040222a4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e74081a4c7d9ff3c652d739058fb54cd = $(`<div id="html_e74081a4c7d9ff3c652d739058fb54cd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Sans Fil across the street from the Church of Saint Michel  Corridor Bastia                 </div>`)[0];
+                popup_0b5a0ad53403e9d21abf10a7040222a4.setContent(html_e74081a4c7d9ff3c652d739058fb54cd);
+            
+        
+
+        circle_marker_7b4831a03249ab812121a1d09603387f.bindPopup(popup_0b5a0ad53403e9d21abf10a7040222a4)
+        ;
+
+        
+    
+    
+            var circle_marker_a8677833b81ec165ccf9139871a2cf68 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_d6f07e918e3f73dc65e5d6ac24697b62 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1fd197ca56e6cc53d598cda8a8691623 = $(`<div id="html_1fd197ca56e6cc53d598cda8a8691623" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Corridor Bastia                 </div>`)[0];
+                popup_d6f07e918e3f73dc65e5d6ac24697b62.setContent(html_1fd197ca56e6cc53d598cda8a8691623);
+            
+        
+
+        circle_marker_a8677833b81ec165ccf9139871a2cf68.bindPopup(popup_d6f07e918e3f73dc65e5d6ac24697b62)
+        ;
+
+        
+    
+    
+            var circle_marker_fef2b0dcfacd1de3737d21d35d97216e = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_3434e76247d6511893122a33682e472a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bdd6b8047bf8ea30a78b2dc3630aba16 = $(`<div id="html_bdd6b8047bf8ea30a78b2dc3630aba16" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Corridor Bastia                 </div>`)[0];
+                popup_3434e76247d6511893122a33682e472a.setContent(html_bdd6b8047bf8ea30a78b2dc3630aba16);
+            
+        
+
+        circle_marker_fef2b0dcfacd1de3737d21d35d97216e.bindPopup(popup_3434e76247d6511893122a33682e472a)
+        ;
+
+        
+    
+    
+            var circle_marker_877bb14b7cf1921d48979a2ee7a3aa20 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_92dbbec276f16ab8c5cfc8d5420a7439 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_578e1001d504528b0834a020bb7e104b = $(`<div id="html_578e1001d504528b0834a020bb7e104b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Montagne des Oliviers church                 </div>`)[0];
+                popup_92dbbec276f16ab8c5cfc8d5420a7439.setContent(html_578e1001d504528b0834a020bb7e104b);
+            
+        
+
+        circle_marker_877bb14b7cf1921d48979a2ee7a3aa20.bindPopup(popup_92dbbec276f16ab8c5cfc8d5420a7439)
+        ;
+
+        
+    
+    
+            var circle_marker_72d29c6b47d9022238f4112f05230cac = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_319db59e37f206f05ec6144798102165 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ac097f9ab1fdb07b2854b24ca1c9ccac = $(`<div id="html_ac097f9ab1fdb07b2854b24ca1c9ccac" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Corridor Bastia                 </div>`)[0];
+                popup_319db59e37f206f05ec6144798102165.setContent(html_ac097f9ab1fdb07b2854b24ca1c9ccac);
+            
+        
+
+        circle_marker_72d29c6b47d9022238f4112f05230cac.bindPopup(popup_319db59e37f206f05ec6144798102165)
+        ;
+
+        
+    
+    
+            var circle_marker_8aec9dd6cf3cc1d196a533841c4e41f0 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_c7459c195ba3c007335a4396224a1855 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_af7a0cae56011965b61cf08ccdab291a = $(`<div id="html_af7a0cae56011965b61cf08ccdab291a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_c7459c195ba3c007335a4396224a1855.setContent(html_af7a0cae56011965b61cf08ccdab291a);
+            
+        
+
+        circle_marker_8aec9dd6cf3cc1d196a533841c4e41f0.bindPopup(popup_c7459c195ba3c007335a4396224a1855)
+        ;
+
+        
+    
+    
+            var circle_marker_c08f1e47c98423f61e33522b7954a40c = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_faa76c88c5f640045d0f7245274c0e89 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fd981605762c7834ebb5b69557126699 = $(`<div id="html_fd981605762c7834ebb5b69557126699" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_faa76c88c5f640045d0f7245274c0e89.setContent(html_fd981605762c7834ebb5b69557126699);
+            
+        
+
+        circle_marker_c08f1e47c98423f61e33522b7954a40c.bindPopup(popup_faa76c88c5f640045d0f7245274c0e89)
+        ;
+
+        
+    
+    
+            var circle_marker_ad7f6bc7ec4b6c84bf5a8a86f6830917 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_373fbe5931b89ea69020aadcfd64f024 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_af2b200e56389fe8ac02555115a28b1a = $(`<div id="html_af2b200e56389fe8ac02555115a28b1a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_373fbe5931b89ea69020aadcfd64f024.setContent(html_af2b200e56389fe8ac02555115a28b1a);
+            
+        
+
+        circle_marker_ad7f6bc7ec4b6c84bf5a8a86f6830917.bindPopup(popup_373fbe5931b89ea69020aadcfd64f024)
+        ;
+
+        
+    
+    
+            var circle_marker_9e31e106b70f04fe8553627d197e9423 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_07a010c14ab606c7232ca327a8dce909 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_989f0112607be1e6066f08884abd9f1c = $(`<div id="html_989f0112607be1e6066f08884abd9f1c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_07a010c14ab606c7232ca327a8dce909.setContent(html_989f0112607be1e6066f08884abd9f1c);
+            
+        
+
+        circle_marker_9e31e106b70f04fe8553627d197e9423.bindPopup(popup_07a010c14ab606c7232ca327a8dce909)
+        ;
+
+        
+    
+    
+            var circle_marker_3bd260f14c57cd193f318bf37133673a = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_fb949357cca2e5d579778de4c1b680b3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_96f8aa7f4378a3ac787cd9acff0e76df = $(`<div id="html_96f8aa7f4378a3ac787cd9acff0e76df" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_fb949357cca2e5d579778de4c1b680b3.setContent(html_96f8aa7f4378a3ac787cd9acff0e76df);
+            
+        
+
+        circle_marker_3bd260f14c57cd193f318bf37133673a.bindPopup(popup_fb949357cca2e5d579778de4c1b680b3)
+        ;
+
+        
+    
+    
+            var circle_marker_6e2670ef345119c27b8294e2a7f4cd29 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_ea88f56fed488ec4c6da772958808443 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5433532a70bdb864bbd4780f9db961df = $(`<div id="html_5433532a70bdb864bbd4780f9db961df" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_ea88f56fed488ec4c6da772958808443.setContent(html_5433532a70bdb864bbd4780f9db961df);
+            
+        
+
+        circle_marker_6e2670ef345119c27b8294e2a7f4cd29.bindPopup(popup_ea88f56fed488ec4c6da772958808443)
+        ;
+
+        
+    
+    
+            var circle_marker_d30ddf5d0a4b6226379434e56683b9e9 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_2d92239d2e1be86c1ccf698b3ac5380e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1b93af1a198749f6e644431d2af2c536 = $(`<div id="html_1b93af1a198749f6e644431d2af2c536" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_2d92239d2e1be86c1ccf698b3ac5380e.setContent(html_1b93af1a198749f6e644431d2af2c536);
+            
+        
+
+        circle_marker_d30ddf5d0a4b6226379434e56683b9e9.bindPopup(popup_2d92239d2e1be86c1ccf698b3ac5380e)
+        ;
+
+        
+    
+    
+            var circle_marker_b56d36f95a414c3c3fdcf9ee28c413ad = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_4b931e6e94328de332403ee0f905b067 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a09941d17a44f3bfe9e265ce1c544b21 = $(`<div id="html_a09941d17a44f3bfe9e265ce1c544b21" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Bel-Air                 </div>`)[0];
+                popup_4b931e6e94328de332403ee0f905b067.setContent(html_a09941d17a44f3bfe9e265ce1c544b21);
+            
+        
+
+        circle_marker_b56d36f95a414c3c3fdcf9ee28c413ad.bindPopup(popup_4b931e6e94328de332403ee0f905b067)
+        ;
+
+        
+    
+    
+            var circle_marker_025107051ba5f49016d3ff0aa4f7df0d = L.circleMarker(
+                [18.577857, -72.331887],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.978661367769954, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_29548366e5518b0fd84caca1696fc72e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cf20a6dede5b5075380ee7758b34b78c = $(`<div id="html_cf20a6dede5b5075380ee7758b34b78c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5779<br>                 <b>Longitude:</b> -72.3319<br>                 <b>Deaths:</b> 19<br>                 <b>Where Coordinates:</b> Cité Soleil town<br>                 <b>Where Description:</b> Nan Brooklyn neighborhood, Cite Soleil                 </div>`)[0];
+                popup_29548366e5518b0fd84caca1696fc72e.setContent(html_cf20a6dede5b5075380ee7758b34b78c);
+            
+        
+
+        circle_marker_025107051ba5f49016d3ff0aa4f7df0d.bindPopup(popup_29548366e5518b0fd84caca1696fc72e)
+        ;
+
+        
+    
+    
+            var circle_marker_a12e8c999c672d2380ed69edd874f019 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_eb6a6c38ab332cf68f837a19d6d62ce7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9cfa14939e5b9972a287ec944e57e90c = $(`<div id="html_9cfa14939e5b9972a287ec944e57e90c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Decayette neighbourhood of Port-au-Prince                 </div>`)[0];
+                popup_eb6a6c38ab332cf68f837a19d6d62ce7.setContent(html_9cfa14939e5b9972a287ec944e57e90c);
+            
+        
+
+        circle_marker_a12e8c999c672d2380ed69edd874f019.bindPopup(popup_eb6a6c38ab332cf68f837a19d6d62ce7)
+        ;
+
+        
+    
+    
+            var circle_marker_65e4ff0e810704eab76ec3e0b3d82d04 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_170f6f1ba527ec988ff76979da77b37a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ea80e31a7dd0320cb0e5999716840c0f = $(`<div id="html_ea80e31a7dd0320cb0e5999716840c0f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Savane Pistache                 </div>`)[0];
+                popup_170f6f1ba527ec988ff76979da77b37a.setContent(html_ea80e31a7dd0320cb0e5999716840c0f);
+            
+        
+
+        circle_marker_65e4ff0e810704eab76ec3e0b3d82d04.bindPopup(popup_170f6f1ba527ec988ff76979da77b37a)
+        ;
+
+        
+    
+    
+            var circle_marker_80ec70cf7f1af302ecb74c182dd85e04 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_aa08a089ce1fbe5fb17d84522d12c62f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5f8b848f05e0478510ff9f4add9718ec = $(`<div id="html_5f8b848f05e0478510ff9f4add9718ec" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Carrefour-Feuilles, Impasse Beauboeuf                 </div>`)[0];
+                popup_aa08a089ce1fbe5fb17d84522d12c62f.setContent(html_5f8b848f05e0478510ff9f4add9718ec);
+            
+        
+
+        circle_marker_80ec70cf7f1af302ecb74c182dd85e04.bindPopup(popup_aa08a089ce1fbe5fb17d84522d12c62f)
+        ;
+
+        
+    
+    
+            var circle_marker_3619499ee1a6c430eaba5886123bd487 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_8898004415990cd8e05405cc82403935 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1b78c3aeacedf66e482868e8d9450bb6 = $(`<div id="html_1b78c3aeacedf66e482868e8d9450bb6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Decayette                 </div>`)[0];
+                popup_8898004415990cd8e05405cc82403935.setContent(html_1b78c3aeacedf66e482868e8d9450bb6);
+            
+        
+
+        circle_marker_3619499ee1a6c430eaba5886123bd487.bindPopup(popup_8898004415990cd8e05405cc82403935)
+        ;
+
+        
+    
+    
+            var circle_marker_c6e80185a27ceec5c94092f2eaa8f6f9 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.29048269010741, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_127d272332881f1d3e7e338609df510f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6e6ce0ce1716413d10482e1b2fce382a = $(`<div id="html_6e6ce0ce1716413d10482e1b2fce382a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 25<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Savane Pistache, Carrefour-Feuilles                 </div>`)[0];
+                popup_127d272332881f1d3e7e338609df510f.setContent(html_6e6ce0ce1716413d10482e1b2fce382a);
+            
+        
+
+        circle_marker_c6e80185a27ceec5c94092f2eaa8f6f9.bindPopup(popup_127d272332881f1d3e7e338609df510f)
+        ;
+
+        
+    
+    
+            var circle_marker_fcbb9a2f2859b20e1d882af99daa55b6 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_edc11605c6dcf11a31166224a1d007c5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_33af0098bea2fc068effddbb03a840ff = $(`<div id="html_33af0098bea2fc068effddbb03a840ff" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Savanne Pistache  Carrefour-Feuilles                 </div>`)[0];
+                popup_edc11605c6dcf11a31166224a1d007c5.setContent(html_33af0098bea2fc068effddbb03a840ff);
+            
+        
+
+        circle_marker_fcbb9a2f2859b20e1d882af99daa55b6.bindPopup(popup_edc11605c6dcf11a31166224a1d007c5)
+        ;
+
+        
+    
+    
+            var circle_marker_9cd9bbf09b9f8ec1f1a67e110aab0ec9 = L.circleMarker(
+                [18.53917, -72.335],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.722194895832201, "stroke": true, "weight": 3}
+            ).addTo(map_54e52d8fcd12fa64a259f09cfdd8c98e);
+        
+    
+        var popup_dab9d81e5712d50a35cfd03ae179971b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4513537310025c5dd94b3910099a2350 = $(`<div id="html_4513537310025c5dd94b3910099a2350" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.5392<br>                 <b>Longitude:</b> -72.3350<br>                 <b>Deaths:</b> 18<br>                 <b>Where Coordinates:</b> Port-au-Prince city<br>                 <b>Where Description:</b> Savane Pistache Carrefour-Feuilles                 </div>`)[0];
+                popup_dab9d81e5712d50a35cfd03ae179971b.setContent(html_4513537310025c5dd94b3910099a2350);
+            
+        
+
+        circle_marker_9cd9bbf09b9f8ec1f1a67e110aab0ec9.bindPopup(popup_dab9d81e5712d50a35cfd03ae179971b)
+        ;
+
+        
+    
+</script>
+</html>

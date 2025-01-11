@@ -1,0 +1,112 @@
+[
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "KT-1",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "인도네시아/튀르키예/페루/세네갈/"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "T-50",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "90",
+        "Export History": "인도네시아/이라크/필리핀/태국/폴란드/말레이시아"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "KF-21",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "80",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "LCH",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "75",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "KUH-1",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "78",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "LAH",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "78",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "Aerostructure",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "87",
+        "Export History": "YES"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "Upgrade & Modification",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "79",
+        "Export History": "YES"
+    },
+    {
+        "Company Name": "1",
+        "Category": "8",
+        "Main_Selling_Product": "UAV",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "88",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "1",
+        "Category": "15",
+        "Main_Selling_Product": "Space Programs",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "77",
+        "Export History": "NO"
+    }
+]

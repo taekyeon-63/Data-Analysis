@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4e040532071a85ae2974e85c8156118 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4e040532071a85ae2974e85c8156118" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4e040532071a85ae2974e85c8156118 = L.map(
+                "map_a4e040532071a85ae2974e85c8156118",
+                {
+                    center: [11.333111777777779, 1.9783031666666666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_198936935f9c498002eac2e9b9c95ffd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_198936935f9c498002eac2e9b9c95ffd.addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+            var marker_77b847a0859b15356fc2552a36ed0be1 = L.marker(
+                [11.333111777777779, 1.9783031666666666],
+                {}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+            var div_icon_980f0b9d069a3234d95fc1332e804d84 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eBenin\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_77b847a0859b15356fc2552a36ed0be1.setIcon(div_icon_980f0b9d069a3234d95fc1332e804d84);
+        
+    
+            var circle_marker_03d0911e332c5fe226e53c12da937c03 = L.circleMarker(
+                [12.06911, 3.18405],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_3ecd36443cc3649d7d424f7d44ad142a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b82758ab0aa8e22994ee1c89b5ef131 = $(`<div id="html_2b82758ab0aa8e22994ee1c89b5ef131" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.0691<br>                 <b>Longitude:</b> 3.1841<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Karimama town<br>                 <b>Where Description:</b> Kofounou-Mamassy Gourma road, in the town of Karimama                 </div>`)[0];
+                popup_3ecd36443cc3649d7d424f7d44ad142a.setContent(html_2b82758ab0aa8e22994ee1c89b5ef131);
+            
+        
+
+        circle_marker_03d0911e332c5fe226e53c12da937c03.bindPopup(popup_3ecd36443cc3649d7d424f7d44ad142a)
+        ;
+
+        
+    
+    
+            var circle_marker_13c938f8558b9646af8d8e1af14f62ab = L.circleMarker(
+                [10.743398, 0.982153],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_ba01e0526d41478ee0db33339abe3fc2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6ab8a2f4f1117fbb0a37a6c81697e6ff = $(`<div id="html_6ab8a2f4f1117fbb0a37a6c81697e6ff" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.7434<br>                 <b>Longitude:</b> 0.9822<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Daloga village<br>                 <b>Where Description:</b> locality of Daloga, not far from the commune of Materi in Benin's northwestern Atakora Department                 </div>`)[0];
+                popup_ba01e0526d41478ee0db33339abe3fc2.setContent(html_6ab8a2f4f1117fbb0a37a6c81697e6ff);
+            
+        
+
+        circle_marker_13c938f8558b9646af8d8e1af14f62ab.bindPopup(popup_ba01e0526d41478ee0db33339abe3fc2)
+        ;
+
+        
+    
+    
+            var circle_marker_53b8ef2f159a55008ee83b43aa0478cb = L.circleMarker(
+                [12.045672, 3.132625],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_a8427d1e671faaaaf757a36e537dd36e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_70e43115e6aafd3553bf38165890faf7 = $(`<div id="html_70e43115e6aafd3553bf38165890faf7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.0457<br>                 <b>Longitude:</b> 3.1326<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mamassi village<br>                 <b>Where Description:</b> Mamassy-Peulh village                 </div>`)[0];
+                popup_a8427d1e671faaaaf757a36e537dd36e.setContent(html_70e43115e6aafd3553bf38165890faf7);
+            
+        
+
+        circle_marker_53b8ef2f159a55008ee83b43aa0478cb.bindPopup(popup_a8427d1e671faaaaf757a36e537dd36e)
+        ;
+
+        
+    
+    
+            var circle_marker_529240e96e4a49f7af6695b725cb8328 = L.circleMarker(
+                [10.914, 1.069],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_045b203b01a72e7dda0e258e7075dbf2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d80622f0d19ed29a42b28a96b8806750 = $(`<div id="html_d80622f0d19ed29a42b28a96b8806750" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.9140<br>                 <b>Longitude:</b> 1.0690<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nouadi town<br>                 <b>Where Description:</b> Nouari                 </div>`)[0];
+                popup_045b203b01a72e7dda0e258e7075dbf2.setContent(html_d80622f0d19ed29a42b28a96b8806750);
+            
+        
+
+        circle_marker_529240e96e4a49f7af6695b725cb8328.bindPopup(popup_045b203b01a72e7dda0e258e7075dbf2)
+        ;
+
+        
+    
+    
+            var circle_marker_22cfeb9123c1ef5a2484aa607d8511d0 = L.circleMarker(
+                [11.068111, 1.920931],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_63618276457b80be79cd854cfc224dea = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cb993155b633137f3eb91dbe9fffad1f = $(`<div id="html_cb993155b633137f3eb91dbe9fffad1f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.0681<br>                 <b>Longitude:</b> 1.9209<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Kaobagou town<br>                 <b>Where Description:</b> Kouabagou, one of the four districts of the commune of Kérou                 </div>`)[0];
+                popup_63618276457b80be79cd854cfc224dea.setContent(html_cb993155b633137f3eb91dbe9fffad1f);
+            
+        
+
+        circle_marker_22cfeb9123c1ef5a2484aa607d8511d0.bindPopup(popup_63618276457b80be79cd854cfc224dea)
+        ;
+
+        
+    
+    
+            var circle_marker_4f8895f4836a049bbd455465fd1bf986 = L.circleMarker(
+                [11.30844, 2.144809],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_59e7f7de33fdeb7f0098125923bc8839 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5ae097812d3246f4396816bbdb2d2887 = $(`<div id="html_5ae097812d3246f4396816bbdb2d2887" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.3084<br>                 <b>Longitude:</b> 2.1448<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Yinyinrou village<br>                 <b>Where Description:</b> Banikoara area, Yinyinrou                 </div>`)[0];
+                popup_59e7f7de33fdeb7f0098125923bc8839.setContent(html_5ae097812d3246f4396816bbdb2d2887);
+            
+        
+
+        circle_marker_4f8895f4836a049bbd455465fd1bf986.bindPopup(popup_59e7f7de33fdeb7f0098125923bc8839)
+        ;
+
+        
+    
+    
+            var circle_marker_b127d8569944dd901d9af13bfb30ae52 = L.circleMarker(
+                [10.7986, 1.02756],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_e438cf8a8c99e11c2ab56b54f9bcf502 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7f2e8c7b6749236bf40283f8f92395f2 = $(`<div id="html_7f2e8c7b6749236bf40283f8f92395f2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.7986<br>                 <b>Longitude:</b> 1.0276<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Matéri commune<br>                 <b>Where Description:</b> Matéri commune, Atakora department                 </div>`)[0];
+                popup_e438cf8a8c99e11c2ab56b54f9bcf502.setContent(html_7f2e8c7b6749236bf40283f8f92395f2);
+            
+        
+
+        circle_marker_b127d8569944dd901d9af13bfb30ae52.bindPopup(popup_e438cf8a8c99e11c2ab56b54f9bcf502)
+        ;
+
+        
+    
+    
+            var circle_marker_e8a01124df47a2ca100ddadaaf99bbaf = L.circleMarker(
+                [10.811077, 1.005061],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_bb4f9576019e676c74010780ddc549b4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7b93a3770f50d54844b7de5f2246dcfa = $(`<div id="html_7b93a3770f50d54844b7de5f2246dcfa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.8111<br>                 <b>Longitude:</b> 1.0051<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nambouli village<br>                 <b>Where Description:</b> Matéri in the district of Tantega, not far from the village of Nambouli                 </div>`)[0];
+                popup_bb4f9576019e676c74010780ddc549b4.setContent(html_7b93a3770f50d54844b7de5f2246dcfa);
+            
+        
+
+        circle_marker_e8a01124df47a2ca100ddadaaf99bbaf.bindPopup(popup_bb4f9576019e676c74010780ddc549b4)
+        ;
+
+        
+    
+    
+            var circle_marker_3340cfbe4991327ae1ce918273285ff8 = L.circleMarker(
+                [11.068111, 1.920931],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_205102cccab50767a02a3bc5d1f9d838 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d85a1aea447ca6672cb9e92bf9ecef32 = $(`<div id="html_d85a1aea447ca6672cb9e92bf9ecef32" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.0681<br>                 <b>Longitude:</b> 1.9209<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Kaobagou town<br>                 <b>Where Description:</b> Kouabagou district of the commune of Kérou                 </div>`)[0];
+                popup_205102cccab50767a02a3bc5d1f9d838.setContent(html_d85a1aea447ca6672cb9e92bf9ecef32);
+            
+        
+
+        circle_marker_3340cfbe4991327ae1ce918273285ff8.bindPopup(popup_205102cccab50767a02a3bc5d1f9d838)
+        ;
+
+        
+    
+    
+            var circle_marker_af35fb53c9308b017f8977f74c97e543 = L.circleMarker(
+                [11.068111, 1.920931],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_0bd1c5b0a4685fe9497f52e2d4da4873 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_57253d333bef2a238a934ba7c60175a1 = $(`<div id="html_57253d333bef2a238a934ba7c60175a1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.0681<br>                 <b>Longitude:</b> 1.9209<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Kaobagou town<br>                 <b>Where Description:</b> Kerou commune Kaobagou area                 </div>`)[0];
+                popup_0bd1c5b0a4685fe9497f52e2d4da4873.setContent(html_57253d333bef2a238a934ba7c60175a1);
+            
+        
+
+        circle_marker_af35fb53c9308b017f8977f74c97e543.bindPopup(popup_0bd1c5b0a4685fe9497f52e2d4da4873)
+        ;
+
+        
+    
+    
+            var circle_marker_af78a525af549ac41c2ad80466a76c17 = L.circleMarker(
+                [10.743398, 0.982153],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_999994a3101f3c1da8e85e002ed6bb4f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_df1426fb7d4e92e4d58bb88bd4d65a60 = $(`<div id="html_df1426fb7d4e92e4d58bb88bd4d65a60" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.7434<br>                 <b>Longitude:</b> 0.9822<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Daloga village<br>                 <b>Where Description:</b> hamlet of #Bouliérou (village of #Daloga , #Matéri , #Atacora )                 </div>`)[0];
+                popup_999994a3101f3c1da8e85e002ed6bb4f.setContent(html_df1426fb7d4e92e4d58bb88bd4d65a60);
+            
+        
+
+        circle_marker_af78a525af549ac41c2ad80466a76c17.bindPopup(popup_999994a3101f3c1da8e85e002ed6bb4f)
+        ;
+
+        
+    
+    
+            var circle_marker_4328f508eeebdd68faadf142f0866201 = L.circleMarker(
+                [12.103854, 3.105676],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_5a2bddd73bf17221c9c8265fa4e317b0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_27506ac34a854cfaa4231c8c621a0354 = $(`<div id="html_27506ac34a854cfaa4231c8c621a0354" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.1039<br>                 <b>Longitude:</b> 3.1057<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Bogobogo town<br>                 <b>Where Description:</b> district of Bogobogo in the Commune of Karimama                 </div>`)[0];
+                popup_5a2bddd73bf17221c9c8265fa4e317b0.setContent(html_27506ac34a854cfaa4231c8c621a0354);
+            
+        
+
+        circle_marker_4328f508eeebdd68faadf142f0866201.bindPopup(popup_5a2bddd73bf17221c9c8265fa4e317b0)
+        ;
+
+        
+    
+    
+            var circle_marker_339d50d9646a7c5187fe7eb5f66e9a1a = L.circleMarker(
+                [11.93816, 2.75703],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_b10d4697581cf6c13beed0677a59d849 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4f4bcc3d58624d638d2212918b83d219 = $(`<div id="html_4f4bcc3d58624d638d2212918b83d219" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.9382<br>                 <b>Longitude:</b> 2.7570<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Karimama commune<br>                 <b>Where Description:</b> Sikawatédji, in the commune of Karimama                 </div>`)[0];
+                popup_b10d4697581cf6c13beed0677a59d849.setContent(html_4f4bcc3d58624d638d2212918b83d219);
+            
+        
+
+        circle_marker_339d50d9646a7c5187fe7eb5f66e9a1a.bindPopup(popup_b10d4697581cf6c13beed0677a59d849)
+        ;
+
+        
+    
+    
+            var circle_marker_06418c441e5e1441a8f7a0a9ef643d5c = L.circleMarker(
+                [11.93816, 2.75703],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_87b721ea8815f1d7e7a94c2ea6b1db42 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3fef1ad840c480e1ed2acab8c4ee8c0b = $(`<div id="html_3fef1ad840c480e1ed2acab8c4ee8c0b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.9382<br>                 <b>Longitude:</b> 2.7570<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Karimama commune<br>                 <b>Where Description:</b> Alibori department’s Karimama commune                 </div>`)[0];
+                popup_87b721ea8815f1d7e7a94c2ea6b1db42.setContent(html_3fef1ad840c480e1ed2acab8c4ee8c0b);
+            
+        
+
+        circle_marker_06418c441e5e1441a8f7a0a9ef643d5c.bindPopup(popup_87b721ea8815f1d7e7a94c2ea6b1db42)
+        ;
+
+        
+    
+    
+            var circle_marker_ee1ed2c151cde246ffbbc0817cf7269f = L.circleMarker(
+                [11.04999, 1.51667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_99fcf3fd8ad6a9e1ad25b6f6bad09b16 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_508292cc5918106f1ab853e28cde86b1 = $(`<div id="html_508292cc5918106f1ab853e28cde86b1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.0500<br>                 <b>Longitude:</b> 1.5167<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Pendjari National Park<br>                 <b>Where Description:</b> Atakora department, Materi commune near Pendjari National Park                 </div>`)[0];
+                popup_99fcf3fd8ad6a9e1ad25b6f6bad09b16.setContent(html_508292cc5918106f1ab853e28cde86b1);
+            
+        
+
+        circle_marker_ee1ed2c151cde246ffbbc0817cf7269f.bindPopup(popup_99fcf3fd8ad6a9e1ad25b6f6bad09b16)
+        ;
+
+        
+    
+    
+            var circle_marker_14bbe0df1d81d364f93ca2f95ee93753 = L.circleMarker(
+                [11.05, 0.966667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_d71afa4a70fd1cbe5cfa4460175da350 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_522913ff7c3022c506b36947e802c032 = $(`<div id="html_522913ff7c3022c506b36947e802c032" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.0500<br>                 <b>Longitude:</b> 0.9667<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Porga town<br>                 <b>Where Description:</b> near Porga                 </div>`)[0];
+                popup_d71afa4a70fd1cbe5cfa4460175da350.setContent(html_522913ff7c3022c506b36947e802c032);
+            
+        
+
+        circle_marker_14bbe0df1d81d364f93ca2f95ee93753.bindPopup(popup_d71afa4a70fd1cbe5cfa4460175da350)
+        ;
+
+        
+    
+    
+            var circle_marker_874b14e8b727e119f74cedff92e25e4d = L.circleMarker(
+                [11.33966, 2.45915],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_9cba013675563794ecedb352ecb46f45 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_36cf11030eb703f519a41c1aa45a309b = $(`<div id="html_36cf11030eb703f519a41c1aa45a309b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.3397<br>                 <b>Longitude:</b> 2.4592<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Banikoara commune<br>                 <b>Where Description:</b> Yinyinrou, a locality in the village of Guimbagou, Toura district in Banikoara commune.                 </div>`)[0];
+                popup_9cba013675563794ecedb352ecb46f45.setContent(html_36cf11030eb703f519a41c1aa45a309b);
+            
+        
+
+        circle_marker_874b14e8b727e119f74cedff92e25e4d.bindPopup(popup_9cba013675563794ecedb352ecb46f45)
+        ;
+
+        
+    
+    
+            var circle_marker_e721a91d36de6a05625d92aa258d786c = L.circleMarker(
+                [11.93816, 2.75703],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_a4e040532071a85ae2974e85c8156118);
+        
+    
+        var popup_37ffd296e7081728207a4ec8a62c6392 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_503c8b0bc5a7bedf06231f3258848cb1 = $(`<div id="html_503c8b0bc5a7bedf06231f3258848cb1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.9382<br>                 <b>Longitude:</b> 2.7570<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Karimama commune<br>                 <b>Where Description:</b> in Karimama commune, Alibori department                 </div>`)[0];
+                popup_37ffd296e7081728207a4ec8a62c6392.setContent(html_503c8b0bc5a7bedf06231f3258848cb1);
+            
+        
+
+        circle_marker_e721a91d36de6a05625d92aa258d786c.bindPopup(popup_37ffd296e7081728207a4ec8a62c6392)
+        ;
+
+        
+    
+</script>
+</html>

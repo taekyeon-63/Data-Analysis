@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_553099702a2fa079772db36c52244265 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_553099702a2fa079772db36c52244265" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_553099702a2fa079772db36c52244265 = L.map(
+                "map_553099702a2fa079772db36c52244265",
+                {
+                    center: [24.73562, 97.558362],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9b98fd8dc774151d6cd97354549a3320 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_9b98fd8dc774151d6cd97354549a3320.addTo(map_553099702a2fa079772db36c52244265);
+        
+    
+            var marker_794c5ad00892e79e525c0162ce22b8c6 = L.marker(
+                [24.73562, 97.558362],
+                {}
+            ).addTo(map_553099702a2fa079772db36c52244265);
+        
+    
+            var div_icon_b9663554182e61315845b2c778a9f09a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eChina\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_794c5ad00892e79e525c0162ce22b8c6.setIcon(div_icon_b9663554182e61315845b2c778a9f09a);
+        
+    
+            var circle_marker_335e4393bac4c34f30d6f789dd744b9e = L.circleMarker(
+                [24.73562, 97.558362],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_553099702a2fa079772db36c52244265);
+        
+    
+        var popup_7b87400db83f9d9a9c3b79db549fd65b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8e8d07d9f207347662b46484d4a7e472 = $(`<div id="html_8e8d07d9f207347662b46484d4a7e472" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 24.7356<br>                 <b>Longitude:</b> 97.5584<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Piguhe village<br>                 <b>Where Description:</b> across Laiza town (in Myanmar)                 </div>`)[0];
+                popup_7b87400db83f9d9a9c3b79db549fd65b.setContent(html_8e8d07d9f207347662b46484d4a7e472);
+            
+        
+
+        circle_marker_335e4393bac4c34f30d6f789dd744b9e.bindPopup(popup_7b87400db83f9d9a9c3b79db549fd65b)
+        ;
+
+        
+    
+</script>
+</html>

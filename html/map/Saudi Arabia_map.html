@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43b72f04f3c61158d4e6393b3f427aa7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_43b72f04f3c61158d4e6393b3f427aa7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_43b72f04f3c61158d4e6393b3f427aa7 = L.map(
+                "map_43b72f04f3c61158d4e6393b3f427aa7",
+                {
+                    center: [17.288037, 43.386573999999996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4bfe5289845999f9b829ac1f3d3e6d1b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_4bfe5289845999f9b829ac1f3d3e6d1b.addTo(map_43b72f04f3c61158d4e6393b3f427aa7);
+        
+    
+            var marker_cf891a44ae6778441cf5046fdfe37877 = L.marker(
+                [17.288037, 43.386573999999996],
+                {}
+            ).addTo(map_43b72f04f3c61158d4e6393b3f427aa7);
+        
+    
+            var div_icon_20c4ba75b3cc1db3e32440633f3e15c0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eSaudi Arabia\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_cf891a44ae6778441cf5046fdfe37877.setIcon(div_icon_20c4ba75b3cc1db3e32440633f3e15c0);
+        
+    
+            var circle_marker_7227b2eb8413297acd48dde770693509 = L.circleMarker(
+                [17.554, 43.46],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_43b72f04f3c61158d4e6393b3f427aa7);
+        
+    
+        var popup_66dbdbb256cca2901361373468eba390 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c00d083ba0daf417ba107b720e28bb92 = $(`<div id="html_c00d083ba0daf417ba107b720e28bb92" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 17.5540<br>                 <b>Longitude:</b> 43.4600<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Saudi Arabia - Yemen border<br>                 <b>Where Description:</b> Saudi Arabia’s southern border                 </div>`)[0];
+                popup_66dbdbb256cca2901361373468eba390.setContent(html_c00d083ba0daf417ba107b720e28bb92);
+            
+        
+
+        circle_marker_7227b2eb8413297acd48dde770693509.bindPopup(popup_66dbdbb256cca2901361373468eba390)
+        ;
+
+        
+    
+    
+            var circle_marker_827541191e4c6db3687bb7fc23ee26b9 = L.circleMarker(
+                [17.554, 43.46],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_43b72f04f3c61158d4e6393b3f427aa7);
+        
+    
+        var popup_aa8ffc46aa685bde4aab0a15c0de32b5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e6ec67ee72f9c98dde3976a1530f98c5 = $(`<div id="html_e6ec67ee72f9c98dde3976a1530f98c5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 17.5540<br>                 <b>Longitude:</b> 43.4600<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Saudi Arabia - Yemen border<br>                 <b>Where Description:</b> Saudi Arabian border with Yemen                 </div>`)[0];
+                popup_aa8ffc46aa685bde4aab0a15c0de32b5.setContent(html_e6ec67ee72f9c98dde3976a1530f98c5);
+            
+        
+
+        circle_marker_827541191e4c6db3687bb7fc23ee26b9.bindPopup(popup_aa8ffc46aa685bde4aab0a15c0de32b5)
+        ;
+
+        
+    
+    
+            var circle_marker_2752ff257024d951600762d8517f4a16 = L.circleMarker(
+                [16.756111, 43.239722],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_43b72f04f3c61158d4e6393b3f427aa7);
+        
+    
+        var popup_6850fed478ee2d226bb42ddaa88cacdb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d18466f383e008c66f4b6ad365f3c00f = $(`<div id="html_d18466f383e008c66f4b6ad365f3c00f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 16.7561<br>                 <b>Longitude:</b> 43.2397<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Jabal al Doud mountain<br>                 <b>Where Description:</b> Jazan’s Doud mountain near border                 </div>`)[0];
+                popup_6850fed478ee2d226bb42ddaa88cacdb.setContent(html_d18466f383e008c66f4b6ad365f3c00f);
+            
+        
+
+        circle_marker_2752ff257024d951600762d8517f4a16.bindPopup(popup_6850fed478ee2d226bb42ddaa88cacdb)
+        ;
+
+        
+    
+</script>
+</html>

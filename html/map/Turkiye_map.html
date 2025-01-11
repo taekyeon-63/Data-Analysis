@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6919e17aaf72ca80d429950c542bcc2e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6919e17aaf72ca80d429950c542bcc2e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6919e17aaf72ca80d429950c542bcc2e = L.map(
+                "map_6919e17aaf72ca80d429950c542bcc2e",
+                {
+                    center: [37.86247957446809, 41.37353172340426],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_863947a7c88d2d219d31b40c7b44072c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_863947a7c88d2d219d31b40c7b44072c.addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+            var marker_63cd1ab6b085c73d6db1d48de7250ebd = L.marker(
+                [37.86247957446809, 41.37353172340426],
+                {}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+            var div_icon_79021eb8bdd9acb0b0abb9f1c4b20bfc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eTurkiye\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_63cd1ab6b085c73d6db1d48de7250ebd.setIcon(div_icon_79021eb8bdd9acb0b0abb9f1c4b20bfc);
+        
+    
+            var circle_marker_3d11723ab23210c58e5678f028480d3a = L.circleMarker(
+                [37.465, 42.173056],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_e005f1809b87b9743e534ef309280922 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c0fcf4ddb9cfe135b091475c6a920889 = $(`<div id="html_c0fcf4ddb9cfe135b091475c6a920889" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4650<br>                 <b>Longitude:</b> 42.1731<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Gabar Mountains<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_e005f1809b87b9743e534ef309280922.setContent(html_c0fcf4ddb9cfe135b091475c6a920889);
+            
+        
+
+        circle_marker_3d11723ab23210c58e5678f028480d3a.bindPopup(popup_e005f1809b87b9743e534ef309280922)
+        ;
+
+        
+    
+    
+            var circle_marker_58ba968b14135b5b1cc3d3f9b7fdce53 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_e68805ea1fceaf0c06a17e2f95fd2adb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dd719582dadb61ffee3e09190cbb61a8 = $(`<div id="html_dd719582dadb61ffee3e09190cbb61a8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_e68805ea1fceaf0c06a17e2f95fd2adb.setContent(html_dd719582dadb61ffee3e09190cbb61a8);
+            
+        
+
+        circle_marker_58ba968b14135b5b1cc3d3f9b7fdce53.bindPopup(popup_e68805ea1fceaf0c06a17e2f95fd2adb)
+        ;
+
+        
+    
+    
+            var circle_marker_e21ccab95438801d9438adbc67ae4869 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_f49fcf1f5fa545bf3221101b4dd79159 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1843796881360a730e53f134c4f2b2f6 = $(`<div id="html_1843796881360a730e53f134c4f2b2f6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f49fcf1f5fa545bf3221101b4dd79159.setContent(html_1843796881360a730e53f134c4f2b2f6);
+            
+        
+
+        circle_marker_e21ccab95438801d9438adbc67ae4869.bindPopup(popup_f49fcf1f5fa545bf3221101b4dd79159)
+        ;
+
+        
+    
+    
+            var circle_marker_3ef7eb63677a87f96c276ed20f842627 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_f11c126c99042f74d1c5fb48d96e72de = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_152c93aeae5eaae6790c0768592f22f3 = $(`<div id="html_152c93aeae5eaae6790c0768592f22f3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f11c126c99042f74d1c5fb48d96e72de.setContent(html_152c93aeae5eaae6790c0768592f22f3);
+            
+        
+
+        circle_marker_3ef7eb63677a87f96c276ed20f842627.bindPopup(popup_f11c126c99042f74d1c5fb48d96e72de)
+        ;
+
+        
+    
+    
+            var circle_marker_60d1baf316fbbc254e949cf42e4c0264 = L.circleMarker(
+                [39.083333, 39.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_ae7f49cf7ec9460ad1b7aa1d6a7706a8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_10dcd073868b1fbe3bb53b8097ae7b83 = $(`<div id="html_10dcd073868b1fbe3bb53b8097ae7b83" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.0833<br>                 <b>Longitude:</b> 39.5000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tunceli province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_ae7f49cf7ec9460ad1b7aa1d6a7706a8.setContent(html_10dcd073868b1fbe3bb53b8097ae7b83);
+            
+        
+
+        circle_marker_60d1baf316fbbc254e949cf42e4c0264.bindPopup(popup_ae7f49cf7ec9460ad1b7aa1d6a7706a8)
+        ;
+
+        
+    
+    
+            var circle_marker_abcb36b3dd8d80f8aedd0225c8db5bfc = L.circleMarker(
+                [37.566667, 44.283333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_79f0a960a3b1d26b03c05e6c8b6dd327 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ee8fe2c1483fb7a1af1ece519e7fa27e = $(`<div id="html_ee8fe2c1483fb7a1af1ece519e7fa27e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.5667<br>                 <b>Longitude:</b> 44.2833<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Yüksekova district<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_79f0a960a3b1d26b03c05e6c8b6dd327.setContent(html_ee8fe2c1483fb7a1af1ece519e7fa27e);
+            
+        
+
+        circle_marker_abcb36b3dd8d80f8aedd0225c8db5bfc.bindPopup(popup_79f0a960a3b1d26b03c05e6c8b6dd327)
+        ;
+
+        
+    
+    
+            var circle_marker_7fe5ce3eb82612418ac26ba9642d23f8 = L.circleMarker(
+                [37.363056, 40.908611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_1197816568eb843f3f1cc4ae0f7be796 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9950a0a6c665c04ed42989add8334e07 = $(`<div id="html_9950a0a6c665c04ed42989add8334e07" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3631<br>                 <b>Longitude:</b> 40.9086<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mardin province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_1197816568eb843f3f1cc4ae0f7be796.setContent(html_9950a0a6c665c04ed42989add8334e07);
+            
+        
+
+        circle_marker_7fe5ce3eb82612418ac26ba9642d23f8.bindPopup(popup_1197816568eb843f3f1cc4ae0f7be796)
+        ;
+
+        
+    
+    
+            var circle_marker_4ffbf3857d5a31619a1bc572b6940167 = L.circleMarker(
+                [38.407357, 43.717793],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_f4cf1889545bc077b64f2f71795403da = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8f5a3508d6775397ed2de5712294eddc = $(`<div id="html_8f5a3508d6775397ed2de5712294eddc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.4074<br>                 <b>Longitude:</b> 43.7178<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Van province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f4cf1889545bc077b64f2f71795403da.setContent(html_8f5a3508d6775397ed2de5712294eddc);
+            
+        
+
+        circle_marker_4ffbf3857d5a31619a1bc572b6940167.bindPopup(popup_f4cf1889545bc077b64f2f71795403da)
+        ;
+
+        
+    
+    
+            var circle_marker_97737dfa6fed333fb7cd8e129bbcf1f0 = L.circleMarker(
+                [37.363056, 40.908611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_f5a6ed2ef0aadbb42f798bad105b130d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e96db190a62a1fc2b75f51a58b097c44 = $(`<div id="html_e96db190a62a1fc2b75f51a58b097c44" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3631<br>                 <b>Longitude:</b> 40.9086<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Mardin province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f5a6ed2ef0aadbb42f798bad105b130d.setContent(html_e96db190a62a1fc2b75f51a58b097c44);
+            
+        
+
+        circle_marker_97737dfa6fed333fb7cd8e129bbcf1f0.bindPopup(popup_f5a6ed2ef0aadbb42f798bad105b130d)
+        ;
+
+        
+    
+    
+            var circle_marker_4168ddf593592b8ea3e6613414d4c0bc = L.circleMarker(
+                [37.890868, 42.526891],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_3b492c63b10d405676f763a240bd0c0c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_58f9b9e1b8490bcb098bea59f0eb9a27 = $(`<div id="html_58f9b9e1b8490bcb098bea59f0eb9a27" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.8909<br>                 <b>Longitude:</b> 42.5269<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Southeastern Turkey<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_3b492c63b10d405676f763a240bd0c0c.setContent(html_58f9b9e1b8490bcb098bea59f0eb9a27);
+            
+        
+
+        circle_marker_4168ddf593592b8ea3e6613414d4c0bc.bindPopup(popup_3b492c63b10d405676f763a240bd0c0c)
+        ;
+
+        
+    
+    
+            var circle_marker_62cb06cea8e6378e52fb38655e7e0dfe = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_2edc48d9071035e570f60bb9a4daa9ee = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_242621bde98859a8e41c4a1c001cc26b = $(`<div id="html_242621bde98859a8e41c4a1c001cc26b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_2edc48d9071035e570f60bb9a4daa9ee.setContent(html_242621bde98859a8e41c4a1c001cc26b);
+            
+        
+
+        circle_marker_62cb06cea8e6378e52fb38655e7e0dfe.bindPopup(popup_2edc48d9071035e570f60bb9a4daa9ee)
+        ;
+
+        
+    
+    
+            var circle_marker_7e091cff5223e9f9bceaaba0ee9662d2 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_c7eeabfb36051af5b7752ab3983c87aa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e9862f4dba9ff8b45de3fb6960d9d1d6 = $(`<div id="html_e9862f4dba9ff8b45de3fb6960d9d1d6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_c7eeabfb36051af5b7752ab3983c87aa.setContent(html_e9862f4dba9ff8b45de3fb6960d9d1d6);
+            
+        
+
+        circle_marker_7e091cff5223e9f9bceaaba0ee9662d2.bindPopup(popup_c7eeabfb36051af5b7752ab3983c87aa)
+        ;
+
+        
+    
+    
+            var circle_marker_d2e75093d009240507b0264eda5b9609 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_d634ea718f32f4302902f9be8b0a0ed5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3fb504a49a49f932d17caeac6a1edc6c = $(`<div id="html_3fb504a49a49f932d17caeac6a1edc6c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_d634ea718f32f4302902f9be8b0a0ed5.setContent(html_3fb504a49a49f932d17caeac6a1edc6c);
+            
+        
+
+        circle_marker_d2e75093d009240507b0264eda5b9609.bindPopup(popup_d634ea718f32f4302902f9be8b0a0ed5)
+        ;
+
+        
+    
+    
+            var circle_marker_fb1c6a08fe0b17ecf31ae2b7530d6dc4 = L.circleMarker(
+                [37.76334, 42.789291],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_b4b81caa1d4897a5235501c364b865d9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_969b4ac1f62a14ee2172b6eaf7705055 = $(`<div id="html_969b4ac1f62a14ee2172b6eaf7705055" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.7633<br>                 <b>Longitude:</b> 42.7893<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Doğanköy village<br>                 <b>Where Description:</b> in the Sabandemiri region of Pervari Doğan Village, Aşağı Karamık Neighborhood, in Siirt.   Sabandemiri seems to be a moıuntain ridge located close to doğanköy in pervari siirt  Osian of Berwari district in the Sirte region                 </div>`)[0];
+                popup_b4b81caa1d4897a5235501c364b865d9.setContent(html_969b4ac1f62a14ee2172b6eaf7705055);
+            
+        
+
+        circle_marker_fb1c6a08fe0b17ecf31ae2b7530d6dc4.bindPopup(popup_b4b81caa1d4897a5235501c364b865d9)
+        ;
+
+        
+    
+    
+            var circle_marker_bc45340b69dafa5c421c9103d598d1a6 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_e779692601cac113c0ceae07bb595ea7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f279f3c6ca5cba8b126fa9e0216498cd = $(`<div id="html_f279f3c6ca5cba8b126fa9e0216498cd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_e779692601cac113c0ceae07bb595ea7.setContent(html_f279f3c6ca5cba8b126fa9e0216498cd);
+            
+        
+
+        circle_marker_bc45340b69dafa5c421c9103d598d1a6.bindPopup(popup_e779692601cac113c0ceae07bb595ea7)
+        ;
+
+        
+    
+    
+            var circle_marker_7303fd53121411cdd7b49899d4a019fa = L.circleMarker(
+                [37.566667, 44.283333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_734d1f141bbfab040fa86eebd0caf15a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_36f868d5a3d38581c2326964ed5ec5da = $(`<div id="html_36f868d5a3d38581c2326964ed5ec5da" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.5667<br>                 <b>Longitude:</b> 44.2833<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Yüksekova district<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_734d1f141bbfab040fa86eebd0caf15a.setContent(html_36f868d5a3d38581c2326964ed5ec5da);
+            
+        
+
+        circle_marker_7303fd53121411cdd7b49899d4a019fa.bindPopup(popup_734d1f141bbfab040fa86eebd0caf15a)
+        ;
+
+        
+    
+    
+            var circle_marker_85a651249205386a8a3ea6d6575d7d03 = L.circleMarker(
+                [37.49865, 43.959756],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_94f1f43db0b422ad830a4fa6bfdc3ab8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a84bd47f225f0d002a526e1b066f6549 = $(`<div id="html_a84bd47f225f0d002a526e1b066f6549" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4986<br>                 <b>Longitude:</b> 43.9598<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Cilo mountain<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_94f1f43db0b422ad830a4fa6bfdc3ab8.setContent(html_a84bd47f225f0d002a526e1b066f6549);
+            
+        
+
+        circle_marker_85a651249205386a8a3ea6d6575d7d03.bindPopup(popup_94f1f43db0b422ad830a4fa6bfdc3ab8)
+        ;
+
+        
+    
+    
+            var circle_marker_fe69b9d1e454b09ef505964158d4123b = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_52a290789193b13351d51e3b8308e6d7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_021098e085d4578bac61b6135ec412c1 = $(`<div id="html_021098e085d4578bac61b6135ec412c1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> Kesen Hill of Besta district in Bhutan  Could be that this actually took place in Turkey sinvce Besta probably refers to Şırnak in Kurdish                 </div>`)[0];
+                popup_52a290789193b13351d51e3b8308e6d7.setContent(html_021098e085d4578bac61b6135ec412c1);
+            
+        
+
+        circle_marker_fe69b9d1e454b09ef505964158d4123b.bindPopup(popup_52a290789193b13351d51e3b8308e6d7)
+        ;
+
+        
+    
+    
+            var circle_marker_235d8b58b22b9a275e29ec7818c386bf = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_eec05f256727f033a7c7c1929426eeef = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2101348bfaccaf41ef516473d954047a = $(`<div id="html_2101348bfaccaf41ef516473d954047a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_eec05f256727f033a7c7c1929426eeef.setContent(html_2101348bfaccaf41ef516473d954047a);
+            
+        
+
+        circle_marker_235d8b58b22b9a275e29ec7818c386bf.bindPopup(popup_eec05f256727f033a7c7c1929426eeef)
+        ;
+
+        
+    
+    
+            var circle_marker_c7bb98daab596ae9664dd8441b9daab1 = L.circleMarker(
+                [37.363056, 40.908611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_b57b3e81f7ddb4470745c10223a35865 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bbc03c86804a701939d9f864aec35e15 = $(`<div id="html_bbc03c86804a701939d9f864aec35e15" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3631<br>                 <b>Longitude:</b> 40.9086<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mardin province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_b57b3e81f7ddb4470745c10223a35865.setContent(html_bbc03c86804a701939d9f864aec35e15);
+            
+        
+
+        circle_marker_c7bb98daab596ae9664dd8441b9daab1.bindPopup(popup_b57b3e81f7ddb4470745c10223a35865)
+        ;
+
+        
+    
+    
+            var circle_marker_f1d27a4f8d7bdcd5312381f41cfa19f8 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_641b3515b9edf9c575e9e5509dd60faa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_21c39cca3512d242313b0a23b87255de = $(`<div id="html_21c39cca3512d242313b0a23b87255de" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_641b3515b9edf9c575e9e5509dd60faa.setContent(html_21c39cca3512d242313b0a23b87255de);
+            
+        
+
+        circle_marker_f1d27a4f8d7bdcd5312381f41cfa19f8.bindPopup(popup_641b3515b9edf9c575e9e5509dd60faa)
+        ;
+
+        
+    
+    
+            var circle_marker_f9d532b6ba3a63109e9fecc222d86148 = L.circleMarker(
+                [39.0, 35.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_02fddf4aee626fb5f39900fe49de3933 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fdedf8000c1fcf4122ab1196987a6fe8 = $(`<div id="html_fdedf8000c1fcf4122ab1196987a6fe8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.0000<br>                 <b>Longitude:</b> 35.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Turkey<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_02fddf4aee626fb5f39900fe49de3933.setContent(html_fdedf8000c1fcf4122ab1196987a6fe8);
+            
+        
+
+        circle_marker_f9d532b6ba3a63109e9fecc222d86148.bindPopup(popup_02fddf4aee626fb5f39900fe49de3933)
+        ;
+
+        
+    
+    
+            var circle_marker_47a319b97958f9beb7b6ddc3a89c95b6 = L.circleMarker(
+                [37.93, 42.270278],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_b4e456719c176752192bdd77a3a0ea24 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9d19fbdc18b6215252f9c29a028726eb = $(`<div id="html_9d19fbdc18b6215252f9c29a028726eb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.9300<br>                 <b>Longitude:</b> 42.2703<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Siirt province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_b4e456719c176752192bdd77a3a0ea24.setContent(html_9d19fbdc18b6215252f9c29a028726eb);
+            
+        
+
+        circle_marker_47a319b97958f9beb7b6ddc3a89c95b6.bindPopup(popup_b4e456719c176752192bdd77a3a0ea24)
+        ;
+
+        
+    
+    
+            var circle_marker_82339944e9bad3e5cb874f5788598eac = L.circleMarker(
+                [38.081944, 41.407222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_0c58626e90dc16473086c88faa47e213 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_08afd761a096f76f3d564b2212b059cb = $(`<div id="html_08afd761a096f76f3d564b2212b059cb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0819<br>                 <b>Longitude:</b> 41.4072<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Batman province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_0c58626e90dc16473086c88faa47e213.setContent(html_08afd761a096f76f3d564b2212b059cb);
+            
+        
+
+        circle_marker_82339944e9bad3e5cb874f5788598eac.bindPopup(popup_0c58626e90dc16473086c88faa47e213)
+        ;
+
+        
+    
+    
+            var circle_marker_81f8bce79f78c1830669b31d13f13b39 = L.circleMarker(
+                [38.081944, 41.407222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_93ccb1afa6fb04b8781a851055d4bbfc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_baf64d15e02b33f73aa8552dca0646da = $(`<div id="html_baf64d15e02b33f73aa8552dca0646da" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0819<br>                 <b>Longitude:</b> 41.4072<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Batman province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_93ccb1afa6fb04b8781a851055d4bbfc.setContent(html_baf64d15e02b33f73aa8552dca0646da);
+            
+        
+
+        circle_marker_81f8bce79f78c1830669b31d13f13b39.bindPopup(popup_93ccb1afa6fb04b8781a851055d4bbfc)
+        ;
+
+        
+    
+    
+            var circle_marker_7782b9c557dd277ca8227d38ee38fb82 = L.circleMarker(
+                [37.075333, 41.215694],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_8561c3800519cff6ae6b829f05696d77 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_26c5f9a098b03d7d86876b0d48cb7d2b = $(`<div id="html_26c5f9a098b03d7d86876b0d48cb7d2b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.0753<br>                 <b>Longitude:</b> 41.2157<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nusaybin district<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_8561c3800519cff6ae6b829f05696d77.setContent(html_26c5f9a098b03d7d86876b0d48cb7d2b);
+            
+        
+
+        circle_marker_7782b9c557dd277ca8227d38ee38fb82.bindPopup(popup_8561c3800519cff6ae6b829f05696d77)
+        ;
+
+        
+    
+    
+            var circle_marker_c4df5c64ccf7d849f305e66f1478f1a9 = L.circleMarker(
+                [37.3, 44.566667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_e7ce76d33c6753b933dda105cfe2e47c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9dbc42a8567d7cb625d5304fd7709661 = $(`<div id="html_9dbc42a8567d7cb625d5304fd7709661" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3000<br>                 <b>Longitude:</b> 44.5667<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Şemdinli district<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_e7ce76d33c6753b933dda105cfe2e47c.setContent(html_9dbc42a8567d7cb625d5304fd7709661);
+            
+        
+
+        circle_marker_c4df5c64ccf7d849f305e66f1478f1a9.bindPopup(popup_e7ce76d33c6753b933dda105cfe2e47c)
+        ;
+
+        
+    
+    
+            var circle_marker_3ab06273b00520ed72d81e5c03a648c7 = L.circleMarker(
+                [37.363056, 40.908611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_62bccc5c552454cc5aae2f23032baad9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_42f048e2f1fa6a0228a680cd82322a62 = $(`<div id="html_42f048e2f1fa6a0228a680cd82322a62" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3631<br>                 <b>Longitude:</b> 40.9086<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Mardin province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_62bccc5c552454cc5aae2f23032baad9.setContent(html_42f048e2f1fa6a0228a680cd82322a62);
+            
+        
+
+        circle_marker_3ab06273b00520ed72d81e5c03a648c7.bindPopup(popup_62bccc5c552454cc5aae2f23032baad9)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee417f3c7b200ffd6d9f872802b8d9b = L.circleMarker(
+                [38.081944, 41.407222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_680f72b2b4f0f859c085d05c4d09553d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_53453810a7f0ae666c6c898dec29f5ef = $(`<div id="html_53453810a7f0ae666c6c898dec29f5ef" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0819<br>                 <b>Longitude:</b> 41.4072<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Batman province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_680f72b2b4f0f859c085d05c4d09553d.setContent(html_53453810a7f0ae666c6c898dec29f5ef);
+            
+        
+
+        circle_marker_4ee417f3c7b200ffd6d9f872802b8d9b.bindPopup(popup_680f72b2b4f0f859c085d05c4d09553d)
+        ;
+
+        
+    
+    
+            var circle_marker_d7311523db3151a3a0c88512b576c917 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_36c681b24a7346d82bfc276d31223c94 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d1642ba61943f83f929c720431d486ab = $(`<div id="html_d1642ba61943f83f929c720431d486ab" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_36c681b24a7346d82bfc276d31223c94.setContent(html_d1642ba61943f83f929c720431d486ab);
+            
+        
+
+        circle_marker_d7311523db3151a3a0c88512b576c917.bindPopup(popup_36c681b24a7346d82bfc276d31223c94)
+        ;
+
+        
+    
+    
+            var circle_marker_7aafd295072888e3634176e9f6669cd3 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_561618a6cf0df7a494d8107412b9549f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e1b12c04c5775bffb8f76bff970c947b = $(`<div id="html_e1b12c04c5775bffb8f76bff970c947b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_561618a6cf0df7a494d8107412b9549f.setContent(html_e1b12c04c5775bffb8f76bff970c947b);
+            
+        
+
+        circle_marker_7aafd295072888e3634176e9f6669cd3.bindPopup(popup_561618a6cf0df7a494d8107412b9549f)
+        ;
+
+        
+    
+    
+            var circle_marker_5513b23555c4c58243e9a7466609b93d = L.circleMarker(
+                [38.407357, 43.717793],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_bc3a0c8c57f05d87c652b178aeb57270 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8d572bef237569df573d77b9b81f2b2d = $(`<div id="html_8d572bef237569df573d77b9b81f2b2d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.4074<br>                 <b>Longitude:</b> 43.7178<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Van province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_bc3a0c8c57f05d87c652b178aeb57270.setContent(html_8d572bef237569df573d77b9b81f2b2d);
+            
+        
+
+        circle_marker_5513b23555c4c58243e9a7466609b93d.bindPopup(popup_bc3a0c8c57f05d87c652b178aeb57270)
+        ;
+
+        
+    
+    
+            var circle_marker_911dd44ebb3b4259cefddca66c3738b2 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_79d2591df6afdfb4e9d11526d27efc38 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_86e287e00cccbdbfe943894b19f4000c = $(`<div id="html_86e287e00cccbdbfe943894b19f4000c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> Besta                 </div>`)[0];
+                popup_79d2591df6afdfb4e9d11526d27efc38.setContent(html_86e287e00cccbdbfe943894b19f4000c);
+            
+        
+
+        circle_marker_911dd44ebb3b4259cefddca66c3738b2.bindPopup(popup_79d2591df6afdfb4e9d11526d27efc38)
+        ;
+
+        
+    
+    
+            var circle_marker_1463d17071573a9dffb842791ba247ea = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_64f84aacb5b9c8c42d14a830e5fb240a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c9c291626afed8b35353083429068d55 = $(`<div id="html_c9c291626afed8b35353083429068d55" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_64f84aacb5b9c8c42d14a830e5fb240a.setContent(html_c9c291626afed8b35353083429068d55);
+            
+        
+
+        circle_marker_1463d17071573a9dffb842791ba247ea.bindPopup(popup_64f84aacb5b9c8c42d14a830e5fb240a)
+        ;
+
+        
+    
+    
+            var circle_marker_6c65079f81f33067bd2298a01be5e055 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_f3fa10bb867c94ac1b2944fca3bca756 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_969bee48797056d09e8d9614f94ce062 = $(`<div id="html_969bee48797056d09e8d9614f94ce062" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f3fa10bb867c94ac1b2944fca3bca756.setContent(html_969bee48797056d09e8d9614f94ce062);
+            
+        
+
+        circle_marker_6c65079f81f33067bd2298a01be5e055.bindPopup(popup_f3fa10bb867c94ac1b2944fca3bca756)
+        ;
+
+        
+    
+    
+            var circle_marker_6e3e0f29463b525647e108e617eb6472 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_fd0f1b2709d8b9e8b6546091651563c4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_439a03125f820de34193fa0fb0d1c260 = $(`<div id="html_439a03125f820de34193fa0fb0d1c260" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_fd0f1b2709d8b9e8b6546091651563c4.setContent(html_439a03125f820de34193fa0fb0d1c260);
+            
+        
+
+        circle_marker_6e3e0f29463b525647e108e617eb6472.bindPopup(popup_fd0f1b2709d8b9e8b6546091651563c4)
+        ;
+
+        
+    
+    
+            var circle_marker_1e7833c27d08d0b491d8f471fee33f17 = L.circleMarker(
+                [37.363056, 40.908611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_1d23921530b0e11c177bc0a813ac7dfc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_18fd918beab579e51ccdc9f6b9c81d35 = $(`<div id="html_18fd918beab579e51ccdc9f6b9c81d35" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3631<br>                 <b>Longitude:</b> 40.9086<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mardin province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_1d23921530b0e11c177bc0a813ac7dfc.setContent(html_18fd918beab579e51ccdc9f6b9c81d35);
+            
+        
+
+        circle_marker_1e7833c27d08d0b491d8f471fee33f17.bindPopup(popup_1d23921530b0e11c177bc0a813ac7dfc)
+        ;
+
+        
+    
+    
+            var circle_marker_386a2e0c7cbfa061f6c127c652ab81f5 = L.circleMarker(
+                [38.75, 35.916667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_3d092545acf3b6af30536322ab1a01b2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e3d61d7bff14298a3a2e8a4a9ead4bf9 = $(`<div id="html_e3d61d7bff14298a3a2e8a4a9ead4bf9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.7500<br>                 <b>Longitude:</b> 35.9167<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kayseri province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_3d092545acf3b6af30536322ab1a01b2.setContent(html_e3d61d7bff14298a3a2e8a4a9ead4bf9);
+            
+        
+
+        circle_marker_386a2e0c7cbfa061f6c127c652ab81f5.bindPopup(popup_3d092545acf3b6af30536322ab1a01b2)
+        ;
+
+        
+    
+    
+            var circle_marker_d96607660f2ee8d6ef8e29ecc644b1f6 = L.circleMarker(
+                [39.911652, 32.840305],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_82a99be50741132cff035fca3b78bacc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cf60634d976aa181204f74a09b477c45 = $(`<div id="html_cf60634d976aa181204f74a09b477c45" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.9117<br>                 <b>Longitude:</b> 32.8403<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Ankara city<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_82a99be50741132cff035fca3b78bacc.setContent(html_cf60634d976aa181204f74a09b477c45);
+            
+        
+
+        circle_marker_d96607660f2ee8d6ef8e29ecc644b1f6.bindPopup(popup_82a99be50741132cff035fca3b78bacc)
+        ;
+
+        
+    
+    
+            var circle_marker_2db7ee91df6f31df18a56b94036daec7 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_d98d7799f993f2c2704b24f677f73693 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3db882b98beebc38bb7335965053edda = $(`<div id="html_3db882b98beebc38bb7335965053edda" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_d98d7799f993f2c2704b24f677f73693.setContent(html_3db882b98beebc38bb7335965053edda);
+            
+        
+
+        circle_marker_2db7ee91df6f31df18a56b94036daec7.bindPopup(popup_d98d7799f993f2c2704b24f677f73693)
+        ;
+
+        
+    
+    
+            var circle_marker_06ebe3617892b1f3a4ad0aa5df2a135c = L.circleMarker(
+                [38.053052, 44.021629],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_d2cf255b267387dc208c5ca1c5395bc9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_828d3bd27640b011a0c855a6397cdeed = $(`<div id="html_828d3bd27640b011a0c855a6397cdeed" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0531<br>                 <b>Longitude:</b> 44.0216<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Başkale district<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_d2cf255b267387dc208c5ca1c5395bc9.setContent(html_828d3bd27640b011a0c855a6397cdeed);
+            
+        
+
+        circle_marker_06ebe3617892b1f3a4ad0aa5df2a135c.bindPopup(popup_d2cf255b267387dc208c5ca1c5395bc9)
+        ;
+
+        
+    
+    
+            var circle_marker_e4294aa1eff1e815e12135593a227881 = L.circleMarker(
+                [37.449444, 42.574444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_907fcdfd029be5318d9ae9741b681afa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_809cd56d121679c472957591f2663086 = $(`<div id="html_809cd56d121679c472957591f2663086" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4494<br>                 <b>Longitude:</b> 42.5744<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Şırnak province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_907fcdfd029be5318d9ae9741b681afa.setContent(html_809cd56d121679c472957591f2663086);
+            
+        
+
+        circle_marker_e4294aa1eff1e815e12135593a227881.bindPopup(popup_907fcdfd029be5318d9ae9741b681afa)
+        ;
+
+        
+    
+    
+            var circle_marker_6bf380867a90b4773889c7e649eca7e3 = L.circleMarker(
+                [37.363056, 40.908611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_9fed5bd77029c517f40e8738a092eb71 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e7f48b2444cf2d6ab18add20330b0821 = $(`<div id="html_e7f48b2444cf2d6ab18add20330b0821" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3631<br>                 <b>Longitude:</b> 40.9086<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mardin province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_9fed5bd77029c517f40e8738a092eb71.setContent(html_e7f48b2444cf2d6ab18add20330b0821);
+            
+        
+
+        circle_marker_6bf380867a90b4773889c7e649eca7e3.bindPopup(popup_9fed5bd77029c517f40e8738a092eb71)
+        ;
+
+        
+    
+    
+            var circle_marker_9d5461aa0269aa91b9914f8ed369cab1 = L.circleMarker(
+                [39.083333, 39.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_38444cad3cccf50f3e73b250b6558d39 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e67b3034649d64fd3930cf1c9d276415 = $(`<div id="html_e67b3034649d64fd3930cf1c9d276415" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.0833<br>                 <b>Longitude:</b> 39.5000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tunceli province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_38444cad3cccf50f3e73b250b6558d39.setContent(html_e67b3034649d64fd3930cf1c9d276415);
+            
+        
+
+        circle_marker_9d5461aa0269aa91b9914f8ed369cab1.bindPopup(popup_38444cad3cccf50f3e73b250b6558d39)
+        ;
+
+        
+    
+    
+            var circle_marker_152d830ec049d9af1cc57dd4a5333331 = L.circleMarker(
+                [38.0, 40.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_4707092b4dae7b8aaa85c934bc96cdde = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_06b2a44770c95aded0ec5abe8a10f9bc = $(`<div id="html_06b2a44770c95aded0ec5abe8a10f9bc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 38.0000<br>                 <b>Longitude:</b> 40.5000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Diyarbakır province<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_4707092b4dae7b8aaa85c934bc96cdde.setContent(html_06b2a44770c95aded0ec5abe8a10f9bc);
+            
+        
+
+        circle_marker_152d830ec049d9af1cc57dd4a5333331.bindPopup(popup_4707092b4dae7b8aaa85c934bc96cdde)
+        ;
+
+        
+    
+    
+            var circle_marker_01b3e6ea095fe21878e844877f05f3ca = L.circleMarker(
+                [39.099212, 39.543511],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_9afd91c8b29864fba67445041899267a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_85d93c77fc611aedf1676c43c82245af = $(`<div id="html_85d93c77fc611aedf1676c43c82245af" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.0992<br>                 <b>Longitude:</b> 39.5435<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tunceli district<br>                 <b>Where Description:</b> Dersîm                 </div>`)[0];
+                popup_9afd91c8b29864fba67445041899267a.setContent(html_85d93c77fc611aedf1676c43c82245af);
+            
+        
+
+        circle_marker_01b3e6ea095fe21878e844877f05f3ca.bindPopup(popup_9afd91c8b29864fba67445041899267a)
+        ;
+
+        
+    
+    
+            var circle_marker_b1121b972613d59953b7df1ecedadaa4 = L.circleMarker(
+                [37.316667, 40.737778],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6919e17aaf72ca80d429950c542bcc2e);
+        
+    
+        var popup_d0d40bbb6fc861d3fb780f90708bda1a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0df82a0edb8a8a7f7c4a2431abc054bd = $(`<div id="html_0df82a0edb8a8a7f7c4a2431abc054bd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3167<br>                 <b>Longitude:</b> 40.7378<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mardin town<br>                 <b>Where Description:</b> Mêrdîn                 </div>`)[0];
+                popup_d0d40bbb6fc861d3fb780f90708bda1a.setContent(html_0df82a0edb8a8a7f7c4a2431abc054bd);
+            
+        
+
+        circle_marker_b1121b972613d59953b7df1ecedadaa4.bindPopup(popup_d0d40bbb6fc861d3fb780f90708bda1a)
+        ;
+
+        
+    
+</script>
+</html>

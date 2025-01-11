@@ -1,0 +1,233 @@
+[
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "5.56mm 탄약",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "미국/필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "7.62mm 탄약",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "미국/필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "9mm 탄약",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "미국/필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "12.7mm 탄약",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "83",
+        "Export History": "미국/필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "20mm 대공포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "83",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "30mm 대공포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "83",
+        "Export History": "필리핀/사우디아라비아/인도네시아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "40mm 대공포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "83",
+        "Export History": "필리핀/사우디아라비아/인도네시아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "60mm 박격포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "81mm 박격포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "필리핀/사우디아라비아/이라크"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "105mm 전차포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "필리핀/사우디아라비아/말레이시아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "120mm 전차포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "필리핀/사우디아라비아/노르웨이/폴란드/이집트"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "127mm 함포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "91",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "155mm 곡사포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "91",
+        "Export History": "미국/사우디아라비아/UAE/폴란드/이집트"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "155mm 사거리연장탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "91",
+        "Export History": "미국/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "무반동 총탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "함포탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "항공탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "대전차 탄약",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "사거리 연장탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "미국/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "Goal Keeper 탄",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "필리핀/사우디아라비아"
+    },
+    {
+        "Company Name": "5",
+        "Category": "3",
+        "Main_Selling_Product": "이중목적탄약",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "필리핀/사우디아라비아"
+    }
+]

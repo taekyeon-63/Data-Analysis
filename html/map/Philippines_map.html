@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_299145a73668d676d2976aa4a4b70c9e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_299145a73668d676d2976aa4a4b70c9e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_299145a73668d676d2976aa4a4b70c9e = L.map(
+                "map_299145a73668d676d2976aa4a4b70c9e",
+                {
+                    center: [9.790921566371683, 123.67047949557522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e2bac9a43035a2adea1105635dc18395 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e2bac9a43035a2adea1105635dc18395.addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+            var marker_fcb78f4250ae93cc5a21efebff2cb5a0 = L.marker(
+                [9.790921566371683, 123.67047949557522],
+                {}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+            var div_icon_8bf29f6c7016f47c8c46b8d36e3c42a2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003ePhilippines\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_fcb78f4250ae93cc5a21efebff2cb5a0.setIcon(div_icon_8bf29f6c7016f47c8c46b8d36e3c42a2);
+        
+    
+            var circle_marker_cc92f9534b95bc9aae82a802c161126d = L.circleMarker(
+                [8.968687, 125.680576],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_3d8d3cd07b220506179214caefb4dc2f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e0c7dac38893f32b9b66133e8da4e25e = $(`<div id="html_e0c7dac38893f32b9b66133e8da4e25e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.9687<br>                 <b>Longitude:</b> 125.6806<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bugsukan village<br>                 <b>Where Description:</b> boundary of barangays Taligaman and Bugsukan, Butuan City                 </div>`)[0];
+                popup_3d8d3cd07b220506179214caefb4dc2f.setContent(html_e0c7dac38893f32b9b66133e8da4e25e);
+            
+        
+
+        circle_marker_cc92f9534b95bc9aae82a802c161126d.bindPopup(popup_3d8d3cd07b220506179214caefb4dc2f)
+        ;
+
+        
+    
+    
+            var circle_marker_63f6b99b9fc6371bc0f4d8d268751a1a = L.circleMarker(
+                [10.045432, 122.966671],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f9822bf302954de3eb3a35b175427f08 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_77c227ff9694ccbbeb5ff64c8b187f83 = $(`<div id="html_77c227ff9694ccbbeb5ff64c8b187f83" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.0454<br>                 <b>Longitude:</b> 122.9667<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Carabalan village<br>                 <b>Where Description:</b> Sitio Maliko-Liko, Barangay Carabalan, Himamaylan City, Negros Occidental                 </div>`)[0];
+                popup_f9822bf302954de3eb3a35b175427f08.setContent(html_77c227ff9694ccbbeb5ff64c8b187f83);
+            
+        
+
+        circle_marker_63f6b99b9fc6371bc0f4d8d268751a1a.bindPopup(popup_f9822bf302954de3eb3a35b175427f08)
+        ;
+
+        
+    
+    
+            var circle_marker_be87d4dbeb086430e95b4e119adc0f34 = L.circleMarker(
+                [10.261027, 123.223173],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f8ae50018c98f554f1956332a3dc76c1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e58b7abccaf36f4f595a9d9dc2e58fa8 = $(`<div id="html_e58b7abccaf36f4f595a9d9dc2e58fa8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2610<br>                 <b>Longitude:</b> 123.2232<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Trinidad village<br>                 <b>Where Description:</b> Sitio Banderahan, Barangay Trinidad in Guihulngan City, Negros Oriental province.                 </div>`)[0];
+                popup_f8ae50018c98f554f1956332a3dc76c1.setContent(html_e58b7abccaf36f4f595a9d9dc2e58fa8);
+            
+        
+
+        circle_marker_be87d4dbeb086430e95b4e119adc0f34.bindPopup(popup_f8ae50018c98f554f1956332a3dc76c1)
+        ;
+
+        
+    
+    
+            var circle_marker_af4f8de1344276008e09735a1070ae50 = L.circleMarker(
+                [6.100278, 124.555556],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_cd9c7beb11586579a58428ed8855bac9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e1c54258a908b7c85b950cb827cb4875 = $(`<div id="html_e1c54258a908b7c85b950cb827cb4875" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.1003<br>                 <b>Longitude:</b> 124.5556<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> New La Union village<br>                 <b>Where Description:</b> Barangay New La Union, Maitum town in Sarangani Province                 </div>`)[0];
+                popup_cd9c7beb11586579a58428ed8855bac9.setContent(html_e1c54258a908b7c85b950cb827cb4875);
+            
+        
+
+        circle_marker_af4f8de1344276008e09735a1070ae50.bindPopup(popup_cd9c7beb11586579a58428ed8855bac9)
+        ;
+
+        
+    
+    
+            var circle_marker_6a496cf5806a7989d967d8f451fab260 = L.circleMarker(
+                [9.109609, 123.116996],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f9db714106ee77af63024e0ba95d8655 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_56115a01e3a2108620a3c6ddcf071074 = $(`<div id="html_56115a01e3a2108620a3c6ddcf071074" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.1096<br>                 <b>Longitude:</b> 123.1170<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Napacao village<br>                 <b>Where Description:</b> sugarcane farm at Sitio Bondo, Barangay Napacao, Siaton town, Negros Oriental province                 </div>`)[0];
+                popup_f9db714106ee77af63024e0ba95d8655.setContent(html_56115a01e3a2108620a3c6ddcf071074);
+            
+        
+
+        circle_marker_6a496cf5806a7989d967d8f451fab260.bindPopup(popup_f9db714106ee77af63024e0ba95d8655)
+        ;
+
+        
+    
+    
+            var circle_marker_c3f9ea3af3591e0c66d7835f1ce7b083 = L.circleMarker(
+                [6.931111, 124.505],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_98833f1cc128d150332b6ad66b7e2ad0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4fcfb1279810302349072c90af93dcc0 = $(`<div id="html_4fcfb1279810302349072c90af93dcc0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9311<br>                 <b>Longitude:</b> 124.5050<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Tukanalipao village<br>                 <b>Where Description:</b> Barangay Tukanalipao, Mamasapano, Maguindanao del Sur                 </div>`)[0];
+                popup_98833f1cc128d150332b6ad66b7e2ad0.setContent(html_4fcfb1279810302349072c90af93dcc0);
+            
+        
+
+        circle_marker_c3f9ea3af3591e0c66d7835f1ce7b083.bindPopup(popup_98833f1cc128d150332b6ad66b7e2ad0)
+        ;
+
+        
+    
+    
+            var circle_marker_c7c2fa39b5b36034fb27cf234e13fdec = L.circleMarker(
+                [7.935278, 124.228889],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_c385f86e10ff67552a3f99cc70317658 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bb08925981149eb67ece9a48ae4a81ba = $(`<div id="html_bb08925981149eb67ece9a48ae4a81ba" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.9353<br>                 <b>Longitude:</b> 124.2289<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nataron village<br>                 <b>Where Description:</b> Barangay Nataron, Marantao town. Lanao del Sur province                 </div>`)[0];
+                popup_c385f86e10ff67552a3f99cc70317658.setContent(html_bb08925981149eb67ece9a48ae4a81ba);
+            
+        
+
+        circle_marker_c7c2fa39b5b36034fb27cf234e13fdec.bindPopup(popup_c385f86e10ff67552a3f99cc70317658)
+        ;
+
+        
+    
+    
+            var circle_marker_9c88e30ff8f1346d35e2fadbef857efc = L.circleMarker(
+                [10.3131, 123.2667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f67c59308d286dc40264ef391c530c98 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e7e16b80492c45c04d2efcb8cdb54d8d = $(`<div id="html_e7e16b80492c45c04d2efcb8cdb54d8d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.3131<br>                 <b>Longitude:</b> 123.2667<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Guba village<br>                 <b>Where Description:</b> Barangay Guba in the town of Vallehermoso in Negros Oriental                 </div>`)[0];
+                popup_f67c59308d286dc40264ef391c530c98.setContent(html_e7e16b80492c45c04d2efcb8cdb54d8d);
+            
+        
+
+        circle_marker_9c88e30ff8f1346d35e2fadbef857efc.bindPopup(popup_f67c59308d286dc40264ef391c530c98)
+        ;
+
+        
+    
+    
+            var circle_marker_d2b19c5da7ab4c65c25076047c5cb686 = L.circleMarker(
+                [10.256111, 123.158889],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_7688f501c39c7358dde81602ee058df1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_34e5ce8a11de8d8bfd832b98c6e98e46 = $(`<div id="html_34e5ce8a11de8d8bfd832b98c6e98e46" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2561<br>                 <b>Longitude:</b> 123.1589<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Macagahay village<br>                 <b>Where Description:</b> Barangay Macagahay in Moises Padilla town in Negros Occidental                 </div>`)[0];
+                popup_7688f501c39c7358dde81602ee058df1.setContent(html_34e5ce8a11de8d8bfd832b98c6e98e46);
+            
+        
+
+        circle_marker_d2b19c5da7ab4c65c25076047c5cb686.bindPopup(popup_7688f501c39c7358dde81602ee058df1)
+        ;
+
+        
+    
+    
+            var circle_marker_8281192c486893a99bb0e129ddf43eee = L.circleMarker(
+                [9.630483, 122.701315],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f112f123b3e967dcca64137105136a8a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_58cf52d28f28089bc1ad87de497b4b40 = $(`<div id="html_58cf52d28f28089bc1ad87de497b4b40" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.6305<br>                 <b>Longitude:</b> 122.7013<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Pinggot village<br>                 <b>Where Description:</b> Sitio Tugas, Barangay Pinggot, Ilog, Negros Occidental.                 </div>`)[0];
+                popup_f112f123b3e967dcca64137105136a8a.setContent(html_58cf52d28f28089bc1ad87de497b4b40);
+            
+        
+
+        circle_marker_8281192c486893a99bb0e129ddf43eee.bindPopup(popup_f112f123b3e967dcca64137105136a8a)
+        ;
+
+        
+    
+    
+            var circle_marker_a0af22d25ca31dfdb1839ca869b8bff5 = L.circleMarker(
+                [9.9725, 122.923611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_e6fc1b33e1c025fca6c84a147ce55cce = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d256e06fbe53b4540b1828dae24d2dfa = $(`<div id="html_d256e06fbe53b4540b1828dae24d2dfa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.9725<br>                 <b>Longitude:</b> 122.9236<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Buenavista village<br>                 <b>Where Description:</b> Sitio Maiti, Barangay Buenavista, Himamaylan City in Negros Occidental.                 </div>`)[0];
+                popup_e6fc1b33e1c025fca6c84a147ce55cce.setContent(html_d256e06fbe53b4540b1828dae24d2dfa);
+            
+        
+
+        circle_marker_a0af22d25ca31dfdb1839ca869b8bff5.bindPopup(popup_e6fc1b33e1c025fca6c84a147ce55cce)
+        ;
+
+        
+    
+    
+            var circle_marker_1c4ffbe2acf5fb6e0a168688caf0fd27 = L.circleMarker(
+                [10.333248, 123.105265],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_10f68aef098edc879ed854fa3da24e7f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6aee0395915afde3d8bc4e504df23bc1 = $(`<div id="html_6aee0395915afde3d8bc4e504df23bc1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.3332<br>                 <b>Longitude:</b> 123.1053<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Manghanoy village<br>                 <b>Where Description:</b> Sitio Sambag, Barangay Manghanoy, La Castellana in Negros Occidental                 </div>`)[0];
+                popup_10f68aef098edc879ed854fa3da24e7f.setContent(html_6aee0395915afde3d8bc4e504df23bc1);
+            
+        
+
+        circle_marker_1c4ffbe2acf5fb6e0a168688caf0fd27.bindPopup(popup_10f68aef098edc879ed854fa3da24e7f)
+        ;
+
+        
+    
+    
+            var circle_marker_67218907c79ab02fbaf740cb560fa5fd = L.circleMarker(
+                [13.35, 122.65],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_fa4495b1982fdeffd69cf5a56110f04c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_19ecfd34e3a0fc014231d3fb0ca5552a = $(`<div id="html_19ecfd34e3a0fc014231d3fb0ca5552a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.3500<br>                 <b>Longitude:</b> 122.6500<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> San Andres municipality<br>                 <b>Where Description:</b> town of San Andres, Quezon                 </div>`)[0];
+                popup_fa4495b1982fdeffd69cf5a56110f04c.setContent(html_19ecfd34e3a0fc014231d3fb0ca5552a);
+            
+        
+
+        circle_marker_67218907c79ab02fbaf740cb560fa5fd.bindPopup(popup_fa4495b1982fdeffd69cf5a56110f04c)
+        ;
+
+        
+    
+    
+            var circle_marker_e4070a804b2be1af960aba8a46f427c2 = L.circleMarker(
+                [5.963889, 120.986667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_00961f01210973d5db1bb8355e4f2794 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3ddf06f0272d159d84234ff9730b7d18 = $(`<div id="html_3ddf06f0272d159d84234ff9730b7d18" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 5.9639<br>                 <b>Longitude:</b> 120.9867<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Labah village<br>                 <b>Where Description:</b> border of Barangays Labah and Kapuk in the towns of Maimbung and Parang, in Sulu                 </div>`)[0];
+                popup_00961f01210973d5db1bb8355e4f2794.setContent(html_3ddf06f0272d159d84234ff9730b7d18);
+            
+        
+
+        circle_marker_e4070a804b2be1af960aba8a46f427c2.bindPopup(popup_00961f01210973d5db1bb8355e4f2794)
+        ;
+
+        
+    
+    
+            var circle_marker_6cea01379223c74ab32e829418da1e29 = L.circleMarker(
+                [7.66667, 124.18333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_44066acd232815c44f091dc03910d12d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4c0d1cbdd79b5358ddf14284130ba1bd = $(`<div id="html_4c0d1cbdd79b5358ddf14284130ba1bd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.6667<br>                 <b>Longitude:</b> 124.1833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Marogong municipality<br>                 <b>Where Description:</b> Barangay Cabasaran, Marogong town, Lanao del Sur province                 </div>`)[0];
+                popup_44066acd232815c44f091dc03910d12d.setContent(html_4c0d1cbdd79b5358ddf14284130ba1bd);
+            
+        
+
+        circle_marker_6cea01379223c74ab32e829418da1e29.bindPopup(popup_44066acd232815c44f091dc03910d12d)
+        ;
+
+        
+    
+    
+            var circle_marker_9b2d297ed4a505ffbdc7a5f85e0e854a = L.circleMarker(
+                [6.9775, 124.517222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_40ee871c28cc235a0cd5b162c80a9a5a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7001cc668c53fe526b0778545574f1d2 = $(`<div id="html_7001cc668c53fe526b0778545574f1d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9775<br>                 <b>Longitude:</b> 124.5172<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Liab village<br>                 <b>Where Description:</b> Barangay Liab, Mamasapano town in Maguindanao del Sur                 </div>`)[0];
+                popup_40ee871c28cc235a0cd5b162c80a9a5a.setContent(html_7001cc668c53fe526b0778545574f1d2);
+            
+        
+
+        circle_marker_9b2d297ed4a505ffbdc7a5f85e0e854a.bindPopup(popup_40ee871c28cc235a0cd5b162c80a9a5a)
+        ;
+
+        
+    
+    
+            var circle_marker_e820f0849b6d63e50dd3c96a64a65548 = L.circleMarker(
+                [12.016667, 123.683333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f2f4999c3e2f318fd55b50b90abc4c2f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e5efbc87a1fc7c9d48742924482ce4b1 = $(`<div id="html_e5efbc87a1fc7c9d48742924482ce4b1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.0167<br>                 <b>Longitude:</b> 123.6833<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Cawayan municipality<br>                 <b>Where Description:</b> Cawayan, a town in Masbate                 </div>`)[0];
+                popup_f2f4999c3e2f318fd55b50b90abc4c2f.setContent(html_e5efbc87a1fc7c9d48742924482ce4b1);
+            
+        
+
+        circle_marker_e820f0849b6d63e50dd3c96a64a65548.bindPopup(popup_f2f4999c3e2f318fd55b50b90abc4c2f)
+        ;
+
+        
+    
+    
+            var circle_marker_2700afc86722f29492a5598c456a4423 = L.circleMarker(
+                [6.06, 121.0525],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_4d4db71e224a168c3368d50056e43025 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8cf325d12359f894ef249218e92d38ac = $(`<div id="html_8cf325d12359f894ef249218e92d38ac" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0600<br>                 <b>Longitude:</b> 121.0525<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tugas village<br>                 <b>Where Description:</b> Barangay Tugas in Patikul, Sulu.                 </div>`)[0];
+                popup_4d4db71e224a168c3368d50056e43025.setContent(html_8cf325d12359f894ef249218e92d38ac);
+            
+        
+
+        circle_marker_2700afc86722f29492a5598c456a4423.bindPopup(popup_4d4db71e224a168c3368d50056e43025)
+        ;
+
+        
+    
+    
+            var circle_marker_c646efd06eb4149ec8640c3058991696 = L.circleMarker(
+                [14.174412, 122.553682],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_26e6a7012fa6221aad47e7f297be59c4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e4cc74ba22a74a4049c9e44450dd0fe4 = $(`<div id="html_e4cc74ba22a74a4049c9e44450dd0fe4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 14.1744<br>                 <b>Longitude:</b> 122.5537<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Canapawan village<br>                 <b>Where Description:</b> Barangay Canapawan in Labo town, Camarines Norte province                 </div>`)[0];
+                popup_26e6a7012fa6221aad47e7f297be59c4.setContent(html_e4cc74ba22a74a4049c9e44450dd0fe4);
+            
+        
+
+        circle_marker_c646efd06eb4149ec8640c3058991696.bindPopup(popup_26e6a7012fa6221aad47e7f297be59c4)
+        ;
+
+        
+    
+    
+            var circle_marker_a15338792aabcdd3404aef791777350f = L.circleMarker(
+                [13.19168, 123.41226],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_5a844736dd8a751ad2efdd635ad215fc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0df31b579e218e6d3a1c46e7e591cae3 = $(`<div id="html_0df31b579e218e6d3a1c46e7e591cae3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.1917<br>                 <b>Longitude:</b> 123.4123<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Ramay village<br>                 <b>Where Description:</b> Barangay Ramay in Oas town in Albay                 </div>`)[0];
+                popup_5a844736dd8a751ad2efdd635ad215fc.setContent(html_0df31b579e218e6d3a1c46e7e591cae3);
+            
+        
+
+        circle_marker_a15338792aabcdd3404aef791777350f.bindPopup(popup_5a844736dd8a751ad2efdd635ad215fc)
+        ;
+
+        
+    
+    
+            var circle_marker_1ba7113e401a80c14e499831f1e0e352 = L.circleMarker(
+                [6.673153, 124.697839],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_018600bce8d0a10aa927630b938a457c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d45ad1dae1361d746176be6fec9df262 = $(`<div id="html_d45ad1dae1361d746176be6fec9df262" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.6732<br>                 <b>Longitude:</b> 124.6978<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> New Isabela village<br>                 <b>Where Description:</b> Purok Yellow Bell, Barangay New Isabela, Tacurong City                 </div>`)[0];
+                popup_018600bce8d0a10aa927630b938a457c.setContent(html_d45ad1dae1361d746176be6fec9df262);
+            
+        
+
+        circle_marker_1ba7113e401a80c14e499831f1e0e352.bindPopup(popup_018600bce8d0a10aa927630b938a457c)
+        ;
+
+        
+    
+    
+            var circle_marker_6123c9b711c213c3c8fc2bbe63511910 = L.circleMarker(
+                [6.046389, 121.078056],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_d308ae6eaf704b5aa9a859c4a614c138 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bd5bcc36b2e0d9a9028b67bc358f5ef0 = $(`<div id="html_bd5bcc36b2e0d9a9028b67bc358f5ef0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.0464<br>                 <b>Longitude:</b> 121.0781<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kabuntakas village<br>                 <b>Where Description:</b> Barangay Kabbon Takas in Patikul, Sulu                 </div>`)[0];
+                popup_d308ae6eaf704b5aa9a859c4a614c138.setContent(html_bd5bcc36b2e0d9a9028b67bc358f5ef0);
+            
+        
+
+        circle_marker_6123c9b711c213c3c8fc2bbe63511910.bindPopup(popup_d308ae6eaf704b5aa9a859c4a614c138)
+        ;
+
+        
+    
+    
+            var circle_marker_851d0c808af7b9bc2bc0b7eddf62821e = L.circleMarker(
+                [13.110404, 123.659597],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_5f2f1cd80337f27d420f10023d0cdf56 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_05401a7be2887b44ecd01c5e404d4f63 = $(`<div id="html_05401a7be2887b44ecd01c5e404d4f63" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.1104<br>                 <b>Longitude:</b> 123.6596<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Cotmon village<br>                 <b>Where Description:</b> Barangay Cotmon, Camalig town Albay province                 </div>`)[0];
+                popup_5f2f1cd80337f27d420f10023d0cdf56.setContent(html_05401a7be2887b44ecd01c5e404d4f63);
+            
+        
+
+        circle_marker_851d0c808af7b9bc2bc0b7eddf62821e.bindPopup(popup_5f2f1cd80337f27d420f10023d0cdf56)
+        ;
+
+        
+    
+    
+            var circle_marker_7df9cb75c60b6e5c724c5939631becc6 = L.circleMarker(
+                [6.127451, 124.788576],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_95dc384c25636a68afd9887e3d21654f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ab4e76fa9911e41e16844cac39302035 = $(`<div id="html_ab4e76fa9911e41e16844cac39302035" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.1275<br>                 <b>Longitude:</b> 124.7886<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Laconon village<br>                 <b>Where Description:</b> Barangay Laconon, T'boli town in South Cotabato province                 </div>`)[0];
+                popup_95dc384c25636a68afd9887e3d21654f.setContent(html_ab4e76fa9911e41e16844cac39302035);
+            
+        
+
+        circle_marker_7df9cb75c60b6e5c724c5939631becc6.bindPopup(popup_95dc384c25636a68afd9887e3d21654f)
+        ;
+
+        
+    
+    
+            var circle_marker_1fcdc52f56977417efe406b54b95093d = L.circleMarker(
+                [9.884233, 123.074601],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_504edc414934326e265772c84735382c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_853e97b8649e22a56f9c4ff4bb526e7a = $(`<div id="html_853e97b8649e22a56f9c4ff4bb526e7a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.8842<br>                 <b>Longitude:</b> 123.0746<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Amdus village<br>                 <b>Where Description:</b> Barangay Amdus, Ayungon, Negros Oriental                 </div>`)[0];
+                popup_504edc414934326e265772c84735382c.setContent(html_853e97b8649e22a56f9c4ff4bb526e7a);
+            
+        
+
+        circle_marker_1fcdc52f56977417efe406b54b95093d.bindPopup(popup_504edc414934326e265772c84735382c)
+        ;
+
+        
+    
+    
+            var circle_marker_9cc43efcf57637ab6c3432942608f416 = L.circleMarker(
+                [8.0, 125.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_b26973a18b1c899e7381ac997247f712 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_addf44d7b7bfc059ec3c13ede15a2637 = $(`<div id="html_addf44d7b7bfc059ec3c13ede15a2637" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0000<br>                 <b>Longitude:</b> 125.0000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Mindanao island<br>                 <b>Where Description:</b> South-Central Mindanao (provinces Maguindanao, Sarangani, Lanao del Sur, South Cotabato, North Cotabato/Cotabato, Sultan Kudarat)                 </div>`)[0];
+                popup_b26973a18b1c899e7381ac997247f712.setContent(html_addf44d7b7bfc059ec3c13ede15a2637);
+            
+        
+
+        circle_marker_9cc43efcf57637ab6c3432942608f416.bindPopup(popup_b26973a18b1c899e7381ac997247f712)
+        ;
+
+        
+    
+    
+            var circle_marker_1fd16e0301aeec3dc519a190cc095f7d = L.circleMarker(
+                [10.045432, 122.966671],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_335eea1d3976961a6bb65d95e0fb410b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aba8fd5651aae10ec57e771a09cb0fd3 = $(`<div id="html_aba8fd5651aae10ec57e771a09cb0fd3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.0454<br>                 <b>Longitude:</b> 122.9667<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Carabalan village<br>                 <b>Where Description:</b> Barangay Carabalan Himamaylan City in Negros Occidental province   on the outskirts of a city in Negros Occidental province                 </div>`)[0];
+                popup_335eea1d3976961a6bb65d95e0fb410b.setContent(html_aba8fd5651aae10ec57e771a09cb0fd3);
+            
+        
+
+        circle_marker_1fd16e0301aeec3dc519a190cc095f7d.bindPopup(popup_335eea1d3976961a6bb65d95e0fb410b)
+        ;
+
+        
+    
+    
+            var circle_marker_71ba96e8e40f9edda690cdbccfc8cdc3 = L.circleMarker(
+                [9.075313, 126.148999],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_0414115fed540919f21c2b8158c5c55d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_20386d82f3fcc7da11945b8e48a2a3fb = $(`<div id="html_20386d82f3fcc7da11945b8e48a2a3fb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.0753<br>                 <b>Longitude:</b> 126.1490<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Awasian village<br>                 <b>Where Description:</b> Purok Pulotan, Barangay Awasian, Tandag City, Surigao del Sur                 </div>`)[0];
+                popup_0414115fed540919f21c2b8158c5c55d.setContent(html_20386d82f3fcc7da11945b8e48a2a3fb);
+            
+        
+
+        circle_marker_71ba96e8e40f9edda690cdbccfc8cdc3.bindPopup(popup_0414115fed540919f21c2b8158c5c55d)
+        ;
+
+        
+    
+    
+            var circle_marker_600c59f9cd18684476cca84c3b479009 = L.circleMarker(
+                [13.0, 122.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_5bb38fc1659376a4ebd5e650c984d274 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e6a38eaca1ed0faf9d626dff9c1c0c90 = $(`<div id="html_e6a38eaca1ed0faf9d626dff9c1c0c90" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.0000<br>                 <b>Longitude:</b> 122.0000<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Philippines<br>                 <b>Where Description:</b> Mindanao Island in south, Visayas Islands in centre and Luzon Island in north                 </div>`)[0];
+                popup_5bb38fc1659376a4ebd5e650c984d274.setContent(html_e6a38eaca1ed0faf9d626dff9c1c0c90);
+            
+        
+
+        circle_marker_600c59f9cd18684476cca84c3b479009.bindPopup(popup_5bb38fc1659376a4ebd5e650c984d274)
+        ;
+
+        
+    
+    
+            var circle_marker_43887eee350a0227d8d7921ead6138b6 = L.circleMarker(
+                [6.925761, 124.415408],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_8ff203d2cb089d5c961f46c78c75f5eb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aec2e718024d572566ff9e22c060bd34 = $(`<div id="html_aec2e718024d572566ff9e22c060bd34" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9258<br>                 <b>Longitude:</b> 124.4154<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Datu Saudi Ampatuan municipality<br>                 <b>Where Description:</b> Datu Saudi Ampatuan, Maguindanao Del Sur                 </div>`)[0];
+                popup_8ff203d2cb089d5c961f46c78c75f5eb.setContent(html_aec2e718024d572566ff9e22c060bd34);
+            
+        
+
+        circle_marker_43887eee350a0227d8d7921ead6138b6.bindPopup(popup_8ff203d2cb089d5c961f46c78c75f5eb)
+        ;
+
+        
+    
+    
+            var circle_marker_2d4efe78433f0272cb871ebea5b0e81d = L.circleMarker(
+                [6.35, 124.35],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_0dbf1e5e6b0295ca9e53ce631a46867c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_74a5d7caacdb38cc4013ec0b7aa484e2 = $(`<div id="html_74a5d7caacdb38cc4013ec0b7aa484e2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.3500<br>                 <b>Longitude:</b> 124.3500<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Senator Ninoy Aquino municipality<br>                 <b>Where Description:</b> Senator Ninoy Aquino, Sultan Kudarat                 </div>`)[0];
+                popup_0dbf1e5e6b0295ca9e53ce631a46867c.setContent(html_74a5d7caacdb38cc4013ec0b7aa484e2);
+            
+        
+
+        circle_marker_2d4efe78433f0272cb871ebea5b0e81d.bindPopup(popup_0dbf1e5e6b0295ca9e53ce631a46867c)
+        ;
+
+        
+    
+    
+            var circle_marker_e62dc44d027d7a8226951475c0712b2b = L.circleMarker(
+                [17.49, 121.15],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_c22017cc016737eb48e7b8d942a10afb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_85257e603903c1c1cab1186b6d940f19 = $(`<div id="html_85257e603903c1c1cab1186b6d940f19" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 17.4900<br>                 <b>Longitude:</b> 121.1500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Balbalan municipality<br>                 <b>Where Description:</b> Balbalan, Kalinga                 </div>`)[0];
+                popup_c22017cc016737eb48e7b8d942a10afb.setContent(html_85257e603903c1c1cab1186b6d940f19);
+            
+        
+
+        circle_marker_e62dc44d027d7a8226951475c0712b2b.bindPopup(popup_c22017cc016737eb48e7b8d942a10afb)
+        ;
+
+        
+    
+    
+            var circle_marker_936db0bf7590285bfdbbb9dbaef3ce48 = L.circleMarker(
+                [6.833333, 124.383333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_57796f278f7fb2104e1b7120e6ab2900 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_064354ff265f2278b369d480648a15e6 = $(`<div id="html_064354ff265f2278b369d480648a15e6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8333<br>                 <b>Longitude:</b> 124.3833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ampatuan municipality<br>                 <b>Where Description:</b> Ampatuan, Maguindanao Del Sur                 </div>`)[0];
+                popup_57796f278f7fb2104e1b7120e6ab2900.setContent(html_064354ff265f2278b369d480648a15e6);
+            
+        
+
+        circle_marker_936db0bf7590285bfdbbb9dbaef3ce48.bindPopup(popup_57796f278f7fb2104e1b7120e6ab2900)
+        ;
+
+        
+    
+    
+            var circle_marker_a292d32ae8f86289eca3ceb5999419d0 = L.circleMarker(
+                [12.014612, 123.802002],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_87071fda8a3a3e390118fe38d94f6376 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3f0d079ee8a5927c87e3ea4e4fe57884 = $(`<div id="html_3f0d079ee8a5927c87e3ea4e4fe57884" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.0146<br>                 <b>Longitude:</b> 123.8020<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Villahermosa village<br>                 <b>Where Description:</b> Barangay Villahermosa in Cawayan town, Masbate                 </div>`)[0];
+                popup_87071fda8a3a3e390118fe38d94f6376.setContent(html_3f0d079ee8a5927c87e3ea4e4fe57884);
+            
+        
+
+        circle_marker_a292d32ae8f86289eca3ceb5999419d0.bindPopup(popup_87071fda8a3a3e390118fe38d94f6376)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc8e25754389c4a6d8e432a563047d6 = L.circleMarker(
+                [7.1, 124.633333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_d7e2fa31e6c842e3e849434784b9390e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f62ef72b02d0b8f4a8c9be79e8c4d197 = $(`<div id="html_f62ef72b02d0b8f4a8c9be79e8c4d197" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.1000<br>                 <b>Longitude:</b> 124.6333<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Pikit municipality<br>                 <b>Where Description:</b> Pikit, North Cotabato                 </div>`)[0];
+                popup_d7e2fa31e6c842e3e849434784b9390e.setContent(html_f62ef72b02d0b8f4a8c9be79e8c4d197);
+            
+        
+
+        circle_marker_5fc8e25754389c4a6d8e432a563047d6.bindPopup(popup_d7e2fa31e6c842e3e849434784b9390e)
+        ;
+
+        
+    
+    
+            var circle_marker_83b33e690f2c9daee7b972914a77f855 = L.circleMarker(
+                [17.49, 121.15],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_899c1c1e0bcf8705da37cbd82fe12111 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b953c85ce9ec433b7a1c7624b28a3219 = $(`<div id="html_b953c85ce9ec433b7a1c7624b28a3219" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 17.4900<br>                 <b>Longitude:</b> 121.1500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Balbalan municipality<br>                 <b>Where Description:</b> Balbalan, Kalinga                 </div>`)[0];
+                popup_899c1c1e0bcf8705da37cbd82fe12111.setContent(html_b953c85ce9ec433b7a1c7624b28a3219);
+            
+        
+
+        circle_marker_83b33e690f2c9daee7b972914a77f855.bindPopup(popup_899c1c1e0bcf8705da37cbd82fe12111)
+        ;
+
+        
+    
+    
+            var circle_marker_aaad77f6d0b5cb91765fb8c1d12165de = L.circleMarker(
+                [6.955212, 124.498207],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_bda93f094de45b7bf5633f321361b4f4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6d3fe983638df80a31c5adaef565bc41 = $(`<div id="html_6d3fe983638df80a31c5adaef565bc41" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9552<br>                 <b>Longitude:</b> 124.4982<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Libutan village<br>                 <b>Where Description:</b> Barangay Libutan, Mamasapano town, Maguindanao del Sur province                 </div>`)[0];
+                popup_bda93f094de45b7bf5633f321361b4f4.setContent(html_6d3fe983638df80a31c5adaef565bc41);
+            
+        
+
+        circle_marker_aaad77f6d0b5cb91765fb8c1d12165de.bindPopup(popup_bda93f094de45b7bf5633f321361b4f4)
+        ;
+
+        
+    
+    
+            var circle_marker_63e45ffcb1e8eeac7ab269a211e45bfc = L.circleMarker(
+                [6.949722, 124.860833],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_d1dcb6a049172a7c5e272035a7632c20 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7fec58cd89311e577870330f1867ffd7 = $(`<div id="html_7fec58cd89311e577870330f1867ffd7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9497<br>                 <b>Longitude:</b> 124.8608<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Dungguan village<br>                 <b>Where Description:</b> in Barangay Dalgan in Pagalungan town  Near Dungguan village. By the border of Maguindanao Sur and North Cotabato provinces.                 </div>`)[0];
+                popup_d1dcb6a049172a7c5e272035a7632c20.setContent(html_7fec58cd89311e577870330f1867ffd7);
+            
+        
+
+        circle_marker_63e45ffcb1e8eeac7ab269a211e45bfc.bindPopup(popup_d1dcb6a049172a7c5e272035a7632c20)
+        ;
+
+        
+    
+    
+            var circle_marker_1af4e2d4972e44549604c734f34c0ba0 = L.circleMarker(
+                [8.08, 124.687778],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_6d710b896a634365b1f1886c5401394a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_41618a9a45736443d97aee8ba9cfbcf3 = $(`<div id="html_41618a9a45736443d97aee8ba9cfbcf3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0800<br>                 <b>Longitude:</b> 124.6878<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Talakag municipality<br>                 <b>Where Description:</b> Talakag, Bukidnon                 </div>`)[0];
+                popup_6d710b896a634365b1f1886c5401394a.setContent(html_41618a9a45736443d97aee8ba9cfbcf3);
+            
+        
+
+        circle_marker_1af4e2d4972e44549604c734f34c0ba0.bindPopup(popup_6d710b896a634365b1f1886c5401394a)
+        ;
+
+        
+    
+    
+            var circle_marker_0ff92012c0131a7955e997158da8e35e = L.circleMarker(
+                [12.303377, 124.865888],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_0b353d617938b1ddf0764c6e4b1ea445 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d5fa0dab0869ced0b8db24c1b6a6851b = $(`<div id="html_d5fa0dab0869ced0b8db24c1b6a6851b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.3034<br>                 <b>Longitude:</b> 124.8659<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Silvino Lobos municipality<br>                 <b>Where Description:</b> Silvino Lobos, Northern Samar                 </div>`)[0];
+                popup_0b353d617938b1ddf0764c6e4b1ea445.setContent(html_d5fa0dab0869ced0b8db24c1b6a6851b);
+            
+        
+
+        circle_marker_0ff92012c0131a7955e997158da8e35e.bindPopup(popup_0b353d617938b1ddf0764c6e4b1ea445)
+        ;
+
+        
+    
+    
+            var circle_marker_806371fc8dcf6d94afb48da91ccd80e8 = L.circleMarker(
+                [8.475726, 123.643482],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_fcd48e7712e243d8fc97b3f2a5e9f147 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_64fb46c9ddcb5db2db8381172a568646 = $(`<div id="html_64fb46c9ddcb5db2db8381172a568646" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.4757<br>                 <b>Longitude:</b> 123.6435<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Siloy village<br>                 <b>Where Description:</b> Barangay Siloy in Calamba, Misamis Occidental                 </div>`)[0];
+                popup_fcd48e7712e243d8fc97b3f2a5e9f147.setContent(html_64fb46c9ddcb5db2db8381172a568646);
+            
+        
+
+        circle_marker_806371fc8dcf6d94afb48da91ccd80e8.bindPopup(popup_fcd48e7712e243d8fc97b3f2a5e9f147)
+        ;
+
+        
+    
+    
+            var circle_marker_a0315ed71ff08064e760a895d0253ab9 = L.circleMarker(
+                [8.856735, 125.845219],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_105869532d3a8f48c1561f6705535dec = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b8d4085112bb5a48f86a46a03fc79199 = $(`<div id="html_b8d4085112bb5a48f86a46a03fc79199" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.8567<br>                 <b>Longitude:</b> 125.8452<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> San Juan village<br>                 <b>Where Description:</b> Bayugan's Barangay San Juan/Sitio Vertudazo, Brgy San Juan in Bayugan City                 </div>`)[0];
+                popup_105869532d3a8f48c1561f6705535dec.setContent(html_b8d4085112bb5a48f86a46a03fc79199);
+            
+        
+
+        circle_marker_a0315ed71ff08064e760a895d0253ab9.bindPopup(popup_105869532d3a8f48c1561f6705535dec)
+        ;
+
+        
+    
+    
+            var circle_marker_4d01a63fa60018da9dd57442efcb75d4 = L.circleMarker(
+                [8.034722, 124.332326],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_53c3dbf6b406b0b64d0ebff323854635 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_54bb609303e4437bb4960fb05178e3e0 = $(`<div id="html_54bb609303e4437bb4960fb05178e3e0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0347<br>                 <b>Longitude:</b> 124.3323<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Dulay West village<br>                 <b>Where Description:</b> Barangay Dulay West, Marawi City, Lanao del Sur                 </div>`)[0];
+                popup_53c3dbf6b406b0b64d0ebff323854635.setContent(html_54bb609303e4437bb4960fb05178e3e0);
+            
+        
+
+        circle_marker_4d01a63fa60018da9dd57442efcb75d4.bindPopup(popup_53c3dbf6b406b0b64d0ebff323854635)
+        ;
+
+        
+    
+    
+            var circle_marker_9a8f97bb9744f521da3701d0b2fb62ce = L.circleMarker(
+                [8.856735, 125.845219],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_378b2bb8fd9bf09249f0a10cd8d47373 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_edbe9b30d7a46b23048b8493d1414c5c = $(`<div id="html_edbe9b30d7a46b23048b8493d1414c5c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.8567<br>                 <b>Longitude:</b> 125.8452<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> San Juan village<br>                 <b>Where Description:</b> Sitio Hugmakan, Barangay San Juan, Bayugan City                 </div>`)[0];
+                popup_378b2bb8fd9bf09249f0a10cd8d47373.setContent(html_edbe9b30d7a46b23048b8493d1414c5c);
+            
+        
+
+        circle_marker_9a8f97bb9744f521da3701d0b2fb62ce.bindPopup(popup_378b2bb8fd9bf09249f0a10cd8d47373)
+        ;
+
+        
+    
+    
+            var circle_marker_57bc556184ab1df057e40adb5a51fd2f = L.circleMarker(
+                [14.58333, 121.16667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_33a0a4b032d182396b7c720b743225cd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_93e69e7e2b6352dd6b37e245eed82711 = $(`<div id="html_93e69e7e2b6352dd6b37e245eed82711" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 14.5833<br>                 <b>Longitude:</b> 121.1667<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Rizal province<br>                 <b>Where Description:</b> Rizal province, east of Metro Manila                 </div>`)[0];
+                popup_33a0a4b032d182396b7c720b743225cd.setContent(html_93e69e7e2b6352dd6b37e245eed82711);
+            
+        
+
+        circle_marker_57bc556184ab1df057e40adb5a51fd2f.bindPopup(popup_33a0a4b032d182396b7c720b743225cd)
+        ;
+
+        
+    
+    
+            var circle_marker_dcefffd9221ff463de928ceb62b23e3c = L.circleMarker(
+                [7.9, 124.35],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_e783477e472d904e7ead4a9b111a0268 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c27c8f9ce4431655a4ed001eb20d2a2f = $(`<div id="html_c27c8f9ce4431655a4ed001eb20d2a2f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.9000<br>                 <b>Longitude:</b> 124.3500<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Lanao del Sur province<br>                 <b>Where Description:</b> Lanao del Sur province                 </div>`)[0];
+                popup_e783477e472d904e7ead4a9b111a0268.setContent(html_c27c8f9ce4431655a4ed001eb20d2a2f);
+            
+        
+
+        circle_marker_dcefffd9221ff463de928ceb62b23e3c.bindPopup(popup_e783477e472d904e7ead4a9b111a0268)
+        ;
+
+        
+    
+    
+            var circle_marker_137add2e732c7143cd5bf8143778cb05 = L.circleMarker(
+                [10.256111, 123.158889],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_a68124773b8d5c810d89adba26ef5e40 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_734bde2d453ece8e094fd19fe5c5a3e0 = $(`<div id="html_734bde2d453ece8e094fd19fe5c5a3e0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2561<br>                 <b>Longitude:</b> 123.1589<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Macagahay village<br>                 <b>Where Description:</b> Barangay Macagahay, Moises Padilla, Negros island                 </div>`)[0];
+                popup_a68124773b8d5c810d89adba26ef5e40.setContent(html_734bde2d453ece8e094fd19fe5c5a3e0);
+            
+        
+
+        circle_marker_137add2e732c7143cd5bf8143778cb05.bindPopup(popup_a68124773b8d5c810d89adba26ef5e40)
+        ;
+
+        
+    
+    
+            var circle_marker_a098ee0b2e821cc2a0d7bd5fb5466324 = L.circleMarker(
+                [10.2617, 123.2773],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_073352b46bb87f1c6e1b8f3d6f96de39 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_92bac0431dbbdf94f565662e4a197bb0 = $(`<div id="html_92bac0431dbbdf94f565662e4a197bb0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2617<br>                 <b>Longitude:</b> 123.2773<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Maniac village<br>                 <b>Where Description:</b> Mani-ak barangay, Guihulngan City, Negros island                 </div>`)[0];
+                popup_073352b46bb87f1c6e1b8f3d6f96de39.setContent(html_92bac0431dbbdf94f565662e4a197bb0);
+            
+        
+
+        circle_marker_a098ee0b2e821cc2a0d7bd5fb5466324.bindPopup(popup_073352b46bb87f1c6e1b8f3d6f96de39)
+        ;
+
+        
+    
+    
+            var circle_marker_d8ca01ebe7122c0367709b2a7d55269a = L.circleMarker(
+                [12.406944, 124.512222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_bacb9e74264f843cbfce38711a40cd78 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f78a127602e162bcc03da36fb3d6af2a = $(`<div id="html_f78a127602e162bcc03da36fb3d6af2a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.4069<br>                 <b>Longitude:</b> 124.5122<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Santander village<br>                 <b>Where Description:</b> Santander village in Bobon town                 </div>`)[0];
+                popup_bacb9e74264f843cbfce38711a40cd78.setContent(html_f78a127602e162bcc03da36fb3d6af2a);
+            
+        
+
+        circle_marker_d8ca01ebe7122c0367709b2a7d55269a.bindPopup(popup_bacb9e74264f843cbfce38711a40cd78)
+        ;
+
+        
+    
+    
+            var circle_marker_5c3ad8209d7f71a7e47caa868e8e3d1f = L.circleMarker(
+                [10.694444, 123.391388],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_aaaf37ac6be91aab5c86dfeb2bb470ab = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_27f33ffc625b209aa6110d492197e1f5 = $(`<div id="html_27f33ffc625b209aa6110d492197e1f5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.6944<br>                 <b>Longitude:</b> 123.3914<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Cambayobo village<br>                 <b>Where Description:</b> Barangay Cambayobo, Calatrava town                 </div>`)[0];
+                popup_aaaf37ac6be91aab5c86dfeb2bb470ab.setContent(html_27f33ffc625b209aa6110d492197e1f5);
+            
+        
+
+        circle_marker_5c3ad8209d7f71a7e47caa868e8e3d1f.bindPopup(popup_aaaf37ac6be91aab5c86dfeb2bb470ab)
+        ;
+
+        
+    
+    
+            var circle_marker_c8f9bd6726406a21e71d7a0662014418 = L.circleMarker(
+                [8.003396, 124.434822],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_289a5fee228d45d4856c576ddd15dbec = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_77edfbbe60a444219a560eca0b31b95c = $(`<div id="html_77edfbbe60a444219a560eca0b31b95c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0034<br>                 <b>Longitude:</b> 124.4348<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Rogero village<br>                 <b>Where Description:</b> Barangay Rogero in Bubong town, Lanao del Sur                 </div>`)[0];
+                popup_289a5fee228d45d4856c576ddd15dbec.setContent(html_77edfbbe60a444219a560eca0b31b95c);
+            
+        
+
+        circle_marker_c8f9bd6726406a21e71d7a0662014418.bindPopup(popup_289a5fee228d45d4856c576ddd15dbec)
+        ;
+
+        
+    
+    
+            var circle_marker_df95f5d6ea650b404fbfec5d24d1d386 = L.circleMarker(
+                [8.432518, 123.391024],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_d19779cf43cc7b9019b5a17588f5df5a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6c67318a7d5fe422c54d2cb901c70489 = $(`<div id="html_6c67318a7d5fe422c54d2cb901c70489" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.4325<br>                 <b>Longitude:</b> 123.3910<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Linabo village<br>                 <b>Where Description:</b> Barangay Linabo, Polanco, Zamboanga del Norte                 </div>`)[0];
+                popup_d19779cf43cc7b9019b5a17588f5df5a.setContent(html_6c67318a7d5fe422c54d2cb901c70489);
+            
+        
+
+        circle_marker_df95f5d6ea650b404fbfec5d24d1d386.bindPopup(popup_d19779cf43cc7b9019b5a17588f5df5a)
+        ;
+
+        
+    
+    
+            var circle_marker_88f8a2f92f3cafcee330c513c48e4f48 = L.circleMarker(
+                [11.416667, 125.166667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_86b17a6ba4c2dba2577a6de2116254eb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c1038f3e6e3299a122005779af24c23a = $(`<div id="html_c1038f3e6e3299a122005779af24c23a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 11.4167<br>                 <b>Longitude:</b> 125.1667<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mabini village<br>                 <b>Where Description:</b> Barangay Mabini, Basey, Samar                 </div>`)[0];
+                popup_86b17a6ba4c2dba2577a6de2116254eb.setContent(html_c1038f3e6e3299a122005779af24c23a);
+            
+        
+
+        circle_marker_88f8a2f92f3cafcee330c513c48e4f48.bindPopup(popup_86b17a6ba4c2dba2577a6de2116254eb)
+        ;
+
+        
+    
+    
+            var circle_marker_2d7f66142e1c81508ee0163926e5f70f = L.circleMarker(
+                [10.36667, 123.2],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_5cce054c3a5a68db281899f5340f845d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b732140bcb265985a1c1ae8d18b9c89 = $(`<div id="html_2b732140bcb265985a1c1ae8d18b9c89" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.3667<br>                 <b>Longitude:</b> 123.2000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Canlaon City municipality<br>                 <b>Where Description:</b> Canlaon City, Negros Oriental                 </div>`)[0];
+                popup_5cce054c3a5a68db281899f5340f845d.setContent(html_2b732140bcb265985a1c1ae8d18b9c89);
+            
+        
+
+        circle_marker_2d7f66142e1c81508ee0163926e5f70f.bindPopup(popup_5cce054c3a5a68db281899f5340f845d)
+        ;
+
+        
+    
+    
+            var circle_marker_01211a1bc0f2546bdfe5ca62eab5bfdc = L.circleMarker(
+                [10.268093, 123.117167],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_fdd0c0347b2ef40c11ed37854a9bbe80 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_67232eb356bf57202c36b9a5171e67b1 = $(`<div id="html_67232eb356bf57202c36b9a5171e67b1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2681<br>                 <b>Longitude:</b> 123.1172<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Quintin Remo village<br>                 <b>Where Description:</b> Sitio Lower Tiyos, Barangay Quintin Remo, Moises Padilla, Negros Occidental                 </div>`)[0];
+                popup_fdd0c0347b2ef40c11ed37854a9bbe80.setContent(html_67232eb356bf57202c36b9a5171e67b1);
+            
+        
+
+        circle_marker_01211a1bc0f2546bdfe5ca62eab5bfdc.bindPopup(popup_fdd0c0347b2ef40c11ed37854a9bbe80)
+        ;
+
+        
+    
+    
+            var circle_marker_6c93b19a70d52b1765c7eef36a2be1af = L.circleMarker(
+                [7.726714, 124.099277],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_05055368210076454be9135e8c4ddece = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_237378080265e56eec15bc25a45b1536 = $(`<div id="html_237378080265e56eec15bc25a45b1536" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.7267<br>                 <b>Longitude:</b> 124.0993<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kalaludan village<br>                 <b>Where Description:</b> Barangay Kalaludan, Pagayawan, Lanao del Sur                 </div>`)[0];
+                popup_05055368210076454be9135e8c4ddece.setContent(html_237378080265e56eec15bc25a45b1536);
+            
+        
+
+        circle_marker_6c93b19a70d52b1765c7eef36a2be1af.bindPopup(popup_05055368210076454be9135e8c4ddece)
+        ;
+
+        
+    
+    
+            var circle_marker_2ee91841ce5c409630e9df31b5f3d5b9 = L.circleMarker(
+                [10.261027, 123.223173],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_5426fe1b88d0833fac0d065c3b5ca3cb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e2c6b1ccb804c5f76dea2d3db95403f1 = $(`<div id="html_e2c6b1ccb804c5f76dea2d3db95403f1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2610<br>                 <b>Longitude:</b> 123.2232<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Trinidad village<br>                 <b>Where Description:</b> Barangay Trinidad in Guihulngan City, Negros Oriental                 </div>`)[0];
+                popup_5426fe1b88d0833fac0d065c3b5ca3cb.setContent(html_e2c6b1ccb804c5f76dea2d3db95403f1);
+            
+        
+
+        circle_marker_2ee91841ce5c409630e9df31b5f3d5b9.bindPopup(popup_5426fe1b88d0833fac0d065c3b5ca3cb)
+        ;
+
+        
+    
+    
+            var circle_marker_c8ae60b7062fe47e31e0414e0315f27f = L.circleMarker(
+                [10.225758, 123.011102],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_8983d1c05640ee9115f18a1f09068c98 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aad128f9e2703db213af38e73aa0135b = $(`<div id="html_aad128f9e2703db213af38e73aa0135b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2258<br>                 <b>Longitude:</b> 123.0111<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Camang-camang village<br>                 <b>Where Description:</b> Sitio Mantabanon, Barangay Camang-camang on the Isabela side in Negros Occidental                 </div>`)[0];
+                popup_8983d1c05640ee9115f18a1f09068c98.setContent(html_aad128f9e2703db213af38e73aa0135b);
+            
+        
+
+        circle_marker_c8ae60b7062fe47e31e0414e0315f27f.bindPopup(popup_8983d1c05640ee9115f18a1f09068c98)
+        ;
+
+        
+    
+    
+            var circle_marker_4f95932c1fed1b13c589846b00a14b02 = L.circleMarker(
+                [10.784909, 123.42705],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_2d53b70e9cd7b60d74c7381f0581d7cc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e657329714325a79719076983ac7bdf3 = $(`<div id="html_e657329714325a79719076983ac7bdf3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.7849<br>                 <b>Longitude:</b> 123.4270<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Binaguiohan village<br>                 <b>Where Description:</b> Barangay Binaguiohan, Escalante City in northern Negros Occidental                 </div>`)[0];
+                popup_2d53b70e9cd7b60d74c7381f0581d7cc.setContent(html_e657329714325a79719076983ac7bdf3);
+            
+        
+
+        circle_marker_4f95932c1fed1b13c589846b00a14b02.bindPopup(popup_2d53b70e9cd7b60d74c7381f0581d7cc)
+        ;
+
+        
+    
+    
+            var circle_marker_778953f4f1fcbf7060a66658dfad5884 = L.circleMarker(
+                [6.969546, 124.486105],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_758f12017f78021157bcaf3948802001 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4cb7bfe569eaf154c7aa7f07c28b4bb2 = $(`<div id="html_4cb7bfe569eaf154c7aa7f07c28b4bb2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9695<br>                 <b>Longitude:</b> 124.4861<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shariff Saydona Mustapha municipality<br>                 <b>Where Description:</b> Shariff Saydona Mustapha town, Maguindanao del Sur province                 </div>`)[0];
+                popup_758f12017f78021157bcaf3948802001.setContent(html_4cb7bfe569eaf154c7aa7f07c28b4bb2);
+            
+        
+
+        circle_marker_778953f4f1fcbf7060a66658dfad5884.bindPopup(popup_758f12017f78021157bcaf3948802001)
+        ;
+
+        
+    
+    
+            var circle_marker_6e39a9d9b3ec571e56123869a02a0138 = L.circleMarker(
+                [9.239901, 125.842492],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_d6ab9be12348affbaeb4f911dbb4fb87 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2f64cd0d9a69065ff6b644a3a802b140 = $(`<div id="html_2f64cd0d9a69065ff6b644a3a802b140" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.2399<br>                 <b>Longitude:</b> 125.8425<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Lobo village<br>                 <b>Where Description:</b> Sitio Katarungan, Barangay Lobo, Cantilan                 </div>`)[0];
+                popup_d6ab9be12348affbaeb4f911dbb4fb87.setContent(html_2f64cd0d9a69065ff6b644a3a802b140);
+            
+        
+
+        circle_marker_6e39a9d9b3ec571e56123869a02a0138.bindPopup(popup_d6ab9be12348affbaeb4f911dbb4fb87)
+        ;
+
+        
+    
+    
+            var circle_marker_9a723b1b4c7a1e9fc247e461eb193bcc = L.circleMarker(
+                [9.9725, 122.923611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_a36cd12798de8a05e2204fe8d2c0fabb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2ac2f209e23b995134f97e60c55f3ffd = $(`<div id="html_2ac2f209e23b995134f97e60c55f3ffd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.9725<br>                 <b>Longitude:</b> 122.9236<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Buenavista village<br>                 <b>Where Description:</b> Barangay Buenavista                 </div>`)[0];
+                popup_a36cd12798de8a05e2204fe8d2c0fabb.setContent(html_2ac2f209e23b995134f97e60c55f3ffd);
+            
+        
+
+        circle_marker_9a723b1b4c7a1e9fc247e461eb193bcc.bindPopup(popup_a36cd12798de8a05e2204fe8d2c0fabb)
+        ;
+
+        
+    
+    
+            var circle_marker_7b310fe7e62b9cd994ea0a4dc047fa72 = L.circleMarker(
+                [12.534653, 125.150519],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_fcda89849c25d6b6b5827939aa32f1e3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_51398d1bb62ba351c39e79d501f5f70f = $(`<div id="html_51398d1bb62ba351c39e79d501f5f70f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.5347<br>                 <b>Longitude:</b> 125.1505<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Capacujan village<br>                 <b>Where Description:</b> outskirts of Capacujan village in Palapag                 </div>`)[0];
+                popup_fcda89849c25d6b6b5827939aa32f1e3.setContent(html_51398d1bb62ba351c39e79d501f5f70f);
+            
+        
+
+        circle_marker_7b310fe7e62b9cd994ea0a4dc047fa72.bindPopup(popup_fcda89849c25d6b6b5827939aa32f1e3)
+        ;
+
+        
+    
+    
+            var circle_marker_6a8467cc4e739d2701278de6b3fcdbf5 = L.circleMarker(
+                [10.268093, 123.117167],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_e0893250c390e74837fef780d78c8455 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1aabd7072f6c01c979cb47379320e205 = $(`<div id="html_1aabd7072f6c01c979cb47379320e205" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2681<br>                 <b>Longitude:</b> 123.1172<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Quintin Remo village<br>                 <b>Where Description:</b> Sitio Napiluan  Barangay Quintin Remo                 </div>`)[0];
+                popup_e0893250c390e74837fef780d78c8455.setContent(html_1aabd7072f6c01c979cb47379320e205);
+            
+        
+
+        circle_marker_6a8467cc4e739d2701278de6b3fcdbf5.bindPopup(popup_e0893250c390e74837fef780d78c8455)
+        ;
+
+        
+    
+    
+            var circle_marker_fad93991692d248ea8455b26576c9a11 = L.circleMarker(
+                [9.75, 123.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_9d0b4a11fe5426ccdd5e36de5af6d681 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c6df614e2c770083929d18a06b7368bb = $(`<div id="html_c6df614e2c770083929d18a06b7368bb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.7500<br>                 <b>Longitude:</b> 123.0000<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Negros Oriental province<br>                 <b>Where Description:</b> Negros Oriental                 </div>`)[0];
+                popup_9d0b4a11fe5426ccdd5e36de5af6d681.setContent(html_c6df614e2c770083929d18a06b7368bb);
+            
+        
+
+        circle_marker_fad93991692d248ea8455b26576c9a11.bindPopup(popup_9d0b4a11fe5426ccdd5e36de5af6d681)
+        ;
+
+        
+    
+    
+            var circle_marker_67a9cebf6e4d9d18ecae4ef35ddcb87e = L.circleMarker(
+                [10.268619, 123.292038],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_b9cd6569f2ea0a76683ff8cfd46d8211 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a967c6cdf3f18bb865bdcb1122ad6aa2 = $(`<div id="html_a967c6cdf3f18bb865bdcb1122ad6aa2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2686<br>                 <b>Longitude:</b> 123.2920<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Calupa-An village<br>                 <b>Where Description:</b> Sitio Mansalukon in Barangay Calupaan                 </div>`)[0];
+                popup_b9cd6569f2ea0a76683ff8cfd46d8211.setContent(html_a967c6cdf3f18bb865bdcb1122ad6aa2);
+            
+        
+
+        circle_marker_67a9cebf6e4d9d18ecae4ef35ddcb87e.bindPopup(popup_b9cd6569f2ea0a76683ff8cfd46d8211)
+        ;
+
+        
+    
+    
+            var circle_marker_5935c68c39bc37d97ae7ff32fda1e2c0 = L.circleMarker(
+                [12.332844, 124.582699],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_7f0e401dfa75ed5cb66822864eeac524 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_de85f97b2430e9e47d6c03c0553b946d = $(`<div id="html_de85f97b2430e9e47d6c03c0553b946d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.3328<br>                 <b>Longitude:</b> 124.5827<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Mabini village<br>                 <b>Where Description:</b> Mabini village                 </div>`)[0];
+                popup_7f0e401dfa75ed5cb66822864eeac524.setContent(html_de85f97b2430e9e47d6c03c0553b946d);
+            
+        
+
+        circle_marker_5935c68c39bc37d97ae7ff32fda1e2c0.bindPopup(popup_7f0e401dfa75ed5cb66822864eeac524)
+        ;
+
+        
+    
+    
+            var circle_marker_5b7971ac495cee80cd6b227cf92f0a33 = L.circleMarker(
+                [12.823529, 121.145321],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_7c21534f21d3b9ae90251b3ef99a9c79 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_18c9733e9c8bdec0bb328fdb83fead37 = $(`<div id="html_18c9733e9c8bdec0bb328fdb83fead37" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.8235<br>                 <b>Longitude:</b> 121.1453<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Malisbong village<br>                 <b>Where Description:</b> Sablayan, Occidental Mindoro  Barangay Malisbong                 </div>`)[0];
+                popup_7c21534f21d3b9ae90251b3ef99a9c79.setContent(html_18c9733e9c8bdec0bb328fdb83fead37);
+            
+        
+
+        circle_marker_5b7971ac495cee80cd6b227cf92f0a33.bindPopup(popup_7c21534f21d3b9ae90251b3ef99a9c79)
+        ;
+
+        
+    
+    
+            var circle_marker_472ca42b893a3e5ef59e650e605dfec6 = L.circleMarker(
+                [12.321358, 125.090176],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_0d3ece1a3470eae35ab132f8d52681b6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b0e507a08be8784a521034e5f81e0838 = $(`<div id="html_b0e507a08be8784a521034e5f81e0838" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.3214<br>                 <b>Longitude:</b> 125.0902<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Magsaysay village<br>                 <b>Where Description:</b> Barangay Magsaysay, Las Navas, Northern Samar                 </div>`)[0];
+                popup_0d3ece1a3470eae35ab132f8d52681b6.setContent(html_b0e507a08be8784a521034e5f81e0838);
+            
+        
+
+        circle_marker_472ca42b893a3e5ef59e650e605dfec6.bindPopup(popup_0d3ece1a3470eae35ab132f8d52681b6)
+        ;
+
+        
+    
+    
+            var circle_marker_fb23f5db5274af216cd1249f5ca05479 = L.circleMarker(
+                [8.0278, 124.2919],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_8d2735a8bffb61c739cc3f993550dd8e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_35eeb66b8b69246a3cc11ad0d274dd22 = $(`<div id="html_35eeb66b8b69246a3cc11ad0d274dd22" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0278<br>                 <b>Longitude:</b> 124.2919<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Marawi City town<br>                 <b>Where Description:</b> Marawi City in Lanao Del Sur province                 </div>`)[0];
+                popup_8d2735a8bffb61c739cc3f993550dd8e.setContent(html_35eeb66b8b69246a3cc11ad0d274dd22);
+            
+        
+
+        circle_marker_fb23f5db5274af216cd1249f5ca05479.bindPopup(popup_8d2735a8bffb61c739cc3f993550dd8e)
+        ;
+
+        
+    
+    
+            var circle_marker_d9afcb3f98f9d1cbc6488773442b1c0a = L.circleMarker(
+                [6.864722, 124.441667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_b07df6af7d74576fcf77c850f527cfb4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_246c3769d353e31fdb860e9f7ecec282 = $(`<div id="html_246c3769d353e31fdb860e9f7ecec282" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8647<br>                 <b>Longitude:</b> 124.4417<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Shariff Aguak town<br>                 <b>Where Description:</b> Shariff Aguak town in Maguindanao del Sur province                 </div>`)[0];
+                popup_b07df6af7d74576fcf77c850f527cfb4.setContent(html_246c3769d353e31fdb860e9f7ecec282);
+            
+        
+
+        circle_marker_d9afcb3f98f9d1cbc6488773442b1c0a.bindPopup(popup_b07df6af7d74576fcf77c850f527cfb4)
+        ;
+
+        
+    
+    
+            var circle_marker_850852fc6893112ae458d049e42b2a77 = L.circleMarker(
+                [9.004444, 125.645278],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_74ac05d475af00191ec13f3d8373b6bd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5de042d70bf43927464486952ede854b = $(`<div id="html_5de042d70bf43927464486952ede854b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.0044<br>                 <b>Longitude:</b> 125.6453<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Anticala village<br>                 <b>Where Description:</b> Barangay Anticala, Butuan City  (Mt. Apo-Apo, Sitio Dugyaman of Antical village)                 </div>`)[0];
+                popup_74ac05d475af00191ec13f3d8373b6bd.setContent(html_5de042d70bf43927464486952ede854b);
+            
+        
+
+        circle_marker_850852fc6893112ae458d049e42b2a77.bindPopup(popup_74ac05d475af00191ec13f3d8373b6bd)
+        ;
+
+        
+    
+    
+            var circle_marker_c6a5a54a4004e7a0cf3bce05db672af0 = L.circleMarker(
+                [8.177217, 125.100076],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_668a45544b8216470c181b3bde5f93a9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4c10993c47c2d8f65eb2a6230e326ac3 = $(`<div id="html_4c10993c47c2d8f65eb2a6230e326ac3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.1772<br>                 <b>Longitude:</b> 125.1001<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kalasungay village<br>                 <b>Where Description:</b> Sitio Malinao, Barangay Kalasungay, in Malaybalay City, Bukidnon                 </div>`)[0];
+                popup_668a45544b8216470c181b3bde5f93a9.setContent(html_4c10993c47c2d8f65eb2a6230e326ac3);
+            
+        
+
+        circle_marker_c6a5a54a4004e7a0cf3bce05db672af0.bindPopup(popup_668a45544b8216470c181b3bde5f93a9)
+        ;
+
+        
+    
+    
+            var circle_marker_67e3953f4e3f922ba397c5db11b89b55 = L.circleMarker(
+                [13.0, 122.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_c6da1dc34b8117229c4237148c0b655a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1b2ceea3cd1554a5cccd040ba2a9c6c4 = $(`<div id="html_1b2ceea3cd1554a5cccd040ba2a9c6c4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.0000<br>                 <b>Longitude:</b> 122.0000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Philippines<br>                 <b>Where Description:</b> "in Mindanao in south and Visayas Islands in centre"                 </div>`)[0];
+                popup_c6da1dc34b8117229c4237148c0b655a.setContent(html_1b2ceea3cd1554a5cccd040ba2a9c6c4);
+            
+        
+
+        circle_marker_67e3953f4e3f922ba397c5db11b89b55.bindPopup(popup_c6da1dc34b8117229c4237148c0b655a)
+        ;
+
+        
+    
+    
+            var circle_marker_0a8ace0960c2c4f1077ebf82bc4eafa2 = L.circleMarker(
+                [6.4197, 121.9714],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_886846779874dae4404e8d5214b88670 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cdd9f41e8e12ce310bfce429e980a384 = $(`<div id="html_cdd9f41e8e12ce310bfce429e980a384" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.4197<br>                 <b>Longitude:</b> 121.9714<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Sumisip municipality<br>                 <b>Where Description:</b> Sumisip hinterlands (BARMM)                 </div>`)[0];
+                popup_886846779874dae4404e8d5214b88670.setContent(html_cdd9f41e8e12ce310bfce429e980a384);
+            
+        
+
+        circle_marker_0a8ace0960c2c4f1077ebf82bc4eafa2.bindPopup(popup_886846779874dae4404e8d5214b88670)
+        ;
+
+        
+    
+    
+            var circle_marker_9be5d3a7cbe71e69d3dac5906cfe814e = L.circleMarker(
+                [9.239157, 126.102921],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_9b197b15eb35815c52f038d003b416be = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_74095443d143dbd955a089a1405b4c83 = $(`<div id="html_74095443d143dbd955a089a1405b4c83" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.2392<br>                 <b>Longitude:</b> 126.1029<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sibahay village<br>                 <b>Where Description:</b> in Sitio Libas, Barangay Sibahay in Lanuza town, Surigao del Sur                 </div>`)[0];
+                popup_9b197b15eb35815c52f038d003b416be.setContent(html_74095443d143dbd955a089a1405b4c83);
+            
+        
+
+        circle_marker_9be5d3a7cbe71e69d3dac5906cfe814e.bindPopup(popup_9b197b15eb35815c52f038d003b416be)
+        ;
+
+        
+    
+    
+            var circle_marker_9e489c9542c6500db90eb2ddbde78e8f = L.circleMarker(
+                [8.294119, 125.103576],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_4d9165b676b7b58835b2f64da18e171c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_54d64dcf4696700be611176430d0a062 = $(`<div id="html_54d64dcf4696700be611176430d0a062" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.2941<br>                 <b>Longitude:</b> 125.1036<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bontongon village<br>                 <b>Where Description:</b> in Barangay Bontongon, Impasugong town in Bukidnon province                 </div>`)[0];
+                popup_4d9165b676b7b58835b2f64da18e171c.setContent(html_54d64dcf4696700be611176430d0a062);
+            
+        
+
+        circle_marker_9e489c9542c6500db90eb2ddbde78e8f.bindPopup(popup_4d9165b676b7b58835b2f64da18e171c)
+        ;
+
+        
+    
+    
+            var circle_marker_31f43b0aab19beca8a68779abbaf773b = L.circleMarker(
+                [12.3333, 124.66667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_ce4e387ddbcc15a4a599473d7ff0866a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_eb378fb9ffa10984e1e025cfbf889f8f = $(`<div id="html_eb378fb9ffa10984e1e025cfbf889f8f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.3333<br>                 <b>Longitude:</b> 124.6667<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Northern Samar province<br>                 <b>Where Description:</b> coastal town in Northern Samar province                 </div>`)[0];
+                popup_ce4e387ddbcc15a4a599473d7ff0866a.setContent(html_eb378fb9ffa10984e1e025cfbf889f8f);
+            
+        
+
+        circle_marker_31f43b0aab19beca8a68779abbaf773b.bindPopup(popup_ce4e387ddbcc15a4a599473d7ff0866a)
+        ;
+
+        
+    
+    
+            var circle_marker_39ad4b10c2091eb8660d39e5a8b4011f = L.circleMarker(
+                [10.285085, 123.148789],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f5042bc04fbe4747fcde05ddaf63914b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_93aa31ac4004fa4ee120dc0f45de3197 = $(`<div id="html_93aa31ac4004fa4ee120dc0f45de3197" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.2851<br>                 <b>Longitude:</b> 123.1488<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Montilla village<br>                 <b>Where Description:</b> Barangay Montilla, Moises Padilla in Negros Occidental    Barangay Magsaysay, Mapanas, Northern Samar                 </div>`)[0];
+                popup_f5042bc04fbe4747fcde05ddaf63914b.setContent(html_93aa31ac4004fa4ee120dc0f45de3197);
+            
+        
+
+        circle_marker_39ad4b10c2091eb8660d39e5a8b4011f.bindPopup(popup_f5042bc04fbe4747fcde05ddaf63914b)
+        ;
+
+        
+    
+    
+            var circle_marker_0f2f1d273e75513161147bed92c727d1 = L.circleMarker(
+                [12.420916, 125.1908],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_88775e8b5cf466dc5e3233f921b52db0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ff5551225a62e3a874d41166ea0c24d9 = $(`<div id="html_ff5551225a62e3a874d41166ea0c24d9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.4209<br>                 <b>Longitude:</b> 125.1908<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Magsaysay village<br>                 <b>Where Description:</b> Barangay Magsaysay, Mapanas, Northern Samar                 </div>`)[0];
+                popup_88775e8b5cf466dc5e3233f921b52db0.setContent(html_ff5551225a62e3a874d41166ea0c24d9);
+            
+        
+
+        circle_marker_0f2f1d273e75513161147bed92c727d1.bindPopup(popup_88775e8b5cf466dc5e3233f921b52db0)
+        ;
+
+        
+    
+    
+            var circle_marker_88520bd697c3cd27a2b55fbb3ff56540 = L.circleMarker(
+                [8.531749, 124.356152],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_54d99aabbbeb3be6a9dd2a19ab9a9c61 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_527714cdce274d0c47b4a220938ae3a6 = $(`<div id="html_527714cdce274d0c47b4a220938ae3a6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.5317<br>                 <b>Longitude:</b> 124.3562<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Libertad village<br>                 <b>Where Description:</b> Barangay Libertad, Gingoog City, Misamis Oriental                 </div>`)[0];
+                popup_54d99aabbbeb3be6a9dd2a19ab9a9c61.setContent(html_527714cdce274d0c47b4a220938ae3a6);
+            
+        
+
+        circle_marker_88520bd697c3cd27a2b55fbb3ff56540.bindPopup(popup_54d99aabbbeb3be6a9dd2a19ab9a9c61)
+        ;
+
+        
+    
+    
+            var circle_marker_e34ea4dff20a12c2d7d5750ba4f6694f = L.circleMarker(
+                [10.859867, 122.335277],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_e3f792eba1c7fef202c804cd34016725 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3855fb2a8cf2017a55c1848689e3ea99 = $(`<div id="html_3855fb2a8cf2017a55c1848689e3ea99" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.8599<br>                 <b>Longitude:</b> 122.3353<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Ayabang village<br>                 <b>Where Description:</b> in Sitio Pagas, Barangay Ayabang in Leon town, Iloilo province                 </div>`)[0];
+                popup_e3f792eba1c7fef202c804cd34016725.setContent(html_3855fb2a8cf2017a55c1848689e3ea99);
+            
+        
+
+        circle_marker_e34ea4dff20a12c2d7d5750ba4f6694f.bindPopup(popup_e3f792eba1c7fef202c804cd34016725)
+        ;
+
+        
+    
+    
+            var circle_marker_b9fa44fe8cb5c229df8a338254bd65a7 = L.circleMarker(
+                [13.906398, 121.48281],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_acc1953634b5e840d8c9946481ee4b53 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_898626c1b82c0a1a9352c35735c75018 = $(`<div id="html_898626c1b82c0a1a9352c35735c75018" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.9064<br>                 <b>Longitude:</b> 121.4828<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lutucan Malabag village<br>                 <b>Where Description:</b> Barangay Lutucan Malabag, Sariaya                 </div>`)[0];
+                popup_acc1953634b5e840d8c9946481ee4b53.setContent(html_898626c1b82c0a1a9352c35735c75018);
+            
+        
+
+        circle_marker_b9fa44fe8cb5c229df8a338254bd65a7.bindPopup(popup_acc1953634b5e840d8c9946481ee4b53)
+        ;
+
+        
+    
+    
+            var circle_marker_1caf8cb2d2e1d523b88ae023f7d2a995 = L.circleMarker(
+                [10.690636, 123.325582],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_a9dd0ae7e6e39c2de252dcd45f594d2b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e4ffb15e00d8663a5d7f333d46cd6525 = $(`<div id="html_e4ffb15e00d8663a5d7f333d46cd6525" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.6906<br>                 <b>Longitude:</b> 123.3256<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Minapasuk village<br>                 <b>Where Description:</b> remote area of Barangay Minapasuk in Calatrava, Negros Occidental                 </div>`)[0];
+                popup_a9dd0ae7e6e39c2de252dcd45f594d2b.setContent(html_e4ffb15e00d8663a5d7f333d46cd6525);
+            
+        
+
+        circle_marker_1caf8cb2d2e1d523b88ae023f7d2a995.bindPopup(popup_a9dd0ae7e6e39c2de252dcd45f594d2b)
+        ;
+
+        
+    
+    
+            var circle_marker_a927791d44c6db31b63aa0f6c7ed9980 = L.circleMarker(
+                [8.324444, 123.257778],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_e25ace98848904de9dd2508ec96674cf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_779ef3e4daab4eff91f8b412fca1cf04 = $(`<div id="html_779ef3e4daab4eff91f8b412fca1cf04" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.3244<br>                 <b>Longitude:</b> 123.2578<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> New Rizal village<br>                 <b>Where Description:</b> Barangay New Rizal in Sergio Osmena town, Zamboanga del Norte                 </div>`)[0];
+                popup_e25ace98848904de9dd2508ec96674cf.setContent(html_779ef3e4daab4eff91f8b412fca1cf04);
+            
+        
+
+        circle_marker_a927791d44c6db31b63aa0f6c7ed9980.bindPopup(popup_e25ace98848904de9dd2508ec96674cf)
+        ;
+
+        
+    
+    
+            var circle_marker_51e02cc9cf7e4f957a3e21781ad32730 = L.circleMarker(
+                [10.65, 123.366667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_8de95f7331d8cf8077d440337dd7512d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d297f1f65101bb41827af0b7c1d395c7 = $(`<div id="html_d297f1f65101bb41827af0b7c1d395c7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.6500<br>                 <b>Longitude:</b> 123.3667<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Calatrava municipality<br>                 <b>Where Description:</b> Calatrava municipality                 </div>`)[0];
+                popup_8de95f7331d8cf8077d440337dd7512d.setContent(html_d297f1f65101bb41827af0b7c1d395c7);
+            
+        
+
+        circle_marker_51e02cc9cf7e4f957a3e21781ad32730.bindPopup(popup_8de95f7331d8cf8077d440337dd7512d)
+        ;
+
+        
+    
+    
+            var circle_marker_153674c936e6b78b6c9c084d50324f7f = L.circleMarker(
+                [6.211502, 124.230754],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_f3dcead1142a9907ad5c652e61ba9e0c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c4283f8ebc06b34dc05df3cfdd620590 = $(`<div id="html_c4283f8ebc06b34dc05df3cfdd620590" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2115<br>                 <b>Longitude:</b> 124.2308<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tibuhol (East Badiangon) village<br>                 <b>Where Description:</b> Barangay Badiangon, Palimbang, Sultan Kudarat                 </div>`)[0];
+                popup_f3dcead1142a9907ad5c652e61ba9e0c.setContent(html_c4283f8ebc06b34dc05df3cfdd620590);
+            
+        
+
+        circle_marker_153674c936e6b78b6c9c084d50324f7f.bindPopup(popup_f3dcead1142a9907ad5c652e61ba9e0c)
+        ;
+
+        
+    
+    
+            var circle_marker_2c3279442f89bc24a6cce558aad805f4 = L.circleMarker(
+                [10.792126, 122.32392],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_22b8890d95f18891b0207e70ee9acb25 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9e2e8d0ebae9e678f6edfa266a7f1831 = $(`<div id="html_9e2e8d0ebae9e678f6edfa266a7f1831" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.7921<br>                 <b>Longitude:</b> 122.3239<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ayubo village<br>                 <b>Where Description:</b> boundary of Barangay Ayobo and Barangay Cananaman, both in Leon, Iloilo.                 </div>`)[0];
+                popup_22b8890d95f18891b0207e70ee9acb25.setContent(html_9e2e8d0ebae9e678f6edfa266a7f1831);
+            
+        
+
+        circle_marker_2c3279442f89bc24a6cce558aad805f4.bindPopup(popup_22b8890d95f18891b0207e70ee9acb25)
+        ;
+
+        
+    
+    
+            var circle_marker_f0d8231f6bfbc7372334f147e365520b = L.circleMarker(
+                [13.666667, 123.333333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_3084ff59ba855e8a70ea734a4897b2ab = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7148e8b878694f7f2720709188887143 = $(`<div id="html_7148e8b878694f7f2720709188887143" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.6667<br>                 <b>Longitude:</b> 123.3333<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Camarines Sur province<br>                 <b>Where Description:</b> Camarines Sur province                 </div>`)[0];
+                popup_3084ff59ba855e8a70ea734a4897b2ab.setContent(html_7148e8b878694f7f2720709188887143);
+            
+        
+
+        circle_marker_f0d8231f6bfbc7372334f147e365520b.bindPopup(popup_3084ff59ba855e8a70ea734a4897b2ab)
+        ;
+
+        
+    
+    
+            var circle_marker_bf1774061feb964240fc956937bd070c = L.circleMarker(
+                [12.166667, 123.58333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_bede4ddd2f0b7bf84b85c4fa937a39c3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_554b1957a6c49d1de26aa883ffc4e5a8 = $(`<div id="html_554b1957a6c49d1de26aa883ffc4e5a8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.1667<br>                 <b>Longitude:</b> 123.5833<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Masbate province<br>                 <b>Where Description:</b> Masbate, Bicol region on main Luzon island                 </div>`)[0];
+                popup_bede4ddd2f0b7bf84b85c4fa937a39c3.setContent(html_554b1957a6c49d1de26aa883ffc4e5a8);
+            
+        
+
+        circle_marker_bf1774061feb964240fc956937bd070c.bindPopup(popup_bede4ddd2f0b7bf84b85c4fa937a39c3)
+        ;
+
+        
+    
+    
+            var circle_marker_52836cde148404a3840c5727f7aa263f = L.circleMarker(
+                [10.116177, 123.101005],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_84c6efebc7302d1319b7b46304c12b9f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bcf62ca0b2823a956a05175a635a6f05 = $(`<div id="html_bcf62ca0b2823a956a05175a635a6f05" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.1162<br>                 <b>Longitude:</b> 123.1010<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Aya village<br>                 <b>Where Description:</b> Sitio Manghuya in Barangay Aya, the farthest hinterland village of La Libertad, Negros Oriental                 </div>`)[0];
+                popup_84c6efebc7302d1319b7b46304c12b9f.setContent(html_bcf62ca0b2823a956a05175a635a6f05);
+            
+        
+
+        circle_marker_52836cde148404a3840c5727f7aa263f.bindPopup(popup_84c6efebc7302d1319b7b46304c12b9f)
+        ;
+
+        
+    
+    
+            var circle_marker_3a1094966d1f0db7205fa0fd9f893468 = L.circleMarker(
+                [8.652066, 125.838507],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_52a26bd98da2f21a30c9357287737d0e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_37bd3756f5674c724394b3a7301d71ab = $(`<div id="html_37bd3756f5674c724394b3a7301d71ab" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.6521<br>                 <b>Longitude:</b> 125.8385<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> La Perian village<br>                 <b>Where Description:</b> Barangay Laperian, Prosperidad, Agusan del Sur                 </div>`)[0];
+                popup_52a26bd98da2f21a30c9357287737d0e.setContent(html_37bd3756f5674c724394b3a7301d71ab);
+            
+        
+
+        circle_marker_3a1094966d1f0db7205fa0fd9f893468.bindPopup(popup_52a26bd98da2f21a30c9357287737d0e)
+        ;
+
+        
+    
+    
+            var circle_marker_4648a2d100e942be2db16e0420705cb0 = L.circleMarker(
+                [8.24111, 125.26167],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_50aa3b8a1ef7d87a44e80a0eba0c9573 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8c086b451b83c14fbe5be9c8b8f6e518 = $(`<div id="html_8c086b451b83c14fbe5be9c8b8f6e518" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.2411<br>                 <b>Longitude:</b> 125.2617<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kulaman village<br>                 <b>Where Description:</b> Barangay Kulaman, Malaybalay City                 </div>`)[0];
+                popup_50aa3b8a1ef7d87a44e80a0eba0c9573.setContent(html_8c086b451b83c14fbe5be9c8b8f6e518);
+            
+        
+
+        circle_marker_4648a2d100e942be2db16e0420705cb0.bindPopup(popup_50aa3b8a1ef7d87a44e80a0eba0c9573)
+        ;
+
+        
+    
+    
+            var circle_marker_af8863c36b5a05089adb83d49f9410a8 = L.circleMarker(
+                [14.036281, 122.60038],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_19001fc2969496693ea4be443449729f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d6e6551116bcf4899ccbf79a36f8bcd1 = $(`<div id="html_d6e6551116bcf4899ccbf79a36f8bcd1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 14.0363<br>                 <b>Longitude:</b> 122.6004<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Mapulot village<br>                 <b>Where Description:</b> Sitio (sub-village) Pagasa in Mapulot, Tagkawayan town, Quezon province                 </div>`)[0];
+                popup_19001fc2969496693ea4be443449729f.setContent(html_d6e6551116bcf4899ccbf79a36f8bcd1);
+            
+        
+
+        circle_marker_af8863c36b5a05089adb83d49f9410a8.bindPopup(popup_19001fc2969496693ea4be443449729f)
+        ;
+
+        
+    
+    
+            var circle_marker_63843be6c159e5f4dc72783a7b8642e5 = L.circleMarker(
+                [9.72964, 124.121358],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_a85b90c690f9bf063741dab444a9123e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e943eba827062a7b12071bd272c185b0 = $(`<div id="html_e943eba827062a7b12071bd272c185b0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.7296<br>                 <b>Longitude:</b> 124.1214<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Campagao village<br>                 <b>Where Description:</b> Barangay Campagao                 </div>`)[0];
+                popup_a85b90c690f9bf063741dab444a9123e.setContent(html_e943eba827062a7b12071bd272c185b0);
+            
+        
+
+        circle_marker_63843be6c159e5f4dc72783a7b8642e5.bindPopup(popup_a85b90c690f9bf063741dab444a9123e)
+        ;
+
+        
+    
+    
+            var circle_marker_c18dd7da430dcc2c4556adb8f16c3874 = L.circleMarker(
+                [6.861742, 124.434705],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_3bb18677c4f3a9d56576c0a800ff2e48 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_30d19407afe8d15fdf774d9c14497289 = $(`<div id="html_30d19407afe8d15fdf774d9c14497289" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8617<br>                 <b>Longitude:</b> 124.4347<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Tuayan village<br>                 <b>Where Description:</b> outskirts of Barangay Mother Tuayan                 </div>`)[0];
+                popup_3bb18677c4f3a9d56576c0a800ff2e48.setContent(html_30d19407afe8d15fdf774d9c14497289);
+            
+        
+
+        circle_marker_c18dd7da430dcc2c4556adb8f16c3874.bindPopup(popup_3bb18677c4f3a9d56576c0a800ff2e48)
+        ;
+
+        
+    
+    
+            var circle_marker_6c6cd6cb33132d9736ca66211521ab7f = L.circleMarker(
+                [9.0287, 126.1521],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_7a8cbbef3bf3f719f95fab774fb0a22d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f8b6f5e5e8e9939386d37c06fc2fa72e = $(`<div id="html_f8b6f5e5e8e9939386d37c06fc2fa72e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.0287<br>                 <b>Longitude:</b> 126.1521<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Maticdum village<br>                 <b>Where Description:</b> Brgy Maticdum in Tandag City                 </div>`)[0];
+                popup_7a8cbbef3bf3f719f95fab774fb0a22d.setContent(html_f8b6f5e5e8e9939386d37c06fc2fa72e);
+            
+        
+
+        circle_marker_6c6cd6cb33132d9736ca66211521ab7f.bindPopup(popup_7a8cbbef3bf3f719f95fab774fb0a22d)
+        ;
+
+        
+    
+    
+            var circle_marker_dc82a79d79a5fc13af1465a49bb4e45c = L.circleMarker(
+                [9.88333, 122.83333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_ab9eeb1d4ca220ab37741e87d9469adc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ea4cae46ce9bff525407edc8715fecf1 = $(`<div id="html_ea4cae46ce9bff525407edc8715fecf1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.8833<br>                 <b>Longitude:</b> 122.8333<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Kabankalan City municipality<br>                 <b>Where Description:</b> on the outskirt of Kabankalan City                 </div>`)[0];
+                popup_ab9eeb1d4ca220ab37741e87d9469adc.setContent(html_ea4cae46ce9bff525407edc8715fecf1);
+            
+        
+
+        circle_marker_dc82a79d79a5fc13af1465a49bb4e45c.bindPopup(popup_ab9eeb1d4ca220ab37741e87d9469adc)
+        ;
+
+        
+    
+    
+            var circle_marker_4b3ba4d1c8e1adae77b7c3ef3bb9379e = L.circleMarker(
+                [14.669197, 120.96616],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_81a5bf220c5172fe977492a14b06cd40 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_985965184ba472cd1d7d9340e0808704 = $(`<div id="html_985965184ba472cd1d7d9340e0808704" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 14.6692<br>                 <b>Longitude:</b> 120.9662<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Acacia village<br>                 <b>Where Description:</b> Barangay Acacia                 </div>`)[0];
+                popup_81a5bf220c5172fe977492a14b06cd40.setContent(html_985965184ba472cd1d7d9340e0808704);
+            
+        
+
+        circle_marker_4b3ba4d1c8e1adae77b7c3ef3bb9379e.bindPopup(popup_81a5bf220c5172fe977492a14b06cd40)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee39d3c94296057527b9a1bd49d806b = L.circleMarker(
+                [10.826218, 122.339149],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_fac80626f83d2a7069b5cfc7c45e2a14 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8ad127ca96b1d73e7c53edf203ddb3db = $(`<div id="html_8ad127ca96b1d73e7c53edf203ddb3db" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 10.8262<br>                 <b>Longitude:</b> 122.3391<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Leon municipality<br>                 <b>Where Description:</b> Leon                 </div>`)[0];
+                popup_fac80626f83d2a7069b5cfc7c45e2a14.setContent(html_8ad127ca96b1d73e7c53edf203ddb3db);
+            
+        
+
+        circle_marker_4ee39d3c94296057527b9a1bd49d806b.bindPopup(popup_fac80626f83d2a7069b5cfc7c45e2a14)
+        ;
+
+        
+    
+    
+            var circle_marker_a1a4a10a9cb97c74843886342ece11cd = L.circleMarker(
+                [6.833333, 124.383333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_cc0fa24282fc56fe6f46c2bc188f678e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_721ac8d2eaa2e8b8cb5d776c5925f342 = $(`<div id="html_721ac8d2eaa2e8b8cb5d776c5925f342" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8333<br>                 <b>Longitude:</b> 124.3833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ampatuan municipality<br>                 <b>Where Description:</b> Ampatuan town                 </div>`)[0];
+                popup_cc0fa24282fc56fe6f46c2bc188f678e.setContent(html_721ac8d2eaa2e8b8cb5d776c5925f342);
+            
+        
+
+        circle_marker_a1a4a10a9cb97c74843886342ece11cd.bindPopup(popup_cc0fa24282fc56fe6f46c2bc188f678e)
+        ;
+
+        
+    
+    
+            var circle_marker_b410d8e52b4140329059f4c2644e6fae = L.circleMarker(
+                [15.5865, 121.1834],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_b4cebb78f58bb86fab29886aca33d3fb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a8e4c15f986ad81077ea8501c2c5c502 = $(`<div id="html_a8e4c15f986ad81077ea8501c2c5c502" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 15.5865<br>                 <b>Longitude:</b> 121.1834<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Laur town<br>                 <b>Where Description:</b> in Nueva Ecija province, in Laur town on central Luzon island                 </div>`)[0];
+                popup_b4cebb78f58bb86fab29886aca33d3fb.setContent(html_a8e4c15f986ad81077ea8501c2c5c502);
+            
+        
+
+        circle_marker_b410d8e52b4140329059f4c2644e6fae.bindPopup(popup_b4cebb78f58bb86fab29886aca33d3fb)
+        ;
+
+        
+    
+    
+            var circle_marker_501e8d83b54da737eb14b782a7b16bc2 = L.circleMarker(
+                [6.844169, 124.426964],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.424533248940001, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_29f59a3ab38ae3aad0212eccbe4937c8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0ea1e0592bd7130c82488c0be2370c6e = $(`<div id="html_0ea1e0592bd7130c82488c0be2370c6e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.8442<br>                 <b>Longitude:</b> 124.4270<br>                 <b>Deaths:</b> 11<br>                 <b>Where Coordinates:</b> Tuyan village<br>                 <b>Where Description:</b> near the village of Tuwayan in southern Datu Hofer town in Maguindanao province                 </div>`)[0];
+                popup_29f59a3ab38ae3aad0212eccbe4937c8.setContent(html_0ea1e0592bd7130c82488c0be2370c6e);
+            
+        
+
+        circle_marker_501e8d83b54da737eb14b782a7b16bc2.bindPopup(popup_29f59a3ab38ae3aad0212eccbe4937c8)
+        ;
+
+        
+    
+    
+            var circle_marker_402f95b1c96ee828f8471c7919e82e1b = L.circleMarker(
+                [8.02769, 124.29585],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_edabb29eacba1d8036f964204b9cefde = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_454c669fbda6fdd86b7006390d897c31 = $(`<div id="html_454c669fbda6fdd86b7006390d897c31" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.0277<br>                 <b>Longitude:</b> 124.2959<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Marawi City municipality<br>                 <b>Where Description:</b> Mindanao State University's gymnasium in Marawi                 </div>`)[0];
+                popup_edabb29eacba1d8036f964204b9cefde.setContent(html_454c669fbda6fdd86b7006390d897c31);
+            
+        
+
+        circle_marker_402f95b1c96ee828f8471c7919e82e1b.bindPopup(popup_edabb29eacba1d8036f964204b9cefde)
+        ;
+
+        
+    
+    
+            var circle_marker_5b7f36d63b14578e91bd40e2781f7c2a = L.circleMarker(
+                [13.521209, 120.968646],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_cc640ec20638f986fba990354879c710 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f978813ed8f990e45edc407efb297484 = $(`<div id="html_f978813ed8f990e45edc407efb297484" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.5212<br>                 <b>Longitude:</b> 120.9686<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Sabang village<br>                 <b>Where Description:</b> Barangay Sabang                 </div>`)[0];
+                popup_cc640ec20638f986fba990354879c710.setContent(html_f978813ed8f990e45edc407efb297484);
+            
+        
+
+        circle_marker_5b7f36d63b14578e91bd40e2781f7c2a.bindPopup(popup_cc640ec20638f986fba990354879c710)
+        ;
+
+        
+    
+    
+            var circle_marker_504068824a16bed37dcbdd21cb1e9b6c = L.circleMarker(
+                [12.939905, 121.476388],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_3c4ddcfd0fccf2e2c4fa8e0e01b9faff = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b03cd7310d745e517241bd236627da8a = $(`<div id="html_b03cd7310d745e517241bd236627da8a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 12.9399<br>                 <b>Longitude:</b> 121.4764<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gloria municipality<br>                 <b>Where Description:</b> Gloria, Oriental Mindoro                 </div>`)[0];
+                popup_3c4ddcfd0fccf2e2c4fa8e0e01b9faff.setContent(html_b03cd7310d745e517241bd236627da8a);
+            
+        
+
+        circle_marker_504068824a16bed37dcbdd21cb1e9b6c.bindPopup(popup_3c4ddcfd0fccf2e2c4fa8e0e01b9faff)
+        ;
+
+        
+    
+    
+            var circle_marker_8a3aec5f9cd0cf3fc3d8f03facc3c59e = L.circleMarker(
+                [6.590671, 122.218378],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_bd3ca6814acbe7f6700139164e72f869 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f4881bd679fbbd601dfc1ae276675323 = $(`<div id="html_f4881bd679fbbd601dfc1ae276675323" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.5907<br>                 <b>Longitude:</b> 122.2184<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lahi-Lahi village<br>                 <b>Where Description:</b> in the municipal waters between Barangay Banah, Tipo-Tipo town and Barangay Lahi-Lahi, Tuburan town                 </div>`)[0];
+                popup_bd3ca6814acbe7f6700139164e72f869.setContent(html_f4881bd679fbbd601dfc1ae276675323);
+            
+        
+
+        circle_marker_8a3aec5f9cd0cf3fc3d8f03facc3c59e.bindPopup(popup_bd3ca6814acbe7f6700139164e72f869)
+        ;
+
+        
+    
+    
+            var circle_marker_747f966f0d03973aab9f75250081d9d6 = L.circleMarker(
+                [6.997553, 124.784566],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_15aeb8def5ba4cce167beef46c9832d2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5b0aab1f58722ef6b6803d4299c5a31e = $(`<div id="html_5b0aab1f58722ef6b6803d4299c5a31e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9976<br>                 <b>Longitude:</b> 124.7846<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Dalgan village<br>                 <b>Where Description:</b> Dalgan, Pagalungan, Maguindanao del Sur                 </div>`)[0];
+                popup_15aeb8def5ba4cce167beef46c9832d2.setContent(html_5b0aab1f58722ef6b6803d4299c5a31e);
+            
+        
+
+        circle_marker_747f966f0d03973aab9f75250081d9d6.bindPopup(popup_15aeb8def5ba4cce167beef46c9832d2)
+        ;
+
+        
+    
+    
+            var circle_marker_7b8e447657fc48da527e86e2a8757057 = L.circleMarker(
+                [6.997553, 124.784566],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.424533248940001, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_58c4ba298ba0ceaf2e0d33de98d49eaa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7398fafaacf4f39753653563854444d9 = $(`<div id="html_7398fafaacf4f39753653563854444d9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9976<br>                 <b>Longitude:</b> 124.7846<br>                 <b>Deaths:</b> 11<br>                 <b>Where Coordinates:</b> Dalgan village<br>                 <b>Where Description:</b> Barangay Dalgan and adjacent villages                 </div>`)[0];
+                popup_58c4ba298ba0ceaf2e0d33de98d49eaa.setContent(html_7398fafaacf4f39753653563854444d9);
+            
+        
+
+        circle_marker_7b8e447657fc48da527e86e2a8757057.bindPopup(popup_58c4ba298ba0ceaf2e0d33de98d49eaa)
+        ;
+
+        
+    
+    
+            var circle_marker_35bf317c6560c31a89205f4b77c58486 = L.circleMarker(
+                [6.997553, 124.784566],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_b5f44004cd9bb083150f49104d9d453f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a6bc27fb74297def1627a15c8f8df439 = $(`<div id="html_a6bc27fb74297def1627a15c8f8df439" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9976<br>                 <b>Longitude:</b> 124.7846<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Dalgan village<br>                 <b>Where Description:</b> Barangay Dalgan                 </div>`)[0];
+                popup_b5f44004cd9bb083150f49104d9d453f.setContent(html_a6bc27fb74297def1627a15c8f8df439);
+            
+        
+
+        circle_marker_35bf317c6560c31a89205f4b77c58486.bindPopup(popup_b5f44004cd9bb083150f49104d9d453f)
+        ;
+
+        
+    
+    
+            var circle_marker_c40294c7b64342bf9ca892160298bed4 = L.circleMarker(
+                [6.997553, 124.784566],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_36d8bc00e090349cb9a882f14325ccb7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_79c8e24afff348f3a95c441bbaefa360 = $(`<div id="html_79c8e24afff348f3a95c441bbaefa360" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.9976<br>                 <b>Longitude:</b> 124.7846<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Dalgan village<br>                 <b>Where Description:</b> around Barangay Dalgan                 </div>`)[0];
+                popup_36d8bc00e090349cb9a882f14325ccb7.setContent(html_79c8e24afff348f3a95c441bbaefa360);
+            
+        
+
+        circle_marker_c40294c7b64342bf9ca892160298bed4.bindPopup(popup_36d8bc00e090349cb9a882f14325ccb7)
+        ;
+
+        
+    
+    
+            var circle_marker_fe99a0d8d65d62ff61f3172f125d6b3b = L.circleMarker(
+                [13.961375, 120.682815],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_11cd79ac3d6a93696ccbedba108a0774 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6d69ea0f5c425971c83db8ad72d2aff7 = $(`<div id="html_6d69ea0f5c425971c83db8ad72d2aff7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 13.9614<br>                 <b>Longitude:</b> 120.6828<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Malalay village<br>                 <b>Where Description:</b> Barangas Malalay                 </div>`)[0];
+                popup_11cd79ac3d6a93696ccbedba108a0774.setContent(html_6d69ea0f5c425971c83db8ad72d2aff7);
+            
+        
+
+        circle_marker_fe99a0d8d65d62ff61f3172f125d6b3b.bindPopup(popup_11cd79ac3d6a93696ccbedba108a0774)
+        ;
+
+        
+    
+    
+            var circle_marker_78c42225fd3a762baadf3935c580aea2 = L.circleMarker(
+                [8.16278, 125.17722],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_299145a73668d676d2976aa4a4b70c9e);
+        
+    
+        var popup_57a2c1eec4bec1e8c026c70a86505392 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e4db9f8fae1dc78ec0297e3ad789dc2b = $(`<div id="html_e4db9f8fae1dc78ec0297e3ad789dc2b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 8.1628<br>                 <b>Longitude:</b> 125.1772<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> Malaybalay City municipality<br>                 <b>Where Description:</b> Malaybalay                 </div>`)[0];
+                popup_57a2c1eec4bec1e8c026c70a86505392.setContent(html_e4db9f8fae1dc78ec0297e3ad789dc2b);
+            
+        
+
+        circle_marker_78c42225fd3a762baadf3935c580aea2.bindPopup(popup_57a2c1eec4bec1e8c026c70a86505392)
+        ;
+
+        
+    
+</script>
+</html>

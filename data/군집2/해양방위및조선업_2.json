@@ -1,0 +1,200 @@
+[
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "장보고-III (도산안창호급)",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "66",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "장보고-II (손원일급)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "장보고-I",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "76",
+        "Export History": "인도네시아"
+    },
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "DSME1400",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "KDX-III",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "68",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "KDX-II",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "KDX-I",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "74",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "FFX Batch-III",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "FFX Batch-II",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "70",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "수출형 초계함",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "잠수함구조함-I",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "89",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "잠수함구조함-II",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "70",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "전투용 무인잠수정",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "전투용 무인수상정",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "Ghost Commander 5,000T",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "70",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "6",
+        "Main_Selling_Product": "Ghost Commander 16,000T",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "영국 군수지원함",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Overseas",
+        "Price Competitiveness": "89",
+        "Export History": "영국"
+    },
+    {
+        "Company Name": "8",
+        "Category": "20",
+        "Main_Selling_Product": "노르웨이 군수지원함",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Overseas",
+        "Price Competitiveness": "88",
+        "Export History": "노르웨이"
+    }
+]

@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_72587e7312536dfd8515a6cee9260d5c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_72587e7312536dfd8515a6cee9260d5c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_72587e7312536dfd8515a6cee9260d5c = L.map(
+                "map_72587e7312536dfd8515a6cee9260d5c",
+                {
+                    center: [35.16406940860215, 68.38915456989247],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7f1cb3ee51aaf90971a4863626cc0c1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_f7f1cb3ee51aaf90971a4863626cc0c1.addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+            var marker_61655eca09554063f6cb0cb6af91509c = L.marker(
+                [35.16406940860215, 68.38915456989247],
+                {}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+            var div_icon_2624e42aa21083f0c49677339b05030d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eAfghanistan\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_61655eca09554063f6cb0cb6af91509c.setIcon(div_icon_2624e42aa21083f0c49677339b05030d);
+        
+    
+            var circle_marker_2df5adc0cff9c894854638ed9044cafc = L.circleMarker(
+                [34.564444, 69.217222],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.862943611198906, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_e4d01debe705c6fda48897b7bc364fa9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_52989d4624127fc3ae0bb9ca6f7382d0 = $(`<div id="html_52989d4624127fc3ae0bb9ca6f7382d0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5644<br>                 <b>Longitude:</b> 69.2172<br>                 <b>Deaths:</b> 15<br>                 <b>Where Coordinates:</b> Kabul international airport<br>                 <b>Where Description:</b> Kabul Military Airport                 </div>`)[0];
+                popup_e4d01debe705c6fda48897b7bc364fa9.setContent(html_52989d4624127fc3ae0bb9ca6f7382d0);
+            
+        
+
+        circle_marker_2df5adc0cff9c894854638ed9044cafc.bindPopup(popup_e4d01debe705c6fda48897b7bc364fa9)
+        ;
+
+        
+    
+    
+            var circle_marker_ae075c45ec8626d84dd0c818f61dfd7f = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_839c9291599f04cbea93ee0637409a6f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3affd19e98e244be98f72e55ef5a1a7e = $(`<div id="html_3affd19e98e244be98f72e55ef5a1a7e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Qalacha and Shuhada-e-Salehin areas of Kabul city                 </div>`)[0];
+                popup_839c9291599f04cbea93ee0637409a6f.setContent(html_3affd19e98e244be98f72e55ef5a1a7e);
+            
+        
+
+        circle_marker_ae075c45ec8626d84dd0c818f61dfd7f.bindPopup(popup_839c9291599f04cbea93ee0637409a6f)
+        ;
+
+        
+    
+    
+            var circle_marker_153c6e05271cfd21607d95d3a43c59c7 = L.circleMarker(
+                [30.959629, 61.862839],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_151ac99fce435a008f66176301b3458a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4515becca430b10df83adbc969a1c8e2 = $(`<div id="html_4515becca430b10df83adbc969a1c8e2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 30.9596<br>                 <b>Longitude:</b> 61.8628<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Zaranj town<br>                 <b>Where Description:</b> Zaranj city, Nimroz province                 </div>`)[0];
+                popup_151ac99fce435a008f66176301b3458a.setContent(html_4515becca430b10df83adbc969a1c8e2);
+            
+        
+
+        circle_marker_153c6e05271cfd21607d95d3a43c59c7.bindPopup(popup_151ac99fce435a008f66176301b3458a)
+        ;
+
+        
+    
+    
+            var circle_marker_52fd94e238259b78650c9dca1560e1f8 = L.circleMarker(
+                [34.73795, 70.60637],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_8b1759489d92ef5180f71e1f327fdf41 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8b8325c5a09ea7c3be907b853860dc55 = $(`<div id="html_8b8325c5a09ea7c3be907b853860dc55" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.7379<br>                 <b>Longitude:</b> 70.6064<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Shimal village<br>                 <b>Where Description:</b> Shimal village of Dara-e Noor district of Nangarhar province                 </div>`)[0];
+                popup_8b1759489d92ef5180f71e1f327fdf41.setContent(html_8b8325c5a09ea7c3be907b853860dc55);
+            
+        
+
+        circle_marker_52fd94e238259b78650c9dca1560e1f8.bindPopup(popup_8b1759489d92ef5180f71e1f327fdf41)
+        ;
+
+        
+    
+    
+            var circle_marker_fa77b99689e807237c1fce145391bfb8 = L.circleMarker(
+                [36.324882, 68.6234],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_4757d4686c161ed9cfdd2f338551c32f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2612f3db9204748fa90e0e667e30e0a7 = $(`<div id="html_2612f3db9204748fa90e0e667e30e0a7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.3249<br>                 <b>Longitude:</b> 68.6234<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Baghlani Jadid district<br>                 <b>Where Description:</b> main intersection of Baghlan, central Baghlan district                 </div>`)[0];
+                popup_4757d4686c161ed9cfdd2f338551c32f.setContent(html_2612f3db9204748fa90e0e667e30e0a7);
+            
+        
+
+        circle_marker_fa77b99689e807237c1fce145391bfb8.bindPopup(popup_4757d4686c161ed9cfdd2f338551c32f)
+        ;
+
+        
+    
+    
+            var circle_marker_552a373c8cd521b8291675a1908ff04a = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.677471079645748, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_1c11554d1d0e176779347d8df7e5737a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_21736ed9899810d58a8d2de7fca523f4 = $(`<div id="html_21736ed9899810d58a8d2de7fca523f4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 22<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> near the Ministry of Foreign Affairs, Kabul                 </div>`)[0];
+                popup_1c11554d1d0e176779347d8df7e5737a.setContent(html_21736ed9899810d58a8d2de7fca523f4);
+            
+        
+
+        circle_marker_552a373c8cd521b8291675a1908ff04a.bindPopup(popup_1c11554d1d0e176779347d8df7e5737a)
+        ;
+
+        
+    
+    
+            var circle_marker_2340207c12977bf4cb145992283aa18d = L.circleMarker(
+                [35.904721, 69.664786],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_bb1d85f14c9c6778bbd24141ac483a7f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b5b11dae102c84eacd695e1a38e93382 = $(`<div id="html_b5b11dae102c84eacd695e1a38e93382" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.9047<br>                 <b>Longitude:</b> 69.6648<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Khost Wa Firing district<br>                 <b>Where Description:</b> Khost district of Afghanistan’s northern province of Baghlan                 </div>`)[0];
+                popup_bb1d85f14c9c6778bbd24141ac483a7f.setContent(html_b5b11dae102c84eacd695e1a38e93382);
+            
+        
+
+        circle_marker_2340207c12977bf4cb145992283aa18d.bindPopup(popup_bb1d85f14c9c6778bbd24141ac483a7f)
+        ;
+
+        
+    
+    
+            var circle_marker_48228499ec1b7c3b56bc5082f154664a = L.circleMarker(
+                [35.904721, 69.664786],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_fd2869109043c12a70c25b57e0dd1009 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_225a059c540cb973e371db3bc9515858 = $(`<div id="html_225a059c540cb973e371db3bc9515858" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.9047<br>                 <b>Longitude:</b> 69.6648<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Khost Wa Firing district<br>                 <b>Where Description:</b> Khost district of Afghanistan’s northern province of Baghlan                 </div>`)[0];
+                popup_fd2869109043c12a70c25b57e0dd1009.setContent(html_225a059c540cb973e371db3bc9515858);
+            
+        
+
+        circle_marker_48228499ec1b7c3b56bc5082f154664a.bindPopup(popup_fd2869109043c12a70c25b57e0dd1009)
+        ;
+
+        
+    
+    
+            var circle_marker_e4deb7384b35dcb60c9225f1125cea90 = L.circleMarker(
+                [31.611795, 65.705795],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_18cbf4fa830bf7250ead791b779f76fd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4ae247cdfcd632a8f79239c626da6d32 = $(`<div id="html_4ae247cdfcd632a8f79239c626da6d32" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 31.6118<br>                 <b>Longitude:</b> 65.7058<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kandahar town<br>                 <b>Where Description:</b> PD9, #Kandahar city                 </div>`)[0];
+                popup_18cbf4fa830bf7250ead791b779f76fd.setContent(html_4ae247cdfcd632a8f79239c626da6d32);
+            
+        
+
+        circle_marker_e4deb7384b35dcb60c9225f1125cea90.bindPopup(popup_18cbf4fa830bf7250ead791b779f76fd)
+        ;
+
+        
+    
+    
+            var circle_marker_c46f3807beb4704ef448cdeab6da91a8 = L.circleMarker(
+                [36.935829, 67.067454],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_ab054eef8e4307dc57c60b15bbd0c80d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ea84882e10f7c7b81252c806f9e7ebf2 = $(`<div id="html_ea84882e10f7c7b81252c806f9e7ebf2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.9358<br>                 <b>Longitude:</b> 67.0675<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Between Dawlatabad district and Mazari Sharif town<br>                 <b>Where Description:</b> road between Mazar-e-Sharif and Daulatabad, NBalkh                 </div>`)[0];
+                popup_ab054eef8e4307dc57c60b15bbd0c80d.setContent(html_ea84882e10f7c7b81252c806f9e7ebf2);
+            
+        
+
+        circle_marker_c46f3807beb4704ef448cdeab6da91a8.bindPopup(popup_ab054eef8e4307dc57c60b15bbd0c80d)
+        ;
+
+        
+    
+    
+            var circle_marker_f6738288f31886049b0c6c0400151463 = L.circleMarker(
+                [36.69545, 66.724586],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_bc9d250d2103b28a7fa7c3a170ad71e5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6aa1b5e022994e6445d5b7dc2bbc44a6 = $(`<div id="html_6aa1b5e022994e6445d5b7dc2bbc44a6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.6955<br>                 <b>Longitude:</b> 66.7246<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Jar Qala village<br>                 <b>Where Description:</b> Jar Qala village of Chimtal district.                 </div>`)[0];
+                popup_bc9d250d2103b28a7fa7c3a170ad71e5.setContent(html_6aa1b5e022994e6445d5b7dc2bbc44a6);
+            
+        
+
+        circle_marker_f6738288f31886049b0c6c0400151463.bindPopup(popup_bc9d250d2103b28a7fa7c3a170ad71e5)
+        ;
+
+        
+    
+    
+            var circle_marker_a54f3ec62241b471b08498affcdf82b9 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b7308123c73ecf8e25f306b3967dc735 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_755f5a44a5c1afa112e9621d8299fdc9 = $(`<div id="html_755f5a44a5c1afa112e9621d8299fdc9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Kart-e Naw area of PD8 in Kabul                 </div>`)[0];
+                popup_b7308123c73ecf8e25f306b3967dc735.setContent(html_755f5a44a5c1afa112e9621d8299fdc9);
+            
+        
+
+        circle_marker_a54f3ec62241b471b08498affcdf82b9.bindPopup(popup_b7308123c73ecf8e25f306b3967dc735)
+        ;
+
+        
+    
+    
+            var circle_marker_0e4b9d6c43929246ac204315ccfce796 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_8fd0d89df9ccd2a6322464565075245b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_85abdf0d7a56d48e3225c1f6ce890c5b = $(`<div id="html_85abdf0d7a56d48e3225c1f6ce890c5b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Horses square PD15, Kabul city                 </div>`)[0];
+                popup_8fd0d89df9ccd2a6322464565075245b.setContent(html_85abdf0d7a56d48e3225c1f6ce890c5b);
+            
+        
+
+        circle_marker_0e4b9d6c43929246ac204315ccfce796.bindPopup(popup_8fd0d89df9ccd2a6322464565075245b)
+        ;
+
+        
+    
+    
+            var circle_marker_dd96076a0bb93fe83b0f840e3b2afcf1 = L.circleMarker(
+                [34.750462, 71.118319],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_be96998c1755b254ba3c619094b8fe85 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_320a8c75cf8476d3a402cb9d7577331b = $(`<div id="html_320a8c75cf8476d3a402cb9d7577331b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.7505<br>                 <b>Longitude:</b> 71.1183<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Sirkanay district<br>                 <b>Where Description:</b> 'Mullah Koro Bagh' (near the Durand Line) area, Shonkaray valley of Sarkano District in #Kunar Province                 </div>`)[0];
+                popup_be96998c1755b254ba3c619094b8fe85.setContent(html_320a8c75cf8476d3a402cb9d7577331b);
+            
+        
+
+        circle_marker_dd96076a0bb93fe83b0f840e3b2afcf1.bindPopup(popup_be96998c1755b254ba3c619094b8fe85)
+        ;
+
+        
+    
+    
+            var circle_marker_2150528abd89319167e017a2603efc5a = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_d95071e2ac670c1fa6a7d50f45e62a32 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0cd8f7df9f2fae114231fc977fd921ab = $(`<div id="html_0cd8f7df9f2fae114231fc977fd921ab" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Shahrak Zakiren area of Khair Khana, in PD17 of #Kabul City                 </div>`)[0];
+                popup_d95071e2ac670c1fa6a7d50f45e62a32.setContent(html_0cd8f7df9f2fae114231fc977fd921ab);
+            
+        
+
+        circle_marker_2150528abd89319167e017a2603efc5a.bindPopup(popup_d95071e2ac670c1fa6a7d50f45e62a32)
+        ;
+
+        
+    
+    
+            var circle_marker_34bc1341b3f3497f9a219f4059242017 = L.circleMarker(
+                [37.116638, 70.580022],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_dfd3cb4674e632fe7eca6ad09a8b91fb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cf3ba8de9eaae18ca7b980643bd2209b = $(`<div id="html_cf3ba8de9eaae18ca7b980643bd2209b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.1166<br>                 <b>Longitude:</b> 70.5800<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Fayzabad town<br>                 <b>Where Description:</b> Kabul Bank in Faizabad, Badakhshan Province                 </div>`)[0];
+                popup_dfd3cb4674e632fe7eca6ad09a8b91fb.setContent(html_cf3ba8de9eaae18ca7b980643bd2209b);
+            
+        
+
+        circle_marker_34bc1341b3f3497f9a219f4059242017.bindPopup(popup_dfd3cb4674e632fe7eca6ad09a8b91fb)
+        ;
+
+        
+    
+    
+            var circle_marker_dd8d7a01333d5998357aa9dd32d4a13a = L.circleMarker(
+                [35.0159, 69.1741],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_6fc7f6a68b9af2be843877b00b4a4fa2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d96e435df06a39583bcc55d8183d128b = $(`<div id="html_d96e435df06a39583bcc55d8183d128b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.0159<br>                 <b>Longitude:</b> 69.1741<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chaharikar town<br>                 <b>Where Description:</b> Charikar, the capital of Parwan province                 </div>`)[0];
+                popup_6fc7f6a68b9af2be843877b00b4a4fa2.setContent(html_d96e435df06a39583bcc55d8183d128b);
+            
+        
+
+        circle_marker_dd8d7a01333d5998357aa9dd32d4a13a.bindPopup(popup_6fc7f6a68b9af2be843877b00b4a4fa2)
+        ;
+
+        
+    
+    
+            var circle_marker_9ead556552d0fd65f6fa66d360d390d2 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b6142ea98e0249db2a2facbb76310f0f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_55f17f7386655464f6555e0fda5af104 = $(`<div id="html_55f17f7386655464f6555e0fda5af104" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Pul-e Sukhta area of #Kabul City.                 </div>`)[0];
+                popup_b6142ea98e0249db2a2facbb76310f0f.setContent(html_55f17f7386655464f6555e0fda5af104);
+            
+        
+
+        circle_marker_9ead556552d0fd65f6fa66d360d390d2.bindPopup(popup_b6142ea98e0249db2a2facbb76310f0f)
+        ;
+
+        
+    
+    
+            var circle_marker_9c1988941f68842d981888e0caa3b923 = L.circleMarker(
+                [34.334991, 62.149803],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_d3574f04485538558840e9334d8b2ace = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0cc746ca4ea7d1447d9a86eb9225fedb = $(`<div id="html_0cc746ca4ea7d1447d9a86eb9225fedb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3350<br>                 <b>Longitude:</b> 62.1498<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Rabat Kabuliha village<br>                 <b>Where Description:</b> PD14 of Herat city (Rabat Kabuli village of district 14 )                 </div>`)[0];
+                popup_d3574f04485538558840e9334d8b2ace.setContent(html_0cc746ca4ea7d1447d9a86eb9225fedb);
+            
+        
+
+        circle_marker_9c1988941f68842d981888e0caa3b923.bindPopup(popup_d3574f04485538558840e9334d8b2ace)
+        ;
+
+        
+    
+    
+            var circle_marker_9a4eb2278a0855f41744ee9d24ed975f = L.circleMarker(
+                [36.700067, 67.116647],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_91bdeef9026125cc8f9e35e7b1cd9bf6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_902411551b2ca66ae84736b691c6b06f = $(`<div id="html_902411551b2ca66ae84736b691c6b06f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7001<br>                 <b>Longitude:</b> 67.1166<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Mazari Sharif town<br>                 <b>Where Description:</b> governor's office, Balkh province                 </div>`)[0];
+                popup_91bdeef9026125cc8f9e35e7b1cd9bf6.setContent(html_902411551b2ca66ae84736b691c6b06f);
+            
+        
+
+        circle_marker_9a4eb2278a0855f41744ee9d24ed975f.bindPopup(popup_91bdeef9026125cc8f9e35e7b1cd9bf6)
+        ;
+
+        
+    
+    
+            var circle_marker_e4b82aad72b362c0b3e92aa35aeb7b43 = L.circleMarker(
+                [34.349991, 62.200001],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_21418d8508f0af8c43b3f4eead646594 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4ecec83478598d3f44a1bacb9c2da5ce = $(`<div id="html_4ecec83478598d3f44a1bacb9c2da5ce" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3500<br>                 <b>Longitude:</b> 62.2000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Hirat town<br>                 <b>Where Description:</b> Herat City                 </div>`)[0];
+                popup_21418d8508f0af8c43b3f4eead646594.setContent(html_4ecec83478598d3f44a1bacb9c2da5ce);
+            
+        
+
+        circle_marker_e4b82aad72b362c0b3e92aa35aeb7b43.bindPopup(popup_21418d8508f0af8c43b3f4eead646594)
+        ;
+
+        
+    
+    
+            var circle_marker_8df3a98bf6e5397153696fcb81563c18 = L.circleMarker(
+                [34.560639, 70.606476],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_3d8dced04428c562f10e7fd73fad50e6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2b675941e4a9dfbf89eed4107240df20 = $(`<div id="html_2b675941e4a9dfbf89eed4107240df20" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5606<br>                 <b>Longitude:</b> 70.6065<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kuz Kunar district<br>                 <b>Where Description:</b> Kuz Kunar district, Nangarhar province                 </div>`)[0];
+                popup_3d8dced04428c562f10e7fd73fad50e6.setContent(html_2b675941e4a9dfbf89eed4107240df20);
+            
+        
+
+        circle_marker_8df3a98bf6e5397153696fcb81563c18.bindPopup(popup_3d8dced04428c562f10e7fd73fad50e6)
+        ;
+
+        
+    
+    
+            var circle_marker_b340b353f29098fd9140d0943f220210 = L.circleMarker(
+                [36.896746, 68.361061],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_f3daa0c90a61b04f94c270ed01274b16 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aa1ec5dc60d730cb27674e8ffa93ef97 = $(`<div id="html_aa1ec5dc60d730cb27674e8ffa93ef97" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.8967<br>                 <b>Longitude:</b> 68.3611<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Qalay-I-Zal district<br>                 <b>Where Description:</b> Qala-e Zal district of #Kunduz province                 </div>`)[0];
+                popup_f3daa0c90a61b04f94c270ed01274b16.setContent(html_aa1ec5dc60d730cb27674e8ffa93ef97);
+            
+        
+
+        circle_marker_b340b353f29098fd9140d0943f220210.bindPopup(popup_f3daa0c90a61b04f94c270ed01274b16)
+        ;
+
+        
+    
+    
+            var circle_marker_049b6dec8d9bcca9f8b95e79f7d416c4 = L.circleMarker(
+                [35.56558, 69.44226],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.989476363991853, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_5aeeadd56af16652e844aa03e99e05eb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_56a60c71bcf3cff95d51408fd6b544b9 = $(`<div id="html_56a60c71bcf3cff95d51408fd6b544b9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.5656<br>                 <b>Longitude:</b> 69.4423<br>                 <b>Deaths:</b> 10<br>                 <b>Where Coordinates:</b> Taghanak village<br>                 <b>Where Description:</b> Taghank village of Pol Hisar district of Andaraab haa.                 </div>`)[0];
+                popup_5aeeadd56af16652e844aa03e99e05eb.setContent(html_56a60c71bcf3cff95d51408fd6b544b9);
+            
+        
+
+        circle_marker_049b6dec8d9bcca9f8b95e79f7d416c4.bindPopup(popup_5aeeadd56af16652e844aa03e99e05eb)
+        ;
+
+        
+    
+    
+            var circle_marker_61784d92e476a17aab89e030be64ddfb = L.circleMarker(
+                [36.700067, 67.116647],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_a22120c168b39bc33cb6c383a41b85cb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fff0cba049e9c53fe290de173356e7d2 = $(`<div id="html_fff0cba049e9c53fe290de173356e7d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7001<br>                 <b>Longitude:</b> 67.1166<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Mazari Sharif town<br>                 <b>Where Description:</b> Shia's Tebyan cultural center in PD2 of Mazar-e-Sharif, Balkh province.                 </div>`)[0];
+                popup_a22120c168b39bc33cb6c383a41b85cb.setContent(html_fff0cba049e9c53fe290de173356e7d2);
+            
+        
+
+        circle_marker_61784d92e476a17aab89e030be64ddfb.bindPopup(popup_a22120c168b39bc33cb6c383a41b85cb)
+        ;
+
+        
+    
+    
+            var circle_marker_ba8da4eca5386dd9955cb35a6d77cd00 = L.circleMarker(
+                [36.700067, 67.116647],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_6c27b7850eb71464c794c0663e6132f8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_327e90972d5025f99614fb42de1fb65e = $(`<div id="html_327e90972d5025f99614fb42de1fb65e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7001<br>                 <b>Longitude:</b> 67.1166<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Mazari Sharif town<br>                 <b>Where Description:</b> Mazar-e-Sharif (fifth, sixth and eighth districts of)                 </div>`)[0];
+                popup_6c27b7850eb71464c794c0663e6132f8.setContent(html_327e90972d5025f99614fb42de1fb65e);
+            
+        
+
+        circle_marker_ba8da4eca5386dd9955cb35a6d77cd00.bindPopup(popup_6c27b7850eb71464c794c0663e6132f8)
+        ;
+
+        
+    
+    
+            var circle_marker_aef9e84b118a63e905f76629b57732cd = L.circleMarker(
+                [34.50251, 69.352234],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_69338bccf1e26a995069b99a883ff4d8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c9169715cb7cdcc63ab2335eac5090af = $(`<div id="html_c9169715cb7cdcc63ab2335eac5090af" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5025<br>                 <b>Longitude:</b> 69.3522<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Butkhak village<br>                 <b>Where Description:</b> Batkhak area of Police District 12 in the capital city of Kabul                 </div>`)[0];
+                popup_69338bccf1e26a995069b99a883ff4d8.setContent(html_c9169715cb7cdcc63ab2335eac5090af);
+            
+        
+
+        circle_marker_aef9e84b118a63e905f76629b57732cd.bindPopup(popup_69338bccf1e26a995069b99a883ff4d8)
+        ;
+
+        
+    
+    
+            var circle_marker_456a51fd8993911d28789bf43ae91b3e = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_df6bcd94c870b466e2b105e62f114b1a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_288652247968700fce1bafb4f6e3efae = $(`<div id="html_288652247968700fce1bafb4f6e3efae" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> near the building of the Ministry of Foreign Affairs in Kabul city, Malik Asghar Square                 </div>`)[0];
+                popup_df6bcd94c870b466e2b105e62f114b1a.setContent(html_288652247968700fce1bafb4f6e3efae);
+            
+        
+
+        circle_marker_456a51fd8993911d28789bf43ae91b3e.bindPopup(popup_df6bcd94c870b466e2b105e62f114b1a)
+        ;
+
+        
+    
+    
+            var circle_marker_22897c0e9c6b9d76ce64e165e896dbd8 = L.circleMarker(
+                [37.4127, 66.0364],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_6285e4695b310ed2f8d1a0d3fd5f7cda = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9ede0814762f4ae9ca98b43f202f0947 = $(`<div id="html_9ede0814762f4ae9ca98b43f202f0947" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.4127<br>                 <b>Longitude:</b> 66.0364<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Qarqin town<br>                 <b>Where Description:</b> on the Jowzjan-Sar-i-Pul highway. Qarqin village under Qarqin District in Jowzjan Province,                 </div>`)[0];
+                popup_6285e4695b310ed2f8d1a0d3fd5f7cda.setContent(html_9ede0814762f4ae9ca98b43f202f0947);
+            
+        
+
+        circle_marker_22897c0e9c6b9d76ce64e165e896dbd8.bindPopup(popup_6285e4695b310ed2f8d1a0d3fd5f7cda)
+        ;
+
+        
+    
+    
+            var circle_marker_ddfdec0ec585f50f0008f5eaf7989929 = L.circleMarker(
+                [34.349991, 62.200001],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_f5da530d7ca8709bec471cf972a97c31 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_185c0ce59be6f309e16bb3e51d7fa4a1 = $(`<div id="html_185c0ce59be6f309e16bb3e51d7fa4a1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3500<br>                 <b>Longitude:</b> 62.2000<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Hirat town<br>                 <b>Where Description:</b> Herat City (9th and 11th districts of)                 </div>`)[0];
+                popup_f5da530d7ca8709bec471cf972a97c31.setContent(html_185c0ce59be6f309e16bb3e51d7fa4a1);
+            
+        
+
+        circle_marker_ddfdec0ec585f50f0008f5eaf7989929.bindPopup(popup_f5da530d7ca8709bec471cf972a97c31)
+        ;
+
+        
+    
+    
+            var circle_marker_4fa8ef9a5f710e60c3d4123315ff11b2 = L.circleMarker(
+                [30.959629, 61.862839],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_c74535dac6a0f2b96cae7bc532c74639 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_96c47df04656433c36d5505f54c627bb = $(`<div id="html_96c47df04656433c36d5505f54c627bb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 30.9596<br>                 <b>Longitude:</b> 61.8628<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Zaranj town<br>                 <b>Where Description:</b> Zaranj City of #Nimruz province (PD3, Sayed Abad area of)                 </div>`)[0];
+                popup_c74535dac6a0f2b96cae7bc532c74639.setContent(html_96c47df04656433c36d5505f54c627bb);
+            
+        
+
+        circle_marker_4fa8ef9a5f710e60c3d4123315ff11b2.bindPopup(popup_c74535dac6a0f2b96cae7bc532c74639)
+        ;
+
+        
+    
+    
+            var circle_marker_d24fa0fdf3834cf4b75f3efa47ad798d = L.circleMarker(
+                [35.0159, 69.1741],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_d23ed0d95713a536267fb14bcc8d9aaa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_726b9fa6c9cff29a9d8d6909f187e20e = $(`<div id="html_726b9fa6c9cff29a9d8d6909f187e20e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.0159<br>                 <b>Longitude:</b> 69.1741<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chaharikar town<br>                 <b>Where Description:</b> near Shahrak-e Mu'alimin in Charikar City (PD1)                 </div>`)[0];
+                popup_d23ed0d95713a536267fb14bcc8d9aaa.setContent(html_726b9fa6c9cff29a9d8d6909f187e20e);
+            
+        
+
+        circle_marker_d24fa0fdf3834cf4b75f3efa47ad798d.bindPopup(popup_d23ed0d95713a536267fb14bcc8d9aaa)
+        ;
+
+        
+    
+    
+            var circle_marker_80ebb75228a25c3d2ea8607e9807eba9 = L.circleMarker(
+                [36.8409, 67.17489],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_eba0fb0386493652e796966bd2f297aa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7c9c8031eb13bb684b02410af33249b6 = $(`<div id="html_7c9c8031eb13bb684b02410af33249b6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.8409<br>                 <b>Longitude:</b> 67.1749<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Nahri Shahi district<br>                 <b>Where Description:</b> Engineer Mahdi/Karte Nassim area of Nahr-e Shahi district (on the outskirts of Mazar city) in Balkh province                 </div>`)[0];
+                popup_eba0fb0386493652e796966bd2f297aa.setContent(html_7c9c8031eb13bb684b02410af33249b6);
+            
+        
+
+        circle_marker_80ebb75228a25c3d2ea8607e9807eba9.bindPopup(popup_eba0fb0386493652e796966bd2f297aa)
+        ;
+
+        
+    
+    
+            var circle_marker_8af58620f817cb061514730d352caf03 = L.circleMarker(
+                [30.959629, 61.862839],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_3a5742e0204cda59ca318c50f2892f0b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_52e09f74d1489b6ee1d10c5338964bee = $(`<div id="html_52e09f74d1489b6ee1d10c5338964bee" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 30.9596<br>                 <b>Longitude:</b> 61.8628<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Zaranj town<br>                 <b>Where Description:</b> Zaranj city of Nimroz (Masoumabad/Masoom Abad village area of ​)                 </div>`)[0];
+                popup_3a5742e0204cda59ca318c50f2892f0b.setContent(html_52e09f74d1489b6ee1d10c5338964bee);
+            
+        
+
+        circle_marker_8af58620f817cb061514730d352caf03.bindPopup(popup_3a5742e0204cda59ca318c50f2892f0b)
+        ;
+
+        
+    
+    
+            var circle_marker_404d18875721e7bccaa9c1dbf00d2a3a = L.circleMarker(
+                [35.23126, 69.20835],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.45521226679158, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_12f8a7438212a5e83dfab0579ec49f8d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_11d405aa4fdecceaf81055b51032df7e = $(`<div id="html_11d405aa4fdecceaf81055b51032df7e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.2313<br>                 <b>Longitude:</b> 69.2083<br>                 <b>Deaths:</b> 21<br>                 <b>Where Coordinates:</b> Koklami valley<br>                 <b>Where Description:</b> Kokalamy valley of Salang district of Parwan province (on their way from the mountains towards Shatal district in Panjshir)                 </div>`)[0];
+                popup_12f8a7438212a5e83dfab0579ec49f8d.setContent(html_11d405aa4fdecceaf81055b51032df7e);
+            
+        
+
+        circle_marker_404d18875721e7bccaa9c1dbf00d2a3a.bindPopup(popup_12f8a7438212a5e83dfab0579ec49f8d)
+        ;
+
+        
+    
+    
+            var circle_marker_32b05fc0b08837e51855982352f2cc74 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_7a17cf599fade43236ea593b7896307a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3fb0b62c10b8582c2f5d1351057b39ce = $(`<div id="html_3fb0b62c10b8582c2f5d1351057b39ce" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> PD-8 of Kabul city (Karta-e-Naw area)                 </div>`)[0];
+                popup_7a17cf599fade43236ea593b7896307a.setContent(html_3fb0b62c10b8582c2f5d1351057b39ce);
+            
+        
+
+        circle_marker_32b05fc0b08837e51855982352f2cc74.bindPopup(popup_7a17cf599fade43236ea593b7896307a)
+        ;
+
+        
+    
+    
+            var circle_marker_b534c232339e9f722da717005cf36ae8 = L.circleMarker(
+                [37.238503, 70.822911],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_24a0fc391c718fc8d0947d91e4f4c31b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ed0bcf9ebff9fa998851e26edff9109d = $(`<div id="html_ed0bcf9ebff9fa998851e26edff9109d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.2385<br>                 <b>Longitude:</b> 70.8229<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Arghanj Khwa district<br>                 <b>Where Description:</b> Arghanj Khwah district                 </div>`)[0];
+                popup_24a0fc391c718fc8d0947d91e4f4c31b.setContent(html_ed0bcf9ebff9fa998851e26edff9109d);
+            
+        
+
+        circle_marker_b534c232339e9f722da717005cf36ae8.bindPopup(popup_24a0fc391c718fc8d0947d91e4f4c31b)
+        ;
+
+        
+    
+    
+            var circle_marker_17ebc2a8192a4be04aeff3bc6c71e658 = L.circleMarker(
+                [36.560871, 70.363304],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_bd538ddc5c071f9717f370d10cf79e62 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8142b17c023b582e8bf46de950c09209 = $(`<div id="html_8142b17c023b582e8bf46de950c09209" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.5609<br>                 <b>Longitude:</b> 70.3633<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Doabi village<br>                 <b>Where Description:</b> village of Duaabi Tagab in Kishm district.                 </div>`)[0];
+                popup_bd538ddc5c071f9717f370d10cf79e62.setContent(html_8142b17c023b582e8bf46de950c09209);
+            
+        
+
+        circle_marker_17ebc2a8192a4be04aeff3bc6c71e658.bindPopup(popup_bd538ddc5c071f9717f370d10cf79e62)
+        ;
+
+        
+    
+    
+            var circle_marker_2e184ea8fc21b8015a23cde14948437a = L.circleMarker(
+                [36.75, 72.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_bb523d2696d34baa4626f1b93acad24b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_292c3674ed2d3899d7f50476e4b2abda = $(`<div id="html_292c3674ed2d3899d7f50476e4b2abda" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7500<br>                 <b>Longitude:</b> 72.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Badakhshan province<br>                 <b>Where Description:</b> Darwaz districts, Badakshan                 </div>`)[0];
+                popup_bb523d2696d34baa4626f1b93acad24b.setContent(html_292c3674ed2d3899d7f50476e4b2abda);
+            
+        
+
+        circle_marker_2e184ea8fc21b8015a23cde14948437a.bindPopup(popup_bb523d2696d34baa4626f1b93acad24b)
+        ;
+
+        
+    
+    
+            var circle_marker_c33442000f3c1ccd97b0a98ff4649cb6 = L.circleMarker(
+                [34.519516, 65.250935],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_17d4564483635fe635e33c5f2884ba42 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5cb207c49d50ea98edc3252f56576cca = $(`<div id="html_5cb207c49d50ea98edc3252f56576cca" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5195<br>                 <b>Longitude:</b> 65.2509<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chaghcharan (Feroz Koh) town<br>                 <b>Where Description:</b> Sadsiyah neighborhood of Firouzkoh city.                 </div>`)[0];
+                popup_17d4564483635fe635e33c5f2884ba42.setContent(html_5cb207c49d50ea98edc3252f56576cca);
+            
+        
+
+        circle_marker_c33442000f3c1ccd97b0a98ff4649cb6.bindPopup(popup_17d4564483635fe635e33c5f2884ba42)
+        ;
+
+        
+    
+    
+            var circle_marker_cd04193d12c2ea953868996cf90b0037 = L.circleMarker(
+                [35.183452, 70.796068],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_273ada8871f3fca82590810d98b4d88f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2e3fbff079deb83fef819bae8741e6e2 = $(`<div id="html_2e3fbff079deb83fef819bae8741e6e2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.1835<br>                 <b>Longitude:</b> 70.7961<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Wama district<br>                 <b>Where Description:</b> Wama district.                 </div>`)[0];
+                popup_273ada8871f3fca82590810d98b4d88f.setContent(html_2e3fbff079deb83fef819bae8741e6e2);
+            
+        
+
+        circle_marker_cd04193d12c2ea953868996cf90b0037.bindPopup(popup_273ada8871f3fca82590810d98b4d88f)
+        ;
+
+        
+    
+    
+            var circle_marker_a160226f5cc00951a9e6be7fdb618354 = L.circleMarker(
+                [34.50251, 69.352234],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_9c9eef475e679e23c143e53410c24cc5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8dd7828d2c8be96500e63e5c10c28eaa = $(`<div id="html_8dd7828d2c8be96500e63e5c10c28eaa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5025<br>                 <b>Longitude:</b> 69.3522<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Butkhak village<br>                 <b>Where Description:</b> outskirts of the capital city Kabul, in Bagrami district, Shamshad street, near Batkhak intersection                 </div>`)[0];
+                popup_9c9eef475e679e23c143e53410c24cc5.setContent(html_8dd7828d2c8be96500e63e5c10c28eaa);
+            
+        
+
+        circle_marker_a160226f5cc00951a9e6be7fdb618354.bindPopup(popup_9c9eef475e679e23c143e53410c24cc5)
+        ;
+
+        
+    
+    
+            var circle_marker_5ab3d4d8c9adda72c66984879b2ae86e = L.circleMarker(
+                [35.88781, 69.45263],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_33082785e1109aeb1a7b741a2bb7af0d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_032156fc58674889040304caa8b32f90 = $(`<div id="html_032156fc58674889040304caa8b32f90" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.8878<br>                 <b>Longitude:</b> 69.4526<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Jangalak mountain<br>                 <b>Where Description:</b> village of Jangalak in the Khost district of Baghlan province                 </div>`)[0];
+                popup_33082785e1109aeb1a7b741a2bb7af0d.setContent(html_032156fc58674889040304caa8b32f90);
+            
+        
+
+        circle_marker_5ab3d4d8c9adda72c66984879b2ae86e.bindPopup(popup_33082785e1109aeb1a7b741a2bb7af0d)
+        ;
+
+        
+    
+    
+            var circle_marker_ff2ca7d0f20017db9aa2ea3fcf5d2afb = L.circleMarker(
+                [34.663825, 69.036425],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_c69a28528cd30a3e5e45d9b1a7ddd266 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d24dfbdd5b4aeef618de779d31dcadba = $(`<div id="html_d24dfbdd5b4aeef618de779d31dcadba" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.6638<br>                 <b>Longitude:</b> 69.0364<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shakardara district<br>                 <b>Where Description:</b> Kabul, Shakar Dara district                 </div>`)[0];
+                popup_c69a28528cd30a3e5e45d9b1a7ddd266.setContent(html_d24dfbdd5b4aeef618de779d31dcadba);
+            
+        
+
+        circle_marker_ff2ca7d0f20017db9aa2ea3fcf5d2afb.bindPopup(popup_c69a28528cd30a3e5e45d9b1a7ddd266)
+        ;
+
+        
+    
+    
+            var circle_marker_2e18e0c16eac31088ad907805243e7f6 = L.circleMarker(
+                [37.001, 69.3588],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_bf52818b63035d3c254062e62580113f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_03cc9092488da10a966f9eedd6b054bc = $(`<div id="html_03cc9092488da10a966f9eedd6b054bc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.0010<br>                 <b>Longitude:</b> 69.3588<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Hazar Bagh village<br>                 <b>Where Description:</b> Hazarbagh village, Khaja Ghar district.                 </div>`)[0];
+                popup_bf52818b63035d3c254062e62580113f.setContent(html_03cc9092488da10a966f9eedd6b054bc);
+            
+        
+
+        circle_marker_2e18e0c16eac31088ad907805243e7f6.bindPopup(popup_bf52818b63035d3c254062e62580113f)
+        ;
+
+        
+    
+    
+            var circle_marker_75e76462967f0f4e5c1c90f961cf46d1 = L.circleMarker(
+                [35.2715, 71.5356],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_435fea31a55972dec2bebe6bce9f6870 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fe312fde1c9c47b2a9c1945bd7599742 = $(`<div id="html_fe312fde1c9c47b2a9c1945bd7599742" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.2715<br>                 <b>Longitude:</b> 71.5356<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Songal village<br>                 <b>Where Description:</b> Sungali village, Nari district., Kunar                 </div>`)[0];
+                popup_435fea31a55972dec2bebe6bce9f6870.setContent(html_fe312fde1c9c47b2a9c1945bd7599742);
+            
+        
+
+        circle_marker_75e76462967f0f4e5c1c90f961cf46d1.bindPopup(popup_435fea31a55972dec2bebe6bce9f6870)
+        ;
+
+        
+    
+    
+            var circle_marker_81057b0cd8b84784cc48bed1ceb27d23 = L.circleMarker(
+                [34.5165, 70.5249],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_434410188043917033eab46ce086fe97 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ebaab92585094f26802ee74296608825 = $(`<div id="html_ebaab92585094f26802ee74296608825" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5165<br>                 <b>Longitude:</b> 70.5249<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Woch Tangi Sayid Abad village<br>                 <b>Where Description:</b> 'Wach Tangi' area of Khewa district of Nangarhar province                 </div>`)[0];
+                popup_434410188043917033eab46ce086fe97.setContent(html_ebaab92585094f26802ee74296608825);
+            
+        
+
+        circle_marker_81057b0cd8b84784cc48bed1ceb27d23.bindPopup(popup_434410188043917033eab46ce086fe97)
+        ;
+
+        
+    
+    
+            var circle_marker_ebbc6c6360074a9258e4d61def6ecd2c = L.circleMarker(
+                [35.944583, 68.715122],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_2e7cd24b383ebb415c43f724c9c17332 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_66fd2ff5925a5e40ddcf1641f2d8c433 = $(`<div id="html_66fd2ff5925a5e40ddcf1641f2d8c433" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.9446<br>                 <b>Longitude:</b> 68.7151<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Puli Khumri town<br>                 <b>Where Description:</b> outskirts of Pul-e-Khumri city in Baghlan province                 </div>`)[0];
+                popup_2e7cd24b383ebb415c43f724c9c17332.setContent(html_66fd2ff5925a5e40ddcf1641f2d8c433);
+            
+        
+
+        circle_marker_ebbc6c6360074a9258e4d61def6ecd2c.bindPopup(popup_2e7cd24b383ebb415c43f724c9c17332)
+        ;
+
+        
+    
+    
+            var circle_marker_ed105b66a9d1fca614a3c469a424e567 = L.circleMarker(
+                [37.116638, 70.580022],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_35aeed810f2af5825cb534e27726c601 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e69f682ae2d64c06b8dba9b7a3aeccbc = $(`<div id="html_e69f682ae2d64c06b8dba9b7a3aeccbc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.1166<br>                 <b>Longitude:</b> 70.5800<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Fayzabad town<br>                 <b>Where Description:</b> Faizabad city of Badakhshan province.                 </div>`)[0];
+                popup_35aeed810f2af5825cb534e27726c601.setContent(html_e69f682ae2d64c06b8dba9b7a3aeccbc);
+            
+        
+
+        circle_marker_ed105b66a9d1fca614a3c469a424e567.bindPopup(popup_35aeed810f2af5825cb534e27726c601)
+        ;
+
+        
+    
+    
+            var circle_marker_4bae48787da2348ad07770eca44cb5db = L.circleMarker(
+                [37.116638, 70.580022],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.722194895832201, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_880db0d4fd5cb279419ae5412cb09794 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0fca76e647e9f424af0016a6de599595 = $(`<div id="html_0fca76e647e9f424af0016a6de599595" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.1166<br>                 <b>Longitude:</b> 70.5800<br>                 <b>Deaths:</b> 18<br>                 <b>Where Coordinates:</b> Fayzabad town<br>                 <b>Where Description:</b> Nabawi mosque in the Hesa-e Awal area of Faizabad city, Badakahshan                 </div>`)[0];
+                popup_880db0d4fd5cb279419ae5412cb09794.setContent(html_0fca76e647e9f424af0016a6de599595);
+            
+        
+
+        circle_marker_4bae48787da2348ad07770eca44cb5db.bindPopup(popup_880db0d4fd5cb279419ae5412cb09794)
+        ;
+
+        
+    
+    
+            var circle_marker_07e9e709236f49036cab0aa0f04cfc91 = L.circleMarker(
+                [34.385312, 69.073766],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_ffe8f69ecdc0a43d4eefb1433c845b32 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4c2dd98602acf7cd8c77ac879b46ee53 = $(`<div id="html_4c2dd98602acf7cd8c77ac879b46ee53" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3853<br>                 <b>Longitude:</b> 69.0738<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chahar Asyab district<br>                 <b>Where Description:</b> Char Asyab district                 </div>`)[0];
+                popup_ffe8f69ecdc0a43d4eefb1433c845b32.setContent(html_4c2dd98602acf7cd8c77ac879b46ee53);
+            
+        
+
+        circle_marker_07e9e709236f49036cab0aa0f04cfc91.bindPopup(popup_ffe8f69ecdc0a43d4eefb1433c845b32)
+        ;
+
+        
+    
+    
+            var circle_marker_08ef0be640f56fc56449815eda1bc5b7 = L.circleMarker(
+                [34.740322, 70.880043],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_7a396cfe30677ead2f951606392b05e6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5c9401789da432798cb6204bb649f27f = $(`<div id="html_5c9401789da432798cb6204bb649f27f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.7403<br>                 <b>Longitude:</b> 70.8800<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Dewagul valley<br>                 <b>Where Description:</b> Dewagal Valley of Sawkay district in Kunar.                 </div>`)[0];
+                popup_7a396cfe30677ead2f951606392b05e6.setContent(html_5c9401789da432798cb6204bb649f27f);
+            
+        
+
+        circle_marker_08ef0be640f56fc56449815eda1bc5b7.bindPopup(popup_7a396cfe30677ead2f951606392b05e6)
+        ;
+
+        
+    
+    
+            var circle_marker_eee9b37b684b3d76bbc254a65933938a = L.circleMarker(
+                [35.0, 69.58333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_0183b38d93273d189c5d6ba18cc5bc7e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a99db687e5e73298ff45602424521acf = $(`<div id="html_a99db687e5e73298ff45602424521acf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.0000<br>                 <b>Longitude:</b> 69.5833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kapisa province<br>                 <b>Where Description:</b> Mohammed Jankhel village , Kohistan district of northeastern Kapisa province                 </div>`)[0];
+                popup_0183b38d93273d189c5d6ba18cc5bc7e.setContent(html_a99db687e5e73298ff45602424521acf);
+            
+        
+
+        circle_marker_eee9b37b684b3d76bbc254a65933938a.bindPopup(popup_0183b38d93273d189c5d6ba18cc5bc7e)
+        ;
+
+        
+    
+    
+            var circle_marker_205ba4b552accea4119fbff23f912372 = L.circleMarker(
+                [34.46895, 69.20212],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_3e7b42f31e115ff9a2d59ca238f4f577 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_87816a8821b06f0814b651fff7521b84 = $(`<div id="html_87816a8821b06f0814b651fff7521b84" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.4689<br>                 <b>Longitude:</b> 69.2021<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Qal‘ah-ye Baghlak village<br>                 <b>Where Description:</b> Qala-e Baghalak area of the Mirwais township in Bagrami district of Kabul province.                 </div>`)[0];
+                popup_3e7b42f31e115ff9a2d59ca238f4f577.setContent(html_87816a8821b06f0814b651fff7521b84);
+            
+        
+
+        circle_marker_205ba4b552accea4119fbff23f912372.bindPopup(popup_3e7b42f31e115ff9a2d59ca238f4f577)
+        ;
+
+        
+    
+    
+            var circle_marker_773b9c1ba98168596e66c64134a38a05 = L.circleMarker(
+                [33.549999, 68.416702],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_6cc457325c4472939de8a1b88360dd0e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b10795be75731e431a388bf903c0f0a6 = $(`<div id="html_b10795be75731e431a388bf903c0f0a6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.5500<br>                 <b>Longitude:</b> 68.4167<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Ghazni town<br>                 <b>Where Description:</b> city of Ghazni                 </div>`)[0];
+                popup_6cc457325c4472939de8a1b88360dd0e.setContent(html_b10795be75731e431a388bf903c0f0a6);
+            
+        
+
+        circle_marker_773b9c1ba98168596e66c64134a38a05.bindPopup(popup_6cc457325c4472939de8a1b88360dd0e)
+        ;
+
+        
+    
+    
+            var circle_marker_2e7da8ff3dc4846d8b91304a10dbf3fa = L.circleMarker(
+                [35.11203, 69.23163],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b7f8c98506fbe5bf9acb37a55236f989 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_454f181b108eb7b5943fa4b520b41997 = $(`<div id="html_454f181b108eb7b5943fa4b520b41997" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.1120<br>                 <b>Longitude:</b> 69.2316<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Miana Guzar village<br>                 <b>Where Description:</b> Miana Guzar village, Jabal Saraj district, eastern Parwan province                 </div>`)[0];
+                popup_b7f8c98506fbe5bf9acb37a55236f989.setContent(html_454f181b108eb7b5943fa4b520b41997);
+            
+        
+
+        circle_marker_2e7da8ff3dc4846d8b91304a10dbf3fa.bindPopup(popup_b7f8c98506fbe5bf9acb37a55236f989)
+        ;
+
+        
+    
+    
+            var circle_marker_75f873ff7313f6e044169d8c158281c2 = L.circleMarker(
+                [36.472633, 69.962859],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_f0ea2c71db51adb845b60654e6a2c673 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6c8c67ba4ce395e0a581bd069535ecf3 = $(`<div id="html_6c8c67ba4ce395e0a581bd069535ecf3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.4726<br>                 <b>Longitude:</b> 69.9629<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Farkhar district<br>                 <b>Where Description:</b> Farkhar district of Takhar province.                 </div>`)[0];
+                popup_f0ea2c71db51adb845b60654e6a2c673.setContent(html_6c8c67ba4ce395e0a581bd069535ecf3);
+            
+        
+
+        circle_marker_75f873ff7313f6e044169d8c158281c2.bindPopup(popup_f0ea2c71db51adb845b60654e6a2c673)
+        ;
+
+        
+    
+    
+            var circle_marker_a6398d49571ca1bc6eb61dbab875b69f = L.circleMarker(
+                [37.116638, 70.580022],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_e4299de5a65c36120f9bb6c4a39f251d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0fce0341d68adc3cbf0eda3ee50d857a = $(`<div id="html_0fce0341d68adc3cbf0eda3ee50d857a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.1166<br>                 <b>Longitude:</b> 70.5800<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Fayzabad town<br>                 <b>Where Description:</b> gate of Faizabad Airport in Badakhshan province                 </div>`)[0];
+                popup_e4299de5a65c36120f9bb6c4a39f251d.setContent(html_0fce0341d68adc3cbf0eda3ee50d857a);
+            
+        
+
+        circle_marker_a6398d49571ca1bc6eb61dbab875b69f.bindPopup(popup_e4299de5a65c36120f9bb6c4a39f251d)
+        ;
+
+        
+    
+    
+            var circle_marker_4e9e0025d7056dcb4b622df1411be683 = L.circleMarker(
+                [34.79139, 70.81694],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_a9cb8b7c40a05d5347249d256a9cb168 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_340fb5909caedff4b13b6f254f3f279b = $(`<div id="html_340fb5909caedff4b13b6f254f3f279b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.7914<br>                 <b>Longitude:</b> 70.8169<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Chalas village<br>                 <b>Where Description:</b> Chalas area, Sawkay, Kunar province                 </div>`)[0];
+                popup_a9cb8b7c40a05d5347249d256a9cb168.setContent(html_340fb5909caedff4b13b6f254f3f279b);
+            
+        
+
+        circle_marker_4e9e0025d7056dcb4b622df1411be683.bindPopup(popup_a9cb8b7c40a05d5347249d256a9cb168)
+        ;
+
+        
+    
+    
+            var circle_marker_e4738843c4de14b611f2852829cf5dc7 = L.circleMarker(
+                [34.95, 71.133333],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_d324bd0a4b3d3a46cf110ae0d365a3d4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bddda5202b83872eae42cde2ab50ab8a = $(`<div id="html_bddda5202b83872eae42cde2ab50ab8a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.9500<br>                 <b>Longitude:</b> 71.1333<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kunar province<br>                 <b>Where Description:</b> Kunar                 </div>`)[0];
+                popup_d324bd0a4b3d3a46cf110ae0d365a3d4.setContent(html_bddda5202b83872eae42cde2ab50ab8a);
+            
+        
+
+        circle_marker_e4738843c4de14b611f2852829cf5dc7.bindPopup(popup_d324bd0a4b3d3a46cf110ae0d365a3d4)
+        ;
+
+        
+    
+    
+            var circle_marker_cba93ec04e95c71a49a1fe936b07c08c = L.circleMarker(
+                [36.734133, 69.533559],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_6140273572e1c696bda79b78404d1fbc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_75043b0524b708df1c9ec27a94a37bac = $(`<div id="html_75043b0524b708df1c9ec27a94a37bac" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7341<br>                 <b>Longitude:</b> 69.5336<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Taluqan town<br>                 <b>Where Description:</b> Taleqan city                 </div>`)[0];
+                popup_6140273572e1c696bda79b78404d1fbc.setContent(html_75043b0524b708df1c9ec27a94a37bac);
+            
+        
+
+        circle_marker_cba93ec04e95c71a49a1fe936b07c08c.bindPopup(popup_6140273572e1c696bda79b78404d1fbc)
+        ;
+
+        
+    
+    
+            var circle_marker_265bb66b12fd9e17a9b18afbd4465146 = L.circleMarker(
+                [37.281711, 70.952341],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_058dbf77f4777760b12410e33f98b16b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_df3a0738afa079f8ba91bf4aa268c8f2 = $(`<div id="html_df3a0738afa079f8ba91bf4aa268c8f2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.2817<br>                 <b>Longitude:</b> 70.9523<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Dozakh Darah valley<br>                 <b>Where Description:</b> Dozakh Darrah area, districts of Shahada, Arghanj Khwa, and Shiwa in Badakhshan province.                 </div>`)[0];
+                popup_058dbf77f4777760b12410e33f98b16b.setContent(html_df3a0738afa079f8ba91bf4aa268c8f2);
+            
+        
+
+        circle_marker_265bb66b12fd9e17a9b18afbd4465146.bindPopup(popup_058dbf77f4777760b12410e33f98b16b)
+        ;
+
+        
+    
+    
+            var circle_marker_9b0e006a154d4003e3b854c8c3d561c1 = L.circleMarker(
+                [37.38038, 69.78578],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_f5e0e97f74822af6853135c2d7bbe357 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f626b299ae8f23d2f7559f145321c246 = $(`<div id="html_f626b299ae8f23d2f7559f145321c246" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 37.3804<br>                 <b>Longitude:</b> 69.7858<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Takhnabad village<br>                 <b>Where Description:</b> village of Takhn Abad in Chah Ab district.                 </div>`)[0];
+                popup_f5e0e97f74822af6853135c2d7bbe357.setContent(html_f626b299ae8f23d2f7559f145321c246);
+            
+        
+
+        circle_marker_9b0e006a154d4003e3b854c8c3d561c1.bindPopup(popup_f5e0e97f74822af6853135c2d7bbe357)
+        ;
+
+        
+    
+    
+            var circle_marker_bcdfad0061bcc6ef403032c2f278bf80 = L.circleMarker(
+                [34.2514, 71.1123],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_4574fc3b885ce6e40fab63e0d29631c2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4af7dccddff7c3bd431781d4c53b0c73 = $(`<div id="html_4af7dccddff7c3bd431781d4c53b0c73" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.2514<br>                 <b>Longitude:</b> 71.1123<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Rena village<br>                 <b>Where Description:</b> Rina Parchaw area of Lalpura district of eastern Nangarhar province.                 </div>`)[0];
+                popup_4574fc3b885ce6e40fab63e0d29631c2.setContent(html_4af7dccddff7c3bd431781d4c53b0c73);
+            
+        
+
+        circle_marker_bcdfad0061bcc6ef403032c2f278bf80.bindPopup(popup_4574fc3b885ce6e40fab63e0d29631c2)
+        ;
+
+        
+    
+    
+            var circle_marker_6f56f0f5570a0e779121243597aec414 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_79d69b99e45ea0d8e55d94dab8455071 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7d43467bcba8c6b14e1cbaea8e28a5f5 = $(`<div id="html_7d43467bcba8c6b14e1cbaea8e28a5f5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Darul Aman area of Kabul.                 </div>`)[0];
+                popup_79d69b99e45ea0d8e55d94dab8455071.setContent(html_7d43467bcba8c6b14e1cbaea8e28a5f5);
+            
+        
+
+        circle_marker_6f56f0f5570a0e779121243597aec414.bindPopup(popup_79d69b99e45ea0d8e55d94dab8455071)
+        ;
+
+        
+    
+    
+            var circle_marker_a43a19b46b7fb4b835eaf882364eeaed = L.circleMarker(
+                [34.5, 62.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_e23b5ad785eb1f67d48e3ba3dc37d623 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_58414d98599411aeec88d71fd79c639f = $(`<div id="html_58414d98599411aeec88d71fd79c639f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5000<br>                 <b>Longitude:</b> 62.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Hirat province<br>                 <b>Where Description:</b> Herat                 </div>`)[0];
+                popup_e23b5ad785eb1f67d48e3ba3dc37d623.setContent(html_58414d98599411aeec88d71fd79c639f);
+            
+        
+
+        circle_marker_a43a19b46b7fb4b835eaf882364eeaed.bindPopup(popup_e23b5ad785eb1f67d48e3ba3dc37d623)
+        ;
+
+        
+    
+    
+            var circle_marker_aae2e0d5a91d867143a1202213585037 = L.circleMarker(
+                [34.52462, 70.154999],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_43ca38f39f52cb1199ae0fad0035d81b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_325f7b48a5a6c01bcb6fc85c52008686 = $(`<div id="html_325f7b48a5a6c01bcb6fc85c52008686" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5246<br>                 <b>Longitude:</b> 70.1550<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Qarghayi district<br>                 <b>Where Description:</b> Qarghayi district of Laghman province                 </div>`)[0];
+                popup_43ca38f39f52cb1199ae0fad0035d81b.setContent(html_325f7b48a5a6c01bcb6fc85c52008686);
+            
+        
+
+        circle_marker_aae2e0d5a91d867143a1202213585037.bindPopup(popup_43ca38f39f52cb1199ae0fad0035d81b)
+        ;
+
+        
+    
+    
+            var circle_marker_252b479bffb76529e187b246d52ae7bf = L.circleMarker(
+                [35.85818, 69.54482],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_81a35e0e48f4012c759eb2023ed1d266 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c5b13f0a3188defadcdf10d4ec368c11 = $(`<div id="html_c5b13f0a3188defadcdf10d4ec368c11" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.8582<br>                 <b>Longitude:</b> 69.5448<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Khawash village<br>                 <b>Where Description:</b> village of Khawosh, Khost district, Baghlan province                 </div>`)[0];
+                popup_81a35e0e48f4012c759eb2023ed1d266.setContent(html_c5b13f0a3188defadcdf10d4ec368c11);
+            
+        
+
+        circle_marker_252b479bffb76529e187b246d52ae7bf.bindPopup(popup_81a35e0e48f4012c759eb2023ed1d266)
+        ;
+
+        
+    
+    
+            var circle_marker_ac7d98d8fb32cdeecfde4d8c7d113211 = L.circleMarker(
+                [35.63348, 69.26019],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b15d4df02089f9a514a095ae65630f7b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_de70716b28e161968a1b49f9873003ae = $(`<div id="html_de70716b28e161968a1b49f9873003ae" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.6335<br>                 <b>Longitude:</b> 69.2602<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Banu town<br>                 <b>Where Description:</b> Bano area of Andarab (Khaj Valley)                 </div>`)[0];
+                popup_b15d4df02089f9a514a095ae65630f7b.setContent(html_de70716b28e161968a1b49f9873003ae);
+            
+        
+
+        circle_marker_ac7d98d8fb32cdeecfde4d8c7d113211.bindPopup(popup_b15d4df02089f9a514a095ae65630f7b)
+        ;
+
+        
+    
+    
+            var circle_marker_b7596cd2479c6b5299d24aced064eaff = L.circleMarker(
+                [36.700067, 67.116647],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_63fbf8f765cefbbeee71a582d961428e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2299648026f9e47410b22e3711312db3 = $(`<div id="html_2299648026f9e47410b22e3711312db3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7001<br>                 <b>Longitude:</b> 67.1166<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mazari Sharif town<br>                 <b>Where Description:</b> Kart-e-Sulh area of the seventh district of Mazar-e-Sharif city                 </div>`)[0];
+                popup_63fbf8f765cefbbeee71a582d961428e.setContent(html_2299648026f9e47410b22e3711312db3);
+            
+        
+
+        circle_marker_b7596cd2479c6b5299d24aced064eaff.bindPopup(popup_63fbf8f765cefbbeee71a582d961428e)
+        ;
+
+        
+    
+    
+            var circle_marker_3088b2d39e83fa82b562ba333192d83f = L.circleMarker(
+                [36.69306, 69.51227],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_8864ee117c9114eb91a3364cca24de2a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_56873f0d936b364e3c1351ae1ae29d59 = $(`<div id="html_56873f0d936b364e3c1351ae1ae29d59" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.6931<br>                 <b>Longitude:</b> 69.5123<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Badam Darah village<br>                 <b>Where Description:</b> Moghol-Qeshlaq village in Badam Darah, located in the city of Taliqan.                 </div>`)[0];
+                popup_8864ee117c9114eb91a3364cca24de2a.setContent(html_56873f0d936b364e3c1351ae1ae29d59);
+            
+        
+
+        circle_marker_3088b2d39e83fa82b562ba333192d83f.bindPopup(popup_8864ee117c9114eb91a3364cca24de2a)
+        ;
+
+        
+    
+    
+            var circle_marker_94a48a1dabe1cf4e7862b418e22f54b5 = L.circleMarker(
+                [35.0, 68.91667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_09a74c54e8a9af8ee39bf2b282c71d31 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_643689bf87530e2e1c3ed0b8aee91a3a = $(`<div id="html_643689bf87530e2e1c3ed0b8aee91a3a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.0000<br>                 <b>Longitude:</b> 68.9167<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Parwan province<br>                 <b>Where Description:</b> Parwan province                 </div>`)[0];
+                popup_09a74c54e8a9af8ee39bf2b282c71d31.setContent(html_643689bf87530e2e1c3ed0b8aee91a3a);
+            
+        
+
+        circle_marker_94a48a1dabe1cf4e7862b418e22f54b5.bindPopup(popup_09a74c54e8a9af8ee39bf2b282c71d31)
+        ;
+
+        
+    
+    
+            var circle_marker_c64ab05bb836e0aac1da33fe4bcbbef1 = L.circleMarker(
+                [32.74804, 68.39877],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_ece9ecace89d7421c33552aa643a2f37 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_965f7c10c68c059361238ce678e93c95 = $(`<div id="html_965f7c10c68c059361238ce678e93c95" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 32.7480<br>                 <b>Longitude:</b> 68.3988<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Jalalzai village<br>                 <b>Where Description:</b> village of Jalal-Zai, Jani Khel district, Paktika                 </div>`)[0];
+                popup_ece9ecace89d7421c33552aa643a2f37.setContent(html_965f7c10c68c059361238ce678e93c95);
+            
+        
+
+        circle_marker_c64ab05bb836e0aac1da33fe4bcbbef1.bindPopup(popup_ece9ecace89d7421c33552aa643a2f37)
+        ;
+
+        
+    
+    
+            var circle_marker_03d2d063199701bc682877313c3c9658 = L.circleMarker(
+                [33.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_c36b1b4d375ecd2dcc715659182ceeea = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d773c63e60d0fe9828ed4b7532c0d70a = $(`<div id="html_d773c63e60d0fe9828ed4b7532c0d70a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0000<br>                 <b>Longitude:</b> 65.0000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Afghanistan<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_c36b1b4d375ecd2dcc715659182ceeea.setContent(html_d773c63e60d0fe9828ed4b7532c0d70a);
+            
+        
+
+        circle_marker_03d2d063199701bc682877313c3c9658.bindPopup(popup_c36b1b4d375ecd2dcc715659182ceeea)
+        ;
+
+        
+    
+    
+            var circle_marker_bca1b2bca78bb0fd7fc29a8bddfc5088 = L.circleMarker(
+                [35.944583, 68.715122],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.328679513998633, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_860c3b4eb8f7819d9a1c30d8e74c1d67 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2f7d0e0b78637549ef68954988ff0fc3 = $(`<div id="html_2f7d0e0b78637549ef68954988ff0fc3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.9446<br>                 <b>Longitude:</b> 68.7151<br>                 <b>Deaths:</b> 31<br>                 <b>Where Coordinates:</b> Puli Khumri town<br>                 <b>Where Description:</b> Imam Zaman Mosque, Pule Khumri                 </div>`)[0];
+                popup_860c3b4eb8f7819d9a1c30d8e74c1d67.setContent(html_2f7d0e0b78637549ef68954988ff0fc3);
+            
+        
+
+        circle_marker_bca1b2bca78bb0fd7fc29a8bddfc5088.bindPopup(popup_860c3b4eb8f7819d9a1c30d8e74c1d67)
+        ;
+
+        
+    
+    
+            var circle_marker_0aa765fc687d2262180c3d52549ff3ac = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_01015362b1e954e50f7603155b584d76 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bbd5f654932c3ca2abc211b7d8c387fb = $(`<div id="html_bbd5f654932c3ca2abc211b7d8c387fb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Darulaman area of Kabul city.                 </div>`)[0];
+                popup_01015362b1e954e50f7603155b584d76.setContent(html_bbd5f654932c3ca2abc211b7d8c387fb);
+            
+        
+
+        circle_marker_0aa765fc687d2262180c3d52549ff3ac.bindPopup(popup_01015362b1e954e50f7603155b584d76)
+        ;
+
+        
+    
+    
+            var circle_marker_c18ec9a466ebde50500fbc9020df58bc = L.circleMarker(
+                [36.812611, 66.889427],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b7b985934e1d74842ffe55662b7d67d1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d32e99847ce29285db0c0ac2f325ef95 = $(`<div id="html_d32e99847ce29285db0c0ac2f325ef95" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.8126<br>                 <b>Longitude:</b> 66.8894<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Balkh district<br>                 <b>Where Description:</b> Chaharsarka area of Khas Balkh district                 </div>`)[0];
+                popup_b7b985934e1d74842ffe55662b7d67d1.setContent(html_d32e99847ce29285db0c0ac2f325ef95);
+            
+        
+
+        circle_marker_c18ec9a466ebde50500fbc9020df58bc.bindPopup(popup_b7b985934e1d74842ffe55662b7d67d1)
+        ;
+
+        
+    
+    
+            var circle_marker_51a0343565a7e026d3fc21014ff8c701 = L.circleMarker(
+                [35.13502, 70.37502],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_0cec1ab845208d403514173c748e3acc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8795de1cbfe0fad8092a0999bce1adc7 = $(`<div id="html_8795de1cbfe0fad8092a0999bce1adc7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.1350<br>                 <b>Longitude:</b> 70.3750<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bajahgal village<br>                 <b>Where Description:</b> Bajagal valley of Do Aab district in Nuristan Province                 </div>`)[0];
+                popup_0cec1ab845208d403514173c748e3acc.setContent(html_8795de1cbfe0fad8092a0999bce1adc7);
+            
+        
+
+        circle_marker_51a0343565a7e026d3fc21014ff8c701.bindPopup(popup_0cec1ab845208d403514173c748e3acc)
+        ;
+
+        
+    
+    
+            var circle_marker_dc60983a11cf9386370aa78c8d90528b = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_ae08283d64088e24e01e83e8338b3855 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c01eb41e2dc7ec761aa27820b0f16ac8 = $(`<div id="html_c01eb41e2dc7ec761aa27820b0f16ac8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Dasht-e Barchi neighborhood of Kabul                 </div>`)[0];
+                popup_ae08283d64088e24e01e83e8338b3855.setContent(html_c01eb41e2dc7ec761aa27820b0f16ac8);
+            
+        
+
+        circle_marker_dc60983a11cf9386370aa78c8d90528b.bindPopup(popup_ae08283d64088e24e01e83e8338b3855)
+        ;
+
+        
+    
+    
+            var circle_marker_545c4769b2d9961a01f803b80c600d23 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.424533248940001, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_df155bdbba9100d4ed4178cfa07285c2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8724b842754fa0904ccd21c251c89299 = $(`<div id="html_8724b842754fa0904ccd21c251c89299" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 11<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> Dasht-e Barchi area of Kabul city                 </div>`)[0];
+                popup_df155bdbba9100d4ed4178cfa07285c2.setContent(html_8724b842754fa0904ccd21c251c89299);
+            
+        
+
+        circle_marker_545c4769b2d9961a01f803b80c600d23.bindPopup(popup_df155bdbba9100d4ed4178cfa07285c2)
+        ;
+
+        
+    
+    
+            var circle_marker_1658a309d352cfc063e918ba9de9f9a6 = L.circleMarker(
+                [34.74075, 70.863598],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_a5ccd4f32f25f50d72e4fb50077b2c00 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_756b02945e08ea25d7b1741e91b5d03e = $(`<div id="html_756b02945e08ea25d7b1741e91b5d03e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.7407<br>                 <b>Longitude:</b> 70.8636<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Chawkay district<br>                 <b>Where Description:</b> Sawkay district                 </div>`)[0];
+                popup_a5ccd4f32f25f50d72e4fb50077b2c00.setContent(html_756b02945e08ea25d7b1741e91b5d03e);
+            
+        
+
+        circle_marker_1658a309d352cfc063e918ba9de9f9a6.bindPopup(popup_a5ccd4f32f25f50d72e4fb50077b2c00)
+        ;
+
+        
+    
+    
+            var circle_marker_e31723d10e46ce9188b13c8520aa7d6c = L.circleMarker(
+                [34.3869, 62.148],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b93a640817f96f53ae583769edb0b46c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_99d9766de84866b0ca84ddb0f6a088fe = $(`<div id="html_99d9766de84866b0ca84ddb0f6a088fe" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3869<br>                 <b>Longitude:</b> 62.1480<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Jibril village<br>                 <b>Where Description:</b> in front of the “Sayed Al-Shohada” mosque in Jibril town of Herat province                 </div>`)[0];
+                popup_b93a640817f96f53ae583769edb0b46c.setContent(html_99d9766de84866b0ca84ddb0f6a088fe);
+            
+        
+
+        circle_marker_e31723d10e46ce9188b13c8520aa7d6c.bindPopup(popup_b93a640817f96f53ae583769edb0b46c)
+        ;
+
+        
+    
+    
+            var circle_marker_97205f1ef5f15c7dad93afd43ac1d1f3 = L.circleMarker(
+                [34.531094, 69.162796],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b1c08fc32d9f36043545389b1d6ed420 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_40731fb661f1ac543c5d1cb5272626ca = $(`<div id="html_40731fb661f1ac543c5d1cb5272626ca" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.5311<br>                 <b>Longitude:</b> 69.1628<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kabul city<br>                 <b>Where Description:</b> near the intersection of Salim Karwan located in the fourth security district of Kabul city                 </div>`)[0];
+                popup_b1c08fc32d9f36043545389b1d6ed420.setContent(html_40731fb661f1ac543c5d1cb5272626ca);
+            
+        
+
+        circle_marker_97205f1ef5f15c7dad93afd43ac1d1f3.bindPopup(popup_b1c08fc32d9f36043545389b1d6ed420)
+        ;
+
+        
+    
+    
+            var circle_marker_044446e04143febb2241cfbce0b3dddd = L.circleMarker(
+                [35.944583, 68.715122],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_99c8841401703e2b8473ce234532110c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0bd712a23d8210bc48523e46bd007c23 = $(`<div id="html_0bd712a23d8210bc48523e46bd007c23" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.9446<br>                 <b>Longitude:</b> 68.7151<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Puli Khumri town<br>                 <b>Where Description:</b> gate of the former Pul Khomri Intelligence Bureau (PRT)                 </div>`)[0];
+                popup_99c8841401703e2b8473ce234532110c.setContent(html_0bd712a23d8210bc48523e46bd007c23);
+            
+        
+
+        circle_marker_044446e04143febb2241cfbce0b3dddd.bindPopup(popup_99c8841401703e2b8473ce234532110c)
+        ;
+
+        
+    
+    
+            var circle_marker_3cdd1763a0a20c0fa2a8dc4142f49d52 = L.circleMarker(
+                [34.3869, 62.148],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_6225f4dd019b3bfed1166d3580e5eb12 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_826c200cbd46df571db3261e3b77cf2c = $(`<div id="html_826c200cbd46df571db3261e3b77cf2c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3869<br>                 <b>Longitude:</b> 62.1480<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Jibril village<br>                 <b>Where Description:</b> Herat city, Injil district, in Jebrael. around 10 kilometres from the city centre, in the vicinity of the Shaheedan and Kuh-e Melli districts within the Jibril district of Herat.                 </div>`)[0];
+                popup_6225f4dd019b3bfed1166d3580e5eb12.setContent(html_826c200cbd46df571db3261e3b77cf2c);
+            
+        
+
+        circle_marker_3cdd1763a0a20c0fa2a8dc4142f49d52.bindPopup(popup_6225f4dd019b3bfed1166d3580e5eb12)
+        ;
+
+        
+    
+    
+            var circle_marker_2402587af5e53c6e9f510ab9f1c084f0 = L.circleMarker(
+                [36.3472, 69.2938],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_100e5c54f92d5b4c3591125fb22db50a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4e0bf45e6c23eef2c8f29b0b3b975421 = $(`<div id="html_4e0bf45e6c23eef2c8f29b0b3b975421" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.3472<br>                 <b>Longitude:</b> 69.2938<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kata Qourough village<br>                 <b>Where Description:</b> in the village of Keta Qurugh in the Eshkemesh district of Takhar province                 </div>`)[0];
+                popup_100e5c54f92d5b4c3591125fb22db50a.setContent(html_4e0bf45e6c23eef2c8f29b0b3b975421);
+            
+        
+
+        circle_marker_2402587af5e53c6e9f510ab9f1c084f0.bindPopup(popup_100e5c54f92d5b4c3591125fb22db50a)
+        ;
+
+        
+    
+    
+            var circle_marker_d1a338d762ff9d831a2b1cd6b1fe329a = L.circleMarker(
+                [33.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_b9b270f9525219d1575403e52bd9089b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_544fcf5e6b7da415b9583e633d5eec4f = $(`<div id="html_544fcf5e6b7da415b9583e633d5eec4f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0000<br>                 <b>Longitude:</b> 65.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Afghanistan<br>                 <b>Where Description:</b> Herat and Nimroz provinces                 </div>`)[0];
+                popup_b9b270f9525219d1575403e52bd9089b.setContent(html_544fcf5e6b7da415b9583e633d5eec4f);
+            
+        
+
+        circle_marker_d1a338d762ff9d831a2b1cd6b1fe329a.bindPopup(popup_b9b270f9525219d1575403e52bd9089b)
+        ;
+
+        
+    
+    
+            var circle_marker_b62ac5a069cd8a85f1e35f73ecb5e33c = L.circleMarker(
+                [33.0, 65.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_a8d5272cce43be15f83aed65ac5133b7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_22bb23168903ca560fe0ccc8148e3b50 = $(`<div id="html_22bb23168903ca560fe0ccc8148e3b50" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0000<br>                 <b>Longitude:</b> 65.0000<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Afghanistan<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_a8d5272cce43be15f83aed65ac5133b7.setContent(html_22bb23168903ca560fe0ccc8148e3b50);
+            
+        
+
+        circle_marker_b62ac5a069cd8a85f1e35f73ecb5e33c.bindPopup(popup_a8d5272cce43be15f83aed65ac5133b7)
+        ;
+
+        
+    
+    
+            var circle_marker_43ca06da6f6557f0bdd360c824eb021a = L.circleMarker(
+                [36.66667, 69.75],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_02f27aab3569dfd9aff2d9ae224a8c9a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_849043bb9030975dc7fcd9a3c0420342 = $(`<div id="html_849043bb9030975dc7fcd9a3c0420342" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.6667<br>                 <b>Longitude:</b> 69.7500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Takhar province<br>                 <b>Where Description:</b> Takhar province                 </div>`)[0];
+                popup_02f27aab3569dfd9aff2d9ae224a8c9a.setContent(html_849043bb9030975dc7fcd9a3c0420342);
+            
+        
+
+        circle_marker_43ca06da6f6557f0bdd360c824eb021a.bindPopup(popup_02f27aab3569dfd9aff2d9ae224a8c9a)
+        ;
+
+        
+    
+    
+            var circle_marker_f4d97aac1c71978d81edf56fe083c1d4 = L.circleMarker(
+                [36.66667, 69.75],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_ac453c62ef59144b86bf994925081348 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ad640a9160fa79220964604b823cc91d = $(`<div id="html_ad640a9160fa79220964604b823cc91d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.6667<br>                 <b>Longitude:</b> 69.7500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Takhar province<br>                 <b>Where Description:</b> Takhar province                 </div>`)[0];
+                popup_ac453c62ef59144b86bf994925081348.setContent(html_ad640a9160fa79220964604b823cc91d);
+            
+        
+
+        circle_marker_f4d97aac1c71978d81edf56fe083c1d4.bindPopup(popup_ac453c62ef59144b86bf994925081348)
+        ;
+
+        
+    
+    
+            var circle_marker_2cd5b4ef1e89d83877f9d046dbf8628e = L.circleMarker(
+                [34.3869, 62.148],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_2dc195d2cf7af588a4a4e8b57d0eee49 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7da64eecf9fd67d5441099873d54b45f = $(`<div id="html_7da64eecf9fd67d5441099873d54b45f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 34.3869<br>                 <b>Longitude:</b> 62.1480<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Jibril village<br>                 <b>Where Description:</b> Jibriel area of Herat city.                 </div>`)[0];
+                popup_2dc195d2cf7af588a4a4e8b57d0eee49.setContent(html_7da64eecf9fd67d5441099873d54b45f);
+            
+        
+
+        circle_marker_2cd5b4ef1e89d83877f9d046dbf8628e.bindPopup(popup_2dc195d2cf7af588a4a4e8b57d0eee49)
+        ;
+
+        
+    
+    
+            var circle_marker_903feb67b6a97cab4193b111863e1d31 = L.circleMarker(
+                [32.416667, 68.75],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_a7b95ab3be5a9e2e1f5e825cb51946af = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_844ca6befbe1ea9719fa479067e9d695 = $(`<div id="html_844ca6befbe1ea9719fa479067e9d695" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 32.4167<br>                 <b>Longitude:</b> 68.7500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Paktika province<br>                 <b>Where Description:</b> Paktika province                 </div>`)[0];
+                popup_a7b95ab3be5a9e2e1f5e825cb51946af.setContent(html_844ca6befbe1ea9719fa479067e9d695);
+            
+        
+
+        circle_marker_903feb67b6a97cab4193b111863e1d31.bindPopup(popup_a7b95ab3be5a9e2e1f5e825cb51946af)
+        ;
+
+        
+    
+    
+            var circle_marker_a7586a3c015125b5b28680aac3fb93a5 = L.circleMarker(
+                [36.75, 72.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_72587e7312536dfd8515a6cee9260d5c);
+        
+    
+        var popup_54a4b7c31b1d8c778224cf278ae39d04 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f322c536e31398e452746b89c1ebbaf7 = $(`<div id="html_f322c536e31398e452746b89c1ebbaf7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 36.7500<br>                 <b>Longitude:</b> 72.0000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Badakhshan province<br>                 <b>Where Description:</b> Badakhshan province                 </div>`)[0];
+                popup_54a4b7c31b1d8c778224cf278ae39d04.setContent(html_f322c536e31398e452746b89c1ebbaf7);
+            
+        
+
+        circle_marker_a7586a3c015125b5b28680aac3fb93a5.bindPopup(popup_54a4b7c31b1d8c778224cf278ae39d04)
+        ;
+
+        
+    
+</script>
+</html>

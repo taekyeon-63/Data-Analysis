@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6bf1a3746d3fc5410e63356fd8588853 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6bf1a3746d3fc5410e63356fd8588853" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6bf1a3746d3fc5410e63356fd8588853 = L.map(
+                "map_6bf1a3746d3fc5410e63356fd8588853",
+                {
+                    center: [40.017318100000004, 45.762166099999995],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95f8004a50cb9bb10dcd5e3bdfc372ec = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_95f8004a50cb9bb10dcd5e3bdfc372ec.addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+            var marker_c62d5b3da46a53f8232b3eccdad8b361 = L.marker(
+                [40.017318100000004, 45.762166099999995],
+                {}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+            var div_icon_e903e67542719f0ae7d282cb886b70c1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eArmenia\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_c62d5b3da46a53f8232b3eccdad8b361.setIcon(div_icon_e903e67542719f0ae7d282cb886b70c1);
+        
+    
+            var circle_marker_1c4ea3057354f9805914bbfeebfd1c89 = L.circleMarker(
+                [39.745716, 44.824667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_5dc93b2bb69f36aedae03a58d4c4b634 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5bd01d9deb7b2892d6d21c8d367a82b5 = $(`<div id="html_5bd01d9deb7b2892d6d21c8d367a82b5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.7457<br>                 <b>Longitude:</b> 44.8247<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Yeraskh village<br>                 <b>Where Description:</b> a combat position located near Yeraskh village                 </div>`)[0];
+                popup_5dc93b2bb69f36aedae03a58d4c4b634.setContent(html_5bd01d9deb7b2892d6d21c8d367a82b5);
+            
+        
+
+        circle_marker_1c4ea3057354f9805914bbfeebfd1c89.bindPopup(popup_5dc93b2bb69f36aedae03a58d4c4b634)
+        ;
+
+        
+    
+    
+            var circle_marker_c4a5f1b186cf6d245adb3fd383f00126 = L.circleMarker(
+                [39.557132, 46.478014],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_efad8bc881c6c1e9138f41bb40dba7c4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ba2b7491561a2d85b93648847901b522 = $(`<div id="html_ba2b7491561a2d85b93648847901b522" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.5571<br>                 <b>Longitude:</b> 46.4780<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Tegh village<br>                 <b>Where Description:</b> near the village of Tegh (Dyg) in Armenia's southern Syunik province, close to the contested Lachin Corridor                 </div>`)[0];
+                popup_efad8bc881c6c1e9138f41bb40dba7c4.setContent(html_ba2b7491561a2d85b93648847901b522);
+            
+        
+
+        circle_marker_c4a5f1b186cf6d245adb3fd383f00126.bindPopup(popup_efad8bc881c6c1e9138f41bb40dba7c4)
+        ;
+
+        
+    
+    
+            var circle_marker_03f070008e59ea766492d6bd0a1fb978 = L.circleMarker(
+                [40.201617, 45.87223],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_1681e7af31e1cd9dbdabfd51904ff6d1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_880095536869597a54d949e4abd8a646 = $(`<div id="html_880095536869597a54d949e4abd8a646" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.2016<br>                 <b>Longitude:</b> 45.8722<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sotk village<br>                 <b>Where Description:</b> near the village of Sotk in Armenia's Gegharkunik Region                 </div>`)[0];
+                popup_1681e7af31e1cd9dbdabfd51904ff6d1.setContent(html_880095536869597a54d949e4abd8a646);
+            
+        
+
+        circle_marker_03f070008e59ea766492d6bd0a1fb978.bindPopup(popup_1681e7af31e1cd9dbdabfd51904ff6d1)
+        ;
+
+        
+    
+    
+            var circle_marker_556953767087474733a121d1782825fb = L.circleMarker(
+                [40.201617, 45.87223],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_fac28d3c7b71bb6fab519501b6dbc7bf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cad7320810619d926eefec5cf25fcda8 = $(`<div id="html_cad7320810619d926eefec5cf25fcda8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.2016<br>                 <b>Longitude:</b> 45.8722<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Sotk village<br>                 <b>Where Description:</b> near the village of Sotk in Armenia's Gegharkunik Region                 </div>`)[0];
+                popup_fac28d3c7b71bb6fab519501b6dbc7bf.setContent(html_cad7320810619d926eefec5cf25fcda8);
+            
+        
+
+        circle_marker_556953767087474733a121d1782825fb.bindPopup(popup_fac28d3c7b71bb6fab519501b6dbc7bf)
+        ;
+
+        
+    
+    
+            var circle_marker_af67bfab67626f5cf6f5d5dcc39a512c = L.circleMarker(
+                [40.201617, 45.87223],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_2fda29568a9873dc1cffb7f9396b04c5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5b1781c24270155ee524adfef0d600ed = $(`<div id="html_5b1781c24270155ee524adfef0d600ed" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.2016<br>                 <b>Longitude:</b> 45.8722<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sotk village<br>                 <b>Where Description:</b> near the village of Sotk in Armenia's Gegharkunik Region                 </div>`)[0];
+                popup_2fda29568a9873dc1cffb7f9396b04c5.setContent(html_5b1781c24270155ee524adfef0d600ed);
+            
+        
+
+        circle_marker_af67bfab67626f5cf6f5d5dcc39a512c.bindPopup(popup_2fda29568a9873dc1cffb7f9396b04c5)
+        ;
+
+        
+    
+    
+            var circle_marker_d1fe5dc6c693ba3e218f16a6c600fb35 = L.circleMarker(
+                [40.201617, 45.87223],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_5a65816aaf075406724dad77fb955a3b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_818495b3d1cea9a60fc0ce52590caff4 = $(`<div id="html_818495b3d1cea9a60fc0ce52590caff4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.2016<br>                 <b>Longitude:</b> 45.8722<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Sotk village<br>                 <b>Where Description:</b> Sotk area                 </div>`)[0];
+                popup_5a65816aaf075406724dad77fb955a3b.setContent(html_818495b3d1cea9a60fc0ce52590caff4);
+            
+        
+
+        circle_marker_d1fe5dc6c693ba3e218f16a6c600fb35.bindPopup(popup_5a65816aaf075406724dad77fb955a3b)
+        ;
+
+        
+    
+    
+            var circle_marker_8b38ef157c95533776d9d182282fd596 = L.circleMarker(
+                [40.183289, 45.73053],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_bba89003a4aca1ac57195098887907bf = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_87e20d6dcd176c0c42543bb0be4360a5 = $(`<div id="html_87e20d6dcd176c0c42543bb0be4360a5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.1833<br>                 <b>Longitude:</b> 45.7305<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Vardenis town<br>                 <b>Where Description:</b> Vardenis Municipality on the Armenian-Azerbaijani border                 </div>`)[0];
+                popup_bba89003a4aca1ac57195098887907bf.setContent(html_87e20d6dcd176c0c42543bb0be4360a5);
+            
+        
+
+        circle_marker_8b38ef157c95533776d9d182282fd596.bindPopup(popup_bba89003a4aca1ac57195098887907bf)
+        ;
+
+        
+    
+    
+            var circle_marker_eb48cc238c1bcc47706da11f1d1ce098 = L.circleMarker(
+                [40.18055, 45.89625],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_4cebb1705edef14cf0cec40c1b390155 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b0baa4460a20b6c3b189fc9e7c5acd7a = $(`<div id="html_b0baa4460a20b6c3b189fc9e7c5acd7a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.1805<br>                 <b>Longitude:</b> 45.8963<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kut village<br>                 <b>Where Description:</b> near the eastern village of Kut                 </div>`)[0];
+                popup_4cebb1705edef14cf0cec40c1b390155.setContent(html_b0baa4460a20b6c3b189fc9e7c5acd7a);
+            
+        
+
+        circle_marker_eb48cc238c1bcc47706da11f1d1ce098.bindPopup(popup_4cebb1705edef14cf0cec40c1b390155)
+        ;
+
+        
+    
+    
+            var circle_marker_92e28c94e7ad2a11bfc4f6bd370dc6fc = L.circleMarker(
+                [40.180556, 45.72],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_2113bd1741a228013351606daee59f9c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_454bd05f497f057a1eb0546673697949 = $(`<div id="html_454bd05f497f057a1eb0546673697949" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 40.1806<br>                 <b>Longitude:</b> 45.7200<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Vardenis municipality<br>                 <b>Where Description:</b> Vardenis Municipality                 </div>`)[0];
+                popup_2113bd1741a228013351606daee59f9c.setContent(html_454bd05f497f057a1eb0546673697949);
+            
+        
+
+        circle_marker_92e28c94e7ad2a11bfc4f6bd370dc6fc.bindPopup(popup_2113bd1741a228013351606daee59f9c)
+        ;
+
+        
+    
+    
+            var circle_marker_0669148689f0f7ff3ae393858e7e946f = L.circleMarker(
+                [39.51947, 45.48328],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_6bf1a3746d3fc5410e63356fd8588853);
+        
+    
+        var popup_3ea3d2562651686a1bb0052c57a94043 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6928456f84080ccd76f0c60e7bfed5d2 = $(`<div id="html_6928456f84080ccd76f0c60e7bfed5d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 39.5195<br>                 <b>Longitude:</b> 45.4833<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bardzruni village<br>                 <b>Where Description:</b> Bardzruni, Vayots Dzor Province                 </div>`)[0];
+                popup_3ea3d2562651686a1bb0052c57a94043.setContent(html_6928456f84080ccd76f0c60e7bfed5d2);
+            
+        
+
+        circle_marker_0669148689f0f7ff3ae393858e7e946f.bindPopup(popup_3ea3d2562651686a1bb0052c57a94043)
+        ;
+
+        
+    
+</script>
+</html>

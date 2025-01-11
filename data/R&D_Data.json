@@ -1,0 +1,611 @@
+[
+    {
+        "Country": "Japan",
+        "Project_Name": "6세대 전투기 공동개발",
+        "Program_Name": "GCAP(Global Combat Air Programme)",
+        "Objective": "차세대 전투기 개발을 통해 공중 우세 확보 및 방위산업 경쟁력 강화",
+        "Features": "스텔스 기술, 인공지능(AI), 네트워크 중심 전투 능력 등 첨단 기술 통합"
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "6세대 전투기 공동개발",
+        "Program_Name": "GCAP(Global Combat Air Programme)",
+        "Objective": "차세대 전투기 개발을 통해 공중 우세 확보 및 방위산업 경쟁력 강화",
+        "Features": "스텔스 기술, 인공지능(AI), 네트워크 중심 전투 능력 등 첨단 기술 통합"
+    },
+    {
+        "Country": "Italy",
+        "Project_Name": "6세대 전투기 공동개발",
+        "Program_Name": "GCAP(Global Combat Air Programme)",
+        "Objective": "차세대 전투기 개발을 통해 공중 우세 확보 및 방위산업 경쟁력 강화",
+        "Features": "스텔스 기술, 인공지능(AI), 네트워크 중심 전투 능력 등 첨단 기술 통합"
+    },
+    {
+        "Country": "South Korea",
+        "Project_Name": "차세대 전투기 공동개발",
+        "Program_Name": "KF-21 보라매 개발 사업",
+        "Objective": "4.5세대 전투기 공동 개발을 통해 양국의 공군력 증강 및 방산 협력 강화",
+        "Features": "스텔스 설계, 첨단 항전 장비, 다양한 무장 탑재 능력 보유"
+    },
+    {
+        "Country": "Indonesia",
+        "Project_Name": "차세대 전투기 공동개발",
+        "Program_Name": "KF-21 보라매 개발 사업",
+        "Objective": "4.5세대 전투기 공동 개발을 통해 양국의 공군력 증강 및 방산 협력 강화",
+        "Features": "스텔스 설계, 첨단 항전 장비, 다양한 무장 탑재 능력 보유"
+    },
+    {
+        "Country": "France",
+        "Project_Name": "차세대 전투기 공동개발",
+        "Program_Name": "FCAS(Future Combat Air System)",
+        "Objective": "유럽의 차세대 공중 전투 시스템 개발을 통해 독립적인 방위 능력 확보",
+        "Features": "유인 전투기와 무인기, 클라우드 기반 전투 관리 시스템의 통합"
+    },
+    {
+        "Country": "Germany",
+        "Project_Name": "차세대 전투기 공동개발",
+        "Program_Name": "FCAS(Future Combat Air System)",
+        "Objective": "유럽의 차세대 공중 전투 시스템 개발을 통해 독립적인 방위 능력 확보",
+        "Features": "유인 전투기와 무인기, 클라우드 기반 전투 관리 시스템의 통합"
+    },
+    {
+        "Country": "Spain",
+        "Project_Name": "차세대 전투기 공동개발",
+        "Program_Name": "FCAS(Future Combat Air System)",
+        "Objective": "유럽의 차세대 공중 전투 시스템 개발을 통해 독립적인 방위 능력 확보",
+        "Features": "유인 전투기와 무인기, 클라우드 기반 전투 관리 시스템의 통합"
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "극초음속 무기 개발 협력",
+        "Program_Name": "AUKUS 협정 내 극초음속 무기 개발",
+        "Objective": "극초음속 무기 및 방어 시스템 개발을 통해 인도-태평양 지역의 안보 강화",
+        "Features": "마하 5 이상의 속도를 가진 극초음속 미사일 개발 및 관련 방어 체계 구축"
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "극초음속 무기 개발 협력",
+        "Program_Name": "AUKUS 협정 내 극초음속 무기 개발",
+        "Objective": "극초음속 무기 및 방어 시스템 개발을 통해 인도-태평양 지역의 안보 강화",
+        "Features": "마하 5 이상의 속도를 가진 극초음속 미사일 개발 및 관련 방어 체계 구축"
+    },
+    {
+        "Country": "Australia",
+        "Project_Name": "극초음속 무기 개발 협력",
+        "Program_Name": "AUKUS 협정 내 극초음속 무기 개발",
+        "Objective": "극초음속 무기 및 방어 시스템 개발을 통해 인도-태평양 지역의 안보 강화",
+        "Features": "마하 5 이상의 속도를 가진 극초음속 미사일 개발 및 관련 방어 체계 구축"
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "극초음속 무기 및 방어 시스템 공동 연구",
+        "Program_Name": "Hypersonic Threat Mitigation Initiative (HTMI)",
+        "Objective": "극초음속 위협에 대응하기 위한 방어 시스템 개발 및 기술 협력",
+        "Features": "극초음속 미사일 탐지, 추적, 요격 기술 개발을 위한 공동 연구 진행"
+    },
+    {
+        "Country": "Japan",
+        "Project_Name": "극초음속 무기 및 방어 시스템 공동 연구",
+        "Program_Name": "Hypersonic Threat Mitigation Initiative (HTMI)",
+        "Objective": "극초음속 위협에 대응하기 위한 방어 시스템 개발 및 기술 협력",
+        "Features": "극초음속 미사일 탐지, 추적, 요격 기술 개발을 위한 공동 연구 진행"
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "미사일 방어 시스템 공동 개발",
+        "Program_Name": "애로우(Arrow) 미사일 방어 시스템",
+        "Objective": "탄도 미사일 위협에 대응하기 위한 고성능 방어 체계 구축",
+        "Features": "미국과 이스라엘이 공동으로 개발한 이 시스템은 다층 방어를 통해 다양한 위협에 대응합니다"
+    },
+    {
+        "Country": "Israel",
+        "Project_Name": "미사일 방어 시스템 공동 개발",
+        "Program_Name": "애로우(Arrow) 미사일 방어 시스템",
+        "Objective": "탄도 미사일 위협에 대응하기 위한 고성능 방어 체계 구축",
+        "Features": "미국과 이스라엘이 공동으로 개발한 이 시스템은 다층 방어를 통해 다양한 위협에 대응합니다"
+    },
+    {
+        "Country": "Germany",
+        "Project_Name": "차세대 전차 공동 개발",
+        "Program_Name": "MGCS(Main Ground Combat System)",
+        "Objective": "레오파드 2와 르클레르 전차를 대체할 차세대 주력 전차 개발",
+        "Features": "양국의 기술력을 결합하여 향후 유럽의 주력 전차로 활용될 예정입니다."
+    },
+    {
+        "Country": "France",
+        "Project_Name": "차세대 전차 공동 개발",
+        "Program_Name": "MGCS(Main Ground Combat System)",
+        "Objective": "레오파드 2와 르클레르 전차를 대체할 차세대 주력 전차 개발",
+        "Features": "양국의 기술력을 결합하여 향후 유럽의 주력 전차로 활용될 예정입니다."
+    },
+    {
+        "Country": "India",
+        "Project_Name": "초음속 순항미사일 공동 개발",
+        "Program_Name": "브라모스(BrahMos) 미사일",
+        "Objective": "세계에서 가장 빠른 순항미사일 중 하나로, 해상 및 지상 목표물 타격 능력 강화",
+        "Features": "인도의 방위연구개발기구(DRDO)와 러시아의 NPO 마시노스트로예니야가 공동 개발하였습니다."
+    },
+    {
+        "Country": "Russia",
+        "Project_Name": "초음속 순항미사일 공동 개발",
+        "Program_Name": "브라모스(BrahMos) 미사일",
+        "Objective": "세계에서 가장 빠른 순항미사일 중 하나로, 해상 및 지상 목표물 타격 능력 강화",
+        "Features": "인도의 방위연구개발기구(DRDO)와 러시아의 NPO 마시노스트로예니야가 공동 개발하였습니다."
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "차세대 레이더 시스템 공동 개발",
+        "Program_Name": "EASR(Enterprise Air Surveillance Radar)",
+        "Objective": "차세대 항공모함과 구축함에 탑재될 고성능 레이더 시스템 개발",
+        "Features": "미국 레이시온과 일본 미쓰비시 전기가 협력하여 개발하고 있습니다."
+    },
+    {
+        "Country": "Japan",
+        "Project_Name": "차세대 레이더 시스템 공동 개발",
+        "Program_Name": "EASR(Enterprise Air Surveillance Radar)",
+        "Objective": "차세대 항공모함과 구축함에 탑재될 고성능 레이더 시스템 개발",
+        "Features": "미국 레이시온과 일본 미쓰비시 전기가 협력하여 개발하고 있습니다."
+    },
+    {
+        "Country": "South Korea",
+        "Project_Name": "자주포 및 전차 기술 협력",
+        "Program_Name": "K9 자주포 및 K2 전차 기술 이전",
+        "Objective": "폴란드의 자주포 및 전차 전력 증강을 위한 기술 협력",
+        "Features": "한국의 한화디펜스와 폴란드 방산업체가 협력하여 현지 생산 및 기술 이전 을 진행하고 있습니다."
+    },
+    {
+        "Country": "Poland",
+        "Project_Name": "자주포 및 전차 기술 협력",
+        "Program_Name": "K9 자주포 및 K2 전차 기술 이전",
+        "Objective": "폴란드의 자주포 및 전차 전력 증강을 위한 기술 협력",
+        "Features": "한국의 한화디펜스와 폴란드 방산업체가 협력하여 현지 생산 및 기술 이전 을 진행하고 있습니다."
+    },
+    {
+        "Country": "France",
+        "Project_Name": "함대 방공 시스템 공동 개발",
+        "Program_Name": "SAMP/T NG (Surface-to-Air Missile Platform/Terrain New Generation)",
+        "Objective": "최신 공중 및 미사일 위협에 대응하기 위한 고성능 방공 시스템 구축",
+        "Features": "프랑스 MBDA와 이탈리아 레오나르도가 협력하여, 나토 표준에 맞는 방공 미사일 시스템을 공동 개발 중입니다. 유럽 전역과 중동에 배치될 예정입니다."
+    },
+    {
+        "Country": "Italy",
+        "Project_Name": "함대 방공 시스템 공동 개발",
+        "Program_Name": "SAMP/T NG (Surface-to-Air Missile Platform/Terrain New Generation)",
+        "Objective": "최신 공중 및 미사일 위협에 대응하기 위한 고성능 방공 시스템 구축",
+        "Features": "프랑스 MBDA와 이탈리아 레오나르도가 협력하여, 나토 표준에 맞는 방공 미사일 시스템을 공동 개발 중입니다. 유럽 전역과 중동에 배치될 예정입니다."
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "차세대 전투기 공동 개발",
+        "Program_Name": "템페스트(Tempest)",
+        "Objective": "차세대 전투기 플랫폼 개발로, 유럽 공군력 강화 및 자국 방산 역량 제고",
+        "Features": "템페스트 전투기는 스텔스, AI, 무인 전투 및 통합 센서 시스템 등 최첨단 기술을 적용하여 영국 BAE Systems, 스웨덴 사브(SAAB), 이탈리아 레오나르도가 공동 개발 중입니다. 2035년까지 배치 목표."
+    },
+    {
+        "Country": "Sweden",
+        "Project_Name": "차세대 전투기 공동 개발",
+        "Program_Name": "템페스트(Tempest)",
+        "Objective": "차세대 전투기 플랫폼 개발로, 유럽 공군력 강화 및 자국 방산 역량 제고",
+        "Features": "템페스트 전투기는 스텔스, AI, 무인 전투 및 통합 센서 시스템 등 최첨단 기술을 적용하여 영국 BAE Systems, 스웨덴 사브(SAAB), 이탈리아 레오나르도가 공동 개발 중입니다. 2035년까지 배치 목표."
+    },
+    {
+        "Country": "Italy",
+        "Project_Name": "차세대 전투기 공동 개발",
+        "Program_Name": "템페스트(Tempest)",
+        "Objective": "차세대 전투기 플랫폼 개발로, 유럽 공군력 강화 및 자국 방산 역량 제고",
+        "Features": "템페스트 전투기는 스텔스, AI, 무인 전투 및 통합 센서 시스템 등 최첨단 기술을 적용하여 영국 BAE Systems, 스웨덴 사브(SAAB), 이탈리아 레오나르도가 공동 개발 중입니다. 2035년까지 배치 목표."
+    },
+    {
+        "Country": "Turkiye",
+        "Project_Name": "중형 전투 탱크 공동 개발",
+        "Program_Name": "Kaplan MT",
+        "Objective": "양국의 군 현대화와 수출을 목표로 한 중형 전투 탱크 개발",
+        "Features": "터키 FNSS와 인도네시아 PT Pindad가 공동으로 개발한 Kaplan MT는 기동성과 방호력을 갖춘 중형 탱크로 동남아 시장에서 수요가 예상됩니다."
+    },
+    {
+        "Country": "Indonesia",
+        "Project_Name": "중형 전투 탱크 공동 개발",
+        "Program_Name": "Kaplan MT",
+        "Objective": "양국의 군 현대화와 수출을 목표로 한 중형 전투 탱크 개발",
+        "Features": "터키 FNSS와 인도네시아 PT Pindad가 공동으로 개발한 Kaplan MT는 기동성과 방호력을 갖춘 중형 탱크로 동남아 시장에서 수요가 예상됩니다."
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "극초음속 무기 공동 개발",
+        "Program_Name": "SCIFiRE (Southern Cross Integrated Flight Research Experiment)",
+        "Objective": "인도-태평양 지역의 전략적 안보 강화를 위한 극초음속 무기 개발",
+        "Features": "양국이 개발 중인 SCIFiRE는 마하 5 이상의 속도를 목표로 한 극초음속 미사일로, 공중 및 해상 타격을 지원하기 위한 무기체계입니다."
+    },
+    {
+        "Country": "Australia",
+        "Project_Name": "극초음속 무기 공동 개발",
+        "Program_Name": "SCIFiRE (Southern Cross Integrated Flight Research Experiment)",
+        "Objective": "인도-태평양 지역의 전략적 안보 강화를 위한 극초음속 무기 개발",
+        "Features": "양국이 개발 중인 SCIFiRE는 마하 5 이상의 속도를 목표로 한 극초음속 미사일로, 공중 및 해상 타격을 지원하기 위한 무기체계입니다."
+    },
+    {
+        "Country": "Japan",
+        "Project_Name": "지능형 무인 전투 시스템 공동 개발",
+        "Program_Name": "신유토리 인공지능 전투 시스템",
+        "Objective": "유인기와 무인기가 협력할 수 있는 지능형 전투 시스템 구축",
+        "Features": "일본과 영국은 무인 전투 드론과 AI 기술을 결합한 시스템을 개발 중이며, 주로 해상 및 공중 전투 지원 임무를 목표로 합니다."
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "지능형 무인 전투 시스템 공동 개발",
+        "Program_Name": "신유토리 인공지능 전투 시스템",
+        "Objective": "유인기와 무인기가 협력할 수 있는 지능형 전투 시스템 구축",
+        "Features": "일본과 영국은 무인 전투 드론과 AI 기술을 결합한 시스템을 개발 중이며, 주로 해상 및 공중 전투 지원 임무를 목표로 합니다."
+    },
+    {
+        "Country": "India",
+        "Project_Name": "무인 항공기(UAV) 공동 개발",
+        "Program_Name": "Heron TP UAV",
+        "Objective": "고도에서 장시간 작전 가능한 무인 정찰 및 감시 드론 개발",
+        "Features": "인도와 이스라엘이 개발 중인 Heron TP는 인도 공군과 육군에 배치될 예정이며, 장거리 정찰 및 감시, 감시 임무를 위한 고성능 카메라와 센서가 탑재됩니다."
+    },
+    {
+        "Country": "Israel",
+        "Project_Name": "무인 항공기(UAV) 공동 개발",
+        "Program_Name": "Heron TP UAV",
+        "Objective": "고도에서 장시간 작전 가능한 무인 정찰 및 감시 드론 개발",
+        "Features": "인도와 이스라엘이 개발 중인 Heron TP는 인도 공군과 육군에 배치될 예정이며, 장거리 정찰 및 감시, 감시 임무를 위한 고성능 카메라와 센서가 탑재됩니다."
+    },
+    {
+        "Country": "Norway",
+        "Project_Name": "잠수함 및 해양 무기 시스템 공동 개발",
+        "Program_Name": "212CD 잠수함",
+        "Objective": "차세대 디젤-전기 잠수함으로 유럽 및 북대서양 해역의 방어 능력 강화",
+        "Features": "노르웨이와 독일은 첨단 소음 제어 시스템과 더불어 수중 전투 및 감시 성능을 강화한 잠수함을 공동 개발 중입니다. 노르웨이 해군과 독일 해군에 배치될 예정입니다."
+    },
+    {
+        "Country": "Germany",
+        "Project_Name": "잠수함 및 해양 무기 시스템 공동 개발",
+        "Program_Name": "212CD 잠수함",
+        "Objective": "차세대 디젤-전기 잠수함으로 유럽 및 북대서양 해역의 방어 능력 강화",
+        "Features": "노르웨이와 독일은 첨단 소음 제어 시스템과 더불어 수중 전투 및 감시 성능을 강화한 잠수함을 공동 개발 중입니다. 노르웨이 해군과 독일 해군에 배치될 예정입니다."
+    },
+    {
+        "Country": "Saudi Arabia",
+        "Project_Name": "방공 및 지대공 미사일 시스템 협력",
+        "Program_Name": "Umkhonto 미사일",
+        "Objective": "중동 지역 방공 체계 강화",
+        "Features": "사우디아라비아와 남아공은 Umkhonto 지대공 미사일 시스템을 통해 중동 지역에 대한 방공 능력을 강화하고 있으며, 이를 통해 다양한 공중 위협에 대응할 계획입니다."
+    },
+    {
+        "Country": "South Africa",
+        "Project_Name": "방공 및 지대공 미사일 시스템 협력",
+        "Program_Name": "Umkhonto 미사일",
+        "Objective": "중동 지역 방공 체계 강화",
+        "Features": "사우디아라비아와 남아공은 Umkhonto 지대공 미사일 시스템을 통해 중동 지역에 대한 방공 능력을 강화하고 있으며, 이를 통해 다양한 공중 위협에 대응할 계획입니다."
+    },
+    {
+        "Country": "Canada",
+        "Project_Name": "극지방 작전 차량 공동 개발",
+        "Program_Name": "Polar Guardian",
+        "Objective": "극지방 및 북극 작전에 최적화된 기동 차량 개발",
+        "Features": "캐나다와 영국은 혹한 환경에서 작전할 수 있는 차량을 개발하고 있으며, 북극 해역 및 고위도 지역에서의 신속 대응을 목표로 합니다. 다양한 센서와 방어 체계가 통합될 예정입니다."
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "극지방 작전 차량 공동 개발",
+        "Program_Name": "Polar Guardian",
+        "Objective": "극지방 및 북극 작전에 최적화된 기동 차량 개발",
+        "Features": "캐나다와 영국은 혹한 환경에서 작전할 수 있는 차량을 개발하고 있으며, 북극 해역 및 고위도 지역에서의 신속 대응을 목표로 합니다. 다양한 센서와 방어 체계가 통합될 예정입니다."
+    },
+    {
+        "Country": "Italy",
+        "Project_Name": "해양 초계기 공동 개발",
+        "Program_Name": "Falco Evo",
+        "Objective": "해양 감시 및 정찰 임무 수행",
+        "Features": "이탈리아와 카타르는 이탈리아 레오나르도가 개발한 Falco Evo 초계기를 카타르 해군에 맞춰 개량하고 있으며, 이를 통해 해양 작전과 해적 방지, 해양 안전을 강화할 계획입니다."
+    },
+    {
+        "Country": "Qatar",
+        "Project_Name": "해양 초계기 공동 개발",
+        "Program_Name": "Falco Evo",
+        "Objective": "해양 감시 및 정찰 임무 수행",
+        "Features": "이탈리아와 카타르는 이탈리아 레오나르도가 개발한 Falco Evo 초계기를 카타르 해군에 맞춰 개량하고 있으며, 이를 통해 해양 작전과 해적 방지, 해양 안전을 강화할 계획입니다."
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "항공모함 전력 강화를 위한 차세대 원자로 개발",
+        "Program_Name": "Next Generation Nuclear Reactor",
+        "Objective": "차세대 항공모함에 탑재할 고성능 원자로 개발로 지속 작전 능력 강화",
+        "Features": "미국과 프랑스는 차세대 항공모함에 사용할 소형 고성능 원자로를 공동 연구하여 원거리 작전에서 지속성을 높일 예정입니다."
+    },
+    {
+        "Country": "France",
+        "Project_Name": "항공모함 전력 강화를 위한 차세대 원자로 개발",
+        "Program_Name": "Next Generation Nuclear Reactor",
+        "Objective": "차세대 항공모함에 탑재할 고성능 원자로 개발로 지속 작전 능력 강화",
+        "Features": "미국과 프랑스는 차세대 항공모함에 사용할 소형 고성능 원자로를 공동 연구하여 원거리 작전에서 지속성을 높일 예정입니다."
+    },
+    {
+        "Country": "South Korea",
+        "Project_Name": "잠수함 공동 개발",
+        "Program_Name": "Nagapasa 잠수함",
+        "Objective": "해양 방위 강화를 위한 디젤-전기 잠수함 개발",
+        "Features": "한국과 인도네시아는 인도네시아 해군에 필요한 디젤-전기 잠수함을 공동 생산하며, 인도네시아가 방산 자립도를 높이기 위한 기술 이전을 포함하고 있습니다."
+    },
+    {
+        "Country": "Indonesia",
+        "Project_Name": "잠수함 공동 개발",
+        "Program_Name": "Nagapasa 잠수함",
+        "Objective": "해양 방위 강화를 위한 디젤-전기 잠수함 개발",
+        "Features": "한국과 인도네시아는 인도네시아 해군에 필요한 디젤-전기 잠수함을 공동 생산하며, 인도네시아가 방산 자립도를 높이기 위한 기술 이전을 포함하고 있습니다."
+    },
+    {
+        "Country": "Australia",
+        "Project_Name": "미사일 방어 레이더 시스템 공동 개발",
+        "Program_Name": "Jindalee Operational Radar Network (JORN)",
+        "Objective": "인도-태평양 지역의 미사일 방어를 위한 레이더 시스템 강화",
+        "Features": "호주와 미국이 협력하여 개발하는 이 시스템은 광범위한 탐지 거리를 통해 인도-태평양 전역의 감시 능력을 높입니다."
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "미사일 방어 레이더 시스템 공동 개발",
+        "Program_Name": "Jindalee Operational Radar Network (JORN)",
+        "Objective": "인도-태평양 지역의 미사일 방어를 위한 레이더 시스템 강화",
+        "Features": "호주와 미국이 협력하여 개발하는 이 시스템은 광범위한 탐지 거리를 통해 인도-태평양 전역의 감시 능력을 높입니다."
+    },
+    {
+        "Country": "Japan",
+        "Project_Name": "극초음속 무기 탐지 및 요격 시스템 공동 연구",
+        "Program_Name": "Hypersonic Defense Initiative",
+        "Objective": "극초음속 무기에 대응할 수 있는 요격 체계 구축",
+        "Features": "일본과 프랑스는 극초음속 무기 탐지 및 방어 기술을 공동 연구하며, 주요 도심과 전략적 거점 보호를 목표로 하고 있습니다."
+    },
+    {
+        "Country": "France",
+        "Project_Name": "극초음속 무기 탐지 및 요격 시스템 공동 연구",
+        "Program_Name": "Hypersonic Defense Initiative",
+        "Objective": "극초음속 무기에 대응할 수 있는 요격 체계 구축",
+        "Features": "일본과 프랑스는 극초음속 무기 탐지 및 방어 기술을 공동 연구하며, 주요 도심과 전략적 거점 보호를 목표로 하고 있습니다."
+    },
+    {
+        "Country": "Brazil",
+        "Project_Name": "해양 경비를 위한 해상 초계기 공동 개발",
+        "Program_Name": "GlobalEye",
+        "Objective": "브라질 해안선의 안보 강화 및 해양 범죄 방지",
+        "Features": "스웨덴 사브의 GlobalEye 시스템을 기반으로 브라질의 해양 환경에 맞춘 해상 초계기를 개발하며, 장거리 탐지와 신속 대응 기능을 제공합니다."
+    },
+    {
+        "Country": "Sweden",
+        "Project_Name": "해양 경비를 위한 해상 초계기 공동 개발",
+        "Program_Name": "GlobalEye",
+        "Objective": "브라질 해안선의 안보 강화 및 해양 범죄 방지",
+        "Features": "스웨덴 사브의 GlobalEye 시스템을 기반으로 브라질의 해양 환경에 맞춘 해상 초계기를 개발하며, 장거리 탐지와 신속 대응 기능을 제공합니다."
+    },
+    {
+        "Country": "Israel",
+        "Project_Name": "사이버 방어 시스템 공동 개발",
+        "Program_Name": "Cyber Defense Initiative",
+        "Objective": "양국의 국방 네트워크와 공공 인프라 보호",
+        "Features": "이스라엘과 싱가포르는 주요 사이버 위협에 대응하기 위해 사이버 방어 기술을 공동 연구하고 있으며, 실시간 위협 감지 및 방어 체계를 포함하고 있습니다."
+    },
+    {
+        "Country": "Singapore",
+        "Project_Name": "사이버 방어 시스템 공동 개발",
+        "Program_Name": "Cyber Defense Initiative",
+        "Objective": "양국의 국방 네트워크와 공공 인프라 보호",
+        "Features": "이스라엘과 싱가포르는 주요 사이버 위협에 대응하기 위해 사이버 방어 기술을 공동 연구하고 있으며, 실시간 위협 감지 및 방어 체계를 포함하고 있습니다."
+    },
+    {
+        "Country": "Russia",
+        "Project_Name": "초음속 폭격기 개발 협력",
+        "Program_Name": "PAK DA",
+        "Objective": "양국의 공중 전략 타격 역량 강화",
+        "Features": "러시아와 중국은 PAK DA 프로그램을 통해 스텔스 기술과 초음속 비행이 가능한 전략 폭격기를 개발 중이며, 긴 사거리에서 타격 능력을 극대화할 예정입니다."
+    },
+    {
+        "Country": "China",
+        "Project_Name": "초음속 폭격기 개발 협력",
+        "Program_Name": "PAK DA",
+        "Objective": "양국의 공중 전략 타격 역량 강화",
+        "Features": "러시아와 중국은 PAK DA 프로그램을 통해 스텔스 기술과 초음속 비행이 가능한 전략 폭격기를 개발 중이며, 긴 사거리에서 타격 능력을 극대화할 예정입니다."
+    },
+    {
+        "Country": "India",
+        "Project_Name": "극초음속 무기 및 방어 시스템 공동 개발",
+        "Program_Name": "Defensive Hypersonic Initiative",
+        "Objective": "극초음속 무기 기술 발전과 위협 방어 시스템 구축",
+        "Features": "인도와 미국은 극초음속 무기와 요격 시스템에 대한 기술 교류 및 연구를 통해, 양국의 방위 능력을 강화하고 인도-태평양 지역의 안보를 강화하고 있습니다."
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "극초음속 무기 및 방어 시스템 공동 개발",
+        "Program_Name": "Defensive Hypersonic Initiative",
+        "Objective": "극초음속 무기 기술 발전과 위협 방어 시스템 구축",
+        "Features": "인도와 미국은 극초음속 무기와 요격 시스템에 대한 기술 교류 및 연구를 통해, 양국의 방위 능력을 강화하고 인도-태평양 지역의 안보를 강화하고 있습니다."
+    },
+    {
+        "Country": "Saudi Arabia",
+        "Project_Name": "방공 레이더 및 미사일 방어 시스템 공동 개발",
+        "Program_Name": "MEADS(Medium Extended Air Defense System)",
+        "Objective": "사우디 아라비아의 공군 방어 체계를 현대화하고, 공중 및 미사일 위협에 대한 방어 강화",
+        "Features": "영국 BAE Systems와 사우디아라비아가 협력하여 새로운 방공 레이더와 미사일 방어 시스템을 개발하고 있으며, 특히 중동 지역의 미사일 위협을 차단하는 데 중점을 두고 있습니다."
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "방공 레이더 및 미사일 방어 시스템 공동 개발",
+        "Program_Name": "MEADS(Medium Extended Air Defense System)",
+        "Objective": "사우디 아라비아의 공군 방어 체계를 현대화하고, 공중 및 미사일 위협에 대한 방어 강화",
+        "Features": "영국 BAE Systems와 사우디아라비아가 협력하여 새로운 방공 레이더와 미사일 방어 시스템을 개발하고 있으며, 특히 중동 지역의 미사일 위협을 차단하는 데 중점을 두고 있습니다."
+    },
+    {
+        "Country": "Austria",
+        "Project_Name": "군용 다목적 헬리콥터 공동 개발",
+        "Program_Name": "European Medium Helicopter Initiative",
+        "Objective": "유럽 지역에서의 다목적 군용 헬리콥터 개발 및 공급",
+        "Features": "오스트리아, 독일, 스위스가 참여하여 공동 개발하는 이 헬리콥터는 수송, 전투 지원, 구조 작업 등 다목적 임무에 활용되며, 유럽 전역에서 통합 운용을 목표로 합니다."
+    },
+    {
+        "Country": "Germany",
+        "Project_Name": "군용 다목적 헬리콥터 공동 개발",
+        "Program_Name": "European Medium Helicopter Initiative",
+        "Objective": "유럽 지역에서의 다목적 군용 헬리콥터 개발 및 공급",
+        "Features": "오스트리아, 독일, 스위스가 참여하여 공동 개발하는 이 헬리콥터는 수송, 전투 지원, 구조 작업 등 다목적 임무에 활용되며, 유럽 전역에서 통합 운용을 목표로 합니다."
+    },
+    {
+        "Country": "Switzerland",
+        "Project_Name": "군용 다목적 헬리콥터 공동 개발",
+        "Program_Name": "European Medium Helicopter Initiative",
+        "Objective": "유럽 지역에서의 다목적 군용 헬리콥터 개발 및 공급",
+        "Features": "오스트리아, 독일, 스위스가 참여하여 공동 개발하는 이 헬리콥터는 수송, 전투 지원, 구조 작업 등 다목적 임무에 활용되며, 유럽 전역에서 통합 운용을 목표로 합니다."
+    },
+    {
+        "Country": "Italy",
+        "Project_Name": "해상 초계함 및 대잠수함 전력 강화",
+        "Program_Name": "PPA(Multipurpose Offshore Patrol Vessel)",
+        "Objective": "해상 초계와 대잠수함 작전을 위한 다목적 함정 개발",
+        "Features": "이탈리아와 튀르키예는 나토 해양 전력 강화의 일환으로 해상 초계와 대잠작전 능력을 높이기 위한 최신 초계함을 개발하고 있습니다."
+    },
+    {
+        "Country": "Turkiye",
+        "Project_Name": "해상 초계함 및 대잠수함 전력 강화",
+        "Program_Name": "PPA(Multipurpose Offshore Patrol Vessel)",
+        "Objective": "해상 초계와 대잠수함 작전을 위한 다목적 함정 개발",
+        "Features": "이탈리아와 튀르키예는 나토 해양 전력 강화의 일환으로 해상 초계와 대잠작전 능력을 높이기 위한 최신 초계함을 개발하고 있습니다."
+    },
+    {
+        "Country": "Japan",
+        "Project_Name": "자율 무인 수중 탐사체 공동 개발",
+        "Program_Name": "Ocean Warrior Initiative",
+        "Objective": "무인 수중 탐사체를 통한 해양 안보와 자원 탐사",
+        "Features": "일본과 호주는 무인 수중 탐사 기술을 공동 연구하여, 양국의 해양 자원 보호와 감시 역량을 강화하고 있습니다."
+    },
+    {
+        "Country": "Australia",
+        "Project_Name": "자율 무인 수중 탐사체 공동 개발",
+        "Program_Name": "Ocean Warrior Initiative",
+        "Objective": "무인 수중 탐사체를 통한 해양 안보와 자원 탐사",
+        "Features": "일본과 호주는 무인 수중 탐사 기술을 공동 연구하여, 양국의 해양 자원 보호와 감시 역량을 강화하고 있습니다."
+    },
+    {
+        "Country": "Czech",
+        "Project_Name": "전술 통신 시스템 현대화",
+        "Program_Name": "V4 Tactical Communication Program",
+        "Objective": "전술 통신 시스템의 통합을 통한 동유럽 국방 네트워크 강화",
+        "Features": "중동부 유럽의 3개국이 전술 통신 시스템을 현대화하고 나토와의 통합 운용을 목표로 공동 연구를 진행 중입니다."
+    },
+    {
+        "Country": "Poland",
+        "Project_Name": "전술 통신 시스템 현대화",
+        "Program_Name": "V4 Tactical Communication Program",
+        "Objective": "전술 통신 시스템의 통합을 통한 동유럽 국방 네트워크 강화",
+        "Features": "중동부 유럽의 3개국이 전술 통신 시스템을 현대화하고 나토와의 통합 운용을 목표로 공동 연구를 진행 중입니다."
+    },
+    {
+        "Country": "Slovakia",
+        "Project_Name": "전술 통신 시스템 현대화",
+        "Program_Name": "V4 Tactical Communication Program",
+        "Objective": "전술 통신 시스템의 통합을 통한 동유럽 국방 네트워크 강화",
+        "Features": "중동부 유럽의 3개국이 전술 통신 시스템을 현대화하고 나토와의 통합 운용을 목표로 공동 연구를 진행 중입니다."
+    },
+    {
+        "Country": "United Kingdom",
+        "Project_Name": "무인 항공기 개발 협력",
+        "Program_Name": "Proteus",
+        "Objective": "무인 항공기(UAV) 개발을 통한 유럽의 무인 전력 강화",
+        "Features": "영국 BAE Systems와 이탈리아 레오나르도가 협력하여 스텔스 기능을 갖춘 차세대 무인 항공기를 개발 중입니다. 이 UAV는 장거리 정찰과 고위험 지역 작전 수행을 목표로 하고 있습니다."
+    },
+    {
+        "Country": "Italy",
+        "Project_Name": "무인 항공기 개발 협력",
+        "Program_Name": "Proteus",
+        "Objective": "무인 항공기(UAV) 개발을 통한 유럽의 무인 전력 강화",
+        "Features": "영국 BAE Systems와 이탈리아 레오나르도가 협력하여 스텔스 기능을 갖춘 차세대 무인 항공기를 개발 중입니다. 이 UAV는 장거리 정찰과 고위험 지역 작전 수행을 목표로 하고 있습니다."
+    },
+    {
+        "Country": "South Korea",
+        "Project_Name": "전투기 엔진 기술 개발 협력",
+        "Program_Name": "KF-X/IF-X",
+        "Objective": "인도네시아와 한국의 전투기 자립도 증진 및 기술 역량 강화",
+        "Features": "한국의 KF-X 프로젝트와 연계된 협력으로, 인도네시아는 엔진 및 기타 전투기 부품의 공동 개발에 참여해 자체 전투기 개발 역량을 확보하는 데 목표를 두고 있습니다."
+    },
+    {
+        "Country": "Indonesia",
+        "Project_Name": "전투기 엔진 기술 개발 협력",
+        "Program_Name": "KF-X/IF-X",
+        "Objective": "인도네시아와 한국의 전투기 자립도 증진 및 기술 역량 강화",
+        "Features": "한국의 KF-X 프로젝트와 연계된 협력으로, 인도네시아는 엔진 및 기타 전투기 부품의 공동 개발에 참여해 자체 전투기 개발 역량을 확보하는 데 목표를 두고 있습니다."
+    },
+    {
+        "Country": "Poland",
+        "Project_Name": "차세대 장갑차 개발",
+        "Program_Name": "OT-64 Puma",
+        "Objective": "양국의 차세대 장갑차 자립도 확보 및 군 현대화",
+        "Features": "폴란드와 우크라이나가 공동으로 개발 중인 장갑차로, 북대서양조약기구(NATO) 표준을 충족하며 다목적 전투 지원을 목표로 합니다."
+    },
+    {
+        "Country": "Ukraine",
+        "Project_Name": "차세대 장갑차 개발",
+        "Program_Name": "OT-64 Puma",
+        "Objective": "양국의 차세대 장갑차 자립도 확보 및 군 현대화",
+        "Features": "폴란드와 우크라이나가 공동으로 개발 중인 장갑차로, 북대서양조약기구(NATO) 표준을 충족하며 다목적 전투 지원을 목표로 합니다."
+    },
+    {
+        "Country": "Spain",
+        "Project_Name": "공중 조기 경보 시스템 공동 개발",
+        "Program_Name": "Next-Gen AEW&C",
+        "Objective": "유럽 전역에서 공중 조기 경보 및 전장 인식 능력 강화",
+        "Features": "스페인과 프랑스는 유럽 공군의 감시 능력을 높이기 위해 첨단 레이더와 통신 기술을 접목한 공중 조기 경보 시스템을 개발 중입니다."
+    },
+    {
+        "Country": "France",
+        "Project_Name": "공중 조기 경보 시스템 공동 개발",
+        "Program_Name": "Next-Gen AEW&C",
+        "Objective": "유럽 전역에서 공중 조기 경보 및 전장 인식 능력 강화",
+        "Features": "스페인과 프랑스는 유럽 공군의 감시 능력을 높이기 위해 첨단 레이더와 통신 기술을 접목한 공중 조기 경보 시스템을 개발 중입니다."
+    },
+    {
+        "Country": "United Arab Emirates",
+        "Project_Name": "해상 방어 드론 공동 개발",
+        "Program_Name": "Seascan Initiative",
+        "Objective": "해상에서의 위협 감시 및 항만 보호",
+        "Features": "UAE와 프랑스는 항만과 해안선 보호를 위해 해상 드론을 공동 개발 중이며, 이는 자율적으로 해상에서 위협을 탐지하고 대응할 수 있는 기능을 갖추고 있습니다."
+    },
+    {
+        "Country": "France",
+        "Project_Name": "해상 방어 드론 공동 개발",
+        "Program_Name": "Seascan Initiative",
+        "Objective": "해상에서의 위협 감시 및 항만 보호",
+        "Features": "UAE와 프랑스는 항만과 해안선 보호를 위해 해상 드론을 공동 개발 중이며, 이는 자율적으로 해상에서 위협을 탐지하고 대응할 수 있는 기능을 갖추고 있습니다."
+    },
+    {
+        "Country": "United States",
+        "Project_Name": "공동 극초음속 무기 개발",
+        "Program_Name": "Allied Hypersonic Initiative",
+        "Objective": "인도-태평양 지역의 군사적 대응 능력 강화",
+        "Features": "미국, 일본, 호주 3국은 극초음속 무기를 공동 개발 중이며, 이 무기는 매우 높은 기동성과 속도를 통해 적의 방어망을 돌파할 수 있는 능력을 지닙니다."
+    },
+    {
+        "Country": "Japan",
+        "Project_Name": "공동 극초음속 무기 개발",
+        "Program_Name": "Allied Hypersonic Initiative",
+        "Objective": "인도-태평양 지역의 군사적 대응 능력 강화",
+        "Features": "미국, 일본, 호주 3국은 극초음속 무기를 공동 개발 중이며, 이 무기는 매우 높은 기동성과 속도를 통해 적의 방어망을 돌파할 수 있는 능력을 지닙니다."
+    },
+    {
+        "Country": "Australia",
+        "Project_Name": "공동 극초음속 무기 개발",
+        "Program_Name": "Allied Hypersonic Initiative",
+        "Objective": "인도-태평양 지역의 군사적 대응 능력 강화",
+        "Features": "미국, 일본, 호주 3국은 극초음속 무기를 공동 개발 중이며, 이 무기는 매우 높은 기동성과 속도를 통해 적의 방어망을 돌파할 수 있는 능력을 지닙니다."
+    },
+    {
+        "Country": "Brazil",
+        "Project_Name": "대공 미사일 시스템 공동 개발",
+        "Program_Name": "Condor Defense",
+        "Objective": "남미 지역의 대공 방어 체계 현대화",
+        "Features": "브라질과 칠레가 공동 개발 중인 대공 미사일 시스템으로, 남미 국가들이 독자적인 방어 능력을 갖추고 역내 안보를 강화하는 데 기여할 예정입니다."
+    },
+    {
+        "Country": "Chile",
+        "Project_Name": "대공 미사일 시스템 공동 개발",
+        "Program_Name": "Condor Defense",
+        "Objective": "남미 지역의 대공 방어 체계 현대화",
+        "Features": "브라질과 칠레가 공동 개발 중인 대공 미사일 시스템으로, 남미 국가들이 독자적인 방어 능력을 갖추고 역내 안보를 강화하는 데 기여할 예정입니다."
+    }
+]

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_11a6170c6b820679ec9d973c0dd2c589 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_11a6170c6b820679ec9d973c0dd2c589" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_11a6170c6b820679ec9d973c0dd2c589 = L.map(
+                "map_11a6170c6b820679ec9d973c0dd2c589",
+                {
+                    center: [6.631920714285714, 30.768327],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d90a6981934d1c2a703dda5a1f97d5d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_4d90a6981934d1c2a703dda5a1f97d5d.addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+            var marker_997e3f3710ec0543fa7a8c568b8ca442 = L.marker(
+                [6.631920714285714, 30.768327],
+                {}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+            var div_icon_1f309619537cbe7cce08ac8255a9e332 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eSouth Sudan\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_997e3f3710ec0543fa7a8c568b8ca442.setIcon(div_icon_1f309619537cbe7cce08ac8255a9e332);
+        
+    
+            var circle_marker_59d36ce4703db1ec9db6c352d62a567b = L.circleMarker(
+                [5.0, 33.8],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_3d4c410d2ed2547a58647cbe8d24812e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8dfea8165439b62f16dfb8eb398070dc = $(`<div id="html_8dfea8165439b62f16dfb8eb398070dc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 5.0000<br>                 <b>Longitude:</b> 33.8000<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Kapoeta East county<br>                 <b>Where Description:</b> near Nadapal border crossing in disputed border territory Ilemi Triangle                 </div>`)[0];
+                popup_3d4c410d2ed2547a58647cbe8d24812e.setContent(html_8dfea8165439b62f16dfb8eb398070dc);
+            
+        
+
+        circle_marker_59d36ce4703db1ec9db6c352d62a567b.bindPopup(popup_3d4c410d2ed2547a58647cbe8d24812e)
+        ;
+
+        
+    
+    
+            var circle_marker_6136299aee94a83f6fd60c24180d95b2 = L.circleMarker(
+                [4.899632, 31.666912],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_77d840d42d46feb402cf187db8d2a91f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1a42de1563126c2799e77e98334c8cd9 = $(`<div id="html_1a42de1563126c2799e77e98334c8cd9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 4.8996<br>                 <b>Longitude:</b> 31.6669<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Gondokoro payam<br>                 <b>Where Description:</b> Mori Boma, Gondokoro payam                 </div>`)[0];
+                popup_77d840d42d46feb402cf187db8d2a91f.setContent(html_1a42de1563126c2799e77e98334c8cd9);
+            
+        
+
+        circle_marker_6136299aee94a83f6fd60c24180d95b2.bindPopup(popup_77d840d42d46feb402cf187db8d2a91f)
+        ;
+
+        
+    
+    
+            var circle_marker_dc81cf3e43fe39022bb36c9c7cde13d8 = L.circleMarker(
+                [7.4996, 29.6348],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.05458956322112, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_a15e73308bc67e2c3a7bd2f52fcb64d2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b8c9dd98a974a6484afa8bd8a4be4ed3 = $(`<div id="html_b8c9dd98a974a6484afa8bd8a4be4ed3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 7.4996<br>                 <b>Longitude:</b> 29.6348<br>                 <b>Deaths:</b> 36<br>                 <b>Where Coordinates:</b> Rumbek North county<br>                 <b>Where Description:</b> Payam communities of Rumbek North county,                 </div>`)[0];
+                popup_a15e73308bc67e2c3a7bd2f52fcb64d2.setContent(html_b8c9dd98a974a6484afa8bd8a4be4ed3);
+            
+        
+
+        circle_marker_dc81cf3e43fe39022bb36c9c7cde13d8.bindPopup(popup_a15e73308bc67e2c3a7bd2f52fcb64d2)
+        ;
+
+        
+    
+    
+            var circle_marker_f672fb089b4d1fddff607e6421e47259 = L.circleMarker(
+                [9.29088, 28.70991],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.722194895832201, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_247e6768a340974df5e5230075580508 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8897b07e845c071599c40fdb1322d32b = $(`<div id="html_8897b07e845c071599c40fdb1322d32b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 9.2909<br>                 <b>Longitude:</b> 28.7099<br>                 <b>Deaths:</b> 18<br>                 <b>Where Coordinates:</b> Ajak Kuac village<br>                 <b>Where Description:</b> several villages in Ajakuac Payam                 </div>`)[0];
+                popup_247e6768a340974df5e5230075580508.setContent(html_8897b07e845c071599c40fdb1322d32b);
+            
+        
+
+        circle_marker_f672fb089b4d1fddff607e6421e47259.bindPopup(popup_247e6768a340974df5e5230075580508)
+        ;
+
+        
+    
+    
+            var circle_marker_d3fdaae2d37d24634cba962af43d3533 = L.circleMarker(
+                [6.75, 30.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_dfc61e4f0878646bd39dd0369b598d3f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a20fb644e1dd853349961aee412a5b1c = $(`<div id="html_a20fb644e1dd853349961aee412a5b1c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.7500<br>                 <b>Longitude:</b> 30.0000<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Lakes state<br>                 <b>Where Description:</b> Lakes State                 </div>`)[0];
+                popup_dfc61e4f0878646bd39dd0369b598d3f.setContent(html_a20fb644e1dd853349961aee412a5b1c);
+            
+        
+
+        circle_marker_d3fdaae2d37d24634cba962af43d3533.bindPopup(popup_dfc61e4f0878646bd39dd0369b598d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_f3d439098040bac4df4a208a7842c06e = L.circleMarker(
+                [6.233333, 31.566667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_87604dd67d98de71e5e2a9ecd679a74c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4bcc2daad2c772931138abb9bf0463c3 = $(`<div id="html_4bcc2daad2c772931138abb9bf0463c3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.2333<br>                 <b>Longitude:</b> 31.5667<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bor town<br>                 <b>Where Description:</b> Bor town                 </div>`)[0];
+                popup_87604dd67d98de71e5e2a9ecd679a74c.setContent(html_4bcc2daad2c772931138abb9bf0463c3);
+            
+        
+
+        circle_marker_f3d439098040bac4df4a208a7842c06e.bindPopup(popup_87604dd67d98de71e5e2a9ecd679a74c)
+        ;
+
+        
+    
+    
+            var circle_marker_e4802e01089e666e301f2480cccd0dcf = L.circleMarker(
+                [6.75, 30.0],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.72466064181625, "stroke": true, "weight": 3}
+            ).addTo(map_11a6170c6b820679ec9d973c0dd2c589);
+        
+    
+        var popup_00459703a60e384b253babd7f576a0c2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_79a215ffcbb542de1480e4582e189ad2 = $(`<div id="html_79a215ffcbb542de1480e4582e189ad2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 6.7500<br>                 <b>Longitude:</b> 30.0000<br>                 <b>Deaths:</b> 114<br>                 <b>Where Coordinates:</b> Lakes state<br>                 <b>Where Description:</b> Lakes                 </div>`)[0];
+                popup_00459703a60e384b253babd7f576a0c2.setContent(html_79a215ffcbb542de1480e4582e189ad2);
+            
+        
+
+        circle_marker_e4802e01089e666e301f2480cccd0dcf.bindPopup(popup_00459703a60e384b253babd7f576a0c2)
+        ;
+
+        
+    
+</script>
+</html>

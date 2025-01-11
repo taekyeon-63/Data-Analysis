@@ -13,27 +13,19 @@
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html">PRISM</a>
+            <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html"><img src="/WEB/web-layout/data/logo.png" style="max-width: 30%; height: auto;"></a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
+            </form> -->
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
-                    </ul>
-                </li>
+               
             </ul>
         </nav>
         <div id="layoutSidenav">
@@ -49,45 +41,189 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
+                        <div class="small">Producted by:</div>
                         천무 - ll
                     </div>
                 </nav>
             </div>
+
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">프로젝트 소개</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="#">기획서.pdf</a></li>
-                            <li class="breadcrumb-item active">기획서 다운로드</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <p class="mb-0">
-                                    프로젝트에 대한 배경 및 설명과 아키텍처에 대한 내용을 포함합니다. 
+                        <!-- 프로젝트 개요 -->
+                        <section class="mb-5">
+                            <h2 class="mt-4 mb-4">1. 프로젝트 개요</h2>
+                            <div class="box p-4" style="border: 2px solid #007bff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                                <p>
+                                    <strong>글로벌 방위산업</strong> 수출 전략 수립을 위한 국가별 맞춤형 정보 제공 플랫폼입니다.
+                                    국가별 경제 지표, 정치 안정성, 분쟁도 데이터 등을 종합적으로 분석하여 수출 전략을 지원합니다.
                                 </p>
+                                <p>
+                                <ul>
+                                    <li><strong>목적:</strong> 방산 수출을 위한 나라별,기업별 <strong> 맞춤형 전략 </strong> 제공, 각 국가별로 방위산업과 관련되는 지표를 취합하여 해당 국가에 수출을 목적으로 하는 고객에게 정보를 제공.                   
+                                </p>
+                                    <li><strong>대상:</strong> 방산 기업, 정책 결정자, 수출 지원 기관 등 국방에 관한 모든 종사자</li>
+                                </ul>
+                            
                             </div>
-                        </div>
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
+                        </section>
+            
+                        <!-- 프로젝트 배경 -->
+                        <section class="mb-5">
+                            <h2 class="mt-4 mb-4">2. 프로젝트 배경</h2>
+                            <div class="box p-4" style="border: 2px solid #28a745; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                                <p>
+                                1. 최근 글로벌 방산 시장이 급성장하면서 <strong>맞춤형 수출 전략</strong>의 필요성이 강조되고 있으며, 증가하는 국내 방위사업 수출에 따른 <strong>국가별 맞춤형 정보</strong>를 한눈에 보이게 제공.
+                                </p>
+                                <p>
+                                2. 고객 (기업) 입장에서 국가별 방위산업 지표를 한눈에 보기 어려운 문제상황 인식
+                                </p>
+                                <p>
+                                3. 기업 입장에서는 자회사와 국가간 유관성을 한번에 파악하기 어려운 문제상황
+                                </p>
+                                <p>
+                                예를 들어, FA-50 전투기, 천궁-II 미사일 등 한국산 무기체계는 폴란드, 사우디아라비아, 호주와 같은 국가에서 큰 수요를 보이고 있습니다.
+                                </p>
+                                <div class="text-center mt-3">
+                                    <img src="/WEB/web-layout/data/프로젝트배경.png" alt="프로젝트 배경 이미지" style="width: 90%; border-radius: 8px;">
+                                </div>
+                            </div>
+                        </section>
+            
+                        <!-- 데이터 흐름도 -->
+                        <section class="mb-5">
+                            <h2 class="mt-4 mb-4">3. 데이터 흐름도</h2>
+                            <div class="box p-4" style="border: 2px solid #17a2b8; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                                <p>데이터의 수집, 처리, 분석, 시각화, 배포를 단계별로 설명하는 흐름도입니다.</p>
+                                <div class="text-center">
+                                    <img src="/WEB/web-layout/data/다이어그램.png" alt="데이터 흐름도" style="width: 90%; border-radius: 8px;">
+                                </div>
+                                <ul class="mt-3">
+                                    <li><strong>수집 단계:</strong> World Bank, SIPRI, UCDP 등 데이터 소스 활용</li>
+                                    <li><strong>전처리 단계:</strong> 결측치 보완, 로그 변환, 정규화</li>
+                                    <li><strong>분석 단계:</strong> 군집화 분석, 회귀 분석, SWOT 분석</li>
+                                    <li><strong>배포 단계:</strong> 웹 기반 시각화 및 데이터 API 제공</li>
+                                </ul>
+                            </div>
+                        </section>
+            
+                        <!-- 분석 과정 (TASK 00 ~ TASK 03) -->
+                        <section class="mb-5">
+                            <h2 class="mt-4 mb-4">4. 분석 과정</h2>
+                            <div class="box p-4" style="border: 2px solid #ffc107; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                                <h3>TASK 00: 초기 국가 필터링</h3>
+                                <ul>
+                                    <li>주요 배제국가: <strong>중국, 이집트</strong> 등 민감국가</li>
+                                    <li>선정국가: 총 20개국</li>
+                                </ul>
+            
+                                <h3 class="mt-4">TASK 01: 경제 및 정치 안정성 분석</h3>
+                                <ul>
+                                    <li>1단계: GDP, 국방비 지출 등 <strong>경제 지표</strong> 분석</li>
+                                    <li>2단계: 정치 안정성 평가 및 점수화</li>
+                                    <li>3단계: 분쟁 지역을 시각화하여 국가 선정</li>
+                                </ul>
+            
+                                <h3 class="mt-4">TASK 02: 무기 시스템 분석</h3>
+                                <ul>
+                                    <li>국가별 보유 무기체계 조사 (Defense White Paper 활용)</li>
+                                    <li>수입 선호 무기 분석 및 동맹국 관계 평가</li>
+                                </ul>
+            
+                                <h3 class="mt-4">TASK 03: 맞춤형 무기 추천 및 SWOT 분석</h3>
+                                <ul>
+                                    <li>맞춤형 무기 추천과 <strong>SWOT 분석</strong> 수행</li>
+                                    <li>대상 국가: TASK 03완료 국가 총 156개국국</li>
+                                    <li>SWOT분석 기업:국내 11개 기업, 해외 10개 기업</li>
+                                </ul>
+                            </div>
+                        </section>
+            
+            <!-- 국가별 상세 분석 -->
+            <h2 class="mt-4 mb-4">5. 국가별 상세 분석</h2>
+            <section id="country-details" class="mb-5">
+                <div class="box p-4 mb-4" style="border: 2px solid #17a2b8; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                    <p>예시의 3개의 국가별 경제, 정치, 군사 데이터를 종합 분석하고 등급화를 했습니다다.</p>
+                    <table class="table table-bordered text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>국가</th>
+                                <th>경제 점수</th>
+                                <th>정치 안정도</th>
+                                <th>분쟁도</th>
+                                <th>국가 등급</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>대한민국</td>
+                                <td>66.7</td>
+                                <td>64.1</td>
+                                <td>92.3%</td>
+                                <td class="text-start">
+                                    <ul>
+                                        <strong>A
+                        
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>폴란드</td>
+                                <td>58.9</td>
+                                <td>55.2</td>
+                                <td>85.1%</td>
+                                <td class="text-start">
+                                    <ul>
+                                       <strong>A
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>인도네시아</td>
+                                <td>49.5</td>
+                                <td>45.3</td>
+                                <td>78.6%</td>
+                                <td class="text-start">
+                                    <ul>
+                                        <strong>C
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+                        <!-- 기대 효과 -->
+                        <section class="mb-5">
+                            <h2 class="mt-4 mb-4">6. 기대 효과</h2>
+                            <div class="box p-4" style="border: 2px solid #ffc107; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+                                <p>
+                                국가별 방위산업 관련 데이터 제공하며 국가, 기업간 비교 기능도 추가를 통해 <strong>방위산업 맞춤형 전략</strong>을 통해 <strong>수출 기회를 극대화</strong>하고 <strong>기업의 효율적 의사결정을 지원</strong>합니다.
+                            <ul>
+                                <li>국가별 맞춤형 방산 전략 수립</li>
+                                <li>경제 및 정치 데이터 기반의 신속한 의사결정</li>
+                                <li>기술 협력 기회 발굴 및 시장 점유율 확대</li>
+                            </ul>
+                        </section>
                     </div>
                 </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </div>
+            
+                            <!-- 다운로드 아이콘 -->
+                            <div class="icon-section" style="position: absolute; top: 80px; right: 30px;">
+                                <a href="/WEB/web-layout/data/한화에어로스페이스_스마트_데이터_분석과정_2조_주요분석결과.pdf" 
+                                class="download-icon" download="한화에어로스페이스_스마트_데이터_분석과정_2조_주요분석결과.pdf">
+                                    <img src="/WEB/web-layout/data/free-icon-pdf-337946.png" alt="Download PDF" 
+                                        style="width: 50px; height: 50px; margin-top:20px;">
+                                </a>
+                            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="/WEB/web-layout/js/scripts.js"></script>
+    </main>
+</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundsle.min.js" crossorigin="anonymous"></script>
+        <script src="/WEB/web-layout/js/detail.js"></script>
     </body>
 </html>

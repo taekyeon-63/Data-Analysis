@@ -3751,7 +3751,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.7rem;
+  --bs-navbar-brand-font-size: 1.7rem !important;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -3786,7 +3786,7 @@ textarea.form-control-lg {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
-  font-size: var(--bs-navbar-brand-font-size);
+  font-size: var(--bs-navbar-brand-font-size) !important;
   font-weight: bold;
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
@@ -10963,7 +10963,7 @@ body {
 
 .sb-topnav {
   padding-left: 0;
-  height: 56px;
+  height: 80px;
   z-index: 1039;
 }
 .sb-topnav .navbar-brand {
@@ -11003,6 +11003,7 @@ body {
   padding-bottom: 0.75rem;
   position: relative;
 }
+
 .sb-sidenav .sb-sidenav-menu .nav .nav-link .sb-nav-link-icon {
   font-size: 0.9rem;
 }
@@ -11364,4 +11365,195 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   outline: none;
+}
+
+/* PDF 뷰어 컨테이너 */
+.pdf-container {
+  border: 1px solid #bbb; /* 더 두드러진 테두리 색상 */
+  background-color: #f9f9f9; /* 전체 배경 밝은 회색 */
+  width: 80%;
+  max-width: 800px;
+  height: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px; /* 모서리를 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+/* PDF 스크롤 영역 */
+.pdf-scroll-area {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 15px;
+  background-color: #f4f4f4; /* 스크롤 영역 배경을 회색으로 설정 */
+  border-top: 1px solid #ddd;
+  border-radius: 4px; /* 스크롤 영역 모서리 둥글게 */
+}
+
+/* PDF 캔버스 */
+#pdfViewerCanvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff; /* 캔버스는 흰색 유지 */
+}
+
+/* PDF 컨트롤 영역 */
+.pdf-controls {
+  text-align: center;
+  background-color: #e9ecef; /* 밝은 회색 배경 */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 버튼 간 간격 */
+  border-radius: 4px 4px 0 0; /* 위쪽 모서리를 둥글게 */
+}
+
+/* 버튼 스타일 */
+.pdf-controls button {
+  background-color: #001A33; /* 기본 버튼 색상 */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-controls button:hover {
+  background-color: #007bff; /* 호버 시 어두운 파란색 */
+}
+
+/* 페이지 정보 텍스트 */
+.pdf-controls span {
+  padding-top: 6px;
+  margin: 0 10px;
+  font-weight: bold; /* 두꺼운 글씨체 */
+  color: #333; /* 다크 그레이 텍스트 */
+  font-size: 15px; /* 폰트 크기 */
+}
+
+/* 스크롤바 스타일 (크롬/엣지/사파리) */
+.pdf-scroll-area::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+}
+
+.pdf-scroll-area::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 스크롤 트랙 배경 */
+}
+
+.pdf-scroll-area::-webkit-scrollbar-thumb {
+  background: #ccc; /* 스크롤바 색상 */
+  border-radius: 4px; /* 스크롤바 모서리 둥글게 */
+}
+
+.pdf-scroll-area::-webkit-scrollbar-thumb:hover {
+  background: #999; /* 호버 시 더 어두운 색상 */
+}
+
+
+/* 데이터 테이블 (국가별) */
+
+#tablesContainer .card {
+  margin-bottom: 1rem;
+}
+
+#tablesContainer .card-header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+  font-size: 14px;
+}
+
+
+#tablesContainer .table-container {
+  overflow-x: auto;
+  max-height: 400px; /* 기본 테이블 크기 */
+  overflow-y: auto;
+}
+
+#tablesContainer table {
+  width: 100%;
+  border-collapse: collapse; /* 테두리 겹침 제거 */
+}
+
+#tablesContainer .table th,
+#tablesContainer .table td {
+  white-space: nowrap; /* 셀 줄바꿈 방지 */
+  padding: 0.5rem; /* 셀 간격 */
+  text-align: left; /* 기본 텍스트 정렬 */
+  border: 1px solid #ddd; /* 셀 테두리 */
+  font-size: 14px;
+}
+
+/* 짝수 행과 홀수 행의 음영 설정 */
+#tablesContainer .table tr:nth-child(even) {
+  background-color: #f2f2f2; /* 짝수 행 배경색 */
+}
+
+#tablesContainer .table tr:nth-child(odd) {
+  background-color: #ffffff; /* 홀수 행 배경색 */
+}
+
+/* 테이블 행 호버 효과 */
+#tablesContainer .table tr:hover {
+  background-color: #e9ecef; /* 호버 시 배경색 */
+}
+
+/* 테이블 헤더 스타일 */
+#tablesContainer .table th {
+  background-color: #F8F9FA; /* 헤더 배경색 */
+  color: #333; /* 헤더 텍스트 색상 */
+  font-weight: bold;
+  text-align: center; /* 헤더 텍스트 중앙 정렬 */
+}
+
+/* 테이블 셀 텍스트 기본 스타일 */
+#tablesContainer .table td {
+  color: #333; /* 기본 텍스트 색상 */
+  font-size: 0.875rem; /* 기본 폰트 크기 */
+}
+
+/* 테이블 헤더와 본문 분리 */
+#tablesContainer .table thead tr {
+  border-bottom: 2px solid #ddd; /* 헤더와 본문 분리선 */
+}
+
+/* 차트 관련 */
+
+#chartsContainer {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 다운로드 아이콘 */
+/* layout.css */
+.icon-section {
+  text-align: right;
+  margin: 0px 0;
+  margin-right: 0px;
+}
+.icon-section a {
+  margin: 0 0px;
+  display: inline-block;
+}
+.icon-section img {
+  width: 50px;
+  height: 50px;
+}
+
+/* 데이터 테이블 텍스트 */
+.dropdown-container .tooltip-text {
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #212529;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-top: 15px;
+  white-space: nowrap;
 }

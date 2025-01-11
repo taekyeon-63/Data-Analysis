@@ -8,6 +8,7 @@
 //     }
 // });
 
+
 window.addEventListener('DOMContentLoaded', (event) => {
     // 기존 기능: 사이드바 토글
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
@@ -120,11 +121,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 .then(data => {
                     if (Array.isArray(data) && data.length > 0) {
-                        // Country 컬럼을 첫 번째로 이동
-                        const reorderedData = data.map(row => {
-                            const { Country, ...rest } = row;
-                            return { Country, ...rest };
-                        });
+                        // // Country 컬럼을 첫 번째로 이동
+                        // const reorderedData = data.map(row => {
+                        //     const { Country, ...rest } = row;
+                        //     return { Country, ...rest };
+                        // });
 
                         // Country 컬럼을 기준으로 알파벳 순으로 정렬
                         const sortedData = reorderedData.sort((a, b) => {
@@ -145,63 +146,60 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // DataTable 구성 함수
-    function initializeDataTable(data, tableElement) {
-        // Country 컬럼을 첫 번째로 이동하도록 헤더를 재정렬
-        const headers = Object.keys(data[0]); // 데이터의 키를 기반으로 헤더 생성
-        const reorderedHeaders = ["Country", ...headers.filter(header => header !== "Country")]; // Country를 첫 번째로 이동
-
-        // 테이블 헤더 생성
-        tableElement.querySelector('thead').innerHTML = `
-            <tr>${reorderedHeaders.map(header => `<th>${header}</th>`).join('')}</tr>
-        `;
-
-        // 테이블 본문 데이터 추가
-        tableElement.querySelector('tbody').innerHTML = data.map(row => `
-            <tr>${reorderedHeaders.map(header => `<td>${row[header] || '-'}</td>`).join('')}</tr>
-        `).join('');
-
-         // 테이블 본문 데이터 제한 및 추가
-        const limitedData = data.slice(0, 100); // 처음 100개 데이터만 사용
-        tableElement.querySelector('tbody').innerHTML = limitedData.map(row => `
-            <tr>${reorderedHeaders.map(header => `<td>${row[header] || '-'}</td>`).join('')}</tr>
-        `).join('');
-
-        // DataTable 초기화 옵션 적용
-        const dataTable = new simpleDatatables.DataTable(tableElement, {
-            perPage: 10, // 기본 행 수
-            perPageSelect: [10, 50, 100, 200], // 선택 가능 행 수
-            searchable: true, // 검색 가능
-        });
-
-        // 검색 기능 확장: Country 컬럼 필터링
-        const searchInput = document.querySelector('.dataTable-input');
-        if (searchInput) {
-            searchInput.addEventListener('input', function () {
-                const searchValue = this.value.toLowerCase();
-                dataTable.rows().each(row => {
-                    const countryCell = row.cells[0].data.toLowerCase(); // 첫 번째 컬럼 (Country)
-                    if (countryCell.includes(searchValue)) {
-                        row.show();
+    
+    // api 참조 데이터테이블 출력 함수
+    function initializeDataTableFromFile(tableElementId, jsonFilePath) {
+        const tableElement = document.getElementById(tableElementId);
+        if (tableElement) {
+            fetch(jsonFilePath)
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    if (Array.isArray(data) && data.length > 0) {
+                        // 데이터 재정렬
+                        const headers = Object.keys(data[0]);
+                        const reorderedHeaders = ["Country", ...headers.filter(h => h !== "Country")];
+    
+                        // 테이블 헤더
+                        tableElement.querySelector('thead').innerHTML = `
+                            <tr>${reorderedHeaders.map(h => `<th>${h}</th>`).join('')}</tr>
+                        `;
+    
+                        // 테이블 데이터 제한 (최대 100개)
+                        const limitedData = data.slice(0, 100);
+    
+                        // 테이블 본문
+                        tableElement.querySelector('tbody').innerHTML = limitedData.map(row => `
+                            <tr>${reorderedHeaders.map(h => `<td>${row[h] || '-'}</td>`).join('')}</tr>
+                        `).join('');
+    
+                        // DataTable 초기화
+                        new simpleDatatables.DataTable(tableElement, {
+                            perPage: 10,
+                            perPageSelect: [10, 50, 100],
+                            searchable: true,
+                        });
                     } else {
-                        row.hide();
+                        console.warn(`No data found in JSON: ${jsonFilePath}`);
                     }
-                });
-            });
+                })
+                .catch(error => console.error(`Error loading JSON: ${error.message}`));
         }
     }
-
+    
     // 여러 테이블 및 JSON 파일 초기화
-    initializeDataTableFromFile('customDataTable', '/WEB/web-layout/data/Economy_data(GDP).json');
+    initializeDataTableFromFile('customDataTable', '/WEB/web-layout/data/Economy_data.json');
     initializeDataTableFromFile('politicsDataTable', '/WEB/web-layout/data/governance_data.json');
     initializeDataTableFromFile('militaryDataTable', '/WEB/web-layout/data/military_expenses_data.json');
-    // initializeDataTableFromFile('ucdpDataTable', '/WEB/web-layout/data/UCDP_data.json');
-    // initializeDataTableFromFile('ucdpgedDataTable', '/WEB/web-layout/data/UCDP_GED_data.json');
-    // initializeDataTableFromFile('armsexportDataTable', '/WEB/web-layout/data/arms_exports_data.json');
-    // initializeDataTableFromFile('armsimportDataTable', '/WEB/web-layout/data/arms_imports_data.json');
-    // initializeDataTableFromFile('weaponsysDataTable', '/WEB/web-layout/data/weapon_system_Data.json');
-    // initializeDataTableFromFile('weaponimportDataTable', '/WEB/web-layout/data/weapon_import.json');
-   
+    initializeDataTableFromFile('ucdpDataTable', '/WEB/web-layout/data/UCDP_data.json');
+    initializeDataTableFromFile('ucdpgedDataTable', '/WEB/web-layout/data/UCDP_GED_2023_data.json');
+    initializeDataTableFromFile('armsexportDataTable', '/WEB/web-layout/data/arms_exports_data.json');
+    initializeDataTableFromFile('armsimportDataTable', '/WEB/web-layout/data/arms_import_data.json');
+    initializeDataTableFromFile('weaponsysDataTable', '/WEB/web-layout/data/weapon_system_Data.json');
+    initializeDataTableFromFile('weaponimportDataTable', '/WEB/web-layout/data/weapon_import.json');
+
 });
 
 

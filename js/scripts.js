@@ -15,13 +15,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     if (defaultDropdown) {
         // 드롭다운 열기
-        defaultDropdown.classList.add('show'); // Bootstrap에서 사용하는 'show' 클래스를 추가하여 열기
+        defaultDropdown.classList.remove('show'); // Bootstrap에서 사용하는 'show' 클래스를 추가하여 열기
 
         // 삼각형 아이콘 회전 상태 설정
         const toggleButton = document.querySelector(`[data-bs-target="#${defaultOpenDropdownId}"]`);
         if (toggleButton) {
-            toggleButton.setAttribute('aria-expanded', 'true'); // 접근성을 위해 aria-expanded를 true로 설정
-            toggleButton.classList.remove('collapsed'); // 'collapsed' 클래스를 제거하여 삼각형이 회전된 상태로 표시
+            toggleButton.setAttribute('aria-expanded', 'false'); // 접근성을 위해 aria-expanded를 true로 설정
+            toggleButton.classList.add('collapsed'); // 'collapsed' 클래스를 제거하여 삼각형이 회전된 상태로 표시
         }
     }
 
@@ -127,7 +127,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 async function fetchNews() {
     const apiKey = "33c385af32f54e7ba2d1afd15baa2d45"; // 본인의 NewsAPI 키를 입력하세요
     const url = `https://newsapi.org/v2/everything?q=defense OR military OR war OR armed conflict&language=en&apiKey=${apiKey}`;
-
+    
     try {
         const response = await fetch(url);
         const data = await response.json();
@@ -192,44 +192,38 @@ function displayAdditionalNews(articles) {
     });
 }
 
-// 지도 생성 및 초기화
-function initMap() {
-    const map = L.map('map').setView([51.505, -0.09], 5); // 초기 좌표 및 확대 레벨 설정
-
-    // OpenStreetMap Tiles 추가
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // 마우스 오버 시 국가 강조 및 이동 이벤트
-    map.on('mouseover', function (e) {
-        const bounds = map.getBounds(); // 현재 지도 범위
-        console.log(`현재 범위: ${bounds.toBBoxString()}`); // 디버깅용
-    });
-}
+// 전역 맵 객체 선언
+window.map = null;
 
 // DOMContentLoaded 이벤트 후 지도 초기화
 document.addEventListener('DOMContentLoaded', () => {
-    // 지도 초기화: 중심 좌표를 동아시아로 설정 (줌 레벨 4)
-    const map = L.map('map').setView([35, 130], 4);
+    console.log('지도 초기화 시작'); // 디버깅 로그
+    window.map = L.map('map').setView([35, 130], 4); // 중심 좌표 설정
 
-    // 약간 어두운 지도 타일 추가
-    L.tileLayer.provider('CartoDB.Positron').addTo(map);
+     // 지도 타일 추가
+     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors & CARTO',
+        subdomains: 'abcd',
+        maxZoom: 19,
+    }).addTo(window.map);
+
+    console.log('지도 초기화 완료:', window.map); // 디버깅 로그
+
 
     // 국가명 동적 표시를 위한 툴팁 생성
     const tooltip = document.createElement('div');
     tooltip.className = 'country-tooltip';
     document.body.appendChild(tooltip);
 
-    // 고해상도 GeoJSON 데이터 로드
-    fetch('https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson') // 고해상도 데이터 경로 확인 필요
+    // GeoJSON 데이터 로드 및 스타일 적용
+    fetch('https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson')
         .then(response => response.json())
         .then(data => {
             L.geoJSON(data, {
                 style: feature => ({
-                    color: '#999',  // 국경선 색상
-                    weight: 1.5,      // 국경선 두께
-                    fillColor: '#888',  // 기본 채우기 색상
+                    color: '#999', // 국경선 색상
+                    weight: 1.5,   // 국경선 두께
+                    fillColor: '#888', // 기본 채우기 색상
                     fillOpacity: 0.4, // 기본 투명도
                 }),
                 onEachFeature: (feature, layer) => {
@@ -245,24 +239,45 @@ document.addEventListener('DOMContentLoaded', () => {
                             });
 
                             // 국가명 표시 및 위치 업데이트
-                            const countryName = feature.properties.ADMIN || feature.properties.name || 'Unknown'; // 필드 확인 및 수정
+                            const countryName = feature.properties.ADMIN || feature.properties.name || 'Unknown';
                             tooltip.innerText = countryName;
                             tooltip.style.display = 'block';
                         },
                         mousemove: e => {
-                            // 마우스 커서 위치에 따라 툴팁 이동
                             tooltip.style.left = `${e.originalEvent.pageX}px`;
                             tooltip.style.top = `${e.originalEvent.pageY}px`;
                         },
                         mouseout: e => {
                             const layer = e.target;
-                            layer.setStyle(originalStyle); // 저장된 원래 스타일로 복원
+                            layer.setStyle(originalStyle); // 원래 스타일 복원
                             tooltip.style.display = 'none'; // 툴팁 숨기기
                         },
                     });
                 },
-            }).addTo(map);
+            }).addTo(window.map);
         })
         .catch(error => console.error('Error loading GeoJSON:', error));
+
+    // 검색 기능 추가
+    const searchButton = document.getElementById('btnNavbarSearch');
+    const searchInput = document.querySelector('.form-control');
+
+    // 엔터키 입력 시 검색 실행
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            searchButton.click();
+        }
+    });
 });
 
+// GeoJSON 레이어의 팝업 생성
+L.geoJSON(data, {
+    onEachFeature: (feature, layer) => {
+        layer.bindPopup(feature.properties.ADMIN);
+        layer.on('popupopen', () => {
+            const countryName = feature.properties.ADMIN; // 국가 이름
+            localStorage.setItem('selectedCountry', countryName); // 선택한 나라 저장
+            window.location.href = '/WEB/web-layout/html/data/analysis_1.html'; // 분석 페이지로 이동
+        });
+    }
+}).addTo(map);

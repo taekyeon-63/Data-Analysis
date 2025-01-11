@@ -1,0 +1,167 @@
+[
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "세종대왕급 이지스 구축함(KDX-lll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "81",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "충무공 이순신급 구축함(KDX-ll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "브라질"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "차기호위함(FFX-lll)",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "77",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "인천급 호위함(FFX-l)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "필리핀"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "Jose Rizal급 호위함(필리핀 해군)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "81",
+        "Export History": "필리핀"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "천왕봉급 상륙함(LST-ll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "남포급 기뢰부설함(MLS-ll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "한산도급 훈련함(ATX)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "삼봉급 해경 경비/구난함",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "태평양급 해경 경비/구난함",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "82",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "한강급 해경 경비/구난함",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "84",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "소양급 군수지원함(AOE-ll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "80",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "Aotearoa급 군수지원함(뉴질랜드 해군)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "88",
+        "Export History": "뉴질랜드"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "손원일급 잠수함(KSS-ll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "76",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "10",
+        "Category": "6",
+        "Main_Selling_Product": "울산급 호위함(Batch-l, ll, lll)",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "NO"
+    }
+]

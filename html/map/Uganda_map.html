@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1cf0c91f493e8666055a4abd27ced21f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1cf0c91f493e8666055a4abd27ced21f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1cf0c91f493e8666055a4abd27ced21f = L.map(
+                "map_1cf0c91f493e8666055a4abd27ced21f",
+                {
+                    center: [0.22264509090909093, 30.407087545454544],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_62f3e8cdfe64bad4209f9adcf1b89831 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_62f3e8cdfe64bad4209f9adcf1b89831.addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+            var marker_459945395ba792915a4df9c372f110b8 = L.marker(
+                [0.22264509090909093, 30.407087545454544],
+                {}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+            var div_icon_6a0b9124d7d1cfab3a531086d31b798a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eUganda\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_459945395ba792915a4df9c372f110b8.setIcon(div_icon_6a0b9124d7d1cfab3a531086d31b798a);
+        
+    
+            var circle_marker_29f07f0e87dd0df94adce8ff56ec7ce1 = L.circleMarker(
+                [0.404839, 32.022012],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_7cc873c01411e04408375ddd9abd23d2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8226887bdb26bb30e1a256dd32772399 = $(`<div id="html_8226887bdb26bb30e1a256dd32772399" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.4048<br>                 <b>Longitude:</b> 32.0220<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Katakala village<br>                 <b>Where Description:</b> Katakala village in Mityana District                 </div>`)[0];
+                popup_7cc873c01411e04408375ddd9abd23d2.setContent(html_8226887bdb26bb30e1a256dd32772399);
+            
+        
+
+        circle_marker_29f07f0e87dd0df94adce8ff56ec7ce1.bindPopup(popup_7cc873c01411e04408375ddd9abd23d2)
+        ;
+
+        
+    
+    
+            var circle_marker_1f49220ff572c7a7eaa076e7be45317e = L.circleMarker(
+                [0.04, 29.725],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.033312448851596, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_561f506f971c3f277cc7e4d89fbebea9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9af9d765e1ac1a6e1f0b6ac4315d9202 = $(`<div id="html_9af9d765e1ac1a6e1f0b6ac4315d9202" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.0400<br>                 <b>Longitude:</b> 29.7250<br>                 <b>Deaths:</b> 44<br>                 <b>Where Coordinates:</b> Mpondwe town<br>                 <b>Where Description:</b> Lhubirira Secondary School in Mpondwe on Uganda’s border with the Democratic Republic of the Congo  Mpondwe town, 2 kms, from the DRC border  -> http://www.geonames.org/229006/mpondwe.html                 </div>`)[0];
+                popup_561f506f971c3f277cc7e4d89fbebea9.setContent(html_9af9d765e1ac1a6e1f0b6ac4315d9202);
+            
+        
+
+        circle_marker_1f49220ff572c7a7eaa076e7be45317e.bindPopup(popup_561f506f971c3f277cc7e4d89fbebea9)
+        ;
+
+        
+    
+    
+            var circle_marker_396898bd09912e8fe6abcbf261789725 = L.circleMarker(
+                [0.04, 29.725],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_6b84718588a3c7c165455ec8a8329d6a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_01e5bb57d83ebd89574051030ef0716a = $(`<div id="html_01e5bb57d83ebd89574051030ef0716a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.0400<br>                 <b>Longitude:</b> 29.7250<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Mpondwe town<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_6b84718588a3c7c165455ec8a8329d6a.setContent(html_01e5bb57d83ebd89574051030ef0716a);
+            
+        
+
+        circle_marker_396898bd09912e8fe6abcbf261789725.bindPopup(popup_6b84718588a3c7c165455ec8a8329d6a)
+        ;
+
+        
+    
+    
+            var circle_marker_6873d9d1ce742ddae835ef245382bbed = L.circleMarker(
+                [0.8024, 31.9103],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_805f8a30b1c29ff4c6ae2b2f3bfb366b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5003356412ae0a8fff64000104ce107d = $(`<div id="html_5003356412ae0a8fff64000104ce107d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.8024<br>                 <b>Longitude:</b> 31.9103<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Nsala parish<br>                 <b>Where Description:</b> Toondo village, Nsala parish, Lwamata Sub-county                 </div>`)[0];
+                popup_805f8a30b1c29ff4c6ae2b2f3bfb366b.setContent(html_5003356412ae0a8fff64000104ce107d);
+            
+        
+
+        circle_marker_6873d9d1ce742ddae835ef245382bbed.bindPopup(popup_805f8a30b1c29ff4c6ae2b2f3bfb366b)
+        ;
+
+        
+    
+    
+            var circle_marker_7bddb7fa467e6f2a13aa21c145c81a10 = L.circleMarker(
+                [0.0, 30.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_daf102552c91a4828c4d33f6392f3835 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0efcae6213c2a4231685675b48eea143 = $(`<div id="html_0efcae6213c2a4231685675b48eea143" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.0000<br>                 <b>Longitude:</b> 30.0000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Kikorongo village<br>                 <b>Where Description:</b> in Kasese, Queen Elizabeth National Park                 </div>`)[0];
+                popup_daf102552c91a4828c4d33f6392f3835.setContent(html_0efcae6213c2a4231685675b48eea143);
+            
+        
+
+        circle_marker_7bddb7fa467e6f2a13aa21c145c81a10.bindPopup(popup_daf102552c91a4828c4d33f6392f3835)
+        ;
+
+        
+    
+    
+            var circle_marker_46dfd46c856fd0c94df46bd2483a8f72 = L.circleMarker(
+                [-0.08333, 29.76667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_bac7ba3e369c05df8b290ccfa5c7e2b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9b4daccb8cb79a05cff04d79f1af078d = $(`<div id="html_9b4daccb8cb79a05cff04d79f1af078d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -0.0833<br>                 <b>Longitude:</b> 29.7667<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Kayanja village<br>                 <b>Where Description:</b> at Kayanja Landing Site along Lake Edward  on Lake Edward, near the Kayanja Landing site                 </div>`)[0];
+                popup_bac7ba3e369c05df8b290ccfa5c7e2b9.setContent(html_9b4daccb8cb79a05cff04d79f1af078d);
+            
+        
+
+        circle_marker_46dfd46c856fd0c94df46bd2483a8f72.bindPopup(popup_bac7ba3e369c05df8b290ccfa5c7e2b9)
+        ;
+
+        
+    
+    
+            var circle_marker_bd581e28bfbd755091670aa562c309ca = L.circleMarker(
+                [0.033077, 29.759251],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_d48fa8594dcc3ae4e22bd0a9bcd113ea = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_777d988dd8107945f8a46b172b2350cf = $(`<div id="html_777d988dd8107945f8a46b172b2350cf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.0331<br>                 <b>Longitude:</b> 29.7593<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Bwera town<br>                 <b>Where Description:</b> Katojo junction 3 km from the Congolese border   /at Katojo Junction along Bwera-Kinyamaseke-Kasese road in Kasese district   near Bweera, Kasese                 </div>`)[0];
+                popup_d48fa8594dcc3ae4e22bd0a9bcd113ea.setContent(html_777d988dd8107945f8a46b172b2350cf);
+            
+        
+
+        circle_marker_bd581e28bfbd755091670aa562c309ca.bindPopup(popup_d48fa8594dcc3ae4e22bd0a9bcd113ea)
+        ;
+
+        
+    
+    
+            var circle_marker_3813b90f4b30f10eac2c85ac60ca0009 = L.circleMarker(
+                [0.26667, 30.31667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_010f39946c940b1588e11bb3e388f019 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e641650f954d4e8e76a846447fdd7e0e = $(`<div id="html_e641650f954d4e8e76a846447fdd7e0e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.2667<br>                 <b>Longitude:</b> 30.3167<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Kyabandara town<br>                 <b>Where Description:</b> Kyabandara Parish in Kamwenge district in Western Uganda                 </div>`)[0];
+                popup_010f39946c940b1588e11bb3e388f019.setContent(html_e641650f954d4e8e76a846447fdd7e0e);
+            
+        
+
+        circle_marker_3813b90f4b30f10eac2c85ac60ca0009.bindPopup(popup_010f39946c940b1588e11bb3e388f019)
+        ;
+
+        
+    
+    
+            var circle_marker_7e243827f771fe7347fae6b61e7c6d23 = L.circleMarker(
+                [0.5, 30.4],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_a1d072d9392881bdf9aa06f5af81dcc3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_887e4cb2df10b5301abd056fd036fc41 = $(`<div id="html_887e4cb2df10b5301abd056fd036fc41" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.5000<br>                 <b>Longitude:</b> 30.4000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kibale National Park<br>                 <b>Where Description:</b> within the Kibale Forest National Park, located in Kamwenge district                 </div>`)[0];
+                popup_a1d072d9392881bdf9aa06f5af81dcc3.setContent(html_887e4cb2df10b5301abd056fd036fc41);
+            
+        
+
+        circle_marker_7e243827f771fe7347fae6b61e7c6d23.bindPopup(popup_a1d072d9392881bdf9aa06f5af81dcc3)
+        ;
+
+        
+    
+    
+            var circle_marker_61d9c9d2546b0fa53210f9be2e4b7423 = L.circleMarker(
+                [0.229, 30.4123],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_c2944b9a52f398243d02f35b53eb8641 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e317496b232835d90ea1be052008861b = $(`<div id="html_e317496b232835d90ea1be052008861b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.2290<br>                 <b>Longitude:</b> 30.4123<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Nyabitusi I village<br>                 <b>Where Description:</b> the village in Kamwenge district / Nyabitusi village 1, Kamwenge District in western Uganda                 </div>`)[0];
+                popup_c2944b9a52f398243d02f35b53eb8641.setContent(html_e317496b232835d90ea1be052008861b);
+            
+        
+
+        circle_marker_61d9c9d2546b0fa53210f9be2e4b7423.bindPopup(popup_c2944b9a52f398243d02f35b53eb8641)
+        ;
+
+        
+    
+    
+            var circle_marker_d0f23b7e606f0fe4ba252b7c34a4474a = L.circleMarker(
+                [0.21644, 30.44076],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_1cf0c91f493e8666055a4abd27ced21f);
+        
+    
+        var popup_13c68f5268db9db623825fa1645ea7a9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0e7d4e89d9301a1f61e149aa538618d5 = $(`<div id="html_0e7d4e89d9301a1f61e149aa538618d5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 0.2164<br>                 <b>Longitude:</b> 30.4408<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Kamwenge district<br>                 <b>Where Description:</b> at the Kibale National Park near the border with DR Congo.                 </div>`)[0];
+                popup_13c68f5268db9db623825fa1645ea7a9.setContent(html_0e7d4e89d9301a1f61e149aa538618d5);
+            
+        
+
+        circle_marker_d0f23b7e606f0fe4ba252b7c34a4474a.bindPopup(popup_13c68f5268db9db623825fa1645ea7a9)
+        ;
+
+        
+    
+</script>
+</html>

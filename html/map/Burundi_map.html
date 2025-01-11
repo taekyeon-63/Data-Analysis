@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b9e2ce27dd4a92ce977240ecc4c7109f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b9e2ce27dd4a92ce977240ecc4c7109f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b9e2ce27dd4a92ce977240ecc4c7109f = L.map(
+                "map_b9e2ce27dd4a92ce977240ecc4c7109f",
+                {
+                    center: [-3.1930238684210526, 29.61126671052632],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47d6ac8c2d0a1cdf6ca7e89abd042fbe = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_47d6ac8c2d0a1cdf6ca7e89abd042fbe.addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+            var marker_e1f7c5f1e04c40b9d57604c0da179d0a = L.marker(
+                [-3.1930238684210526, 29.61126671052632],
+                {}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+            var div_icon_b1afe8eb9ae7499b61f5257c3dd6e016 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eBurundi\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_e1f7c5f1e04c40b9d57604c0da179d0a.setIcon(div_icon_b1afe8eb9ae7499b61f5257c3dd6e016);
+        
+    
+            var circle_marker_4e1df3aea6c3e4f617105178ca079c39 = L.circleMarker(
+                [-2.8095, 29.082],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_97b56674037e7428314b07f917164ae9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3a3b096ce64536af55f398a5033748c0 = $(`<div id="html_3a3b096ce64536af55f398a5033748c0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.8095<br>                 <b>Longitude:</b> 29.0820<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Rugombo town<br>                 <b>Where Description:</b> In the transverse road 8 of the hill and zone of ​​Cibitoke, in the commune of Rugombo in the province of Cibitoke                 </div>`)[0];
+                popup_97b56674037e7428314b07f917164ae9.setContent(html_3a3b096ce64536af55f398a5033748c0);
+            
+        
+
+        circle_marker_4e1df3aea6c3e4f617105178ca079c39.bindPopup(popup_97b56674037e7428314b07f917164ae9)
+        ;
+
+        
+    
+    
+            var circle_marker_02d95e30f36dbe51170ebd8e34b4d736 = L.circleMarker(
+                [-2.6999, 29.1881],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_2eae46b54b8b7a05afbc1d424de6b947 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_77fee3848724e2b4fb5e34667814e1cd = $(`<div id="html_77fee3848724e2b4fb5e34667814e1cd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.6999<br>                 <b>Longitude:</b> 29.1881<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Buhoro colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_2eae46b54b8b7a05afbc1d424de6b947.setContent(html_77fee3848724e2b4fb5e34667814e1cd);
+            
+        
+
+        circle_marker_02d95e30f36dbe51170ebd8e34b4d736.bindPopup(popup_2eae46b54b8b7a05afbc1d424de6b947)
+        ;
+
+        
+    
+    
+            var circle_marker_8059362abf85e1b224cd527e5e5f30e9 = L.circleMarker(
+                [-3.8582, 29.456],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_2d996609e657a279fbb84dc8266154cd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_51dd9e80622f62120017a4690cfd5f22 = $(`<div id="html_51dd9e80622f62120017a4690cfd5f22" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.8582<br>                 <b>Longitude:</b> 29.4560<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gitongwe village<br>                 <b>Where Description:</b> Gitongwe hill, Rusabagi zone, Bu Rambi commune, Rumonge province                 </div>`)[0];
+                popup_2d996609e657a279fbb84dc8266154cd.setContent(html_51dd9e80622f62120017a4690cfd5f22);
+            
+        
+
+        circle_marker_8059362abf85e1b224cd527e5e5f30e9.bindPopup(popup_2d996609e657a279fbb84dc8266154cd)
+        ;
+
+        
+    
+    
+            var circle_marker_acc5f01c2e5f306f1384135d77a4b124 = L.circleMarker(
+                [-3.0605, 29.6182],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_2ed266a39f2cba1f5e344f7f5d277614 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_554a6b197b01642de4de4098d6bdd812 = $(`<div id="html_554a6b197b01642de4de4098d6bdd812" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.0605<br>                 <b>Longitude:</b> 29.6182<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ruganza village<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_2ed266a39f2cba1f5e344f7f5d277614.setContent(html_554a6b197b01642de4de4098d6bdd812);
+            
+        
+
+        circle_marker_acc5f01c2e5f306f1384135d77a4b124.bindPopup(popup_2ed266a39f2cba1f5e344f7f5d277614)
+        ;
+
+        
+    
+    
+            var circle_marker_e095e950599c4afc802761eba8d31288 = L.circleMarker(
+                [-4.334502, 29.619719],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_1898d1548ae33ca8aa3362f38e1d78ae = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8c84ef6a19aad818d0f20028a6735ec2 = $(`<div id="html_8c84ef6a19aad818d0f20028a6735ec2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -4.3345<br>                 <b>Longitude:</b> 29.6197<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bukeye colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_1898d1548ae33ca8aa3362f38e1d78ae.setContent(html_8c84ef6a19aad818d0f20028a6735ec2);
+            
+        
+
+        circle_marker_e095e950599c4afc802761eba8d31288.bindPopup(popup_1898d1548ae33ca8aa3362f38e1d78ae)
+        ;
+
+        
+    
+    
+            var circle_marker_c3c88fee7cfc90ef2a3677694f0b8b24 = L.circleMarker(
+                [-3.4948, 29.3538],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_814cb9a92487dd17442b1b563bdcadb7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7e5d1f83e2b7e9b1f39100a28ec1d686 = $(`<div id="html_7e5d1f83e2b7e9b1f39100a28ec1d686" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.4948<br>                 <b>Longitude:</b> 29.3538<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gakungwe colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_814cb9a92487dd17442b1b563bdcadb7.setContent(html_7e5d1f83e2b7e9b1f39100a28ec1d686);
+            
+        
+
+        circle_marker_c3c88fee7cfc90ef2a3677694f0b8b24.bindPopup(popup_814cb9a92487dd17442b1b563bdcadb7)
+        ;
+
+        
+    
+    
+            var circle_marker_375d3bf21838815ec9ecab869cd19634 = L.circleMarker(
+                [-2.65101, 29.22447],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_dd5f1f5d0246f9a39c364b7bc2fbae35 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fbc41019dbbef9fb9e22a8d7f2210f66 = $(`<div id="html_fbc41019dbbef9fb9e22a8d7f2210f66" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.6510<br>                 <b>Longitude:</b> 29.2245<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ruhororo colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_dd5f1f5d0246f9a39c364b7bc2fbae35.setContent(html_fbc41019dbbef9fb9e22a8d7f2210f66);
+            
+        
+
+        circle_marker_375d3bf21838815ec9ecab869cd19634.bindPopup(popup_dd5f1f5d0246f9a39c364b7bc2fbae35)
+        ;
+
+        
+    
+    
+            var circle_marker_655479e6bc92b8d33ea6534075c59b79 = L.circleMarker(
+                [-2.86963, 29.77779],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_40894f5a09952f476b2a6b89a30642f7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c1ee255e69dae111c382b397845fae61 = $(`<div id="html_c1ee255e69dae111c382b397845fae61" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.8696<br>                 <b>Longitude:</b> 29.7778<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Karungura colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_40894f5a09952f476b2a6b89a30642f7.setContent(html_c1ee255e69dae111c382b397845fae61);
+            
+        
+
+        circle_marker_655479e6bc92b8d33ea6534075c59b79.bindPopup(popup_40894f5a09952f476b2a6b89a30642f7)
+        ;
+
+        
+    
+    
+            var circle_marker_30d4a77ddd0421ecff63a77d3322f162 = L.circleMarker(
+                [-2.734292, 29.286334],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_e5c11ab752d633e8bee826d8ade71f40 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3d8f43027f4260f7740207f839b1be01 = $(`<div id="html_3d8f43027f4260f7740207f839b1be01" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.7343<br>                 <b>Longitude:</b> 29.2863<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gafumbegete colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_e5c11ab752d633e8bee826d8ade71f40.setContent(html_3d8f43027f4260f7740207f839b1be01);
+            
+        
+
+        circle_marker_30d4a77ddd0421ecff63a77d3322f162.bindPopup(popup_e5c11ab752d633e8bee826d8ade71f40)
+        ;
+
+        
+    
+    
+            var circle_marker_f3d9607fda2206f925ec9797edba1402 = L.circleMarker(
+                [-2.841944, 29.083611],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_2847acd6763b450b680eaed71477c5d7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cbac8646d6d4955c7f767ba9472b722b = $(`<div id="html_cbac8646d6d4955c7f767ba9472b722b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.8419<br>                 <b>Longitude:</b> 29.0836<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mparambo I locality<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_2847acd6763b450b680eaed71477c5d7.setContent(html_cbac8646d6d4955c7f767ba9472b722b);
+            
+        
+
+        circle_marker_f3d9607fda2206f925ec9797edba1402.bindPopup(popup_2847acd6763b450b680eaed71477c5d7)
+        ;
+
+        
+    
+    
+            var circle_marker_4233c07af754ff47b2039f1331bb04b4 = L.circleMarker(
+                [-2.434701, 30.259616],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_1dd009cd945cc3cc3ca7be3fef43911a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_564d5b0b8c96a91ab0baa8f2e2099922 = $(`<div id="html_564d5b0b8c96a91ab0baa8f2e2099922" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.4347<br>                 <b>Longitude:</b> 30.2596<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gatare colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_1dd009cd945cc3cc3ca7be3fef43911a.setContent(html_564d5b0b8c96a91ab0baa8f2e2099922);
+            
+        
+
+        circle_marker_4233c07af754ff47b2039f1331bb04b4.bindPopup(popup_1dd009cd945cc3cc3ca7be3fef43911a)
+        ;
+
+        
+    
+    
+            var circle_marker_ed8f388b9c15fa258cd5e575a5f9c71d = L.circleMarker(
+                [-2.715467, 29.244129],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_b1f6a10d2c0d623967a5e39b9baab473 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e62faafb23cc1d43066c476ee16fa78a = $(`<div id="html_e62faafb23cc1d43066c476ee16fa78a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.7155<br>                 <b>Longitude:</b> 29.2441<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Mabayi town<br>                 <b>Where Description:</b> in the capital of Mabayi commune, Cibitoke province [...] at the modern market of Mabayi                 </div>`)[0];
+                popup_b1f6a10d2c0d623967a5e39b9baab473.setContent(html_e62faafb23cc1d43066c476ee16fa78a);
+            
+        
+
+        circle_marker_ed8f388b9c15fa258cd5e575a5f9c71d.bindPopup(popup_b1f6a10d2c0d623967a5e39b9baab473)
+        ;
+
+        
+    
+    
+            var circle_marker_f9ddff89f40f06941dd563e60eda3128 = L.circleMarker(
+                [-3.9308, 30.1459],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_99f7757d9cec8ad7dc1fa230ad769873 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_359e885258084b523b17f6c2671f8f89 = $(`<div id="html_359e885258084b523b17f6c2671f8f89" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.9308<br>                 <b>Longitude:</b> 30.1459<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shembe village<br>                 <b>Where Description:</b> on Shembe hill, Giharo commune, Rutana province                 </div>`)[0];
+                popup_99f7757d9cec8ad7dc1fa230ad769873.setContent(html_359e885258084b523b17f6c2671f8f89);
+            
+        
+
+        circle_marker_f9ddff89f40f06941dd563e60eda3128.bindPopup(popup_99f7757d9cec8ad7dc1fa230ad769873)
+        ;
+
+        
+    
+    
+            var circle_marker_5e95ae79a922f7fdede5a60303ce7e8c = L.circleMarker(
+                [-3.389082, 30.288512],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_9ca454081cf97561721c13815e1f3c35 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f15751d3289e7cb10676ddf5caf57c54 = $(`<div id="html_f15751d3289e7cb10676ddf5caf57c54" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.3891<br>                 <b>Longitude:</b> 30.2885<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Buruhukiro colline<br>                 <b>Where Description:</b> in Ruyigi province;   on the Buruhukiro hill of the Rusengo zone, in the commune and province of Ruyigi (eastern Burundi)                 </div>`)[0];
+                popup_9ca454081cf97561721c13815e1f3c35.setContent(html_f15751d3289e7cb10676ddf5caf57c54);
+            
+        
+
+        circle_marker_5e95ae79a922f7fdede5a60303ce7e8c.bindPopup(popup_9ca454081cf97561721c13815e1f3c35)
+        ;
+
+        
+    
+    
+            var circle_marker_7d0fb460b48e4755d2dd2f56bd837196 = L.circleMarker(
+                [-3.44282, 29.9592],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_f91371cece06f842cbe958a5350fff77 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_24e015ce2b6d23178a3d2b25530a1772 = $(`<div id="html_24e015ce2b6d23178a3d2b25530a1772" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.4428<br>                 <b>Longitude:</b> 29.9592<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Birohe colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_f91371cece06f842cbe958a5350fff77.setContent(html_24e015ce2b6d23178a3d2b25530a1772);
+            
+        
+
+        circle_marker_7d0fb460b48e4755d2dd2f56bd837196.bindPopup(popup_f91371cece06f842cbe958a5350fff77)
+        ;
+
+        
+    
+    
+            var circle_marker_695824a5d9b2be10d1721118f0178533 = L.circleMarker(
+                [-3.9759, 30.1093],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_fe1891025e41d9e4cd598d59c306b8ad = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e3c14f91bf2ea32967c423936a332083 = $(`<div id="html_e3c14f91bf2ea32967c423936a332083" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.9759<br>                 <b>Longitude:</b> 30.1093<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Rutamba sub-colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_fe1891025e41d9e4cd598d59c306b8ad.setContent(html_e3c14f91bf2ea32967c423936a332083);
+            
+        
+
+        circle_marker_695824a5d9b2be10d1721118f0178533.bindPopup(popup_fe1891025e41d9e4cd598d59c306b8ad)
+        ;
+
+        
+    
+    
+            var circle_marker_165945640cb7c99e8668b1a142f0a9a6 = L.circleMarker(
+                [-3.04449, 29.80341],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_42f870c145356fba69487460969f7b74 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1fdfe5f6a1bb05fab3804d6bab0bbc4f = $(`<div id="html_1fdfe5f6a1bb05fab3804d6bab0bbc4f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.0445<br>                 <b>Longitude:</b> 29.8034<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Muhanga commune<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_42f870c145356fba69487460969f7b74.setContent(html_1fdfe5f6a1bb05fab3804d6bab0bbc4f);
+            
+        
+
+        circle_marker_165945640cb7c99e8668b1a142f0a9a6.bindPopup(popup_42f870c145356fba69487460969f7b74)
+        ;
+
+        
+    
+    
+            var circle_marker_ff83c82feca67cb9e73ebe91980a3fff = L.circleMarker(
+                [-3.513603, 29.341588],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_8ee34060274b3ba075c33b7dc749ee31 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1e4b395073cefcbd39776e2dda6ebf67 = $(`<div id="html_1e4b395073cefcbd39776e2dda6ebf67" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.5136<br>                 <b>Longitude:</b> 29.3416<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nyabage sub-colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_8ee34060274b3ba075c33b7dc749ee31.setContent(html_1e4b395073cefcbd39776e2dda6ebf67);
+            
+        
+
+        circle_marker_ff83c82feca67cb9e73ebe91980a3fff.bindPopup(popup_8ee34060274b3ba075c33b7dc749ee31)
+        ;
+
+        
+    
+    
+            var circle_marker_dedd3096a07e2102491257b0f8bc57db = L.circleMarker(
+                [-2.6777, 29.2444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_6639b860e4d8bc4cb2344c3028d7bbe8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ebfaac708ab9801f3bfb4a7f016f6859 = $(`<div id="html_ebfaac708ab9801f3bfb4a7f016f6859" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.6777<br>                 <b>Longitude:</b> 29.2444<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ngoma sub-colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_6639b860e4d8bc4cb2344c3028d7bbe8.setContent(html_ebfaac708ab9801f3bfb4a7f016f6859);
+            
+        
+
+        circle_marker_dedd3096a07e2102491257b0f8bc57db.bindPopup(popup_6639b860e4d8bc4cb2344c3028d7bbe8)
+        ;
+
+        
+    
+    
+            var circle_marker_c25a17b53108a77d0abf823a56ab8528 = L.circleMarker(
+                [-3.5646, 29.3587],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_4885d8d4f0c8c1b920dca2852fa87a1f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_212a5091ff2ee7ad8137f0f8f240e6a2 = $(`<div id="html_212a5091ff2ee7ad8137f0f8f240e6a2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.5646<br>                 <b>Longitude:</b> 29.3587<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Buhinda sub-colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_4885d8d4f0c8c1b920dca2852fa87a1f.setContent(html_212a5091ff2ee7ad8137f0f8f240e6a2);
+            
+        
+
+        circle_marker_c25a17b53108a77d0abf823a56ab8528.bindPopup(popup_4885d8d4f0c8c1b920dca2852fa87a1f)
+        ;
+
+        
+    
+    
+            var circle_marker_b9239b93adc2e7c9a5eeb039fe78a20e = L.circleMarker(
+                [-2.6257, 30.0638],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_2b49da802b679630c7c338b540f3b32c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0a4b9d287842ab530bb9c261eaf4624f = $(`<div id="html_0a4b9d287842ab530bb9c261eaf4624f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.6257<br>                 <b>Longitude:</b> 30.0638<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Nyakibingo sub-colline<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_2b49da802b679630c7c338b540f3b32c.setContent(html_0a4b9d287842ab530bb9c261eaf4624f);
+            
+        
+
+        circle_marker_b9239b93adc2e7c9a5eeb039fe78a20e.bindPopup(popup_2b49da802b679630c7c338b540f3b32c)
+        ;
+
+        
+    
+    
+            var circle_marker_6427c6862251064c73fd3b205358d820 = L.circleMarker(
+                [-3.00896, 29.93898],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_c603bbfdb40f0d0cb2673cf8c0bd723b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_be7d998902cc8925d66af38013e0e6be = $(`<div id="html_be7d998902cc8925d66af38013e0e6be" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.0090<br>                 <b>Longitude:</b> 29.9390<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ruhororo commune<br>                 <b>Where Description:</b> Makarira valley  However last seen alive in rushenza hill in muhanga commune kayanza province                 </div>`)[0];
+                popup_c603bbfdb40f0d0cb2673cf8c0bd723b.setContent(html_be7d998902cc8925d66af38013e0e6be);
+            
+        
+
+        circle_marker_6427c6862251064c73fd3b205358d820.bindPopup(popup_c603bbfdb40f0d0cb2673cf8c0bd723b)
+        ;
+
+        
+    
+    
+            var circle_marker_56d22fa85bb9d22f0cc857d0bfa70f3b = L.circleMarker(
+                [-2.94251, 29.59635],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_03119c46c90509a98c2b2fd2e57ca540 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_761a551adcac5357d8b76b92b2ca9e94 = $(`<div id="html_761a551adcac5357d8b76b92b2ca9e94" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.9425<br>                 <b>Longitude:</b> 29.5964<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Myugariro colline<br>                 <b>Where Description:</b> Myugariro hill, Muruta commune, Kayanza province                 </div>`)[0];
+                popup_03119c46c90509a98c2b2fd2e57ca540.setContent(html_761a551adcac5357d8b76b92b2ca9e94);
+            
+        
+
+        circle_marker_56d22fa85bb9d22f0cc857d0bfa70f3b.bindPopup(popup_03119c46c90509a98c2b2fd2e57ca540)
+        ;
+
+        
+    
+    
+            var circle_marker_71585239a12a607f88cbd011f33d67d4 = L.circleMarker(
+                [-3.194722, 29.295278],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_8f4b629f25e433ad2b307ac87f1e1090 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0d27f6300f57ce336a91941065f56548 = $(`<div id="html_0d27f6300f57ce336a91941065f56548" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.1947<br>                 <b>Longitude:</b> 29.2953<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Gihanga town<br>                 <b>Where Description:</b> the road from Gihanga to Bujumbura                 </div>`)[0];
+                popup_8f4b629f25e433ad2b307ac87f1e1090.setContent(html_0d27f6300f57ce336a91941065f56548);
+            
+        
+
+        circle_marker_71585239a12a607f88cbd011f33d67d4.bindPopup(popup_8f4b629f25e433ad2b307ac87f1e1090)
+        ;
+
+        
+    
+    
+            var circle_marker_4a4715c6ad0ea38d52e37005fbda0cd6 = L.circleMarker(
+                [-3.27562, 29.8826],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_11f7c8da55472c26d0136fb96df35435 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5bdf5619fc4e1d64b165fafad2bad57a = $(`<div id="html_5bdf5619fc4e1d64b165fafad2bad57a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.2756<br>                 <b>Longitude:</b> 29.8826<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Runyeri colline<br>                 <b>Where Description:</b> Bugendana commune, Gitega province                 </div>`)[0];
+                popup_11f7c8da55472c26d0136fb96df35435.setContent(html_5bdf5619fc4e1d64b165fafad2bad57a);
+            
+        
+
+        circle_marker_4a4715c6ad0ea38d52e37005fbda0cd6.bindPopup(popup_11f7c8da55472c26d0136fb96df35435)
+        ;
+
+        
+    
+    
+            var circle_marker_f79c79d9217f96bbc6c2780ddc82f915 = L.circleMarker(
+                [-3.27562, 29.8826],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_19a3b40b7be3280d63612e1fe9e5e2e9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6a172ca890436c69c362140c86b8c81d = $(`<div id="html_6a172ca890436c69c362140c86b8c81d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.2756<br>                 <b>Longitude:</b> 29.8826<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Runyeri colline<br>                 <b>Where Description:</b> Runyeri, Bugendana in Gitega province                 </div>`)[0];
+                popup_19a3b40b7be3280d63612e1fe9e5e2e9.setContent(html_6a172ca890436c69c362140c86b8c81d);
+            
+        
+
+        circle_marker_f79c79d9217f96bbc6c2780ddc82f915.bindPopup(popup_19a3b40b7be3280d63612e1fe9e5e2e9)
+        ;
+
+        
+    
+    
+            var circle_marker_8b0c72e40fd9402698732e69a4a11646 = L.circleMarker(
+                [-2.789615, 29.033516],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_453f553aceee225fea05d252126390e6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6cca9b50accd1339ea2af8106b295a3c = $(`<div id="html_6cca9b50accd1339ea2af8106b295a3c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.7896<br>                 <b>Longitude:</b> 29.0335<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Rukana II colline<br>                 <b>Where Description:</b> Rugomero subhill on the Rukana II hill, in the commune of Rugombo of Cibitoke province (northwest Burundi)                 </div>`)[0];
+                popup_453f553aceee225fea05d252126390e6.setContent(html_6cca9b50accd1339ea2af8106b295a3c);
+            
+        
+
+        circle_marker_8b0c72e40fd9402698732e69a4a11646.bindPopup(popup_453f553aceee225fea05d252126390e6)
+        ;
+
+        
+    
+    
+            var circle_marker_a837e8f762d79a3fb60f0b62ca47290a = L.circleMarker(
+                [-2.434701, 30.259616],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_25f952bff8ebd2caec2bd098758781c6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8a15271d4da19866ccfecd5a591a8941 = $(`<div id="html_8a15271d4da19866ccfecd5a591a8941" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.4347<br>                 <b>Longitude:</b> 30.2596<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gatare colline<br>                 <b>Where Description:</b> Cimbogo sub-hill on the Gatete hill, in the Gatare zone, in the Busoni commune of Kirundo province (northern Burundi)                 </div>`)[0];
+                popup_25f952bff8ebd2caec2bd098758781c6.setContent(html_8a15271d4da19866ccfecd5a591a8941);
+            
+        
+
+        circle_marker_a837e8f762d79a3fb60f0b62ca47290a.bindPopup(popup_25f952bff8ebd2caec2bd098758781c6)
+        ;
+
+        
+    
+    
+            var circle_marker_b02d27059c519f8b3bad6ecfb1343773 = L.circleMarker(
+                [-3.2795, 29.2837],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.554369320866556, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_c8d5b16b9a595946957111ea79f57385 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_27220ae0ed1ccd1c0a2532e1ffc4a9d2 = $(`<div id="html_27220ae0ed1ccd1c0a2532e1ffc4a9d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.2795<br>                 <b>Longitude:</b> 29.2837<br>                 <b>Deaths:</b> 60<br>                 <b>Where Coordinates:</b> Buringa colline<br>                 <b>Where Description:</b> Buringa area of Bubanza province, near economic capital Bujumbura,                 </div>`)[0];
+                popup_c8d5b16b9a595946957111ea79f57385.setContent(html_27220ae0ed1ccd1c0a2532e1ffc4a9d2);
+            
+        
+
+        circle_marker_b02d27059c519f8b3bad6ecfb1343773.bindPopup(popup_c8d5b16b9a595946957111ea79f57385)
+        ;
+
+        
+    
+    
+            var circle_marker_d925d7c1aa1b54b23d88ef80384aff9f = L.circleMarker(
+                [-4.27285, 29.59507],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_7e4323764aaa7c6c26371898554263b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_43530a80709da205944e88636b33a6ba = $(`<div id="html_43530a80709da205944e88636b33a6ba" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -4.2729<br>                 <b>Longitude:</b> 29.5951<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Biniganyi colline<br>                 <b>Where Description:</b> in a cassava field on the Biringanyi hill in the commune of Nyanza-lac of in the Makamba province (southern Burundi)                 </div>`)[0];
+                popup_7e4323764aaa7c6c26371898554263b9.setContent(html_43530a80709da205944e88636b33a6ba);
+            
+        
+
+        circle_marker_d925d7c1aa1b54b23d88ef80384aff9f.bindPopup(popup_7e4323764aaa7c6c26371898554263b9)
+        ;
+
+        
+    
+    
+            var circle_marker_033db2e942afa68809189451ee4145d8 = L.circleMarker(
+                [-2.587084, 30.097258],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_c9193bc686fd8163feab0158064ee828 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dde0cf42d9b9f743f44c79d6b23b5c39 = $(`<div id="html_dde0cf42d9b9f743f44c79d6b23b5c39" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.5871<br>                 <b>Longitude:</b> 30.0973<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kavogero Sous Colline<br>                 <b>Where Description:</b> by the side of the road in the Kavogero district of the commune and province of Kirundo (northern Burundi)                 </div>`)[0];
+                popup_c9193bc686fd8163feab0158064ee828.setContent(html_dde0cf42d9b9f743f44c79d6b23b5c39);
+            
+        
+
+        circle_marker_033db2e942afa68809189451ee4145d8.bindPopup(popup_c9193bc686fd8163feab0158064ee828)
+        ;
+
+        
+    
+    
+            var circle_marker_f5259e815e500440d4e2469f99968523 = L.circleMarker(
+                [-3.1826, 29.4361],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_ae31d8282057d73b39a5c2973c9c4f33 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_75866fbc34467bbf20c3679f6c8e9cfc = $(`<div id="html_75866fbc34467bbf20c3679f6c8e9cfc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.1826<br>                 <b>Longitude:</b> 29.4361<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Masha village<br>                 <b>Where Description:</b> on the Masha hill in the commune of Mpanda of the Bubanza province (north-west Burundi)                 </div>`)[0];
+                popup_ae31d8282057d73b39a5c2973c9c4f33.setContent(html_75866fbc34467bbf20c3679f6c8e9cfc);
+            
+        
+
+        circle_marker_f5259e815e500440d4e2469f99968523.bindPopup(popup_ae31d8282057d73b39a5c2973c9c4f33)
+        ;
+
+        
+    
+    
+            var circle_marker_86e0cab3bb2695fcd567cedb23a866e6 = L.circleMarker(
+                [-3.27077, 29.243499],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.222612188617115, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_6f78ccecc5104fb71c390ff09df6406f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2e01b9665779ad712af24d950e591592 = $(`<div id="html_2e01b9665779ad712af24d950e591592" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.2708<br>                 <b>Longitude:</b> 29.2435<br>                 <b>Deaths:</b> 20<br>                 <b>Where Coordinates:</b> Vugizo village<br>                 <b>Where Description:</b> in the town of Vugizo, near the border with the Democratic Republic of Congo                 </div>`)[0];
+                popup_6f78ccecc5104fb71c390ff09df6406f.setContent(html_2e01b9665779ad712af24d950e591592);
+            
+        
+
+        circle_marker_86e0cab3bb2695fcd567cedb23a866e6.bindPopup(popup_6f78ccecc5104fb71c390ff09df6406f)
+        ;
+
+        
+    
+    
+            var circle_marker_a422b5a3efc228ceef319378a6779149 = L.circleMarker(
+                [-3.189096, 29.290239],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_555665a0ca3c4e7dc5662362cc7914e6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b5e2f6d0507714435c513ecc78493d4b = $(`<div id="html_b5e2f6d0507714435c513ecc78493d4b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.1891<br>                 <b>Longitude:</b> 29.2902<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Kajeke bridge<br>                 <b>Where Description:</b> in Bubanza province bridge #Kajeke                 </div>`)[0];
+                popup_555665a0ca3c4e7dc5662362cc7914e6.setContent(html_b5e2f6d0507714435c513ecc78493d4b);
+            
+        
+
+        circle_marker_a422b5a3efc228ceef319378a6779149.bindPopup(popup_555665a0ca3c4e7dc5662362cc7914e6)
+        ;
+
+        
+    
+    
+            var circle_marker_8dec4e53e3cc53652da2b54c66fcedfc = L.circleMarker(
+                [-2.9725, 29.205833],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_7dbe33bb2ba4ef7978ecc63886656936 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_58d69e88a8815c62522cbe4107b9391e = $(`<div id="html_58d69e88a8815c62522cbe4107b9391e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -2.9725<br>                 <b>Longitude:</b> 29.2058<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Gasenyi village<br>                 <b>Where Description:</b> in the Gasenyi zone of Buganda commune, in the province of Cibitoke (north-west Burundi).                 </div>`)[0];
+                popup_7dbe33bb2ba4ef7978ecc63886656936.setContent(html_58d69e88a8815c62522cbe4107b9391e);
+            
+        
+
+        circle_marker_8dec4e53e3cc53652da2b54c66fcedfc.bindPopup(popup_7dbe33bb2ba4ef7978ecc63886656936)
+        ;
+
+        
+    
+    
+            var circle_marker_996b2081ea1560453021ec16499074f6 = L.circleMarker(
+                [-3.869722, 30.242778],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_f5b5322ab778b6f7f8aec8510cf53254 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1123531d5fcc9d15ff77211b202daf11 = $(`<div id="html_1123531d5fcc9d15ff77211b202daf11" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.8697<br>                 <b>Longitude:</b> 30.2428<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Butezi colline<br>                 <b>Where Description:</b> on the Butezi hill in the commune of Giharo of the Rutana province (south-east Burundi).                 </div>`)[0];
+                popup_f5b5322ab778b6f7f8aec8510cf53254.setContent(html_1123531d5fcc9d15ff77211b202daf11);
+            
+        
+
+        circle_marker_996b2081ea1560453021ec16499074f6.bindPopup(popup_f5b5322ab778b6f7f8aec8510cf53254)
+        ;
+
+        
+    
+    
+            var circle_marker_fc47e8eb222a5b8723ad53380adb2387 = L.circleMarker(
+                [-3.9308, 30.1459],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_e0b32f0d06a16b6a2a9c143eb81224b5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_232836564f12afbf3321cde9843c2036 = $(`<div id="html_232836564f12afbf3321cde9843c2036" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.9308<br>                 <b>Longitude:</b> 30.1459<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shembe village<br>                 <b>Where Description:</b> on the Shembe hill in the Muzye zone, in the commune of Giharo of the Rutana province (south-east Burundi).                 </div>`)[0];
+                popup_e0b32f0d06a16b6a2a9c143eb81224b5.setContent(html_232836564f12afbf3321cde9843c2036);
+            
+        
+
+        circle_marker_fc47e8eb222a5b8723ad53380adb2387.bindPopup(popup_e0b32f0d06a16b6a2a9c143eb81224b5)
+        ;
+
+        
+    
+    
+            var circle_marker_906126343857aca0faa2b29b7a0ee324 = L.circleMarker(
+                [-3.189096, 29.290239],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b9e2ce27dd4a92ce977240ecc4c7109f);
+        
+    
+        var popup_8610a1388bfecbb0addb2595f90a3fb9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f7e8ca766c6c6830a0fb1c395e25c673 = $(`<div id="html_f7e8ca766c6c6830a0fb1c395e25c673" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -3.1891<br>                 <b>Longitude:</b> 29.2902<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kajeke bridge<br>                 <b>Where Description:</b> RN5 at the Kajeke river bridge in the commune of Gihanga of the Bubanza province (north-west Burundi).                 </div>`)[0];
+                popup_8610a1388bfecbb0addb2595f90a3fb9.setContent(html_f7e8ca766c6c6830a0fb1c395e25c673);
+            
+        
+
+        circle_marker_906126343857aca0faa2b29b7a0ee324.bindPopup(popup_8610a1388bfecbb0addb2595f90a3fb9)
+        ;
+
+        
+    
+</script>
+</html>

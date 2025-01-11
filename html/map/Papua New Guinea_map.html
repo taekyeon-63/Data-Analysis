@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da6b64456dfdcd918984344623d39924 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da6b64456dfdcd918984344623d39924" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da6b64456dfdcd918984344623d39924 = L.map(
+                "map_da6b64456dfdcd918984344623d39924",
+                {
+                    center: [-4.52278, 145.47037],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4265b6eb73ce49c35cafd75a71010a6a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_4265b6eb73ce49c35cafd75a71010a6a.addTo(map_da6b64456dfdcd918984344623d39924);
+        
+    
+            var marker_c424c6ea183591135cf033432c2463dd = L.marker(
+                [-4.52278, 145.47037],
+                {}
+            ).addTo(map_da6b64456dfdcd918984344623d39924);
+        
+    
+            var div_icon_ba6abf5695ce2595d96fece299bf071b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003ePapua New Guinea\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_c424c6ea183591135cf033432c2463dd.setIcon(div_icon_ba6abf5695ce2595d96fece299bf071b);
+        
+    
+            var circle_marker_eab20fd37169224974b86f73d32c2fdd = L.circleMarker(
+                [-4.52278, 145.47037],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_da6b64456dfdcd918984344623d39924);
+        
+    
+        var popup_e42d5b28da1ffc6a35ea45bd3d4e2f5b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e66dde48625cfe747ba3eb202951b2ec = $(`<div id="html_e66dde48625cfe747ba3eb202951b2ec" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -4.5228<br>                 <b>Longitude:</b> 145.4704<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Korak village, Almami sub-district<br>                 <b>Where Description:</b> Korak village  near the Bogia Highway                 </div>`)[0];
+                popup_e42d5b28da1ffc6a35ea45bd3d4e2f5b.setContent(html_e66dde48625cfe747ba3eb202951b2ec);
+            
+        
+
+        circle_marker_eab20fd37169224974b86f73d32c2fdd.bindPopup(popup_e42d5b28da1ffc6a35ea45bd3d4e2f5b)
+        ;
+
+        
+    
+</script>
+</html>

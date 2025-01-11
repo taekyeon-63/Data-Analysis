@@ -1,0 +1,145 @@
+[
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K2전차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "92",
+        "Export History": "폴란드"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K1구난전차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "90",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K1교량전차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "89",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K600 장애물개척전차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "88",
+        "Export History": "우크라이나"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K808 차륜형장갑차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "87",
+        "Export History": "페루"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K806 차륜형장갑차",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "86",
+        "Export History": "페루"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K877 차륜형 지휘소용차량",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "K870 차륜형 자휘소용차량",
+        "R&D Status": "Completed",
+        "Technology_Readiness_Level": "3",
+        "MRO Capability": "YES",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "85",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "다목적 무인차량(현대)",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "차세대 전차",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "차세대 차륜형장갑차",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Domestic",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "Redback(현대)",
+        "R&D Status": "Ongoing",
+        "Technology_Readiness_Level": "2",
+        "MRO Capability": "NO",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "78",
+        "Export History": "NO"
+    },
+    {
+        "Company Name": "9",
+        "Category": "7",
+        "Main_Selling_Product": "수소연료 전차",
+        "R&D Status": "Planned",
+        "Technology_Readiness_Level": "1",
+        "MRO Capability": "NO",
+        "Production Location": "Mixed",
+        "Price Competitiveness": "1",
+        "Export History": "NO"
+    }
+]

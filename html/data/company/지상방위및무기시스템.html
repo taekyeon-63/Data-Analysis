@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>지상방위- DEFT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="/WEB/web-layout/css/layout.css" rel="stylesheet">
+    <link href="/WEB/web-layout/css/main_css.css" rel="stylesheet">
+    <link href="/WEB/web-layout/css/company_news.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        .content-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .table-container {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: calc(100% - 200px);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+        }
+        .breadcrumb {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .container-fluid {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 0;
+        }
+        #layoutSidenav_content {
+            margin-left: 200px;
+            padding-left: 0;
+        }
+        .sb-sidenav {
+            width: 200px;
+        }
+        /* 툴팁 스타일 */
+        [data-tooltip] {
+            position: relative;
+            cursor: pointer;
+        }
+        [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            font-size: 0.85em;
+            z-index: 1000;
+        }
+        .info-box {
+    position: fixed;
+    top: 80px; /* Adjusted to clear the header */
+    right: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: 0.9rem;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-align: center;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.info-box strong {
+    color: #007bff;
+}
+
+.toggle-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.info-box.collapsed {
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+
+.info-box.collapsed .toggle-button {
+    background-color: #0056b3;
+}
+.hidden {
+    display: none; /* Completely hide the content */
+}
+@media screen and (max-width: 768px) {
+    .info-box {
+        width: 90%;
+        top: 70px; /* Adjust for mobile header spacing */
+        right: 5%;
+    }
+    .toggle-button {
+        font-size: 0.9rem;
+    }
+}
+#map {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+        #iframe-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #cluster-content {
+            margin-top: 20px;
+        }
+    </style>
+</head> 
+<body>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" href="/WEB/web-layout/index.html"><img src="/WEB/web-layout/data/logo.png" style="max-width: 30%; height: auto;"></a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </form> -->
+        <!-- Navbar-->
+        <!-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </li>
+        </ul> -->
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="/WEB/web-layout/html/data/analysis_1.html">국가별 데이터</a>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="false" aria-controls="collapseResearch">
+                            기업별 데이터
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseResearch" aria-labelledby="headingResearch" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="/WEB/web-layout/html/data/company/항공및우주기술.html"><i class="fas fa-plane"></i> &nbsp; 항공우주기술</a>
+                                <a class="nav-link" href="/WEB/web-layout/html/data/company/해양방위및조선업.html"><i class="fas fa-ship"></i> &nbsp; 해양방위</a>
+                                <a class="nav-link" href="/WEB/web-layout/html/data/company/전자및시스템주요제품.html"><i class="fas fa-microchip"></i> &nbsp; 전자 및 시스템</a>
+                                <a class="nav-link" href="/WEB/web-layout/html/data/company/지상방위및무기시스템.html"><i class="fas fa-shield-alt"></i> &nbsp; 지상방위</a>
+                                <a class="nav-link" href="/WEB/web-layout/html/data/company/해외기업.html"><i class="fas fa-globe"></i> &nbsp; 해외기업</a>
+                            </nav>                                
+                        </div>
+                        <a class="nav-link" href="/WEB/web-layout/html/data/analysis_3.html">비교 및 분석</a>                            
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="info-box" id="infoBox">
+            <button class="toggle-button" onclick="toggleInfoBox()">컬럼 설명</button>
+            <div class="info-content">
+                <ul>
+                    <li><strong>Category:</strong> 각 카테고리 숫자를 표시하며, 커서를 가져가면 세부 설명을 확인할 수 있습니다.</li>
+                    <li><strong>Main_Selling_Product:</strong> 주요 판매 제품 (예: KT-1, T-50 등).</li>
+                    <li><strong>R&D Status:</strong> 연구 개발 상태 - 진행 중(Ongoing), 계획 중(Planned), 완료(Completed).</li>
+                    <li><strong>Technology_Readiness_Level:</strong> 기술 준비 수준을 숫자로 표시 (1: 준비 미흡, 2: 진행 중, 3: 양산 중인 장비).</li>
+                    <li><strong>MRO Capability:</strong> 정비, 수리 및 운용 능력 (MRO 가능 여부: YES/NO).</li>
+                    <li><strong>Production Location:</strong> 제품 생산 위치 (국내 생산(Domestic), 해외 생산(Overseas), 혼합(Mixed)).</li>
+                    <li><strong>Price Competitiveness:</strong> 가격 경쟁력 점수화 (개발비용 25점, 운영비용 25점, 유지보수 비용 50점).</li>
+                    <li><strong>Export History:</strong> 제품의 수출 이력 (수출국 목록 또는 NO).</li>
+                </ul>
+            </div></div>
+
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-0">
+                    <h1 class="mt-4"><i class="fas fa-chart-bar me-2"></i> 기업별 상세</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="/WEB/web-layout/index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/WEB/web-layout/html/data/analysis_2.html">기업별 상세 page</a></li>
+                        <li class="breadcrumb-item active">지상 방위 및 무기 시스템</li>
+                    </ol>
+                    <h2 class="mt-4">지상 방위 및 무기 시스템</h2>
+                    <div id="iframe-container">
+                        <iframe src="/WEB/web-layout/html/data/company/군집html/군집4.html" title="군집4 데이터"></iframe>
+                    </div>
+                    <div id="cluster-content"></div>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        // AJAX로 군집1.html 로드
+                        $("#cluster-content").load("/WEB/web-layout/html/data/company/군집html/군집4.html", function(response, status, xhr) {
+                            if (status === "error") {
+                                $("#cluster-content").html("<p style='color:red;'>군집4.html 로드 실패: " + xhr.status + " " + xhr.statusText + "</p>");
+                            }
+                        });
+                    });
+                </script>
+                    <h3 class="content-title">지상 방위 및 무기 시스템 기업</h3>
+                    <div id="data-container" class="table-container"></div>
+                </div>
+            </main>
+    <script>
+
+        // JSON 파일 경로
+        const jsonFiles = [
+    { path: "/WEB/web-layout/data/군집3/지상방위및무기시스템_1.json", companyName: "Company 7" },
+    { path: "/WEB/web-layout/data/군집3/지상방위및무기시스템_2.json", companyName: "Company 9" },
+    { path: "/WEB/web-layout/data/군집3/지상방위및무기시스템_3.json", companyName: "Company 3" },
+    { path: "/WEB/web-layout/data/군집3/지상방위및무기시스템_4.json", companyName: "Company 5" }
+];
+
+// JSON 데이터 로드 함수
+async function loadJSONData() {
+    const categoryDescriptions = {
+        1: "화기류, 근접공격무기류 및 전투용 산탄총류 - 0.50인치 이하의 화기류",
+        2: "총기류 및 화포류 - 0.50인치 이상의 화기류",
+        3: "탄약 및 관련 장비 - 화기류의 탄약 및 관련 장비",
+        4: "이동발사체 및 유도미사일 등",
+        5: "폭발물 및 에너지 물질",
+        6: "전함 및 해군 특수장비",
+        7: "탱크 및 군용차량",
+        8: "항공기 및 관련 장비 - 헬리콥터, 비행체 등",
+        9: "군 훈련용 장비 및 훈련",
+        10: "개인 방호장비 및 보호시설",
+        11: "군 전자장비 - 탐지, 식별 장비",
+        12: "사격통제 및 광학기기",
+        13: "보조 군사장비",
+        14: "독극물 - 화학 및 생물학 독성 물질",
+        15: "우주선 시스템 및 관련 장비",
+        16: "핵무기 관련 설계, 시험장비",
+        17: "기타 군용 물자",
+        18: "지향성 에너지 무기체계",
+        19: "생물학적 또는 방사성 물질",
+        20: "잠수함 및 해양 장비",
+        21: "기타 군용물자",
+        22: "군사 인력"
+    };  
+
+    const container = document.getElementById("data-container");
+    try {
+        for (let i = 0; i < jsonFiles.length; i++) {
+            const response = await fetch(jsonFiles[i].path);
+            const data = await response.json();
+
+            // 각 JSON 파일 제목 추가
+            const title = document.createElement("h3");
+            title.textContent = jsonFiles[i].companyName;
+            container.appendChild(title);
+
+            // 테이블 생성
+            let tableHTML = "<div class='table-container'><table class='table table-bordered'>";
+            tableHTML += `
+                <thead>
+                    <tr>
+                        <th>Company Name</th>   
+                        <th>Category</th>
+                        <th>Main Selling Product</th>
+                        <th>R&D Status</th>
+                        <th>Technology Readiness Level</th>
+                        <th>MRO Capability</th>
+                        <th>Production Location</th>
+                        <th>Price Competitiveness</th>
+                        <th>Export History</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+
+                    data.forEach(item => {
+    const categoryNumber = item["Category"]; // Category 숫자를 가져옴
+    const categoryTooltip = categoryDescriptions[categoryNumber] || "설명 없음"; // 해당 숫자의 설명 가져옴
+
+    tableHTML += `
+        <tr>
+            <td>${item["Company Name"]}</td>
+            <td data-tooltip="${categoryTooltip}">${categoryNumber}</td> <!-- 툴팁 추가 -->
+            <td>${item["Main_Selling_Product"]}</td>
+            <td>${item["R&D Status"]}</td>
+            <td>${item["Technology_Readiness_Level"]}</td>
+            <td>${item["MRO Capability"]}</td>
+            <td>${item["Production Location"]}</td>
+            <td>${item["Price Competitiveness"]}</td>
+            <td>${item["Export History"]}</td>
+        </tr>`;
+});
+
+            tableHTML += "</tbody></table></div>";
+            container.innerHTML += tableHTML;
+        }
+    } catch (error) {
+        container.innerHTML = `<p style="color: red;">데이터를 불러오는 데 실패했습니다: ${error.message}</p>`;
+    }
+}
+
+// 페이지 로드 시 JSON 데이터 로드
+document.addEventListener("DOMContentLoaded", loadJSONData);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleInfoBox() {
+            const infoBox = document.getElementById("infoBox");
+            const infoContent = infoBox.querySelector(".info-content");
+    
+            // Toggle the 'hidden' class
+            infoContent.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

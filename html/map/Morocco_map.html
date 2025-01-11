@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20bae4f0f247658fd30316360337679d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20bae4f0f247658fd30316360337679d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20bae4f0f247658fd30316360337679d = L.map(
+                "map_20bae4f0f247658fd30316360337679d",
+                {
+                    center: [26.73841, -11.67194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_20fae6fceb4af5593d563f53e7673ea1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_20fae6fceb4af5593d563f53e7673ea1.addTo(map_20bae4f0f247658fd30316360337679d);
+        
+    
+            var marker_90eb11aec7f754e22d701ade855e645e = L.marker(
+                [26.73841, -11.67194],
+                {}
+            ).addTo(map_20bae4f0f247658fd30316360337679d);
+        
+    
+            var div_icon_c7b921d984a1675c0f90f77ede252678 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eMorocco\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_90eb11aec7f754e22d701ade855e645e.setIcon(div_icon_c7b921d984a1675c0f90f77ede252678);
+        
+    
+            var circle_marker_b49c561eaab8a371032ad0bb4292c61c = L.circleMarker(
+                [26.73841, -11.67194],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_20bae4f0f247658fd30316360337679d);
+        
+    
+        var popup_bc9f8dcb4bc44b2b5b0052f1debf31c4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2eea6cb05bffe794b2e11b7b49bec2c1 = $(`<div id="html_2eea6cb05bffe794b2e11b7b49bec2c1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 26.7384<br>                 <b>Longitude:</b> -11.6719<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Semara town<br>                 <b>Where Description:</b> in the city of Smara                 </div>`)[0];
+                popup_bc9f8dcb4bc44b2b5b0052f1debf31c4.setContent(html_2eea6cb05bffe794b2e11b7b49bec2c1);
+            
+        
+
+        circle_marker_b49c561eaab8a371032ad0bb4292c61c.bindPopup(popup_bc9f8dcb4bc44b2b5b0052f1debf31c4)
+        ;
+
+        
+    
+    
+            var circle_marker_1f8b2a27842f68e570f00f2422d2b0d8 = L.circleMarker(
+                [26.73841, -11.67194],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_20bae4f0f247658fd30316360337679d);
+        
+    
+        var popup_b5e42dcdc0a2ad8544c172d04eceea91 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6fe98b68d7f695658267f080ccba6d7d = $(`<div id="html_6fe98b68d7f695658267f080ccba6d7d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 26.7384<br>                 <b>Longitude:</b> -11.6719<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Semara town<br>                 <b>Where Description:</b> the city of Smara                 </div>`)[0];
+                popup_b5e42dcdc0a2ad8544c172d04eceea91.setContent(html_6fe98b68d7f695658267f080ccba6d7d);
+            
+        
+
+        circle_marker_1f8b2a27842f68e570f00f2422d2b0d8.bindPopup(popup_b5e42dcdc0a2ad8544c172d04eceea91)
+        ;
+
+        
+    
+</script>
+</html>

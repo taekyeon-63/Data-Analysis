@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36a2c37a71742642d20d0c5450931222 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36a2c37a71742642d20d0c5450931222" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36a2c37a71742642d20d0c5450931222 = L.map(
+                "map_36a2c37a71742642d20d0c5450931222",
+                {
+                    center: [-11.101175, -75.09328500000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9434d9c4a51b697144ca2d07bc62f0cd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_9434d9c4a51b697144ca2d07bc62f0cd.addTo(map_36a2c37a71742642d20d0c5450931222);
+        
+    
+            var marker_d8804c9c143d8b442fb8a2d1c3aa2854 = L.marker(
+                [-11.101175, -75.09328500000001],
+                {}
+            ).addTo(map_36a2c37a71742642d20d0c5450931222);
+        
+    
+            var div_icon_b431b2e35612f7a6f713df60ad9a875d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003ePeru\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_d8804c9c143d8b442fb8a2d1c3aa2854.setIcon(div_icon_b431b2e35612f7a6f713df60ad9a875d);
+        
+    
+            var circle_marker_b089edce854257034130ac7cd44b0574 = L.circleMarker(
+                [-12.20235, -74.18657],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_36a2c37a71742642d20d0c5450931222);
+        
+    
+        var popup_8b1e2fb1093fe61a7d49afcfcb5b12ce = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0cd9b8d1c13a26d45e63233e2e224252 = $(`<div id="html_0cd9b8d1c13a26d45e63233e2e224252" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -12.2023<br>                 <b>Longitude:</b> -74.1866<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Vizcatan Del Ene community<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_8b1e2fb1093fe61a7d49afcfcb5b12ce.setContent(html_0cd9b8d1c13a26d45e63233e2e224252);
+            
+        
+
+        circle_marker_b089edce854257034130ac7cd44b0574.bindPopup(popup_8b1e2fb1093fe61a7d49afcfcb5b12ce)
+        ;
+
+        
+    
+    
+            var circle_marker_f635866375d33ad898fbf6109c6a2128 = L.circleMarker(
+                [-10.0, -76.0],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_36a2c37a71742642d20d0c5450931222);
+        
+    
+        var popup_c108b6f61cb503d6d0cb15d16beb2d55 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7647452931c1fb2541ba53272c649d05 = $(`<div id="html_7647452931c1fb2541ba53272c649d05" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> -10.0000<br>                 <b>Longitude:</b> -76.0000<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Peru<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_c108b6f61cb503d6d0cb15d16beb2d55.setContent(html_7647452931c1fb2541ba53272c649d05);
+            
+        
+
+        circle_marker_f635866375d33ad898fbf6109c6a2128.bindPopup(popup_c108b6f61cb503d6d0cb15d16beb2d55)
+        ;
+
+        
+    
+</script>
+</html>

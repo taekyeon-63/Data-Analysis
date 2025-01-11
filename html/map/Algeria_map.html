@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b1219d5f1ab1a75235d70a155acfee4f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b1219d5f1ab1a75235d70a155acfee4f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b1219d5f1ab1a75235d70a155acfee4f = L.map(
+                "map_b1219d5f1ab1a75235d70a155acfee4f",
+                {
+                    center: [35.607778, 1.811111],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5906dbfab14e08140ab24a5358c91d80 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_5906dbfab14e08140ab24a5358c91d80.addTo(map_b1219d5f1ab1a75235d70a155acfee4f);
+        
+    
+            var marker_4cee3ea945b69e5a3b4e923a3212fb88 = L.marker(
+                [35.607778, 1.811111],
+                {}
+            ).addTo(map_b1219d5f1ab1a75235d70a155acfee4f);
+        
+    
+            var div_icon_64996b76afd432e71a5f0bc57440683b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eAlgeria\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_4cee3ea945b69e5a3b4e923a3212fb88.setIcon(div_icon_64996b76afd432e71a5f0bc57440683b);
+        
+    
+            var circle_marker_4c706bf46adc5850f9db65b257e54793 = L.circleMarker(
+                [35.607778, 1.811111],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_b1219d5f1ab1a75235d70a155acfee4f);
+        
+    
+        var popup_464bbe5d755ce84d6440d5bfdffd5176 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_92de82fd91fa64abe9714a87eb8b97f1 = $(`<div id="html_92de82fd91fa64abe9714a87eb8b97f1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 35.6078<br>                 <b>Longitude:</b> 1.8111<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tissemsilt town<br>                 <b>Where Description:</b> region of Tissemsilt                 </div>`)[0];
+                popup_464bbe5d755ce84d6440d5bfdffd5176.setContent(html_92de82fd91fa64abe9714a87eb8b97f1);
+            
+        
+
+        circle_marker_4c706bf46adc5850f9db65b257e54793.bindPopup(popup_464bbe5d755ce84d6440d5bfdffd5176)
+        ;
+
+        
+    
+</script>
+</html>

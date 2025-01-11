@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1faf6747cfff7f83447eb6f23f39c13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1faf6747cfff7f83447eb6f23f39c13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1faf6747cfff7f83447eb6f23f39c13 = L.map(
+                "map_e1faf6747cfff7f83447eb6f23f39c13",
+                {
+                    center: [33.16417287179487, 35.45167207692308],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b3941baece1981ebba189695a951ff4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_5b3941baece1981ebba189695a951ff4.addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+            var marker_87fa2e25d22163e761e007d8d7aac21e = L.marker(
+                [33.16417287179487, 35.45167207692308],
+                {}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+            var div_icon_8f1bd8b1082547d55a7e9603c7b6eae0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eLebanon\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_87fa2e25d22163e761e007d8d7aac21e.setIcon(div_icon_8f1bd8b1082547d55a7e9603c7b6eae0);
+        
+    
+            var circle_marker_1418c64d75be2d88184e2f57ca0ca83b = L.circleMarker(
+                [33.22931, 35.42407],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_f2bdd515e4fe27458d5390e45f39512a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8baf93e20e48d703fbe5eecce3723fc3 = $(`<div id="html_8baf93e20e48d703fbe5eecce3723fc3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2293<br>                 <b>Longitude:</b> 35.4241<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Khirbet Selm village<br>                 <b>Where Description:</b> lebanese side                 </div>`)[0];
+                popup_f2bdd515e4fe27458d5390e45f39512a.setContent(html_8baf93e20e48d703fbe5eecce3723fc3);
+            
+        
+
+        circle_marker_1418c64d75be2d88184e2f57ca0ca83b.bindPopup(popup_f2bdd515e4fe27458d5390e45f39512a)
+        ;
+
+        
+    
+    
+            var circle_marker_94e3a5241a04daded0b2fcd70b441029 = L.circleMarker(
+                [33.097222, 35.334444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_369da0b8729ad1ec05f893ad7b31a970 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_145aadef90603e4a904f3c0e232db403 = $(`<div id="html_145aadef90603e4a904f3c0e232db403" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0972<br>                 <b>Longitude:</b> 35.3344<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Aita al-Shaab village<br>                 <b>Where Description:</b> near Alma al-Shaab, close to the Israel border                 </div>`)[0];
+                popup_369da0b8729ad1ec05f893ad7b31a970.setContent(html_145aadef90603e4a904f3c0e232db403);
+            
+        
+
+        circle_marker_94e3a5241a04daded0b2fcd70b441029.bindPopup(popup_369da0b8729ad1ec05f893ad7b31a970)
+        ;
+
+        
+    
+    
+            var circle_marker_31374294f39d5f631807176880c9fdce = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_0b26dbbe31fa6f5c01fe875fff1184ff = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f4b87b7ad3f8368257192ffd6da0a085 = $(`<div id="html_f4b87b7ad3f8368257192ffd6da0a085" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Lebanese side of the border and near Kibbutz Hanita                 </div>`)[0];
+                popup_0b26dbbe31fa6f5c01fe875fff1184ff.setContent(html_f4b87b7ad3f8368257192ffd6da0a085);
+            
+        
+
+        circle_marker_31374294f39d5f631807176880c9fdce.bindPopup(popup_0b26dbbe31fa6f5c01fe875fff1184ff)
+        ;
+
+        
+    
+    
+            var circle_marker_b47a08dd3a0880255348d99a93f3b8dc = L.circleMarker(
+                [33.216667, 35.516667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_38e8059f16b9df04ccde15eaec01a41a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_950f4c376c11081c2554af4328178466 = $(`<div id="html_950f4c376c11081c2554af4328178466" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2167<br>                 <b>Longitude:</b> 35.5167<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Hula village<br>                 <b>Where Description:</b> outside the border town of Houla in southern Lebanon                 </div>`)[0];
+                popup_38e8059f16b9df04ccde15eaec01a41a.setContent(html_950f4c376c11081c2554af4328178466);
+            
+        
+
+        circle_marker_b47a08dd3a0880255348d99a93f3b8dc.bindPopup(popup_38e8059f16b9df04ccde15eaec01a41a)
+        ;
+
+        
+    
+    
+            var circle_marker_346e828b616d04720c5ad2ba282490a1 = L.circleMarker(
+                [33.3475, 35.749167],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_848ca1e6d38d00f3e989e2b95c370a38 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8374e9207f49763d6ef9064767f3110f = $(`<div id="html_8374e9207f49763d6ef9064767f3110f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.3475<br>                 <b>Longitude:</b> 35.7492<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Shebaa town<br>                 <b>Where Description:</b> SHebaa town, southern Lebanon                 </div>`)[0];
+                popup_848ca1e6d38d00f3e989e2b95c370a38.setContent(html_8374e9207f49763d6ef9064767f3110f);
+            
+        
+
+        circle_marker_346e828b616d04720c5ad2ba282490a1.bindPopup(popup_848ca1e6d38d00f3e989e2b95c370a38)
+        ;
+
+        
+    
+    
+            var circle_marker_bdc0285a6391dfe02309ff9168ab50ff = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_31e5e6fca8232e63f0f6525b025dbfbe = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_efd8507acd76289fdd6f62baabfd4ac1 = $(`<div id="html_efd8507acd76289fdd6f62baabfd4ac1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israel's border with Lebanon                 </div>`)[0];
+                popup_31e5e6fca8232e63f0f6525b025dbfbe.setContent(html_efd8507acd76289fdd6f62baabfd4ac1);
+            
+        
+
+        circle_marker_bdc0285a6391dfe02309ff9168ab50ff.bindPopup(popup_31e5e6fca8232e63f0f6525b025dbfbe)
+        ;
+
+        
+    
+    
+            var circle_marker_1432bca690a49c6dcf35116a19f27097 = L.circleMarker(
+                [33.097222, 35.334444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_f3f01baac4f519020f99e7c18f8e95b5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e33a5172161639f6b8d8f60a165f9057 = $(`<div id="html_e33a5172161639f6b8d8f60a165f9057" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0972<br>                 <b>Longitude:</b> 35.3344<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Aita al-Shaab village<br>                 <b>Where Description:</b> Aita al-Shaab                 </div>`)[0];
+                popup_f3f01baac4f519020f99e7c18f8e95b5.setContent(html_e33a5172161639f6b8d8f60a165f9057);
+            
+        
+
+        circle_marker_1432bca690a49c6dcf35116a19f27097.bindPopup(popup_f3f01baac4f519020f99e7c18f8e95b5)
+        ;
+
+        
+    
+    
+            var circle_marker_387ade598942d2f161879dac2a57405c = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_8e8fe18395dd5b7713b6400ba2651ffd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c7fb8b360b240922c0f545815abc2f9e = $(`<div id="html_c7fb8b360b240922c0f545815abc2f9e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israel-Lebanon border                 </div>`)[0];
+                popup_8e8fe18395dd5b7713b6400ba2651ffd.setContent(html_c7fb8b360b240922c0f545815abc2f9e);
+            
+        
+
+        circle_marker_387ade598942d2f161879dac2a57405c.bindPopup(popup_8e8fe18395dd5b7713b6400ba2651ffd)
+        ;
+
+        
+    
+    
+            var circle_marker_56ff05f5d816ee3da3bbb9e807d628b6 = L.circleMarker(
+                [33.197668, 35.355287],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_f8862be30c787afcad38a081b21acbe4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_35b1fec5b7c6ab5dd348b038a9c76bb5 = $(`<div id="html_35b1fec5b7c6ab5dd348b038a9c76bb5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1977<br>                 <b>Longitude:</b> 35.3553<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Southern Lebanon<br>                 <b>Where Description:</b> southern Lebanon                 </div>`)[0];
+                popup_f8862be30c787afcad38a081b21acbe4.setContent(html_35b1fec5b7c6ab5dd348b038a9c76bb5);
+            
+        
+
+        circle_marker_56ff05f5d816ee3da3bbb9e807d628b6.bindPopup(popup_f8862be30c787afcad38a081b21acbe4)
+        ;
+
+        
+    
+    
+            var circle_marker_69c541b007eda030d118378a71c9cafb = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_30e8ababbbe7c209da3bbc974ba733aa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_639757051a2200d32a52118dfeb779ec = $(`<div id="html_639757051a2200d32a52118dfeb779ec" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israel-Lebanon border                 </div>`)[0];
+                popup_30e8ababbbe7c209da3bbc974ba733aa.setContent(html_639757051a2200d32a52118dfeb779ec);
+            
+        
+
+        circle_marker_69c541b007eda030d118378a71c9cafb.bindPopup(popup_30e8ababbbe7c209da3bbc974ba733aa)
+        ;
+
+        
+    
+    
+            var circle_marker_a8b9e9e4bf79eda0efaf22c84e9047ac = L.circleMarker(
+                [33.216667, 35.516667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.729550745276565, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_b8e06df8f197709b58b9a079ac8a321c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0048b874f89c35f6bf361e9c3eac86de = $(`<div id="html_0048b874f89c35f6bf361e9c3eac86de" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2167<br>                 <b>Longitude:</b> 35.5167<br>                 <b>Deaths:</b> 6<br>                 <b>Where Coordinates:</b> Hula village<br>                 <b>Where Description:</b> area of Hula                 </div>`)[0];
+                popup_b8e06df8f197709b58b9a079ac8a321c.setContent(html_0048b874f89c35f6bf361e9c3eac86de);
+            
+        
+
+        circle_marker_a8b9e9e4bf79eda0efaf22c84e9047ac.bindPopup(popup_b8e06df8f197709b58b9a079ac8a321c)
+        ;
+
+        
+    
+    
+            var circle_marker_6bffd879022b997dcf9c89cb4bfb45c1 = L.circleMarker(
+                [33.27556, 35.62278],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_239fbcc873bafd8584f7ecae2baaa887 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3b7eb8aea6c6d3d9fdd92df7e1c4b636 = $(`<div id="html_3b7eb8aea6c6d3d9fdd92df7e1c4b636" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2756<br>                 <b>Longitude:</b> 35.6228<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> El Wazzani village<br>                 <b>Where Description:</b> Wazzani village                 </div>`)[0];
+                popup_239fbcc873bafd8584f7ecae2baaa887.setContent(html_3b7eb8aea6c6d3d9fdd92df7e1c4b636);
+            
+        
+
+        circle_marker_6bffd879022b997dcf9c89cb4bfb45c1.bindPopup(popup_239fbcc873bafd8584f7ecae2baaa887)
+        ;
+
+        
+    
+    
+            var circle_marker_bd34ded4284440a1f3f9634aa5085053 = L.circleMarker(
+                [33.197668, 35.355287],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.094379124341003, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_737461fa77161507bbc1502eca87779c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1bc30345f8d3a5fc1167ace2d0585f81 = $(`<div id="html_1bc30345f8d3a5fc1167ace2d0585f81" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1977<br>                 <b>Longitude:</b> 35.3553<br>                 <b>Deaths:</b> 24<br>                 <b>Where Coordinates:</b> Southern Lebanon<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_737461fa77161507bbc1502eca87779c.setContent(html_1bc30345f8d3a5fc1167ace2d0585f81);
+            
+        
+
+        circle_marker_bd34ded4284440a1f3f9634aa5085053.bindPopup(popup_737461fa77161507bbc1502eca87779c)
+        ;
+
+        
+    
+    
+            var circle_marker_8e4d544466d8b5a9aecfd971415fce29 = L.circleMarker(
+                [33.097222, 35.334444],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_46e9b37756e72917efb922ed1dabf629 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_89abb346e6238c8605bc381db36d2c04 = $(`<div id="html_89abb346e6238c8605bc381db36d2c04" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0972<br>                 <b>Longitude:</b> 35.3344<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Aita al-Shaab village<br>                 <b>Where Description:</b> town of Alma al-Shaab in southern Lebanon                 </div>`)[0];
+                popup_46e9b37756e72917efb922ed1dabf629.setContent(html_89abb346e6238c8605bc381db36d2c04);
+            
+        
+
+        circle_marker_8e4d544466d8b5a9aecfd971415fce29.bindPopup(popup_46e9b37756e72917efb922ed1dabf629)
+        ;
+
+        
+    
+    
+            var circle_marker_99ddeafd0c31b5e6405a51a193c91b4d = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_520b443876908027ac4ff98e9a287582 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_04d4e1243bbc6e39911a3e7d5e4f6b01 = $(`<div id="html_04d4e1243bbc6e39911a3e7d5e4f6b01" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israel-Lebanon border                 </div>`)[0];
+                popup_520b443876908027ac4ff98e9a287582.setContent(html_04d4e1243bbc6e39911a3e7d5e4f6b01);
+            
+        
+
+        circle_marker_99ddeafd0c31b5e6405a51a193c91b4d.bindPopup(popup_520b443876908027ac4ff98e9a287582)
+        ;
+
+        
+    
+    
+            var circle_marker_b30fc8dad3d380805f53843ed0d09686 = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_b6c87eadd4e24d1ca700505c57e3c9d6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9c591d4d63633e58c374b56f4424356a = $(`<div id="html_9c591d4d63633e58c374b56f4424356a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_b6c87eadd4e24d1ca700505c57e3c9d6.setContent(html_9c591d4d63633e58c374b56f4424356a);
+            
+        
+
+        circle_marker_b30fc8dad3d380805f53843ed0d09686.bindPopup(popup_b6c87eadd4e24d1ca700505c57e3c9d6)
+        ;
+
+        
+    
+    
+            var circle_marker_22ec9bb18b87545457a4c0c6785e0824 = L.circleMarker(
+                [33.128935, 35.435196],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_846690c4a75dbc4a92c27d6ec8f03fa5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c140bcb3c10b7493b739b4c0e5eee269 = $(`<div id="html_c140bcb3c10b7493b739b4c0e5eee269" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1289<br>                 <b>Longitude:</b> 35.4352<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Aaianata village<br>                 <b>Where Description:</b> between the villages of Aianata and Aitaroun near the border with Israel                 </div>`)[0];
+                popup_846690c4a75dbc4a92c27d6ec8f03fa5.setContent(html_c140bcb3c10b7493b739b4c0e5eee269);
+            
+        
+
+        circle_marker_22ec9bb18b87545457a4c0c6785e0824.bindPopup(popup_846690c4a75dbc4a92c27d6ec8f03fa5)
+        ;
+
+        
+    
+    
+            var circle_marker_0c013ec4ffbab81fe118debe1929a530 = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.39720770839918, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_acc97a788fbc1bcf6bb87df09bafb8b9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_23a23095d772c586c24b37463f3e8e74 = $(`<div id="html_23a23095d772c586c24b37463f3e8e74" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 7<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli borders, southern Lebanon                 </div>`)[0];
+                popup_acc97a788fbc1bcf6bb87df09bafb8b9.setContent(html_23a23095d772c586c24b37463f3e8e74);
+            
+        
+
+        circle_marker_0c013ec4ffbab81fe118debe1929a530.bindPopup(popup_acc97a788fbc1bcf6bb87df09bafb8b9)
+        ;
+
+        
+    
+    
+            var circle_marker_cee2ed2b63b7b0b0ab38294ba7396ac6 = L.circleMarker(
+                [33.128935, 35.435196],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_a0f7b8fc3dfa49fff78b5603e1e61355 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d6e4f33d996366b060934aa289246be5 = $(`<div id="html_d6e4f33d996366b060934aa289246be5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1289<br>                 <b>Longitude:</b> 35.4352<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Aaianata village<br>                 <b>Where Description:</b> town of Ainata, south Lebanon                 </div>`)[0];
+                popup_a0f7b8fc3dfa49fff78b5603e1e61355.setContent(html_d6e4f33d996366b060934aa289246be5);
+            
+        
+
+        circle_marker_cee2ed2b63b7b0b0ab38294ba7396ac6.bindPopup(popup_a0f7b8fc3dfa49fff78b5603e1e61355)
+        ;
+
+        
+    
+    
+            var circle_marker_c45a8436f62fc965ebdd604b6fb37011 = L.circleMarker(
+                [33.127314, 35.218986],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_b9b96119985fec6d972073651ce6c193 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_47354d4a6a9cd01a9e296991291d5612 = $(`<div id="html_47354d4a6a9cd01a9e296991291d5612" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1273<br>                 <b>Longitude:</b> 35.2190<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Tair Harfa village<br>                 <b>Where Description:</b> Tair Harfa area, southern Lebanon                 </div>`)[0];
+                popup_b9b96119985fec6d972073651ce6c193.setContent(html_47354d4a6a9cd01a9e296991291d5612);
+            
+        
+
+        circle_marker_c45a8436f62fc965ebdd604b6fb37011.bindPopup(popup_b9b96119985fec6d972073651ce6c193)
+        ;
+
+        
+    
+    
+            var circle_marker_996d8282265b291904127ebe38870aa6 = L.circleMarker(
+                [33.283333, 35.55],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_47551a813aa6920fa9db4712a1ba062c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a5b52e66644b5321635cecb916471ca8 = $(`<div id="html_a5b52e66644b5321635cecb916471ca8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2833<br>                 <b>Longitude:</b> 35.5500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kfar Kila village<br>                 <b>Where Description:</b> Kfar Kila, southern Lebanon                 </div>`)[0];
+                popup_47551a813aa6920fa9db4712a1ba062c.setContent(html_a5b52e66644b5321635cecb916471ca8);
+            
+        
+
+        circle_marker_996d8282265b291904127ebe38870aa6.bindPopup(popup_47551a813aa6920fa9db4712a1ba062c)
+        ;
+
+        
+    
+    
+            var circle_marker_86eeecb532a38eb18d730dee16b899a3 = L.circleMarker(
+                [33.32814, 35.561117],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_e3efcba1279423ad769c8c5fc7274388 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_dfc783f8a3251e2f04d7b1eebfda2953 = $(`<div id="html_dfc783f8a3251e2f04d7b1eebfda2953" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.3281<br>                 <b>Longitude:</b> 35.5611<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Qlaiaa village<br>                 <b>Where Description:</b> between Qlaileh and Shaaytiyeh, near Tyre town                 </div>`)[0];
+                popup_e3efcba1279423ad769c8c5fc7274388.setContent(html_dfc783f8a3251e2f04d7b1eebfda2953);
+            
+        
+
+        circle_marker_86eeecb532a38eb18d730dee16b899a3.bindPopup(popup_e3efcba1279423ad769c8c5fc7274388)
+        ;
+
+        
+    
+    
+            var circle_marker_4de93d1a9f1a2ca6db979eac00873b89 = L.circleMarker(
+                [33.157654, 35.431029],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_716bc405814785eb9b3b9942563d3225 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2abc1035a295546e57f7a6f7066cd95d = $(`<div id="html_2abc1035a295546e57f7a6f7066cd95d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1577<br>                 <b>Longitude:</b> 35.4310<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> Beit Yahoun village<br>                 <b>Where Description:</b> Beit Yahun                 </div>`)[0];
+                popup_716bc405814785eb9b3b9942563d3225.setContent(html_2abc1035a295546e57f7a6f7066cd95d);
+            
+        
+
+        circle_marker_4de93d1a9f1a2ca6db979eac00873b89.bindPopup(popup_716bc405814785eb9b3b9942563d3225)
+        ;
+
+        
+    
+    
+            var circle_marker_74cb600a328c4fc6cfd8f50503615cdb = L.circleMarker(
+                [33.216667, 35.516667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_3e88038b2a4c289f383e7a52048a5e2c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_98405121cf8feb1961481dcdaebba4e4 = $(`<div id="html_98405121cf8feb1961481dcdaebba4e4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2167<br>                 <b>Longitude:</b> 35.5167<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Hula village<br>                 <b>Where Description:</b> town of Hula                 </div>`)[0];
+                popup_3e88038b2a4c289f383e7a52048a5e2c.setContent(html_98405121cf8feb1961481dcdaebba4e4);
+            
+        
+
+        circle_marker_74cb600a328c4fc6cfd8f50503615cdb.bindPopup(popup_3e88038b2a4c289f383e7a52048a5e2c)
+        ;
+
+        
+    
+    
+            var circle_marker_6f1cab9fe0ca322b89cebc221b48e2ab = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_bc096b0c4e492e903b1ad1b3df1034ac = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c8e71d14285da5fa5a586d3ddf68310d = $(`<div id="html_c8e71d14285da5fa5a586d3ddf68310d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli border with southern Lebanon                 </div>`)[0];
+                popup_bc096b0c4e492e903b1ad1b3df1034ac.setContent(html_c8e71d14285da5fa5a586d3ddf68310d);
+            
+        
+
+        circle_marker_6f1cab9fe0ca322b89cebc221b48e2ab.bindPopup(popup_bc096b0c4e492e903b1ad1b3df1034ac)
+        ;
+
+        
+    
+    
+            var circle_marker_b55cd529d20decc8222afe0fd0234a03 = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_589c6e5878c93450de523595b588ee7e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6c030a31cfcce4dd0635fec739e623b0 = $(`<div id="html_6c030a31cfcce4dd0635fec739e623b0" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli border with southern Lebanon                 </div>`)[0];
+                popup_589c6e5878c93450de523595b588ee7e.setContent(html_6c030a31cfcce4dd0635fec739e623b0);
+            
+        
+
+        circle_marker_b55cd529d20decc8222afe0fd0234a03.bindPopup(popup_589c6e5878c93450de523595b588ee7e)
+        ;
+
+        
+    
+    
+            var circle_marker_c8cf5f911daa4176248a1d1508191f20 = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_752744435a44ab77d9b845642dcd5d13 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e355ffc94f6ce9e591d0ec2bbbac136f = $(`<div id="html_e355ffc94f6ce9e591d0ec2bbbac136f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli border with southern Lebanon                 </div>`)[0];
+                popup_752744435a44ab77d9b845642dcd5d13.setContent(html_e355ffc94f6ce9e591d0ec2bbbac136f);
+            
+        
+
+        circle_marker_c8cf5f911daa4176248a1d1508191f20.bindPopup(popup_752744435a44ab77d9b845642dcd5d13)
+        ;
+
+        
+    
+    
+            var circle_marker_033988aec765746e08570c7597ce4909 = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_2486bdf3cb9890223a1dc38d575a6182 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5d8ec2b69a78a6690475fc33dccac6d3 = $(`<div id="html_5d8ec2b69a78a6690475fc33dccac6d3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli border with southern Lebanon                 </div>`)[0];
+                popup_2486bdf3cb9890223a1dc38d575a6182.setContent(html_5d8ec2b69a78a6690475fc33dccac6d3);
+            
+        
+
+        circle_marker_033988aec765746e08570c7597ce4909.bindPopup(popup_2486bdf3cb9890223a1dc38d575a6182)
+        ;
+
+        
+    
+    
+            var circle_marker_76709e907cc0005e3d6ce40b134e8e6d = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_9f1ea80165cc0e51a45e338af5bd650f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_28239bce95e7458947e5ff11c3bfd74b = $(`<div id="html_28239bce95e7458947e5ff11c3bfd74b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli border with Lebanon                 </div>`)[0];
+                popup_9f1ea80165cc0e51a45e338af5bd650f.setContent(html_28239bce95e7458947e5ff11c3bfd74b);
+            
+        
+
+        circle_marker_76709e907cc0005e3d6ce40b134e8e6d.bindPopup(popup_9f1ea80165cc0e51a45e338af5bd650f)
+        ;
+
+        
+    
+    
+            var circle_marker_2befc8362e71a3838f41fe10cbe433bd = L.circleMarker(
+                [33.090675, 35.44584],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_c802c6e7d2ada82636e976763216131e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_73919f4560b7b0f0e3703b6d51c8aa55 = $(`<div id="html_73919f4560b7b0f0e3703b6d51c8aa55" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0907<br>                 <b>Longitude:</b> 35.4458<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Lebanon-Israel border<br>                 <b>Where Description:</b> Israeli border with Lebanon                 </div>`)[0];
+                popup_c802c6e7d2ada82636e976763216131e.setContent(html_73919f4560b7b0f0e3703b6d51c8aa55);
+            
+        
+
+        circle_marker_2befc8362e71a3838f41fe10cbe433bd.bindPopup(popup_c802c6e7d2ada82636e976763216131e)
+        ;
+
+        
+    
+    
+            var circle_marker_f6ea6da0b4a3355595c6066499f3cd8b = L.circleMarker(
+                [33.254263, 35.542429],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_17e6f9677e28a14d5ed8c946a89544b4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a0b5337375b08b1175cacc6516a68b12 = $(`<div id="html_a0b5337375b08b1175cacc6516a68b12" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2543<br>                 <b>Longitude:</b> 35.5424<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Adaisseh village<br>                 <b>Where Description:</b> “Al-Awaida” hill, north of the town of Adissa                 </div>`)[0];
+                popup_17e6f9677e28a14d5ed8c946a89544b4.setContent(html_a0b5337375b08b1175cacc6516a68b12);
+            
+        
+
+        circle_marker_f6ea6da0b4a3355595c6066499f3cd8b.bindPopup(popup_17e6f9677e28a14d5ed8c946a89544b4)
+        ;
+
+        
+    
+    
+            var circle_marker_64b6dc4b283009ff88833c260a0819f6 = L.circleMarker(
+                [33.080556, 35.422222],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_bbaf98fd09ee2f8b2e278d7dd1ea00c0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0a695673143334df5974865f054bb737 = $(`<div id="html_0a695673143334df5974865f054bb737" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.0806<br>                 <b>Longitude:</b> 35.4222<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Maroun al-Ras town<br>                 <b>Where Description:</b> Maroun al Ras                 </div>`)[0];
+                popup_bbaf98fd09ee2f8b2e278d7dd1ea00c0.setContent(html_0a695673143334df5974865f054bb737);
+            
+        
+
+        circle_marker_64b6dc4b283009ff88833c260a0819f6.bindPopup(popup_bbaf98fd09ee2f8b2e278d7dd1ea00c0)
+        ;
+
+        
+    
+    
+            var circle_marker_30641d65f1537d90df32c17bfe9c9b6c = L.circleMarker(
+                [33.283333, 35.55],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_10295967dd8b4077a5c0b69e85ee6717 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1b458c23021f22e19ed2bb2a1ef1d6c5 = $(`<div id="html_1b458c23021f22e19ed2bb2a1ef1d6c5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2833<br>                 <b>Longitude:</b> 35.5500<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kfar Kila village<br>                 <b>Where Description:</b> Around Kfar Kila in southern Lebanon                 </div>`)[0];
+                popup_10295967dd8b4077a5c0b69e85ee6717.setContent(html_1b458c23021f22e19ed2bb2a1ef1d6c5);
+            
+        
+
+        circle_marker_30641d65f1537d90df32c17bfe9c9b6c.bindPopup(popup_10295967dd8b4077a5c0b69e85ee6717)
+        ;
+
+        
+    
+    
+            var circle_marker_3a9518f6fb612ea61b556e776088e457 = L.circleMarker(
+                [33.19694, 35.26528],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_dc8ac67935de9435bd87e3382d83325d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_03efddab20e9ef67fb3ad83637457079 = $(`<div id="html_03efddab20e9ef67fb3ad83637457079" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1969<br>                 <b>Longitude:</b> 35.2653<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Chaaitiyeh town<br>                 <b>Where Description:</b> Shaytiya area in southern Lebanon                 </div>`)[0];
+                popup_dc8ac67935de9435bd87e3382d83325d.setContent(html_03efddab20e9ef67fb3ad83637457079);
+            
+        
+
+        circle_marker_3a9518f6fb612ea61b556e776088e457.bindPopup(popup_dc8ac67935de9435bd87e3382d83325d)
+        ;
+
+        
+    
+    
+            var circle_marker_7480c76a2b7c31291ee0a21d7976edd9 = L.circleMarker(
+                [33.147774, 35.341157],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_577ad162ef54c4a67b236f5c4607b8e0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_82901dcdb4195e8788df46e79342d8b5 = $(`<div id="html_82901dcdb4195e8788df46e79342d8b5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1478<br>                 <b>Longitude:</b> 35.3412<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Yater village<br>                 <b>Where Description:</b> Yater town                 </div>`)[0];
+                popup_577ad162ef54c4a67b236f5c4607b8e0.setContent(html_82901dcdb4195e8788df46e79342d8b5);
+            
+        
+
+        circle_marker_7480c76a2b7c31291ee0a21d7976edd9.bindPopup(popup_577ad162ef54c4a67b236f5c4607b8e0)
+        ;
+
+        
+    
+    
+            var circle_marker_e34a326a5744643930ca1136f3d5a9e0 = L.circleMarker(
+                [33.280751, 35.510088],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_af44d689282ed2b91a17b065aea348d8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_775c93b61df48c245a81d4ab911140c8 = $(`<div id="html_775c93b61df48c245a81d4ab911140c8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2808<br>                 <b>Longitude:</b> 35.5101<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Taibe village<br>                 <b>Where Description:</b> Taibe village                 </div>`)[0];
+                popup_af44d689282ed2b91a17b065aea348d8.setContent(html_775c93b61df48c245a81d4ab911140c8);
+            
+        
+
+        circle_marker_e34a326a5744643930ca1136f3d5a9e0.bindPopup(popup_af44d689282ed2b91a17b065aea348d8)
+        ;
+
+        
+    
+    
+            var circle_marker_afa0f60c99d3fdcebef849054d05ecdc = L.circleMarker(
+                [33.283333, 35.55],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_bb2ec1666f79f9fe12678b78c852c884 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d2a8220d43c447d51cb2a8917053adc6 = $(`<div id="html_d2a8220d43c447d51cb2a8917053adc6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2833<br>                 <b>Longitude:</b> 35.5500<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kfar Kila village<br>                 <b>Where Description:</b> On the road near Kfarkela village                 </div>`)[0];
+                popup_bb2ec1666f79f9fe12678b78c852c884.setContent(html_d2a8220d43c447d51cb2a8917053adc6);
+            
+        
+
+        circle_marker_afa0f60c99d3fdcebef849054d05ecdc.bindPopup(popup_bb2ec1666f79f9fe12678b78c852c884)
+        ;
+
+        
+    
+    
+            var circle_marker_5da670f1948c9c0bca0eef5552e0ca5b = L.circleMarker(
+                [33.233333, 35.516667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_f81c0517383ceb94ce8bb49440500454 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cb78409ba2495183ff3c9dbc7c4dfefc = $(`<div id="html_cb78409ba2495183ff3c9dbc7c4dfefc" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.2333<br>                 <b>Longitude:</b> 35.5167<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Markaba village<br>                 <b>Where Description:</b> in Markaba village                 </div>`)[0];
+                popup_f81c0517383ceb94ce8bb49440500454.setContent(html_cb78409ba2495183ff3c9dbc7c4dfefc);
+            
+        
+
+        circle_marker_5da670f1948c9c0bca0eef5552e0ca5b.bindPopup(popup_f81c0517383ceb94ce8bb49440500454)
+        ;
+
+        
+    
+    
+            var circle_marker_a984c4cf27e974e7da087bfd8301b022 = L.circleMarker(
+                [33.12, 35.43],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_e1faf6747cfff7f83447eb6f23f39c13);
+        
+    
+        var popup_8c92f3681c022726418053e8841ceb83 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8d6c62e2585bd160a1e482e57643ce91 = $(`<div id="html_8d6c62e2585bd160a1e482e57643ce91" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 33.1200<br>                 <b>Longitude:</b> 35.4300<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Bint Jubayl town<br>                 <b>Where Description:</b> town of Bint Jbeil                 </div>`)[0];
+                popup_8c92f3681c022726418053e8841ceb83.setContent(html_8d6c62e2585bd160a1e482e57643ce91);
+            
+        
+
+        circle_marker_a984c4cf27e974e7da087bfd8301b022.bindPopup(popup_8c92f3681c022726418053e8841ceb83)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_facff2943353ec4436186fff236a6127 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_facff2943353ec4436186fff236a6127" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_facff2943353ec4436186fff236a6127 = L.map(
+                "map_facff2943353ec4436186fff236a6127",
+                {
+                    center: [18.8248935, -14.649262499999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76fa5ff62a398b85942f7c268603f43f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_76fa5ff62a398b85942f7c268603f43f.addTo(map_facff2943353ec4436186fff236a6127);
+        
+    
+            var marker_9c167b4534cbcb864276e6b6e060709f = L.marker(
+                [18.8248935, -14.649262499999999],
+                {}
+            ).addTo(map_facff2943353ec4436186fff236a6127);
+        
+    
+            var div_icon_017abe3372e93b4550ce657c85d90896 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eMauritania\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_9c167b4534cbcb864276e6b6e060709f.setIcon(div_icon_017abe3372e93b4550ce657c85d90896);
+        
+    
+            var circle_marker_6c80f47517c88f2db66a18422baae992 = L.circleMarker(
+                [18.083117, -15.981855],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_facff2943353ec4436186fff236a6127);
+        
+    
+        var popup_ddf000357823947b6c9ad37eb953c875 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0e29282e05200161e9bf9d3e26c4479f = $(`<div id="html_0e29282e05200161e9bf9d3e26c4479f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 18.0831<br>                 <b>Longitude:</b> -15.9819<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nouakchott city<br>                 <b>Where Description:</b> Nouakchott                 </div>`)[0];
+                popup_ddf000357823947b6c9ad37eb953c875.setContent(html_0e29282e05200161e9bf9d3e26c4479f);
+            
+        
+
+        circle_marker_6c80f47517c88f2db66a18422baae992.bindPopup(popup_ddf000357823947b6c9ad37eb953c875)
+        ;
+
+        
+    
+    
+            var circle_marker_ba08310d725058e6d66d719257041fbc = L.circleMarker(
+                [19.56667, -13.31667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_facff2943353ec4436186fff236a6127);
+        
+    
+        var popup_06a1710e2596eb6d7f7bd0d298bacdcd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a006f691150ff226390091beb7b3e6ca = $(`<div id="html_a006f691150ff226390091beb7b3e6ca" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 19.5667<br>                 <b>Longitude:</b> -13.3167<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> El Mseïdi well<br>                 <b>Where Description:</b> state of Adrar, in the north of the country  “Lamsaydi” area of ​​the Awjft municipality                 </div>`)[0];
+                popup_06a1710e2596eb6d7f7bd0d298bacdcd.setContent(html_a006f691150ff226390091beb7b3e6ca);
+            
+        
+
+        circle_marker_ba08310d725058e6d66d719257041fbc.bindPopup(popup_06a1710e2596eb6d7f7bd0d298bacdcd)
+        ;
+
+        
+    
+</script>
+</html>

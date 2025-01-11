@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_056c62caac4aa6cf9adf5d705af32227 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_056c62caac4aa6cf9adf5d705af32227" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_056c62caac4aa6cf9adf5d705af32227 = L.map(
+                "map_056c62caac4aa6cf9adf5d705af32227",
+                {
+                    center: [51.000214987804874, 36.17326003658536],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39fd4ec4bfe885d4d6d045f39ab467e3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_39fd4ec4bfe885d4d6d045f39ab467e3.addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+            var marker_2df9b983e42d4cd392ea0d7c6f1044c1 = L.marker(
+                [51.000214987804874, 36.17326003658536],
+                {}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+            var div_icon_faf1b3dee1771776cd55f72b3a6dc4c6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 18px; color: black; font-weight: bold;\"\u003eRussia (Soviet Union)\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_2df9b983e42d4cd392ea0d7c6f1044c1.setIcon(div_icon_faf1b3dee1771776cd55f72b3a6dc4c6);
+        
+    
+            var circle_marker_0a1dee9fd7623b1ef3fba25437869dbf = L.circleMarker(
+                [50.2394, 37.841],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_6eac5460cc5f8787451f421f2142e8fb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_11da09c29e83a6185f5b8f93ce4d037e = $(`<div id="html_11da09c29e83a6185f5b8f93ce4d037e" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.2394<br>                 <b>Longitude:</b> 37.8410<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kazinka village<br>                 <b>Where Description:</b> village of Kazinka in the Valuysky urban district, Belgorod region                 </div>`)[0];
+                popup_6eac5460cc5f8787451f421f2142e8fb.setContent(html_11da09c29e83a6185f5b8f93ce4d037e);
+            
+        
+
+        circle_marker_0a1dee9fd7623b1ef3fba25437869dbf.bindPopup(popup_6eac5460cc5f8787451f421f2142e8fb)
+        ;
+
+        
+    
+    
+            var circle_marker_364d51833e7e88aaec66e014e6e2b8c6 = L.circleMarker(
+                [51.0918, 35.2688],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_7093f54e960d897754f3c013a72d6bc5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9fe2fe24d765c0ec63655ec4dd99f16c = $(`<div id="html_9fe2fe24d765c0ec63655ec4dd99f16c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.0918<br>                 <b>Longitude:</b> 35.2688<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Guevo village<br>                 <b>Where Description:</b> village of Guevo, Sudzhansky district, Kursk region                 </div>`)[0];
+                popup_7093f54e960d897754f3c013a72d6bc5.setContent(html_9fe2fe24d765c0ec63655ec4dd99f16c);
+            
+        
+
+        circle_marker_364d51833e7e88aaec66e014e6e2b8c6.bindPopup(popup_7093f54e960d897754f3c013a72d6bc5)
+        ;
+
+        
+    
+    
+            var circle_marker_699eea9ea0264d1a911f548d42064f15 = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_cacb1cbb2510761200204ab85c18d53f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fd3d423e0319b13419ef81689d93f19a = $(`<div id="html_fd3d423e0319b13419ef81689d93f19a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> village of Novaya Tavolzhanka, Belgorod Region                 </div>`)[0];
+                popup_cacb1cbb2510761200204ab85c18d53f.setContent(html_fd3d423e0319b13419ef81689d93f19a);
+            
+        
+
+        circle_marker_699eea9ea0264d1a911f548d42064f15.bindPopup(popup_cacb1cbb2510761200204ab85c18d53f)
+        ;
+
+        
+    
+    
+            var circle_marker_958c39f0424fd3d873e8efd8f795a6b1 = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d4cab61ef3b6565c6ce5fe49aa70b2b2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ed4ada87ce1afe310a39002dbbf5072d = $(`<div id="html_ed4ada87ce1afe310a39002dbbf5072d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> village of Novaya Tavolzhanka, Belgorod Region                 </div>`)[0];
+                popup_d4cab61ef3b6565c6ce5fe49aa70b2b2.setContent(html_ed4ada87ce1afe310a39002dbbf5072d);
+            
+        
+
+        circle_marker_958c39f0424fd3d873e8efd8f795a6b1.bindPopup(popup_d4cab61ef3b6565c6ce5fe49aa70b2b2)
+        ;
+
+        
+    
+    
+            var circle_marker_8b43247e2caf87f268c6a6a5a2ac22a6 = L.circleMarker(
+                [50.3586, 37.6393],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_858b02962c3e2e0c1af267bfeeb5c0c0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1454f0ff07b1f158f1b9d192a4cdbffd = $(`<div id="html_1454f0ff07b1f158f1b9d192a4cdbffd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3586<br>                 <b>Longitude:</b> 37.6393<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Borisovka village<br>                 <b>Where Description:</b> village of Borisovka in the Belgorod region                 </div>`)[0];
+                popup_858b02962c3e2e0c1af267bfeeb5c0c0.setContent(html_1454f0ff07b1f158f1b9d192a4cdbffd);
+            
+        
+
+        circle_marker_8b43247e2caf87f268c6a6a5a2ac22a6.bindPopup(popup_858b02962c3e2e0c1af267bfeeb5c0c0)
+        ;
+
+        
+    
+    
+            var circle_marker_9dd49066437ef307290f0f910d15ac81 = L.circleMarker(
+                [52.3354, 32.35717],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_f79e68eb5ebe1a0b684dabcfd1dc1e2c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d4d547f631c518456ce6a25b3f2713d3 = $(`<div id="html_d4d547f631c518456ce6a25b3f2713d3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.3354<br>                 <b>Longitude:</b> 32.3572<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Lyubechane village<br>                 <b>Where Description:</b> village of Lyubechane, Klimovsky district of the Bryansk region                 </div>`)[0];
+                popup_f79e68eb5ebe1a0b684dabcfd1dc1e2c.setContent(html_d4d547f631c518456ce6a25b3f2713d3);
+            
+        
+
+        circle_marker_9dd49066437ef307290f0f910d15ac81.bindPopup(popup_f79e68eb5ebe1a0b684dabcfd1dc1e2c)
+        ;
+
+        
+    
+    
+            var circle_marker_ea6db2d7cde37a1449350b4bb3222500 = L.circleMarker(
+                [51.28128, 34.29382],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_65a7e624a0dbd295e5e288d8895cefa9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_68513baf286bff28d8702cb4662b7e79 = $(`<div id="html_68513baf286bff28d8702cb4662b7e79" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.2813<br>                 <b>Longitude:</b> 34.2938<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tetkino village<br>                 <b>Where Description:</b> village of Tetkino in the Kursk region                 </div>`)[0];
+                popup_65a7e624a0dbd295e5e288d8895cefa9.setContent(html_68513baf286bff28d8702cb4662b7e79);
+            
+        
+
+        circle_marker_ea6db2d7cde37a1449350b4bb3222500.bindPopup(popup_65a7e624a0dbd295e5e288d8895cefa9)
+        ;
+
+        
+    
+    
+            var circle_marker_d96aec53950aada2ece01b1da444a589 = L.circleMarker(
+                [50.3586, 37.6393],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_c1cfd61e894e3b101ec9354117553b0d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_8bf6246540cb3d3cf969ce464c9c1841 = $(`<div id="html_8bf6246540cb3d3cf969ce464c9c1841" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3586<br>                 <b>Longitude:</b> 37.6393<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Borisovka village<br>                 <b>Where Description:</b> village of Borisovka, Volokonovsky district.                 </div>`)[0];
+                popup_c1cfd61e894e3b101ec9354117553b0d.setContent(html_8bf6246540cb3d3cf969ce464c9c1841);
+            
+        
+
+        circle_marker_d96aec53950aada2ece01b1da444a589.bindPopup(popup_c1cfd61e894e3b101ec9354117553b0d)
+        ;
+
+        
+    
+    
+            var circle_marker_39e1834500ddce49d88b66ebdaee5725 = L.circleMarker(
+                [43.2281, 44.6485],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_4a3bde4b7c5635cac63ba5a540793914 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c9c9eb27cffa61ac67a998fb891719c9 = $(`<div id="html_c9c9eb27cffa61ac67a998fb891719c9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.2281<br>                 <b>Longitude:</b> 44.6485<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Kantyshevo village<br>                 <b>Where Description:</b> Ingushetia: traffic police post "Volga-14", which is located near the rural settlement of Kantyshevo, Nazranovsky district of the republic.                 </div>`)[0];
+                popup_4a3bde4b7c5635cac63ba5a540793914.setContent(html_c9c9eb27cffa61ac67a998fb891719c9);
+            
+        
+
+        circle_marker_39e1834500ddce49d88b66ebdaee5725.bindPopup(popup_4a3bde4b7c5635cac63ba5a540793914)
+        ;
+
+        
+    
+    
+            var circle_marker_f38e8b5defc07fb104351e964f6ded6f = L.circleMarker(
+                [43.483155, 44.774084],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_92d9fb301555dd3e76462b16ad1ce01e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bb6474fbce1e035ce63ff635dc155743 = $(`<div id="html_bb6474fbce1e035ce63ff635dc155743" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 43.4832<br>                 <b>Longitude:</b> 44.7741<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Zyazikov-Yurt village<br>                 <b>Where Description:</b> rural settlement of Zyazikov-Yurt in the Malgobek district of Ingushetia                 </div>`)[0];
+                popup_92d9fb301555dd3e76462b16ad1ce01e.setContent(html_bb6474fbce1e035ce63ff635dc155743);
+            
+        
+
+        circle_marker_f38e8b5defc07fb104351e964f6ded6f.bindPopup(popup_92d9fb301555dd3e76462b16ad1ce01e)
+        ;
+
+        
+    
+    
+            var circle_marker_085def461fd6ea2cd9f937f174cfdb12 = L.circleMarker(
+                [52.36921, 33.29939],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_448d888408391db5b37c32d7736ed492 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7851ca3e3ce0c7c00854e8e89a8f6418 = $(`<div id="html_7851ca3e3ce0c7c00854e8e89a8f6418" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.3692<br>                 <b>Longitude:</b> 33.2994<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Sluchevsk village<br>                 <b>Where Description:</b> near the settlement of Sluchaevsk, Bryansk region                 </div>`)[0];
+                popup_448d888408391db5b37c32d7736ed492.setContent(html_7851ca3e3ce0c7c00854e8e89a8f6418);
+            
+        
+
+        circle_marker_085def461fd6ea2cd9f937f174cfdb12.bindPopup(popup_448d888408391db5b37c32d7736ed492)
+        ;
+
+        
+    
+    
+            var circle_marker_9c330a0c304f0668ca3dbe88d929f478 = L.circleMarker(
+                [52.31834, 34.07899],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_ca5c89786a63d86a3fb69a8e066eaf9f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f61e99051c6394b786a79f817d82061d = $(`<div id="html_f61e99051c6394b786a79f817d82061d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.3183<br>                 <b>Longitude:</b> 34.0790<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Suzemka town<br>                 <b>Where Description:</b> village of Suzemka in the Bryansk region                 </div>`)[0];
+                popup_ca5c89786a63d86a3fb69a8e066eaf9f.setContent(html_f61e99051c6394b786a79f817d82061d);
+            
+        
+
+        circle_marker_9c330a0c304f0668ca3dbe88d929f478.bindPopup(popup_ca5c89786a63d86a3fb69a8e066eaf9f)
+        ;
+
+        
+    
+    
+            var circle_marker_41446fe6d83c1272b8a7a23c96dc79d0 = L.circleMarker(
+                [56.57716, 44.67522],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_8061857b8aa8634fc641a42c5dfdafc4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_77ea83555a74a641b472720626259252 = $(`<div id="html_77ea83555a74a641b472720626259252" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 56.5772<br>                 <b>Longitude:</b> 44.6752<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Pionerskiy village<br>                 <b>Where Description:</b> near the village of Pionersky, Borsky District of the Nizhny Novgorod Region                 </div>`)[0];
+                popup_8061857b8aa8634fc641a42c5dfdafc4.setContent(html_77ea83555a74a641b472720626259252);
+            
+        
+
+        circle_marker_41446fe6d83c1272b8a7a23c96dc79d0.bindPopup(popup_8061857b8aa8634fc641a42c5dfdafc4)
+        ;
+
+        
+    
+    
+            var circle_marker_da782171d5bfc84932c4194044b4cc09 = L.circleMarker(
+                [52.742869, 32.433641],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_dd3e62ac15bf9d545423f5a3ae7f7ad4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f8bfd5c92ec80bafb1cd54559f36fe04 = $(`<div id="html_f8bfd5c92ec80bafb1cd54559f36fe04" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.7429<br>                 <b>Longitude:</b> 32.4336<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Suretsky Muravey village<br>                 <b>Where Description:</b> near Suretsky Muravey of the Klintsovsky District in the Bryansk region                 </div>`)[0];
+                popup_dd3e62ac15bf9d545423f5a3ae7f7ad4.setContent(html_f8bfd5c92ec80bafb1cd54559f36fe04);
+            
+        
+
+        circle_marker_da782171d5bfc84932c4194044b4cc09.bindPopup(popup_dd3e62ac15bf9d545423f5a3ae7f7ad4)
+        ;
+
+        
+    
+    
+            var circle_marker_c4a9309bc6f00f61058a9763f3631bd2 = L.circleMarker(
+                [50.40967, 36.9136],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_aa594569556bb1fce705faf894e192a4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_03ff4b6ce16366142b6eaa5f514dda70 = $(`<div id="html_03ff4b6ce16366142b6eaa5f514dda70" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4097<br>                 <b>Longitude:</b> 36.9136<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shebekino town<br>                 <b>Where Description:</b> city of Shebekino, Belgorod region                 </div>`)[0];
+                popup_aa594569556bb1fce705faf894e192a4.setContent(html_03ff4b6ce16366142b6eaa5f514dda70);
+            
+        
+
+        circle_marker_c4a9309bc6f00f61058a9763f3631bd2.bindPopup(popup_aa594569556bb1fce705faf894e192a4)
+        ;
+
+        
+    
+    
+            var circle_marker_f73e015878ff367f46bf7826813fb346 = L.circleMarker(
+                [50.44272, 37.0966],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_147d91a61189c2bf9a3fbc13980fc1d0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4f021df547ba08876f8708a137f171ad = $(`<div id="html_4f021df547ba08876f8708a137f171ad" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4427<br>                 <b>Longitude:</b> 37.0966<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Nizhne-Berezovo Vtoroye village<br>                 <b>Where Description:</b> village of Nizhne Berezovo in the Belgorod region.                 </div>`)[0];
+                popup_147d91a61189c2bf9a3fbc13980fc1d0.setContent(html_4f021df547ba08876f8708a137f171ad);
+            
+        
+
+        circle_marker_f73e015878ff367f46bf7826813fb346.bindPopup(popup_147d91a61189c2bf9a3fbc13980fc1d0)
+        ;
+
+        
+    
+    
+            var circle_marker_24f12adeb43854731e2558e233ba171c = L.circleMarker(
+                [50.5, 35.66667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_e84771078393b94397b47c0ae925222b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e608b9b7ba7e36327015c85a8ecb0d10 = $(`<div id="html_e608b9b7ba7e36327015c85a8ecb0d10" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.5000<br>                 <b>Longitude:</b> 35.6667<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Grayvoronsky raion<br>                 <b>Where Description:</b> Belgorod region                 </div>`)[0];
+                popup_e84771078393b94397b47c0ae925222b.setContent(html_e608b9b7ba7e36327015c85a8ecb0d10);
+            
+        
+
+        circle_marker_24f12adeb43854731e2558e233ba171c.bindPopup(popup_e84771078393b94397b47c0ae925222b)
+        ;
+
+        
+    
+    
+            var circle_marker_461175bebf8b15784d7b2a52a22c5574 = L.circleMarker(
+                [50.431956, 35.588966],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_8cc39d70f882d5aeda8367113876cd49 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_088183a976eff86ab123eda38b7406a7 = $(`<div id="html_088183a976eff86ab123eda38b7406a7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4320<br>                 <b>Longitude:</b> 35.5890<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kozinka border post<br>                 <b>Where Description:</b> a border post near Kozinka                 </div>`)[0];
+                popup_8cc39d70f882d5aeda8367113876cd49.setContent(html_088183a976eff86ab123eda38b7406a7);
+            
+        
+
+        circle_marker_461175bebf8b15784d7b2a52a22c5574.bindPopup(popup_8cc39d70f882d5aeda8367113876cd49)
+        ;
+
+        
+    
+    
+            var circle_marker_b3bfbf0a1fe019643a6635319ba8d825 = L.circleMarker(
+                [50.4613, 35.6026],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_f3b284a97f6f94d51ea8bc5527613cea = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_cfc1b10a7d405764b1e7de7e8f51f76d = $(`<div id="html_cfc1b10a7d405764b1e7de7e8f51f76d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4613<br>                 <b>Longitude:</b> 35.6026<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kozinka village<br>                 <b>Where Description:</b> village of Kozinka                 </div>`)[0];
+                popup_f3b284a97f6f94d51ea8bc5527613cea.setContent(html_cfc1b10a7d405764b1e7de7e8f51f76d);
+            
+        
+
+        circle_marker_b3bfbf0a1fe019643a6635319ba8d825.bindPopup(popup_f3b284a97f6f94d51ea8bc5527613cea)
+        ;
+
+        
+    
+    
+            var circle_marker_20a762199dccd349fd409ee09c9a5ce2 = L.circleMarker(
+                [51.10306, 35.3275],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_101650e4a88dd3229f1bb17f72da026a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_523b53ea85a674fb070240d8db626129 = $(`<div id="html_523b53ea85a674fb070240d8db626129" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.1031<br>                 <b>Longitude:</b> 35.3275<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Plekhovo village<br>                 <b>Where Description:</b> near the village of Plekhovo on the defensive line of the state border fortifications, Sudzhansky district of the Kursk region                 </div>`)[0];
+                popup_101650e4a88dd3229f1bb17f72da026a.setContent(html_523b53ea85a674fb070240d8db626129);
+            
+        
+
+        circle_marker_20a762199dccd349fd409ee09c9a5ce2.bindPopup(popup_101650e4a88dd3229f1bb17f72da026a)
+        ;
+
+        
+    
+    
+            var circle_marker_13df3752b328a1d2ae77ec6e33fb0fa7 = L.circleMarker(
+                [50.40967, 36.9136],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_355321061e770a44441c17c2b1509133 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2d607f345860fb016fa84d901923938a = $(`<div id="html_2d607f345860fb016fa84d901923938a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4097<br>                 <b>Longitude:</b> 36.9136<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shebekino town<br>                 <b>Where Description:</b> Shebekinsky district of the Belgorod region                 </div>`)[0];
+                popup_355321061e770a44441c17c2b1509133.setContent(html_2d607f345860fb016fa84d901923938a);
+            
+        
+
+        circle_marker_13df3752b328a1d2ae77ec6e33fb0fa7.bindPopup(popup_355321061e770a44441c17c2b1509133)
+        ;
+
+        
+    
+    
+            var circle_marker_bfee35ec6065b555e19e5df65aff29df = L.circleMarker(
+                [50.40292, 36.73922],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_bacd7e622016fc2c666b23a42bc94ccd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_942785031d050b9ef637c603ea86edbf = $(`<div id="html_942785031d050b9ef637c603ea86edbf" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4029<br>                 <b>Longitude:</b> 36.7392<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Grafovka village<br>                 <b>Where Description:</b> village of Grafovka, Shebekinsky urban district, Belgorod region.                 </div>`)[0];
+                popup_bacd7e622016fc2c666b23a42bc94ccd.setContent(html_942785031d050b9ef637c603ea86edbf);
+            
+        
+
+        circle_marker_bfee35ec6065b555e19e5df65aff29df.bindPopup(popup_bacd7e622016fc2c666b23a42bc94ccd)
+        ;
+
+        
+    
+    
+            var circle_marker_35e30582bfdc00da8d3ea836bced6e42 = L.circleMarker(
+                [50.40967, 36.9136],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_cfa916866b3dddd93cd3079f9a483d06 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5c47a1e099da05a7946d4304421e6488 = $(`<div id="html_5c47a1e099da05a7946d4304421e6488" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4097<br>                 <b>Longitude:</b> 36.9136<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shebekino town<br>                 <b>Where Description:</b> Shebekino city, Belgorod region                 </div>`)[0];
+                popup_cfa916866b3dddd93cd3079f9a483d06.setContent(html_5c47a1e099da05a7946d4304421e6488);
+            
+        
+
+        circle_marker_35e30582bfdc00da8d3ea836bced6e42.bindPopup(popup_cfa916866b3dddd93cd3079f9a483d06)
+        ;
+
+        
+    
+    
+            var circle_marker_19d622bdf2ba74306fb431c8c5fe6894 = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.195286648076292, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_7755cd0d07686010c5323c05c16c2973 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7ae55a2cd83b229eefc4bcbcc53e9580 = $(`<div id="html_7ae55a2cd83b229eefc4bcbcc53e9580" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 13<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> settlement of New Tavolzhanka, Belhorod                 </div>`)[0];
+                popup_7755cd0d07686010c5323c05c16c2973.setContent(html_7ae55a2cd83b229eefc4bcbcc53e9580);
+            
+        
+
+        circle_marker_19d622bdf2ba74306fb431c8c5fe6894.bindPopup(popup_7755cd0d07686010c5323c05c16c2973)
+        ;
+
+        
+    
+    
+            var circle_marker_13fdd9a443e3fbbb8d5e5ab66abd291c = L.circleMarker(
+                [52.506368, 32.559529],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_8b16db5206b6e7421f0135397f7e48bd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0b1982d37696d3bd3f23b7582ae8a4a2 = $(`<div id="html_0b1982d37696d3bd3f23b7582ae8a4a2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.5064<br>                 <b>Longitude:</b> 32.5595<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Istrovka village<br>                 <b>Where Description:</b> near the village of Istrivka near Starodub                 </div>`)[0];
+                popup_8b16db5206b6e7421f0135397f7e48bd.setContent(html_0b1982d37696d3bd3f23b7582ae8a4a2);
+            
+        
+
+        circle_marker_13fdd9a443e3fbbb8d5e5ab66abd291c.bindPopup(popup_8b16db5206b6e7421f0135397f7e48bd)
+        ;
+
+        
+    
+    
+            var circle_marker_609c7981a063886f778672aac7cfc221 = L.circleMarker(
+                [50.45758, 36.72038],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_57ee6de524c89fd8845f9fa627841ee5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_9ae7bf111feb3956718a3d28529a11f7 = $(`<div id="html_9ae7bf111feb3956718a3d28529a11f7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4576<br>                 <b>Longitude:</b> 36.7204<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Maslova Pristan village<br>                 <b>Where Description:</b> village of Maslova Pristan, Shebekinsky District, Belgorod Region                 </div>`)[0];
+                popup_57ee6de524c89fd8845f9fa627841ee5.setContent(html_9ae7bf111feb3956718a3d28529a11f7);
+            
+        
+
+        circle_marker_609c7981a063886f778672aac7cfc221.bindPopup(popup_57ee6de524c89fd8845f9fa627841ee5)
+        ;
+
+        
+    
+    
+            var circle_marker_843abe30f38118af3a4d78efc1895b13 = L.circleMarker(
+                [52.734391, 32.805941],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_ca1d9b4dcc899199c7683b039bf647e8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2a0a27b0f8bf7c20a348aa8a3635bb0f = $(`<div id="html_2a0a27b0f8bf7c20a348aa8a3635bb0f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.7344<br>                 <b>Longitude:</b> 32.8059<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Volkustichi village<br>                 <b>Where Description:</b> near the village of Volkustichi, Unechsky district of the Bryansk region                 </div>`)[0];
+                popup_ca1d9b4dcc899199c7683b039bf647e8.setContent(html_2a0a27b0f8bf7c20a348aa8a3635bb0f);
+            
+        
+
+        circle_marker_843abe30f38118af3a4d78efc1895b13.bindPopup(popup_ca1d9b4dcc899199c7683b039bf647e8)
+        ;
+
+        
+    
+    
+            var circle_marker_739a0d9c3d2798b705a6895e17788115 = L.circleMarker(
+                [50.071, 38.0594],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_858b8680f3838d183212aa27545bc82b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_110c53b6b52f7325e36ff22d77e11b6f = $(`<div id="html_110c53b6b52f7325e36ff22d77e11b6f" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.0710<br>                 <b>Longitude:</b> 38.0594<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Sobolevka village<br>                 <b>Where Description:</b> village of Sobolevka, Valuysky District, Belgorod Region.                 </div>`)[0];
+                popup_858b8680f3838d183212aa27545bc82b.setContent(html_110c53b6b52f7325e36ff22d77e11b6f);
+            
+        
+
+        circle_marker_739a0d9c3d2798b705a6895e17788115.bindPopup(popup_858b8680f3838d183212aa27545bc82b)
+        ;
+
+        
+    
+    
+            var circle_marker_084fc35d320c5f2670ffa4651ee01cd8 = L.circleMarker(
+                [50.395171, 36.777457],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_2ff753111c6698fb9bd1c8eb3c96e45d = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_3f61418174e8c0ff60ace06053beb339 = $(`<div id="html_3f61418174e8c0ff60ace06053beb339" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3952<br>                 <b>Longitude:</b> 36.7775<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Bezlyudovka village<br>                 <b>Where Description:</b> Bezlyudovka                 </div>`)[0];
+                popup_2ff753111c6698fb9bd1c8eb3c96e45d.setContent(html_3f61418174e8c0ff60ace06053beb339);
+            
+        
+
+        circle_marker_084fc35d320c5f2670ffa4651ee01cd8.bindPopup(popup_2ff753111c6698fb9bd1c8eb3c96e45d)
+        ;
+
+        
+    
+    
+            var circle_marker_87cd0f7af988d76c0d9470e7dfc90b2a = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_ba590e584333a5d3c5b988ac58efee49 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_279daa1b114ec2df91ec8ffb2a73b29b = $(`<div id="html_279daa1b114ec2df91ec8ffb2a73b29b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> Novaya Tavolzhanka                 </div>`)[0];
+                popup_ba590e584333a5d3c5b988ac58efee49.setContent(html_279daa1b114ec2df91ec8ffb2a73b29b);
+            
+        
+
+        circle_marker_87cd0f7af988d76c0d9470e7dfc90b2a.bindPopup(popup_ba590e584333a5d3c5b988ac58efee49)
+        ;
+
+        
+    
+    
+            var circle_marker_ff8249db4e7564e4e4cb224b4ea2698d = L.circleMarker(
+                [50.5, 35.66667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_32479b6bca4fb088b936069a814bbab6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1a341a5d2734219a937789079ebe7fe3 = $(`<div id="html_1a341a5d2734219a937789079ebe7fe3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.5000<br>                 <b>Longitude:</b> 35.6667<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Grayvoronsky raion<br>                 <b>Where Description:</b> Belgorod region, during attempts to repulse the attack of the Russian Volunteer Corps                 </div>`)[0];
+                popup_32479b6bca4fb088b936069a814bbab6.setContent(html_1a341a5d2734219a937789079ebe7fe3);
+            
+        
+
+        circle_marker_ff8249db4e7564e4e4cb224b4ea2698d.bindPopup(popup_32479b6bca4fb088b936069a814bbab6)
+        ;
+
+        
+    
+    
+            var circle_marker_ed81e89ef269dda660f995abbcf52255 = L.circleMarker(
+                [52.229593, 32.308137],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_94d91d0c399b8ab0e4b521c5ef4bf6c1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_de878f1e0ef9d6d74d0416d8af0b527a = $(`<div id="html_de878f1e0ef9d6d74d0416d8af0b527a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.2296<br>                 <b>Longitude:</b> 32.3081<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Brovnichi village<br>                 <b>Where Description:</b> Brovnychy-Sushany road, Klimovsky district (about 750 meters from the border)                 </div>`)[0];
+                popup_94d91d0c399b8ab0e4b521c5ef4bf6c1.setContent(html_de878f1e0ef9d6d74d0416d8af0b527a);
+            
+        
+
+        circle_marker_ed81e89ef269dda660f995abbcf52255.bindPopup(popup_94d91d0c399b8ab0e4b521c5ef4bf6c1)
+        ;
+
+        
+    
+    
+            var circle_marker_2e4909de12d86d0f04b412f2daab4c57 = L.circleMarker(
+                [50.351958, 36.921969],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_29a9000413edcbaff7361af7456f4630 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6b4f9623eb90a07b6be6f986c1bca853 = $(`<div id="html_6b4f9623eb90a07b6be6f986c1bca853" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3520<br>                 <b>Longitude:</b> 36.9220<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> App Shebekino border crossing<br>                 <b>Where Description:</b> Russian Control Point on the border in the direction of Tavolzhanka Identified as the App Shebekino border crossing.                 </div>`)[0];
+                popup_29a9000413edcbaff7361af7456f4630.setContent(html_6b4f9623eb90a07b6be6f986c1bca853);
+            
+        
+
+        circle_marker_2e4909de12d86d0f04b412f2daab4c57.bindPopup(popup_29a9000413edcbaff7361af7456f4630)
+        ;
+
+        
+    
+    
+            var circle_marker_d3bb505802404f96d7d0fe2318332b2d = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_a0d39c19e07134584a962bb0387a4677 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ee6e415135d31c96ce0aaec3adfe00d2 = $(`<div id="html_ee6e415135d31c96ce0aaec3adfe00d2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> near Tavolzhanka                 </div>`)[0];
+                popup_a0d39c19e07134584a962bb0387a4677.setContent(html_ee6e415135d31c96ce0aaec3adfe00d2);
+            
+        
+
+        circle_marker_d3bb505802404f96d7d0fe2318332b2d.bindPopup(popup_a0d39c19e07134584a962bb0387a4677)
+        ;
+
+        
+    
+    
+            var circle_marker_d35bdaf7b378c410499aaece34de4fea = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_80fae5bd3178e6401fc2dd78ab6b0686 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6ed6adce4d18d0c1a27e24ff29a699e5 = $(`<div id="html_6ed6adce4d18d0c1a27e24ff29a699e5" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> Tavolzhanka                 </div>`)[0];
+                popup_80fae5bd3178e6401fc2dd78ab6b0686.setContent(html_6ed6adce4d18d0c1a27e24ff29a699e5);
+            
+        
+
+        circle_marker_d35bdaf7b378c410499aaece34de4fea.bindPopup(popup_80fae5bd3178e6401fc2dd78ab6b0686)
+        ;
+
+        
+    
+    
+            var circle_marker_1d00895c324bbbd51a6d52ec43e451b8 = L.circleMarker(
+                [50.5, 35.66667],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_3902612258e091604d430cae5aca5e37 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d95f6e03addbbc26e579ec3d5e990db2 = $(`<div id="html_d95f6e03addbbc26e579ec3d5e990db2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.5000<br>                 <b>Longitude:</b> 35.6667<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Grayvoronsky raion<br>                 <b>Where Description:</b> Belgorod raid                 </div>`)[0];
+                popup_3902612258e091604d430cae5aca5e37.setContent(html_d95f6e03addbbc26e579ec3d5e990db2);
+            
+        
+
+        circle_marker_1d00895c324bbbd51a6d52ec43e451b8.bindPopup(popup_3902612258e091604d430cae5aca5e37)
+        ;
+
+        
+    
+    
+            var circle_marker_1ac5fcef7223e89ae3da70a5662d81c4 = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_bc21989df5961a0edbf92ea20d0a1fb3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_40bd29f5118f68d4cc2b74e93712efc8 = $(`<div id="html_40bd29f5118f68d4cc2b74e93712efc8" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> village of Novaya Tavolzhanka                 </div>`)[0];
+                popup_bc21989df5961a0edbf92ea20d0a1fb3.setContent(html_40bd29f5118f68d4cc2b74e93712efc8);
+            
+        
+
+        circle_marker_1ac5fcef7223e89ae3da70a5662d81c4.bindPopup(popup_bc21989df5961a0edbf92ea20d0a1fb3)
+        ;
+
+        
+    
+    
+            var circle_marker_7e654ca7845343bbc065e687ca17607f = L.circleMarker(
+                [51.863784, 39.21589],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.51292546497023, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_368a9637c0d009e0e6408441ec766eb8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fd2a993c8fb7747ab91e49060cdb78ee = $(`<div id="html_fd2a993c8fb7747ab91e49060cdb78ee" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.8638<br>                 <b>Longitude:</b> 39.2159<br>                 <b>Deaths:</b> 9<br>                 <b>Where Coordinates:</b> M4 highway between Rostov and Moscow<br>                 <b>Where Description:</b> Along M4 (most of them in Voronezh)                 </div>`)[0];
+                popup_368a9637c0d009e0e6408441ec766eb8.setContent(html_fd2a993c8fb7747ab91e49060cdb78ee);
+            
+        
+
+        circle_marker_7e654ca7845343bbc065e687ca17607f.bindPopup(popup_368a9637c0d009e0e6408441ec766eb8)
+        ;
+
+        
+    
+    
+            var circle_marker_07fcffa8d5eb48bf3334405a6c4fac66 = L.circleMarker(
+                [50.351958, 36.921969],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958797346140274, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_87f95b54133bfe373e707cbb92bbeca5 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_89e53fcb43869be3f7812d9fe6f2670c = $(`<div id="html_89e53fcb43869be3f7812d9fe6f2670c" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3520<br>                 <b>Longitude:</b> 36.9220<br>                 <b>Deaths:</b> 5<br>                 <b>Where Coordinates:</b> App Shebekino border crossing<br>                 <b>Where Description:</b> administrative building of the border checkpoint, Shebekino geolocated: 50.350313, 36.923111                 </div>`)[0];
+                popup_87f95b54133bfe373e707cbb92bbeca5.setContent(html_89e53fcb43869be3f7812d9fe6f2670c);
+            
+        
+
+        circle_marker_07fcffa8d5eb48bf3334405a6c4fac66.bindPopup(popup_87f95b54133bfe373e707cbb92bbeca5)
+        ;
+
+        
+    
+    
+            var circle_marker_06da0698fd385651dff43c249e3f9eb9 = L.circleMarker(
+                [50.75, 37.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_597d469b3b9610a94ddaa88343f939ff = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_53ef15273392056be39b95f3e37ad1fb = $(`<div id="html_53ef15273392056be39b95f3e37ad1fb" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.7500<br>                 <b>Longitude:</b> 37.5000<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Belgorod oblast<br>                 <b>Where Description:</b> Belgorod region                 </div>`)[0];
+                popup_597d469b3b9610a94ddaa88343f939ff.setContent(html_53ef15273392056be39b95f3e37ad1fb);
+            
+        
+
+        circle_marker_06da0698fd385651dff43c249e3f9eb9.bindPopup(popup_597d469b3b9610a94ddaa88343f939ff)
+        ;
+
+        
+    
+    
+            var circle_marker_565d99651a64a5690932128b7b4a0d82 = L.circleMarker(
+                [50.132706, 37.754733],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_a878221a130e102254c174688a500dc6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_4f7c1f0439dfeaff56871a83c8d71f4b = $(`<div id="html_4f7c1f0439dfeaff56871a83c8d71f4b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.1327<br>                 <b>Longitude:</b> 37.7547<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novopetrovka village<br>                 <b>Where Description:</b> the village of Novopetrovka, Valuysky district, Belgorod region                 </div>`)[0];
+                popup_a878221a130e102254c174688a500dc6.setContent(html_4f7c1f0439dfeaff56871a83c8d71f4b);
+            
+        
+
+        circle_marker_565d99651a64a5690932128b7b4a0d82.bindPopup(popup_a878221a130e102254c174688a500dc6)
+        ;
+
+        
+    
+    
+            var circle_marker_ddeebf1504da2d712a3b56612f234dad = L.circleMarker(
+                [52.379708, 33.482754],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_7f0228f0c7b0dff8550f0c768b7b495c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ae420eaa37ac1dfa4beafeef212ab0ba = $(`<div id="html_ae420eaa37ac1dfa4beafeef212ab0ba" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.3797<br>                 <b>Longitude:</b> 33.4828<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Belaya Beryozka village<br>                 <b>Where Description:</b> (Russia) Belaya Berezka village, Trubchevsky District, 2.5 km from the border with Ukraine                 </div>`)[0];
+                popup_7f0228f0c7b0dff8550f0c768b7b495c.setContent(html_ae420eaa37ac1dfa4beafeef212ab0ba);
+            
+        
+
+        circle_marker_ddeebf1504da2d712a3b56612f234dad.bindPopup(popup_7f0228f0c7b0dff8550f0c768b7b495c)
+        ;
+
+        
+    
+    
+            var circle_marker_a892464ee74feb43ae12936af0da3c90 = L.circleMarker(
+                [50.40967, 36.9136],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_0dcdc75f7d177795dfe0e5e1eb04f56e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_06a11a9e9f1537b361136ed4fbb6e526 = $(`<div id="html_06a11a9e9f1537b361136ed4fbb6e526" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4097<br>                 <b>Longitude:</b> 36.9136<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shebekino town<br>                 <b>Where Description:</b> (Russia) central market in Shebekino, Belgorod region                 </div>`)[0];
+                popup_0dcdc75f7d177795dfe0e5e1eb04f56e.setContent(html_06a11a9e9f1537b361136ed4fbb6e526);
+            
+        
+
+        circle_marker_a892464ee74feb43ae12936af0da3c90.bindPopup(popup_0dcdc75f7d177795dfe0e5e1eb04f56e)
+        ;
+
+        
+    
+    
+            var circle_marker_9af0afca0ca70f6367da0003e49a4bdc = L.circleMarker(
+                [50.23923, 36.61564],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_260fb886056f7c2d43774f7ed9023569 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2f9844a032a301394fb3abcbc7dcea12 = $(`<div id="html_2f9844a032a301394fb3abcbc7dcea12" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.2392<br>                 <b>Longitude:</b> 36.6156<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Sereda village<br>                 <b>Where Description:</b> road near the border settlement of Sereda, Shebekinsky district, Belgorod region                 </div>`)[0];
+                popup_260fb886056f7c2d43774f7ed9023569.setContent(html_2f9844a032a301394fb3abcbc7dcea12);
+            
+        
+
+        circle_marker_9af0afca0ca70f6367da0003e49a4bdc.bindPopup(popup_260fb886056f7c2d43774f7ed9023569)
+        ;
+
+        
+    
+    
+            var circle_marker_bc875f833d802008c38ee4681757a688 = L.circleMarker(
+                [50.447278, 35.850782],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_5df3874975159fc33431584f29e8b0f6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_f3629fd17e192db21cc8fbfe6ea7a36d = $(`<div id="html_f3629fd17e192db21cc8fbfe6ea7a36d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4473<br>                 <b>Longitude:</b> 35.8508<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Gor’kovskiy village<br>                 <b>Where Description:</b> village of Gorky in the Belgorod region                 </div>`)[0];
+                popup_5df3874975159fc33431584f29e8b0f6.setContent(html_f3629fd17e192db21cc8fbfe6ea7a36d);
+            
+        
+
+        circle_marker_bc875f833d802008c38ee4681757a688.bindPopup(popup_5df3874975159fc33431584f29e8b0f6)
+        ;
+
+        
+    
+    
+            var circle_marker_7b8525d99fc9d0a12a3e3c8bb0ac82ee = L.circleMarker(
+                [52.40427, 33.29489],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_c609374eeca39429cfb34e6d7d056745 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_eed42e9ff5fc19f687efecb5ab3c720a = $(`<div id="html_eed42e9ff5fc19f687efecb5ab3c720a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.4043<br>                 <b>Longitude:</b> 33.2949<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Chausy village<br>                 <b>Where Description:</b> village of Chausy, Pogarsky district, Bryansk region                 </div>`)[0];
+                popup_c609374eeca39429cfb34e6d7d056745.setContent(html_eed42e9ff5fc19f687efecb5ab3c720a);
+            
+        
+
+        circle_marker_7b8525d99fc9d0a12a3e3c8bb0ac82ee.bindPopup(popup_c609374eeca39429cfb34e6d7d056745)
+        ;
+
+        
+    
+    
+            var circle_marker_64e9c9b42977a75d657367d811a272f3 = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_b624cb3e71a46b7df1372e55a0079c92 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d22193c931066a386030a020ec2ee174 = $(`<div id="html_d22193c931066a386030a020ec2ee174" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> village of Novaya Tavolzhanka in the Belgorod region                 </div>`)[0];
+                popup_b624cb3e71a46b7df1372e55a0079c92.setContent(html_d22193c931066a386030a020ec2ee174);
+            
+        
+
+        circle_marker_64e9c9b42977a75d657367d811a272f3.bindPopup(popup_b624cb3e71a46b7df1372e55a0079c92)
+        ;
+
+        
+    
+    
+            var circle_marker_31f52e5ad8ed52ed3c6d9c4caff5ec58 = L.circleMarker(
+                [50.23572, 37.9681],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d73ab1e3dd35bf151c81fd357ce57837 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5893e77b3ca61f00162f8a204f55d4ad = $(`<div id="html_5893e77b3ca61f00162f8a204f55d4ad" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.2357<br>                 <b>Longitude:</b> 37.9681<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Lavy village<br>                 <b>Where Description:</b> village of Lava in the Valuysk city district, Belgorod                 </div>`)[0];
+                popup_d73ab1e3dd35bf151c81fd357ce57837.setContent(html_5893e77b3ca61f00162f8a204f55d4ad);
+            
+        
+
+        circle_marker_31f52e5ad8ed52ed3c6d9c4caff5ec58.bindPopup(popup_d73ab1e3dd35bf151c81fd357ce57837)
+        ;
+
+        
+    
+    
+            var circle_marker_ad61ee98d7f5502fb568f158d2e2649d = L.circleMarker(
+                [57.74745, 33.953205],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.989476363991853, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_f0ce3152295954bd1890ad27addee851 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5b20af9250dec635945295780a0c63f7 = $(`<div id="html_5b20af9250dec635945295780a0c63f7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 57.7475<br>                 <b>Longitude:</b> 33.9532<br>                 <b>Deaths:</b> 10<br>                 <b>Where Coordinates:</b> RA-02795 crash site<br>                 <b>Where Description:</b> near Kuzhenkino in Tver Oblast                 </div>`)[0];
+                popup_f0ce3152295954bd1890ad27addee851.setContent(html_5b20af9250dec635945295780a0c63f7);
+            
+        
+
+        circle_marker_ad61ee98d7f5502fb568f158d2e2649d.bindPopup(popup_f0ce3152295954bd1890ad27addee851)
+        ;
+
+        
+    
+    
+            var circle_marker_1b79a626030a393b12bf704408118d8f = L.circleMarker(
+                [51.200009, 34.731223],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_dc4aed0abdc89754b65cc73e437217eb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d6e2c01bffda8e15c044e10d9f5d13b9 = $(`<div id="html_d6e2c01bffda8e15c044e10d9f5d13b9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.2000<br>                 <b>Longitude:</b> 34.7312<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Elizavetovka village<br>                 <b>Where Description:</b> village of Elizavetovka, Glushkovsky district, Kursk region                 </div>`)[0];
+                popup_dc4aed0abdc89754b65cc73e437217eb.setContent(html_d6e2c01bffda8e15c044e10d9f5d13b9);
+            
+        
+
+        circle_marker_1b79a626030a393b12bf704408118d8f.bindPopup(popup_dc4aed0abdc89754b65cc73e437217eb)
+        ;
+
+        
+    
+    
+            var circle_marker_7ecaa610d4c85077514821c408b9ef4b = L.circleMarker(
+                [50.45135, 36.16894],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_e68de54cf748568f73038a467bedd73e = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c62a5bdd8dc855f4ce25bb7a5be74f66 = $(`<div id="html_c62a5bdd8dc855f4ce25bb7a5be74f66" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4513<br>                 <b>Longitude:</b> 36.1689<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Shchetinovka village<br>                 <b>Where Description:</b> village of Shchetinovka, Belgorod Region                 </div>`)[0];
+                popup_e68de54cf748568f73038a467bedd73e.setContent(html_c62a5bdd8dc855f4ce25bb7a5be74f66);
+            
+        
+
+        circle_marker_7ecaa610d4c85077514821c408b9ef4b.bindPopup(popup_e68de54cf748568f73038a467bedd73e)
+        ;
+
+        
+    
+    
+            var circle_marker_55efd74bef9f5f3830ca5525efe89493 = L.circleMarker(
+                [52.37877, 32.1963],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_bf37e00a38fe8f9ce22e856718f94f28 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_711760cf326954ac45d520bd0355dbc3 = $(`<div id="html_711760cf326954ac45d520bd0355dbc3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.3788<br>                 <b>Longitude:</b> 32.1963<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Klimovo town<br>                 <b>Where Description:</b> village of Klimovo, Bryansk region.                 </div>`)[0];
+                popup_bf37e00a38fe8f9ce22e856718f94f28.setContent(html_711760cf326954ac45d520bd0355dbc3);
+            
+        
+
+        circle_marker_55efd74bef9f5f3830ca5525efe89493.bindPopup(popup_bf37e00a38fe8f9ce22e856718f94f28)
+        ;
+
+        
+    
+    
+            var circle_marker_da718768aa7e2ee08ea324c1e7101b7d = L.circleMarker(
+                [52.87218, 34.41837],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.047189562170502, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_3c4740a1f11bc33b9137a98b8a69057a = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_21100bef807b1614a9fa2a6ae7c6b7b4 = $(`<div id="html_21100bef807b1614a9fa2a6ae7c6b7b4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.8722<br>                 <b>Longitude:</b> 34.4184<br>                 <b>Deaths:</b> 4<br>                 <b>Where Coordinates:</b> Navlinskiy rayon<br>                 <b>Where Description:</b> Navlinsky district of the Bryansk region                 </div>`)[0];
+                popup_3c4740a1f11bc33b9137a98b8a69057a.setContent(html_21100bef807b1614a9fa2a6ae7c6b7b4);
+            
+        
+
+        circle_marker_da718768aa7e2ee08ea324c1e7101b7d.bindPopup(popup_3c4740a1f11bc33b9137a98b8a69057a)
+        ;
+
+        
+    
+    
+            var circle_marker_ad7271bb1ced9c63b3144a741a54d4b6 = L.circleMarker(
+                [50.0836, 38.0395],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_25b2bcc0a0e55433634eb47c821117bc = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c820ef162ce397d79e68173da99006b7 = $(`<div id="html_c820ef162ce397d79e68173da99006b7" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.0836<br>                 <b>Longitude:</b> 38.0395<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Urazovo village<br>                 <b>Where Description:</b> village of Urazovo, Valuysky urban district, Belgorod region                 </div>`)[0];
+                popup_25b2bcc0a0e55433634eb47c821117bc.setContent(html_c820ef162ce397d79e68173da99006b7);
+            
+        
+
+        circle_marker_ad7271bb1ced9c63b3144a741a54d4b6.bindPopup(popup_25b2bcc0a0e55433634eb47c821117bc)
+        ;
+
+        
+    
+    
+            var circle_marker_7e8e78f0eb33ae52f4e3addf2d1b65d7 = L.circleMarker(
+                [50.4613, 35.6026],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_0a11e5f7ed9aec2b8431387324688427 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e9cdab8e17aa42e80676b64fb0950b57 = $(`<div id="html_e9cdab8e17aa42e80676b64fb0950b57" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4613<br>                 <b>Longitude:</b> 35.6026<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kozinka village<br>                 <b>Where Description:</b> village of Kozinka, Grayvoronsky district                 </div>`)[0];
+                popup_0a11e5f7ed9aec2b8431387324688427.setContent(html_e9cdab8e17aa42e80676b64fb0950b57);
+            
+        
+
+        circle_marker_7e8e78f0eb33ae52f4e3addf2d1b65d7.bindPopup(popup_0a11e5f7ed9aec2b8431387324688427)
+        ;
+
+        
+    
+    
+            var circle_marker_ee4722b4ab2cdfc1dcf450ef06a36f83 = L.circleMarker(
+                [51.28128, 34.29382],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_72ac686c80849d440bddcd671e2cf88f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_96e090ff07b4606ad0ce86a275c85649 = $(`<div id="html_96e090ff07b4606ad0ce86a275c85649" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.2813<br>                 <b>Longitude:</b> 34.2938<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Tetkino village<br>                 <b>Where Description:</b> a plant in the border village of Tetkino in the Kursk region                 </div>`)[0];
+                popup_72ac686c80849d440bddcd671e2cf88f.setContent(html_96e090ff07b4606ad0ce86a275c85649);
+            
+        
+
+        circle_marker_ee4722b4ab2cdfc1dcf450ef06a36f83.bindPopup(popup_72ac686c80849d440bddcd671e2cf88f)
+        ;
+
+        
+    
+    
+            var circle_marker_e2835b3bb0d7b395a78008d33486a618 = L.circleMarker(
+                [51.10306, 35.3275],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_3f71cf10ec7a876357e8e8245e0b2e89 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7250a4ef31f9f80b6138b7366154e70b = $(`<div id="html_7250a4ef31f9f80b6138b7366154e70b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.1031<br>                 <b>Longitude:</b> 35.3275<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Plekhovo village<br>                 <b>Where Description:</b> village of Plekhovo, Sudzhansky district                 </div>`)[0];
+                popup_3f71cf10ec7a876357e8e8245e0b2e89.setContent(html_7250a4ef31f9f80b6138b7366154e70b);
+            
+        
+
+        circle_marker_e2835b3bb0d7b395a78008d33486a618.bindPopup(popup_3f71cf10ec7a876357e8e8245e0b2e89)
+        ;
+
+        
+    
+    
+            var circle_marker_1e5a8d9388e08c5680b6615429b07ecc = L.circleMarker(
+                [50.526, 37.3655],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_6e73fe70c64d38c9ac04d0ab0de61959 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_b4bba72e3ccd56a7c66aab0078156d1b = $(`<div id="html_b4bba72e3ccd56a7c66aab0078156d1b" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.5260<br>                 <b>Longitude:</b> 37.3655<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Maksimovka village<br>                 <b>Where Description:</b> village of Maksimovka, Belgorod                 </div>`)[0];
+                popup_6e73fe70c64d38c9ac04d0ab0de61959.setContent(html_b4bba72e3ccd56a7c66aab0078156d1b);
+            
+        
+
+        circle_marker_1e5a8d9388e08c5680b6615429b07ecc.bindPopup(popup_6e73fe70c64d38c9ac04d0ab0de61959)
+        ;
+
+        
+    
+    
+            var circle_marker_497432f1fb2dca81cc140160e07290a2 = L.circleMarker(
+                [51.253071, 34.54082],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_02504ba7cd6d9a31a419857ae7aa4989 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0bf6b646db5358814e9052ef5e3cf520 = $(`<div id="html_0bf6b646db5358814e9052ef5e3cf520" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.2531<br>                 <b>Longitude:</b> 34.5408<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Border between Kursk oblast and Sumy oblast (Ukraine)<br>                 <b>Where Description:</b> Kursk region (border)                 </div>`)[0];
+                popup_02504ba7cd6d9a31a419857ae7aa4989.setContent(html_0bf6b646db5358814e9052ef5e3cf520);
+            
+        
+
+        circle_marker_497432f1fb2dca81cc140160e07290a2.bindPopup(popup_02504ba7cd6d9a31a419857ae7aa4989)
+        ;
+
+        
+    
+    
+            var circle_marker_4b362b3a09925be936368ae1de8b8978 = L.circleMarker(
+                [51.751682, 36.293136],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d414a8143d5ae60765cad58c72f08196 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2c6fd2abf8e2e2abbb0d06e6c805ab8a = $(`<div id="html_2c6fd2abf8e2e2abbb0d06e6c805ab8a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.7517<br>                 <b>Longitude:</b> 36.2931<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Khalino airport<br>                 <b>Where Description:</b> Kursk airfield/Khalino airfield                 </div>`)[0];
+                popup_d414a8143d5ae60765cad58c72f08196.setContent(html_2c6fd2abf8e2e2abbb0d06e6c805ab8a);
+            
+        
+
+        circle_marker_4b362b3a09925be936368ae1de8b8978.bindPopup(popup_d414a8143d5ae60765cad58c72f08196)
+        ;
+
+        
+    
+    
+            var circle_marker_146e9287dcf98be410b92e3aacf3e174 = L.circleMarker(
+                [50.0836, 38.0395],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d36c38d077c053536f9a99af87594b02 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2964f9b038cb47591ee84e9e4cdd2fa4 = $(`<div id="html_2964f9b038cb47591ee84e9e4cdd2fa4" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.0836<br>                 <b>Longitude:</b> 38.0395<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Urazovo village<br>                 <b>Where Description:</b> village of Urazovo in the Belgorod region.                 </div>`)[0];
+                popup_d36c38d077c053536f9a99af87594b02.setContent(html_2964f9b038cb47591ee84e9e4cdd2fa4);
+            
+        
+
+        circle_marker_146e9287dcf98be410b92e3aacf3e174.bindPopup(popup_d36c38d077c053536f9a99af87594b02)
+        ;
+
+        
+    
+    
+            var circle_marker_02b0ed83cc4799f7a90391d080d5866e = L.circleMarker(
+                [50.87575, 37.19356],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_90dc1a565d5afd2f6700daf1820cc325 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_00867d5b54d6f4c96fb8de7104c9a186 = $(`<div id="html_00867d5b54d6f4c96fb8de7104c9a186" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.8757<br>                 <b>Longitude:</b> 37.1936<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Popovka village<br>                 <b>Where Description:</b> village of Popovka, Krasnoyaruzh region, Belgorod region                 </div>`)[0];
+                popup_90dc1a565d5afd2f6700daf1820cc325.setContent(html_00867d5b54d6f4c96fb8de7104c9a186);
+            
+        
+
+        circle_marker_02b0ed83cc4799f7a90391d080d5866e.bindPopup(popup_90dc1a565d5afd2f6700daf1820cc325)
+        ;
+
+        
+    
+    
+            var circle_marker_a55cf263aa43c5d5b1e0e620b4ab6d58 = L.circleMarker(
+                [50.605139, 36.589673],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_b8bd5b1d9c684c22eaae87a5a91fd506 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_0234c4e0728df55fde52125f9bbaf8a6 = $(`<div id="html_0234c4e0728df55fde52125f9bbaf8a6" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.6051<br>                 <b>Longitude:</b> 36.5897<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Belgorod town<br>                 <b>Where Description:</b> Belgorod                 </div>`)[0];
+                popup_b8bd5b1d9c684c22eaae87a5a91fd506.setContent(html_0234c4e0728df55fde52125f9bbaf8a6);
+            
+        
+
+        circle_marker_a55cf263aa43c5d5b1e0e620b4ab6d58.bindPopup(popup_b8bd5b1d9c684c22eaae87a5a91fd506)
+        ;
+
+        
+    
+    
+            var circle_marker_872cd98eb2ffd00abab130e9d602a19b = L.circleMarker(
+                [51.67204, 39.1843],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.986122886681098, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_3497bc8692e691cf2ad8d3f24f8b0bfa = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_600159b13b3e9c296b585773aa1631e1 = $(`<div id="html_600159b13b3e9c296b585773aa1631e1" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.6720<br>                 <b>Longitude:</b> 39.1843<br>                 <b>Deaths:</b> 8<br>                 <b>Where Coordinates:</b> Voronezh town<br>                 <b>Where Description:</b> near Voronezh                 </div>`)[0];
+                popup_3497bc8692e691cf2ad8d3f24f8b0bfa.setContent(html_600159b13b3e9c296b585773aa1631e1);
+            
+        
+
+        circle_marker_872cd98eb2ffd00abab130e9d602a19b.bindPopup(popup_3497bc8692e691cf2ad8d3f24f8b0bfa)
+        ;
+
+        
+    
+    
+            var circle_marker_00c484e250647441b13275bd4b124662 = L.circleMarker(
+                [50.70132, 35.4725],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_0a894b179e51032b033ce2f59d054e62 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_37bac120f94949d22aff7fb8a0f49c2a = $(`<div id="html_37bac120f94949d22aff7fb8a0f49c2a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.7013<br>                 <b>Longitude:</b> 35.4725<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Staroselye village<br>                 <b>Where Description:</b> east of the village of Starosilske in the Krasnoyaruzhsky district of the Belgorod region                 </div>`)[0];
+                popup_0a894b179e51032b033ce2f59d054e62.setContent(html_37bac120f94949d22aff7fb8a0f49c2a);
+            
+        
+
+        circle_marker_00c484e250647441b13275bd4b124662.bindPopup(popup_0a894b179e51032b033ce2f59d054e62)
+        ;
+
+        
+    
+    
+            var circle_marker_e2f083f18d08496f470c78ca07b64f80 = L.circleMarker(
+                [50.605139, 36.589673],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d7a6555ec8844f5919daeacee603b06b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_38876a365f23f71a8b02828eab46072a = $(`<div id="html_38876a365f23f71a8b02828eab46072a" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.6051<br>                 <b>Longitude:</b> 36.5897<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Belgorod town<br>                 <b>Where Description:</b> Belgorod, Russia                 </div>`)[0];
+                popup_d7a6555ec8844f5919daeacee603b06b.setContent(html_38876a365f23f71a8b02828eab46072a);
+            
+        
+
+        circle_marker_e2f083f18d08496f470c78ca07b64f80.bindPopup(popup_d7a6555ec8844f5919daeacee603b06b)
+        ;
+
+        
+    
+    
+            var circle_marker_2ca148e49375dc25a484323c4b34fd2d = L.circleMarker(
+                [50.99, 35.34],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_dc4c20738924f47b997d16d6c9cfd4d7 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2ccbf029be54a20792f6ae51f436bc81 = $(`<div id="html_2ccbf029be54a20792f6ae51f436bc81" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.9900<br>                 <b>Longitude:</b> 35.3400<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Border between Russia and Ukraine<br>                 <b>Where Description:</b> border zone                 </div>`)[0];
+                popup_dc4c20738924f47b997d16d6c9cfd4d7.setContent(html_2ccbf029be54a20792f6ae51f436bc81);
+            
+        
+
+        circle_marker_2ca148e49375dc25a484323c4b34fd2d.bindPopup(popup_dc4c20738924f47b997d16d6c9cfd4d7)
+        ;
+
+        
+    
+    
+            var circle_marker_72e3f9a350e5bfe2273bd66198d06d7e = L.circleMarker(
+                [52.249148, 33.957568],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_462c258b370a1b24017846974749a58b = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1b3e656c9528e3bee292755d99f89fd9 = $(`<div id="html_1b3e656c9528e3bee292755d99f89fd9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.2491<br>                 <b>Longitude:</b> 33.9576<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Ulitsa village<br>                 <b>Where Description:</b> outskirts of the village of Ulitsa, Bryansk region.                 </div>`)[0];
+                popup_462c258b370a1b24017846974749a58b.setContent(html_1b3e656c9528e3bee292755d99f89fd9);
+            
+        
+
+        circle_marker_72e3f9a350e5bfe2273bd66198d06d7e.bindPopup(popup_462c258b370a1b24017846974749a58b)
+        ;
+
+        
+    
+    
+            var circle_marker_22dd5a6dea0d5263b16e3cae770addaa = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_203f0d97b05788c3e891293f1ccad934 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c40df3e5de68bfe139e930ec7eb815fd = $(`<div id="html_c40df3e5de68bfe139e930ec7eb815fd" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> Novaya Tavolzhanka                 </div>`)[0];
+                popup_203f0d97b05788c3e891293f1ccad934.setContent(html_c40df3e5de68bfe139e930ec7eb815fd);
+            
+        
+
+        circle_marker_22dd5a6dea0d5263b16e3cae770addaa.bindPopup(popup_203f0d97b05788c3e891293f1ccad934)
+        ;
+
+        
+    
+    
+            var circle_marker_6005957aabc3fd8f58b170fa36f508bd = L.circleMarker(
+                [50.75, 37.5],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d23be07f27e757777ac490abd615b374 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1b270e6ef7d11796a9cd9b78bca5a974 = $(`<div id="html_1b270e6ef7d11796a9cd9b78bca5a974" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.7500<br>                 <b>Longitude:</b> 37.5000<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Belgorod oblast<br>                 <b>Where Description:</b> nan                 </div>`)[0];
+                popup_d23be07f27e757777ac490abd615b374.setContent(html_1b270e6ef7d11796a9cd9b78bca5a974);
+            
+        
+
+        circle_marker_6005957aabc3fd8f58b170fa36f508bd.bindPopup(popup_d23be07f27e757777ac490abd615b374)
+        ;
+
+        
+    
+    
+            var circle_marker_74a6a9e849b4e74a36141a09918f5f0d = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_cda22379b28becbea00ad98098b51c15 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_443bf8d3f3a604c8891e78904681ef97 = $(`<div id="html_443bf8d3f3a604c8891e78904681ef97" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> settlement of New Tavolzhanka, Belhorod                 </div>`)[0];
+                popup_cda22379b28becbea00ad98098b51c15.setContent(html_443bf8d3f3a604c8891e78904681ef97);
+            
+        
+
+        circle_marker_74a6a9e849b4e74a36141a09918f5f0d.bindPopup(popup_cda22379b28becbea00ad98098b51c15)
+        ;
+
+        
+    
+    
+            var circle_marker_f12ea36fed87defed85295b9eb91467b = L.circleMarker(
+                [50.478446, 35.679903],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_9fa30e8d49dd02fdb9c5a1565245f9bb = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c57447a8fa3d314d67a53a1984ab5966 = $(`<div id="html_c57447a8fa3d314d67a53a1984ab5966" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.4784<br>                 <b>Longitude:</b> 35.6799<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Grayvoron town<br>                 <b>Where Description:</b> near Tavolzhanka, Grayvoron and Urazovo                 </div>`)[0];
+                popup_9fa30e8d49dd02fdb9c5a1565245f9bb.setContent(html_c57447a8fa3d314d67a53a1984ab5966);
+            
+        
+
+        circle_marker_f12ea36fed87defed85295b9eb91467b.bindPopup(popup_9fa30e8d49dd02fdb9c5a1565245f9bb)
+        ;
+
+        
+    
+    
+            var circle_marker_aa7c679abd717975ee564ef1433d50c8 = L.circleMarker(
+                [50.35123, 36.8298],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_6b2707088190da1e59b2e05fc0e1d141 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_25188b264edf34110114448bf8348564 = $(`<div id="html_25188b264edf34110114448bf8348564" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3512<br>                 <b>Longitude:</b> 36.8298<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Novaya Tavolzhanka village<br>                 <b>Where Description:</b> near Tavolzhanka, Grayvoron and Urazovo                 </div>`)[0];
+                popup_6b2707088190da1e59b2e05fc0e1d141.setContent(html_25188b264edf34110114448bf8348564);
+            
+        
+
+        circle_marker_aa7c679abd717975ee564ef1433d50c8.bindPopup(popup_6b2707088190da1e59b2e05fc0e1d141)
+        ;
+
+        
+    
+    
+            var circle_marker_ae90da88c707720eba4a3b996ffe9905 = L.circleMarker(
+                [50.0836, 38.0395],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.931471805599453, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_a39461f485ce90a8cd73a0706ed324a1 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6d5c1355e6ddd8363e0f5582c9a95f2d = $(`<div id="html_6d5c1355e6ddd8363e0f5582c9a95f2d" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.0836<br>                 <b>Longitude:</b> 38.0395<br>                 <b>Deaths:</b> 3<br>                 <b>Where Coordinates:</b> Urazovo village<br>                 <b>Where Description:</b> near Tavolzhanka, Grayvoron and Urazovo                 </div>`)[0];
+                popup_a39461f485ce90a8cd73a0706ed324a1.setContent(html_6d5c1355e6ddd8363e0f5582c9a95f2d);
+            
+        
+
+        circle_marker_ae90da88c707720eba4a3b996ffe9905.bindPopup(popup_a39461f485ce90a8cd73a0706ed324a1)
+        ;
+
+        
+    
+    
+            var circle_marker_683b5cd7cfb0234e1911f6101c5e3640 = L.circleMarker(
+                [52.36966, 33.34459],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_f40b95d872b2e16d6a345db437af5ef8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_90028b9fe7a3d3eeb3560959f5b609f9 = $(`<div id="html_90028b9fe7a3d3eeb3560959f5b609f9" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.3697<br>                 <b>Longitude:</b> 33.3446<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Sopychi village<br>                 <b>Where Description:</b> the village of Sopychi, Pogarsky district                 </div>`)[0];
+                popup_f40b95d872b2e16d6a345db437af5ef8.setContent(html_90028b9fe7a3d3eeb3560959f5b609f9);
+            
+        
+
+        circle_marker_683b5cd7cfb0234e1911f6101c5e3640.bindPopup(popup_f40b95d872b2e16d6a345db437af5ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_a2cff90d41cbe8bda477b434aae2c289 = L.circleMarker(
+                [51.389691, 34.341537],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_b630d3896fdc77e4c3b548822d70f4c4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a5aa94c33351d451e817f80f5626e6fa = $(`<div id="html_a5aa94c33351d451e817f80f5626e6fa" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 51.3897<br>                 <b>Longitude:</b> 34.3415<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Alekseevka village<br>                 <b>Where Description:</b> the village of Alekseevka, Glushkovsky district, Kursk region                 </div>`)[0];
+                popup_b630d3896fdc77e4c3b548822d70f4c4.setContent(html_a5aa94c33351d451e817f80f5626e6fa);
+            
+        
+
+        circle_marker_a2cff90d41cbe8bda477b434aae2c289.bindPopup(popup_b630d3896fdc77e4c3b548822d70f4c4)
+        ;
+
+        
+    
+    
+            var circle_marker_14458de47552f54810dbaa5d0dcc44d0 = L.circleMarker(
+                [50.605139, 36.589673],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_01cd0c557504727e661f308660edb5c0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_a66e55ccd75f1dc5214fba33048703d3 = $(`<div id="html_a66e55ccd75f1dc5214fba33048703d3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.6051<br>                 <b>Longitude:</b> 36.5897<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Belgorod town<br>                 <b>Where Description:</b> Belgorod                 </div>`)[0];
+                popup_01cd0c557504727e661f308660edb5c0.setContent(html_a66e55ccd75f1dc5214fba33048703d3);
+            
+        
+
+        circle_marker_14458de47552f54810dbaa5d0dcc44d0.bindPopup(popup_01cd0c557504727e661f308660edb5c0)
+        ;
+
+        
+    
+    
+            var circle_marker_f57ac42e55d0470de0c0f810b456cff7 = L.circleMarker(
+                [52.405818, 33.105745],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_d3293f259002c64fc9756f53faab8b5f = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_51c555080e132aad8f0d32f5fa3f10a3 = $(`<div id="html_51c555080e132aad8f0d32f5fa3f10a3" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.4058<br>                 <b>Longitude:</b> 33.1057<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Kister village<br>                 <b>Where Description:</b> the villages of Kister and Borshchevo in the Pohar district.                 </div>`)[0];
+                popup_d3293f259002c64fc9756f53faab8b5f.setContent(html_51c555080e132aad8f0d32f5fa3f10a3);
+            
+        
+
+        circle_marker_f57ac42e55d0470de0c0f810b456cff7.bindPopup(popup_d3293f259002c64fc9756f53faab8b5f)
+        ;
+
+        
+    
+    
+            var circle_marker_0006664490d0891ad94b24e5d655a396 = L.circleMarker(
+                [50.605139, 36.589673],
+                {"bubblingMouseEvents": true, "color": "#4F4F4F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4F4F4F", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.29048269010741, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_51214019b0401ba8f92807f9ac28dec2 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_6e29385f8437a9fe2ade0cf928784776 = $(`<div id="html_6e29385f8437a9fe2ade0cf928784776" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.6051<br>                 <b>Longitude:</b> 36.5897<br>                 <b>Deaths:</b> 25<br>                 <b>Where Coordinates:</b> Belgorod town<br>                 <b>Where Description:</b> the center of Belgorod                 </div>`)[0];
+                popup_51214019b0401ba8f92807f9ac28dec2.setContent(html_6e29385f8437a9fe2ade0cf928784776);
+            
+        
+
+        circle_marker_0006664490d0891ad94b24e5d655a396.bindPopup(popup_51214019b0401ba8f92807f9ac28dec2)
+        ;
+
+        
+    
+    
+            var circle_marker_8827cabf2c7042771d04766d62d3f430 = L.circleMarker(
+                [50.370254, 37.145559],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_00d4f7ab7d079e760783c40a7d2fe27c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_97157132154ed72175cac793b27c1873 = $(`<div id="html_97157132154ed72175cac793b27c1873" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 50.3703<br>                 <b>Longitude:</b> 37.1456<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Krasnoe village<br>                 <b>Where Description:</b> village of Krasnoye, Shebekinsky urban district                 </div>`)[0];
+                popup_00d4f7ab7d079e760783c40a7d2fe27c.setContent(html_97157132154ed72175cac793b27c1873);
+            
+        
+
+        circle_marker_8827cabf2c7042771d04766d62d3f430.bindPopup(popup_00d4f7ab7d079e760783c40a7d2fe27c)
+        ;
+
+        
+    
+    
+            var circle_marker_9da5fdddd53effa9456f246e7cdf44e9 = L.circleMarker(
+                [52.15, 34.4],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.493061443340549, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_8df512481d90843112b40a4e3f1833e4 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_5654c2240ddcc61892fc8423e3a93d99 = $(`<div id="html_5654c2240ddcc61892fc8423e3a93d99" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 52.1500<br>                 <b>Longitude:</b> 34.4000<br>                 <b>Deaths:</b> 2<br>                 <b>Where Coordinates:</b> Sevsky raion<br>                 <b>Where Description:</b> Sevsky district of Bryansk Oblast.                 </div>`)[0];
+                popup_8df512481d90843112b40a4e3f1833e4.setContent(html_5654c2240ddcc61892fc8423e3a93d99);
+            
+        
+
+        circle_marker_9da5fdddd53effa9456f246e7cdf44e9.bindPopup(popup_8df512481d90843112b40a4e3f1833e4)
+        ;
+
+        
+    
+    
+            var circle_marker_24c2369210a8ad703c8dfdc8fc8e70f4 = L.circleMarker(
+                [58.139199, 30.329573],
+                {"bubblingMouseEvents": true, "color": "#B0B0B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#B0B0B0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4657359027997265, "stroke": true, "weight": 3}
+            ).addTo(map_056c62caac4aa6cf9adf5d705af32227);
+        
+    
+        var popup_1b56687867cce9b2d33ec3aa52b25c5c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_386b2d7dc8ab755188a2b849377150a2 = $(`<div id="html_386b2d7dc8ab755188a2b849377150a2" style="width: 100.0%; height: 100.0%;">                 <b>Latitude:</b> 58.1392<br>                 <b>Longitude:</b> 30.3296<br>                 <b>Deaths:</b> 1<br>                 <b>Where Coordinates:</b> Soltsy airfield<br>                 <b>Where Description:</b> Returning from the Soltsy military airfield in the Novgorod region                 </div>`)[0];
+                popup_1b56687867cce9b2d33ec3aa52b25c5c.setContent(html_386b2d7dc8ab755188a2b849377150a2);
+            
+        
+
+        circle_marker_24c2369210a8ad703c8dfdc8fc8e70f4.bindPopup(popup_1b56687867cce9b2d33ec3aa52b25c5c)
+        ;
+
+        
+    
+</script>
+</html>
