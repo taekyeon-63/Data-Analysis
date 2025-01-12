@@ -53,4 +53,12 @@
 ![Alt text](https://www.dropbox.com/scl/fi/l1kxklhlgdv2o9lr3hwu7/3.png?rlkey=gocv4uk7m4icus5ig6e5wi69t&st=5mra0wqu&raw=1)
 - 해당 페이지에서 프로젝트의 목적과 분석 과정도 어떻게 진행했는지 확인할 수 있도록 넣어보았습니다.
 
+# 국가별 데이터
+![Alt text](https://www.dropbox.com/scl/fi/gkbs9dkdkicboogfda4pz/1.png?rlkey=gw60pz6u2mug9wzou3aah3jlw&st=dojw9lzv&raw=1)
+해당 페이지에서 국가를 선택하면 현재 그 나라의 정보를 조회할 수 있습니다.
+- 해당 나라가 분쟁 중이거나 무기 금수조치 국가의 경우 지도 위에 빨간색으로 출력됩니다.
+- 해당 나라가 분쟁 정보가 있을 경우, 분쟁 위치에 사망자를 기준으로 많을 경우 크게 동그라미가 출력됩니다.
+![Alt text](https://www.dropbox.com/scl/fi/pqsuqdey7tkahil9cox4g/2.png?rlkey=38x2p3mfkxu410h3b7gdhxr6k&st=wcnytw8x&raw=1)
+![Alt text](https://www.dropbox.com/scl/fi/elekiv91zl3wqxhju5jsa/3.png?rlkey=c6d3jg3ppj5ne73q0a9gqf4r3&st=z4da3g9q&raw=1)
+해당 지도 데이터 밑에는 첫 페이지에서 조회할 수 있던 그 나라에 대한 데이터를 보다 자세하게 조회할 수 있습니다.
 
