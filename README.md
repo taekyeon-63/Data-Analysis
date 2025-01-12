@@ -46,8 +46,11 @@
 # 플랫폼 구현
 
 ![Alt text](https://www.dropbox.com/scl/fi/nt13cx63tame948ujhu47/1.png?rlkey=lzza17q84hhalsap1ue11v5ve&st=954c3mam&raw=1)
-![Alt text](https://www.dropbox.com/scl/fi/9vq42msjjdypgfcbz7q3e/2.png?rlkey=pxfv10x13zul1s9n51hsaw40v&st=0fb8pc8e&raw=1)
-![Alt text](https://www.dropbox.com/scl/fi/l1kxklhlgdv2o9lr3hwu7/3.png?rlkey=gocv4uk7m4icus5ig6e5wi69t&st=5mra0wqu&raw=1)
 
+- 플랫폼의 메인 페이지에서는 세계지도가 있는데, 나라를 클릭하면 경제, 정치, 분쟁도 점수와 보유 무기 체계, 수입 무기 체계 등을 조회할 수 있습니다.
+![Alt text](https://www.dropbox.com/scl/fi/9vq42msjjdypgfcbz7q3e/2.png?rlkey=pxfv10x13zul1s9n51hsaw40v&st=0fb8pc8e&raw=1)
+- 그 밑에는 최신 분쟁 현황을 나타내보기 위해 분쟁 관련된 뉴스가 뜨도록 링크를 달아보았습니다.
+![Alt text](https://www.dropbox.com/scl/fi/l1kxklhlgdv2o9lr3hwu7/3.png?rlkey=gocv4uk7m4icus5ig6e5wi69t&st=5mra0wqu&raw=1)
+- 해당 페이지에서 프로젝트의 목적과 분석 과정도 어떻게 진행했는지 확인할 수 있도록 넣어보았습니다.
 
 
