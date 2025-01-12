@@ -3,6 +3,8 @@
 # 프로젝트 선정이유 
 
 ![Alt text](https://www.dropbox.com/scl/fi/uued58a5q1yrnhbmhw17w/.png?rlkey=0h5d62oiqt9xd2qs4uxsoh7i7&st=epjpmczc&raw=1)
+기업 입장에서 무기를 수풀하는 과정에서 한눈에 어느 나라가 어느 무기체계를 필요로 하는지 조회하는 데에 많은 어려움이 있습니다.
+따라서 해당 데이터를 한번에 조회하고 계획을 수립할 수 있도록 정보를 제공해주는 플랫폼이 있으면 좋을 것 같다고 생각했습니다.
 
 # 프로젝트 개요 및 목적
 
@@ -64,3 +66,18 @@
 ![Alt text](https://www.dropbox.com/scl/fi/elekiv91zl3wqxhju5jsa/3.png?rlkey=c6d3jg3ppj5ne73q0a9gqf4r3&st=z4da3g9q&raw=1)
 해당 지도 데이터 밑에는 첫 페이지에서 조회할 수 있던 그 나라에 대한 데이터를 보다 자세하게 조회할 수 있습니다.
 
+# 기업별 데이터
+![Alt text](https://www.dropbox.com/scl/fi/5vipq5rb26t3zefcoc3u2/.png?rlkey=0fdi1yyis6yct0l5onqh5dden&st=ds9ugyod&raw=1)
+
+해당 페이지에서는 프로젝트에서 분석에 사용된 기업의 정보를 확인할 수 있습니다. 링크를 클릭하면 해당 기업의 홈페이지로 연결됩니다.
+
+
+# 데이터 비교 및 분석
+
+![Alt text](https://www.dropbox.com/scl/fi/cdglkihgxi23vzqc2us74/1.png?rlkey=junsusmx8x34rs6pucvbk52et&st=0n0qyhch&raw=1)
+- 해당 페이지에서 국가와 기업을 선택하면 해당 나라가 어떤 무기 체계를 보유하고 수입하는지를 조회할 수 있습니다.
+- 같은 카테고리의 무기체계는 같은 색으로 표시됩니다.
+- 해당 무기 체계에 마우스를 올려놓으면 카테고리의 무기를 확인할 수 있습니다.
+![Alt text](https://www.dropbox.com/scl/fi/5vipq5rb26t3zefcoc3u2/.png?rlkey=0fdi1yyis6yct0l5onqh5dden&st=ds9ugyod&raw=1)
+- 밑으로 내리면 해당 나라의 지형 정보와 R&D 정보를 확인할 수 있습니다.
+- 지형 정보는 해당 나라가 어떤 지리적 정보를 가지고 있는지를, R&D 정보는 해당 나라가 어떤 연구를 하고 있는지를 확인할 수 있습니다.
