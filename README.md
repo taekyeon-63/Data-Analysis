@@ -23,6 +23,11 @@
 
 # 데이터 분석
 ![Alt text](https://www.dropbox.com/scl/fi/bo3tncdq7ggkp6693yipp/1.png?rlkey=0h0p72z4vn5dfnnpdav9g1fzr&st=jip75y18&raw=1)
+
+조사한 국가들을 대상으로 경제, 정치 거버넌스 지표, 분쟁도 지표를 가지고 점수화를 시켜보았습니다.
+- 경제 지표로 점수를 낼 때는 GDP, 군사력 비용 등 9개의 지표를 사용하여 점수화를 시켜보았고,
+- 정치 거버넌스 지표는 원 데이터의 6가지 지표에 대해 동등한 가중치로 점수를 매겨보았습니다. 
+- 분쟁도 점수는 분쟁의 최대사망자 기준으로 나라별로 합을 구한 후 분쟁이 없는 나라는 100점, 분쟁이 있는 나라는 사망자의 역순을 기준으로 99-1점을 매겼습니다.
 ![Alt text](https://www.dropbox.com/scl/fi/2tfligjp3sy3xo5okj1gn/2.png?rlkey=566tor2t257mpmxubj2xx090w&st=acx779v8&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/wase3hs2zlsb5vq58ze04/3.png?rlkey=wbe3c09op9nzhyb825ll3nf5v&st=50zebf1o&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/nq74b4jzcrerv1j1qd2o5/4.png?rlkey=le8xtstd8v9f368e19iojyfdd&st=1xmqbk5w&raw=1)
