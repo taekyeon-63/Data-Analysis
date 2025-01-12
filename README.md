@@ -29,6 +29,7 @@
 - 정치 거버넌스 지표는 원 데이터의 6가지 지표에 대해 동등한 가중치로 점수를 매겨보았습니다. 
 - 분쟁도 점수는 분쟁의 최대사망자 기준으로 나라별로 합을 구한 후 분쟁이 없는 나라는 100점, 분쟁이 있는 나라는 사망자의 역순을 기준으로 99-1점을 매겼습니다.
 
+각 지표의 변수는 1991년 데이터부터 2020년 데이터까지의 데이터를 모두 수집한 후 사이클로이드 곡선을 통해 최근 데이터가 가중치가 더 많이 나타나도록 가중치를 주어 수치화시켰습니다. 그 후 그 변수들을 가지고 점수화를 진행하였습니다.
 
 ![Alt text](https://www.dropbox.com/scl/fi/2tfligjp3sy3xo5okj1gn/2.png?rlkey=566tor2t257mpmxubj2xx090w&st=acx779v8&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/wase3hs2zlsb5vq58ze04/3.png?rlkey=wbe3c09op9nzhyb825ll3nf5v&st=50zebf1o&raw=1)
@@ -36,4 +37,8 @@
 ![Alt text](https://www.dropbox.com/scl/fi/nq74b4jzcrerv1j1qd2o5/4.png?rlkey=le8xtstd8v9f368e19iojyfdd&st=1xmqbk5w&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/2wg0ub4q3ffx1ll3gbojy/5.png?rlkey=ushlrs6u191hcbzd19ih6nvy0&st=i68691vd&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/0vmzcwlrb2iqm09shdtdg/6.png?rlkey=jfhazk3ttqnvnlqq1gkq1pbra&st=4z6aqo0s&raw=1)
+무기 체계는 미국 방위사업청 출처를 기준으로 카테고리화를 시켜보았습니다. 
+- 해당 카테고리를 기준으로 보유 현황을 수입양으로 나눠 해당 나라가 어떤 무기체계에 대해 얼마나 수입에 의존하는지를 나타내보았습니다
+- 한 나라가 어느 무기 체계에서 수입이 많은지를 나타내보았습니다.
+- 해당 그래프 옆에 저희가 구했던 경제, 정치, 분쟁도 점수와 국가 등급, GDP를 같이 나타내보았습니다. 
 ![Alt text](https://www.dropbox.com/scl/fi/xhkbo5s51cljdl6k11ufu/7.png?rlkey=6yo5xy0s15wzbnn6k4bm93rfx&st=wtxtnuz5&raw=1)
