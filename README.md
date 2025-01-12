@@ -41,4 +41,5 @@
 - 해당 카테고리를 기준으로 보유 현황을 수입양으로 나눠 해당 나라가 어떤 무기체계에 대해 얼마나 수입에 의존하는지를 나타내보았습니다
 - 한 나라가 어느 무기 체계에서 수입이 많은지를 나타내보았습니다.
 - 해당 그래프 옆에 저희가 구했던 경제, 정치, 분쟁도 점수와 국가 등급, GDP를 같이 나타내보았습니다. 
-![Alt text](https://www.dropbox.com/scl/fi/xhkbo5s51cljdl6k11ufu/7.png?rlkey=6yo5xy0s15wzbnn6k4bm93rfx&st=wtxtnuz5&raw=1)
+
+
