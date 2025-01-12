@@ -40,6 +40,14 @@
 무기 체계는 미국 방위사업청 출처를 기준으로 카테고리화를 시켜보았습니다. 
 - 해당 카테고리를 기준으로 보유 현황을 수입양으로 나눠 해당 나라가 어떤 무기체계에 대해 얼마나 수입에 의존하는지를 나타내보았습니다
 - 한 나라가 어느 무기 체계에서 수입이 많은지를 나타내보았습니다.
-- 해당 그래프 옆에 저희가 구했던 경제, 정치, 분쟁도 점수와 국가 등급, GDP를 같이 나타내보았습니다. 
+- 해당 그래프 옆에 저희가 구했던 경제, 정치, 분쟁도 점수와 국가 등급, GDP를 같이 나타내보았습니다.
+
+
+# 플랫폼 구현
+
+![Alt text](https://www.dropbox.com/scl/fi/nt13cx63tame948ujhu47/1.png?rlkey=lzza17q84hhalsap1ue11v5ve&st=954c3mam&raw=1)
+![Alt text](https://www.dropbox.com/scl/fi/9vq42msjjdypgfcbz7q3e/2.png?rlkey=pxfv10x13zul1s9n51hsaw40v&st=0fb8pc8e&raw=1)
+![Alt text](https://www.dropbox.com/scl/fi/l1kxklhlgdv2o9lr3hwu7/3.png?rlkey=gocv4uk7m4icus5ig6e5wi69t&st=5mra0wqu&raw=1)
+
 
 
