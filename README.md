@@ -30,6 +30,7 @@
 - 분쟁도 점수는 분쟁의 최대사망자 기준으로 나라별로 합을 구한 후 분쟁이 없는 나라는 100점, 분쟁이 있는 나라는 사망자의 역순을 기준으로 99-1점을 매겼습니다.
 ![Alt text](https://www.dropbox.com/scl/fi/2tfligjp3sy3xo5okj1gn/2.png?rlkey=566tor2t257mpmxubj2xx090w&st=acx779v8&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/wase3hs2zlsb5vq58ze04/3.png?rlkey=wbe3c09op9nzhyb825ll3nf5v&st=50zebf1o&raw=1)
+이후 이 3개의 점수에 동일한 가중치를 주어 군집화를 진행해보았고, 군집을 기준으로 나라의 등급을 A, B, C로 매겨보았습니다.
 ![Alt text](https://www.dropbox.com/scl/fi/nq74b4jzcrerv1j1qd2o5/4.png?rlkey=le8xtstd8v9f368e19iojyfdd&st=1xmqbk5w&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/2wg0ub4q3ffx1ll3gbojy/5.png?rlkey=ushlrs6u191hcbzd19ih6nvy0&st=i68691vd&raw=1)
 ![Alt text](https://www.dropbox.com/scl/fi/0vmzcwlrb2iqm09shdtdg/6.png?rlkey=jfhazk3ttqnvnlqq1gkq1pbra&st=4z6aqo0s&raw=1)
