@@ -2,7 +2,7 @@
 
 # 프로젝트 선정이유 
 
-![Alt text](https://www.dropbox.com/scl/fi/1fowl5caxob0p76ld4mee/.png?rlkey=xyh6uarlme6gorshh48lke94q&st=9v11s5lg&raw=1)
+![Alt text](https://www.dropbox.com/scl/fi/uued58a5q1yrnhbmhw17w/.png?rlkey=0h5d62oiqt9xd2qs4uxsoh7i7&st=epjpmczc&raw=1)
 
 # 프로젝트 개요
 
