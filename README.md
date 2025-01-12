@@ -54,6 +54,8 @@
 - 해당 페이지에서 프로젝트의 목적과 분석 과정도 어떻게 진행했는지 확인할 수 있도록 넣어보았습니다.
 
 # 국가별 데이터
+![Alt text](https://www.dropbox.com/scl/fi/3zkdveq2cariwnob6kykj/.png?rlkey=lrse1f9nsdpdbgde70tsjeynu&st=9b3v4q6w&raw=1)
+메인 페이지에서 데이터 탭을 누르면 데이터에 관련된 정보도 확인할 수 있습니다.
 ![Alt text](https://www.dropbox.com/scl/fi/gkbs9dkdkicboogfda4pz/1.png?rlkey=gw60pz6u2mug9wzou3aah3jlw&st=dojw9lzv&raw=1)
 해당 페이지에서 국가를 선택하면 현재 그 나라의 정보를 조회할 수 있습니다.
 - 해당 나라가 분쟁 중이거나 무기 금수조치 국가의 경우 지도 위에 빨간색으로 출력됩니다.
