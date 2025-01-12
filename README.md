@@ -2,7 +2,7 @@
 
 # 프로젝트 선정이유 
 
-고객(기업) 입장에서 국가별 방위산업 지표를 한눈에 보기 어려우므로 자회사와 국가간 유관성을 한번에 파악하기 어려움
+![Alt text](https://www.dropbox.com/scl/fi/1fowl5caxob0p76ld4mee/.png?rlkey=xyh6uarlme6gorshh48lke94q&st=9v11s5lg&raw=1)
 
 # 프로젝트 개요
 
