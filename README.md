@@ -6,21 +6,18 @@
 
 # 프로젝트 개요
 
-글로벌 방위산업 수출 전략 수립을 위한 국가별 맞춤형 정보 제공 플랫폼
+![Alt text](https://www.dropbox.com/scl/fi/3z5zuy4y1ja31iomwrf9d/.png?rlkey=vfjy76clb7k89j2midsuv49gm&st=owp5fu0m&raw=1)
 
 
 # 목적
 
-각 국가별로 방위산업과 관련되는 지표를 취합하여 해당 국가에 수출을 목적으로 하는 고객에게 정보를 제공
-
+![Alt text](https://www.dropbox.com/scl/fi/3z5zuy4y1ja31iomwrf9d/.png?rlkey=vfjy76clb7k89j2midsuv49gm&st=owp5fu0m&raw=1)
 # 프로젝트 배경
-
-증가하는 국내 방위사업 수출에 따른 국가별 맞춤형 정보를 한눈에 보이게 제공
+![Alt text](https://www.dropbox.com/scl/fi/3z5zuy4y1ja31iomwrf9d/.png?rlkey=vfjy76clb7k89j2midsuv49gm&st=owp5fu0m&raw=1)
 
 # 데이터 흐름도
 ![Alt text](https://www.dropbox.com/scl/fi/1fowl5caxob0p76ld4mee/.png?rlkey=xyh6uarlme6gorshh48lke94q&st=9v11s5lg&raw=1)
 
 
 # 기대효과
-
-웹을 통하여 국가별 방위산업 관련 데이터 제공하며 국가, 기업간 비교도 추가
+![Alt text](https://www.dropbox.com/scl/fi/3z5zuy4y1ja31iomwrf9d/.png?rlkey=vfjy76clb7k89j2midsuv49gm&st=owp5fu0m&raw=1)
